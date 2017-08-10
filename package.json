@@ -1,33 +1,36 @@
 {
-    "name": "Excel2017",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node_modules/.bin/webpack --progress --colors --watch"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "react": "^15.6.1",
-        "react-dom": "^15.6.1",
-        "react-redux": "^5.0.5",
-        "react-router-dom": "^4.1.1",
-        "redux": "^3.7.1",
-        "redux-thunk": "^2.2.0"
-    },
-    "devDependencies": {
-        "babel-cli": "^6.24.1",
-        "babel-loader": "^7.1.1",
-        "babel-plugin-transform-decorators-legacy": "^1.3.4",
-        "babel-plugin-transform-object-rest-spread": "^6.23.0",
-        "babel-preset-es2015": "^6.24.1",
-        "babel-preset-react": "^6.24.1",
-        "css-loader": "^0.28.4",
-        "extract-text-webpack-plugin": "^2.1.2",
-        "redux-devtools-extension": "^2.13.2",
-        "webpack": "^3.0.0"
-    }
+	"name": "Excel2017",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "concurrently \"node_modules/.bin/webpack --progress --colors --watch\" \"node_modules/.bin/webpack-dev-server --progress --colors --watch\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"react": "^15.6.1",
+		"react-dom": "^15.6.1",
+		"react-icons": "^2.2.5",
+		"react-redux": "^5.0.5",
+		"react-router-dom": "^4.1.1",
+		"redux": "^3.7.1",
+		"redux-thunk": "^2.2.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-loader": "^7.1.1",
+		"babel-plugin-transform-decorators-legacy": "^1.3.4",
+		"babel-plugin-transform-object-rest-spread": "^6.23.0",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-react": "^6.24.1",
+		"concurrently": "^3.5.0",
+		"css-loader": "^0.28.4",
+		"extract-text-webpack-plugin": "^2.1.2",
+		"redux-devtools-extension": "^2.13.2",
+		"webpack": "^3.0.0",
+		"webpack-dev-server": "^2.7.1"
+	}
 }
