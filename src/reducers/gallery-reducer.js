@@ -17,7 +17,7 @@ const galleryReducer = (state={
                 images: action.payload
             }
         default:
-            return state
+            return state;
     }
 }
 
