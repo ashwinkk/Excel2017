@@ -6,6 +6,7 @@ import CompetitionDetail from "./pages/competition-detail";
 import Gallery from "./pages/gallery.js";
 
 import './styles/defaults.css';
+import './styles/test.scss';
 
 function App(props) {
   return (

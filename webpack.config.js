@@ -18,10 +18,15 @@ var config = {
                 loader: "babel-loader"
             },
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
+                test: /(\.scss$|\.css$)/,
                 use: ExtractTextPlugin.extract({
-                    use: 'css-loader'
+                    use: [{
+                        loader: "css-loader"
+                    }, {
+                        loader: "sass-loader"
+                    }],
+                    // use style-loader in development
+                    fallback: "style-loader"
                 })
             },
             {
