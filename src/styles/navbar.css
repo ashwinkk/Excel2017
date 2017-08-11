@@ -1,6 +1,7 @@
 .navbar-container {
 	position: fixed;
 	width: 100%;
+	background: white;
 }
 
 @media (min-width: 300px) {
