@@ -14,7 +14,6 @@ const workshopsReducer = (
 				fetchedWorkshops: false
 			};
 		case "FETCHED_WORKSHOPS":
-			console.log(action.payload);
 			return {
 				...state,
 				fetchingWorkshops: false,

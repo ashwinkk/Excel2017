@@ -27,33 +27,35 @@ class WorkshopDetail extends React.Component {
 	}
 	componentWillReceiveProps(nextProps) {
 		const workshopId = nextProps.match.params.type;
-		console.log(nextProps);
-		const workshop = getObjectFromStore(nextProps.workshops, workshopId);
-		console.log(workshop);
+		let workshop = getObjectFromStore(nextProps.workshops, workshopId);
+		workshop.overview = ReactHtmlParser(workshop.overview);
+		workshop.schedule = ReactHtmlParser(workshop.schedule);
+		workshop.particulars = ReactHtmlParser(workshop.particulars);
 		this.setState({ workshop });
 	}
 	handleTab(tabIndex) {
 		this.setState({ activeIndex: tabIndex });
 	}
 	render() {
-		let WorkShopTabContent = [
-			ReactHtmlParser(this.state.workshop.overview),
-			ReactHtmlParser(this.state.workshop.schedule),
-			ReactHtmlParser(this.state.workshop.particulars)
-		];
-		let activeContent = WorkShopTabContent[this.state.activeIndex];
 		return (
-			<div className="container workshop-container">
+			<div className="workshop-container">
 				<h1>
 					{this.state.workshop.title}
 				</h1>
 				<EventTabs
 					activeTab={this.handleTab}
 					tabLabels={["Overview", "Schedule", "Particulars"]}
-				/>
-				<div>
-					{activeContent}
-				</div>
+				>
+					<div className="active-tab">
+						{this.state.workshop.overview}
+					</div>
+					<div>
+						{this.state.workshop.schedule}
+					</div>
+					<div>
+						{this.state.workshop.particulars}
+					</div>
+				</EventTabs>
 			</div>
 		);
 	}

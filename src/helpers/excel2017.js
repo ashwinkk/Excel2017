@@ -1,5 +1,4 @@
 export function getObjectFromStore(store, id) {
-	console.log(store, id);
 	let objArray = store.filter((obj, index) => {
 		return obj.id === id;
 	});
