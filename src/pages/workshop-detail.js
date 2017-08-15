@@ -6,7 +6,7 @@ import { fetchWorkshops } from "../actions/workshop-actions";
 import { getObjectFromStore } from "../helpers/excel2017";
 import EventTabs from "../partials/event-tabs";
 
-import "../styles/workshop-detail.css";
+import "../styles/workshop-detail.scss";
 
 @connect(store => {
 	return {
@@ -39,9 +39,15 @@ class WorkshopDetail extends React.Component {
 	render() {
 		return (
 			<div className="workshop-container">
-				<h1>
+				<img src="/static/images/3eye.png" />
+				<h2>
 					{this.state.workshop.title}
-				</h1>
+				</h2>
+				<button>
+					<a target="_blank" href="http://www.google.com">
+						Register
+					</a>
+				</button>
 				<EventTabs
 					activeTab={this.handleTab}
 					tabLabels={["Overview", "Schedule", "Particulars"]}

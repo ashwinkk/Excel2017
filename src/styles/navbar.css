@@ -9,6 +9,9 @@
 	.nav-text {
 		display: none;
 	}
+	.lonely-home {
+		display: none;
+	}
 	.navbar-container {
 		position: fixed;
 		bottom: 0;
@@ -67,6 +70,9 @@
 }
 
 @media (min-width: 600px) {
+	.lonely-home {
+		display: block;
+	}
 	.navbar-container {
 		top: 0;
 		height: 70px;
@@ -77,11 +83,13 @@
 		margin: auto;
 	}
 	.icons {
-		width: 85%;
+		width: 100%;
 	}
-	.left,
+	.left {
+		width: 60%;
+	}
 	.right {
-		width: 50%;
+		width: 40%;
 	}
 
 	.left > div > *,
@@ -94,12 +102,15 @@
 		display: block;
 	}
 	.bot-spawn {
-		position: relative;
+		position: fixed;
 		left: unset;
 		transform: none;
 		margin: auto;
 		height: 60px;
 		width: 60px;
+		top: unset;
+		bottom: 25px;
+		right: 25px;
 	}
 	.bot-spawn > div {
 		font-size: 18px;

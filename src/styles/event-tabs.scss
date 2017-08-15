@@ -15,6 +15,7 @@
 }
 .tab-container p {
 	margin: auto;
+	cursor: pointer;
 	padding: 5px 0;
 	color: white;
 	width: calc(100% / 3);
@@ -24,6 +25,7 @@
 }
 #highlighter {
 	background-color: wheat;
+	cursor: pointer;
 	position: absolute;
 	width: calc(100% / 3);
 	height: 110%;
@@ -46,8 +48,24 @@
 		overflow: auto;
 		transition: transform 0.3s;
 		vertical-align: top;
+		overflow: hidden;
 	}
 	div.active-tab {
 		transform: translateX(0);
+	}
+}
+.tab-container {
+	@media (min-width: 1000px) {
+		width: 50%;
+	}
+}
+#tab-content-container {
+	@media (min-width: 1000px) {
+		.tab-content {
+			& > * {
+				width: 50%;
+				margin: 20px auto;
+			}
+		}
 	}
 }
