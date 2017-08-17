@@ -10,6 +10,7 @@ import ComingSoon from "./pages/coming-soon";
 import Spotlight from "./pages/spotlight";
 import Events from "./pages/events";
 import CountDown from "./partials/countdown-ringer";
+import PageNotFound from "./pages/pagenotfound";
 
 import "./styles/defaults.css";
 import "./styles/test.scss";
@@ -19,7 +20,7 @@ function App(props) {
 		textColor: "#000",
 		endDate: "2017-09-09",
 		topCircleColor: "rgba(33,15,255,0.5)",
-		bottomCircleColor: "rgba(90,77,245,1)" 
+		bottomCircleColor: "rgba(90,77,245,1)"
 	};
 	return (
 		<div>
@@ -37,6 +38,7 @@ function App(props) {
 					<Route path="/events" component={Events} />
 					<Route path="/competitions" component={Competitions} />
 					<Route path="/under-construction" component={ComingSoon} />
+					<Route path="*" component={PageNotFound} />
 				</Switch>
 			</div>
 		</div>

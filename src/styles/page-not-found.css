@@ -1,0 +1,20 @@
+.page-not-found-container{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.r2-image{
+    height: 300px;
+}
+
+.page-not-found-title{
+    font-family: Roboto;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.page-not-found-subtitle{
+    font-size: 18px;
+}
