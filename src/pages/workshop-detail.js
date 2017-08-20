@@ -32,6 +32,12 @@ class WorkshopDetail extends React.Component {
 		workshop.schedule = ReactHtmlParser(workshop.schedule);
 		workshop.particulars = ReactHtmlParser(workshop.particulars);
 		this.setState({ workshop });
+		document.body.style.background =
+			'url("/static/images/circuitry.png") cadetblue';
+		document.body.style.backgroundSize = "cover";
+	}
+	componentWillUnmount() {
+		document.body.style.background = "";
 	}
 	handleTab(tabIndex) {
 		this.setState({ activeIndex: tabIndex });
@@ -39,15 +45,17 @@ class WorkshopDetail extends React.Component {
 	render() {
 		return (
 			<div className="workshop-container">
-				<img src="/static/images/3eye.png" />
+				<img src={this.state.workshop.image} />
 				<h2>
 					{this.state.workshop.title}
 				</h2>
-				<button>
-					<a target="_blank" href="http://www.google.com">
-						Register
-					</a>
-				</button>
+				<a
+					className="reg_button"
+					target="_blank"
+					href="https://goo.gl/forms/zFkCmBTU1FQKSqeb2"
+				>
+					Register
+				</a>
 				<EventTabs
 					activeTab={this.handleTab}
 					tabLabels={["Overview", "Schedule", "Particulars"]}

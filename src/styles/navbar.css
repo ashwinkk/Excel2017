@@ -61,6 +61,19 @@
 	.navbar {
 		width: 100%;
 	}
+	.flap {
+		position: fixed;
+		top: 0;
+		padding-top: 5px;
+		background-color: white;
+		width: 100%;
+	}
+	.flap img {
+		width: 120px;
+		position: absolute;
+		top: 0px;
+		margin-left: 10px;
+	}
 }
 @media (min-width: 400px) {
 	.left > *,
@@ -70,6 +83,9 @@
 }
 
 @media (min-width: 600px) {
+	.flap {
+		display: none;
+	}
 	.lonely-home {
 		display: block;
 	}
@@ -118,5 +134,25 @@
 	.left > *,
 	.right > * {
 		font-size: 18px;
+	}
+}
+
+.record {
+	animation: mic-animation 2s ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes mic-animation {
+	0% {
+		box-shadow: 0 1px 10px rgba(255, 0, 0, 0.12),
+			0 1px 5px rgba(255, 0, 0, 0.24);
+	}
+	50% {
+		box-shadow: 0 1px 20px rgba(255, 0, 0, 0.5),
+			0 1px 20px rgba(255, 0, 0, 0.24);
+	}
+	100% {
+		box-shadow: 0 1px 10px rgba(255, 0, 0, 0.12),
+			0 1px 5px rgba(255, 0, 0, 0.24);
 	}
 }

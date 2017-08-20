@@ -8,6 +8,8 @@ class EventTabs extends React.Component {
 		this.state = {
 			height: 0
 		};
+		this.dragHor = false;
+		this.dragVer = false;
 		this.initial = 0;
 		this.width = 0;
 		this.contentPos = 0;
@@ -34,7 +36,8 @@ class EventTabs extends React.Component {
 
 	componentDidMount() {
 		let cont = ReactDOM.findDOMNode(this.refs["tab-content-container"]);
-		this.width = cont.getBoundingClientRect().width;
+		this.width =
+			cont.getBoundingClientRect().width / this.props.children.length;
 		let tabContainer = ReactDOM.findDOMNode(this.refs["tab"]);
 		this.tabContainer = tabContainer.getBoundingClientRect();
 	}
@@ -48,21 +51,28 @@ class EventTabs extends React.Component {
 	}
 
 	handleDragContainer(pos) {
-		this.contentNext = pos.left < 0;
+		if (Math.abs(pos.left) < Math.abs(pos.top)) this.dragVer = true;
+		else this.dragHor = true;
+		if (this.dragVer) return;
+		if (Math.abs(pos.left) > 0) this.contentNext = pos.left < 0;
 		this.contentPos += pos.left;
 		if (this.contentPos > 0) this.contentPos = 0;
-		else if (this.contentPos <= -2 * this.width) {
-			this.contentPos = -2 * this.width;
+		else if (
+			this.contentPos <=
+			-(this.props.children.length - 1) * this.width
+		) {
+			this.contentPos = -(this.props.children.length - 1) * this.width;
 		}
 		this.seekContent(this.contentPos);
 	}
 
 	handleEndDragContainer() {
+		this.dragHor = this.dragVer = false;
 		let travel = Math.abs(this.contentPos % this.width);
 		if (this.contentNext === false) travel = this.width - travel;
 		let restorePos = true;
 		let seekFactor = travel;
-		if (travel > this.width / 4) {
+		if (travel > this.width / 10) {
 			restorePos = false;
 			seekFactor = Math.abs(this.width - travel);
 		}
@@ -92,21 +102,29 @@ class EventTabs extends React.Component {
 	handleDragTab(pos) {
 		this.contentNext = pos.left > 0;
 		this.tabPos += pos.left;
-		if (this.tabPos > this.tabContainer.width * 2 / 3)
-			this.tabPos = this.tabContainer.width * 2 / 3;
+		if (
+			this.tabPos >
+			this.tabContainer.width * (1 - 1 / this.props.children.length)
+		)
+			this.tabPos =
+				this.tabContainer.width * (1 - 1 / this.props.children.length);
 		else if (this.tabPos < 0) this.tabPos = 0;
 		this.seekTab(this.tabPos);
 	}
 
 	handleEndDragTab() {
-		let travel = Math.abs(this.tabPos % (this.tabContainer.width / 3));
+		let travel = Math.abs(
+			this.tabPos % (this.tabContainer.width / this.props.children.length)
+		);
 		if (this.contentNext === false)
-			travel = this.tabContainer.width / 3 - travel;
+			travel = this.tabContainer.width / this.props.children.length - travel;
 		let restorePos = true;
 		let seekFactor = travel;
-		if (travel > this.tabContainer.width / (4 * 3)) {
+		if (travel > this.tabContainer.width / (4 * this.props.children.length)) {
 			restorePos = false;
-			seekFactor = Math.abs(this.tabContainer.width / 3 - travel);
+			seekFactor = Math.abs(
+				this.tabContainer.width / this.props.children.length - travel
+			);
 		}
 		let direction = restorePos ? -1 : 1;
 		if (this.contentNext === false) direction = -direction;
@@ -116,14 +134,19 @@ class EventTabs extends React.Component {
 
 	seekTab(position, transition) {
 		this.contentPos =
-			-1 * this.tabPos * (this.width * 3) / this.tabContainer.width;
+			-1 *
+			this.tabPos *
+			(this.width * this.props.children.length) /
+			this.tabContainer.width;
 		this.moveContent(this.contentPos, transition);
 		this.moveTab(position, transition);
 	}
 
 	seekContent(position, transition) {
 		this.tabPos = Math.abs(
-			this.contentPos * this.tabContainer.width / (3 * this.width)
+			this.contentPos *
+				this.tabContainer.width /
+				(this.props.children.length * this.width)
 		);
 		this.moveTab(this.tabPos, transition);
 		this.moveContent(position, transition);
@@ -131,6 +154,8 @@ class EventTabs extends React.Component {
 
 	render() {
 		let tabArray = this.props.tabLabels;
+		let childNodes = this.props.children;
+		let tabWidth = 100 / childNodes.length + "%";
 		let tabs = tabArray.map((tab, index) => {
 			let className = "";
 			if (index == 0) className = "active";
@@ -141,13 +166,13 @@ class EventTabs extends React.Component {
 					onClick={e => {
 						this.handleClick(e, index);
 					}}
+					style={{ width: tabWidth }}
 				>
 					{tab}
 				</p>
 			);
 		});
-		let childNodes = this.props.children;
-		let pos = { left: 0, right: 0 };
+		let pos = { left: 0, top: 0 };
 		return (
 			<div>
 				<div className="tab-container ">
@@ -163,7 +188,7 @@ class EventTabs extends React.Component {
 					<div
 						id="highlighter"
 						ref="tab-highlighter"
-						onClick={() => console.log("heloo")}
+						style={{ width: tabWidth }}
 					/>
 				</div>
 				<Draggable
@@ -171,13 +196,18 @@ class EventTabs extends React.Component {
 					onDrag={this.handleDragContainer}
 					onDragEnd={this.handleEndDragContainer}
 				>
-					<div id="tab-content-container" ref="tab-content-container">
+					<div
+						id="tab-content-container"
+						ref="tab-content-container"
+						style={{ width: this.props.children.length * 100 + "%" }}
+					>
 						{React.Children.map(childNodes, (child, index) => {
 							let classTab = "";
 							if (index == 0) classTab = "active-tab";
 							return React.cloneElement(child, {
 								className: classTab + " tab-content container",
-								ref: "tab-content-" + index
+								ref: "tab-content",
+								style: { width: tabWidth }
 							});
 						})}
 					</div>

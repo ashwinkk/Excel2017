@@ -4,6 +4,13 @@ body {
 	padding: 0;
 	overflow-x: hidden;
 	position: relative;
+	transition: background 0.3s;
+	background-size: cover;
+}
+
+@font-face {
+	font-family: Cocomat-Light;
+	src: url("/assets/fonts/Cocomat-Light.ttf");
 }
 a,
 a:hover,
@@ -13,9 +20,26 @@ a:focus {
 	color: inherit;
 }
 
+p,
+ul,
+h3 {
+	font-family: 'Muli', sans-serif;
+}
+
+h1,
+a,
+h2 {
+	font-family: 'Raleway', sans-serif;
+}
+
+#root {
+	overflow-x: hidden;
+}
+
 @media (min-width: 300px) {
 	.content {
 		margin-bottom: 80px;
+		margin-top: 50px;
 	}
 }
 
