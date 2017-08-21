@@ -18,7 +18,7 @@ function App(props) {
 		textColor: "#000",
 		endDate: "2017-09-09",
 		topCircleColor: "rgba(33,15,255,0.5)",
-		bottomCircleColor: "rgba(90,77,245,1)" 
+		bottomCircleColor: "rgba(90,77,245,1)"
 	};
 	return (
 		<div>

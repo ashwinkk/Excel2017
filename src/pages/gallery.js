@@ -40,7 +40,7 @@ class Gallery extends React.Component {
 	componentDidMount() {
 		let height = document.getElementById("gallery-container").offsetHeight;
 		console.log(height);
-		if (screen.width > 1000) {
+		if (window.innerWidth > 1000) {
 			this.unitHeight = height / 6;
 			console.log("something");
 		} else {
@@ -148,7 +148,7 @@ class Gallery extends React.Component {
 
 	collectWidth(index, width, height) {
 		this.setState((prevState, props) => {
-			if (count == 17)
+			if (prevState.count == 17)
 				return {
 					...prevState,
 					count: prevState.count + 1,
