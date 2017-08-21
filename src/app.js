@@ -14,6 +14,12 @@ import "./styles/defaults.css";
 import "./styles/test.scss";
 
 function App(props) {
+	const options = {
+		textColor: "#000",
+		endDate: "2017-09-09",
+		topCircleColor: "rgba(33,15,255,0.5)",
+		bottomCircleColor: "rgba(90,77,245,1)" 
+	};
 	return (
 		<div>
 			<Navbar />

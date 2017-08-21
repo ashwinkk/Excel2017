@@ -6,7 +6,6 @@ var APP_DIR = path.resolve(__dirname, "src");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var config = {
-	devtool: "#cheap-source-map",
 	entry: APP_DIR + "/index.js",
 	output: {
 		path: BUILD_DIR,
@@ -15,7 +14,7 @@ var config = {
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /(\.js$|\.jsx$)/,
 				exclude: /node_modules/,
 				loader: "babel-loader"
 			},
@@ -40,14 +39,7 @@ var config = {
 			}
 		]
 	},
-	plugins: [
-		new ExtractTextPlugin("styles.css"),
-		new webpack.DefinePlugin({
-			"process.env": {
-				NODE_ENV: JSON.stringify("production")
-			}
-		})
-	]
+	plugins: [new ExtractTextPlugin("styles.css")]
 };
 
 module.exports = config;
