@@ -4,7 +4,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Competitions from "./pages/competitions";
 import CompetitionDetail from "./pages/competition-detail";
 import WorkshopDetail from "./pages/workshop-detail";
-import Gallery from "./pages/gallery.js";
+// import Gallery from "./pages/gallery.js";
 import Navbar from "./partials/navbar";
 import ComingSoon from "./pages/coming-soon";
 import Spotlight from "./pages/spotlight";
@@ -34,7 +34,7 @@ function App(props) {
 					<Route path="/spotlight" component={Spotlight} />
 					<Route path="/events" component={Events} />
 					<Route path="/competitions" component={Competitions} />
-					<Route path="/gallery" component={Gallery} />
+					{/*<Route path="/gallery" component={Gallery} />*/}
 					<Route path="/under-construction" component={ComingSoon} />
 				</Switch>
 			</div>
