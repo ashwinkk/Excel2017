@@ -1,17 +1,20 @@
 .workshop-container p {
-  text-align: justify; }
+  text-align: justify;
+  color: white; }
 
 .workshop-container h2,
 .workshop-container h3 {
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 .workshop-container {
   margin-top: 20px; }
   .workshop-container img {
     margin: auto;
-    width: 60%;
+    width: 50%;
     display: block; }
-  .workshop-container button {
+  .workshop-container .reg_button {
+    text-align: center;
     margin: 30px auto;
     display: block;
     border: none;

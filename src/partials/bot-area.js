@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/bot-area.scss";
+import "../styles/bot-area.css";
 
 class BotChat extends React.Component {
 	render() {

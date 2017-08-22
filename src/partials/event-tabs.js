@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Draggable } from "react-touch";
 
+import "../styles/event-tabs.css";
+
 class EventTabs extends React.Component {
 	constructor(props) {
 		super(props);

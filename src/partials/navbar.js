@@ -77,7 +77,7 @@ class Navbar extends React.Component {
 					</div>
 					<div className="flap">
 						<Link to="/">
-							<img src="/static/images/flap.png" />
+							<img src="/static/images/flap.png" alt="excel-home" />
 						</Link>
 					</div>
 				</div>

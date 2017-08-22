@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/coming-soon.scss";
+import "../styles/coming-soon.css";
 
 export default function ComingSoon(props) {
 	return (
