@@ -40,6 +40,9 @@ class CompetitionDetail extends React.Component {
 				<h2>
 					{this.state.competition.name}
 				</h2>
+				<h3>
+					Prize pool: {this.state.competition.prize_pool}
+				</h3>
 				<a
 					className="reg_button"
 					target="_blank"

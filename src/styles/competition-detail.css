@@ -7,6 +7,10 @@
   margin: 20px auto;
   text-align: center; }
 
+.competitions-container h3 {
+  text-align: center;
+  color: #ebba16; }
+
 ul li p {
   color: black; }
 
