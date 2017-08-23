@@ -24,6 +24,9 @@
   text-align: center !important;
   position: relative;
   z-index: 1; }
+  @media (max-width: 600px) {
+    .tab-container p {
+      font-size: 10px; } }
   @media (min-width: 1000px) {
     .tab-container p {
       font-size: 18px; } }
@@ -54,6 +57,8 @@
     transition: transform 0.3s;
     vertical-align: top;
     overflow: hidden; }
+    #tab-content-container div.tab-content p {
+      text-align: justify; }
   #tab-content-container div.active-tab {
     transform: translateX(0); }
 

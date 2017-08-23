@@ -24,6 +24,9 @@
 	text-align: center !important;
 	position: relative;
 	z-index: 1;
+	@media (max-width: 600px) {
+		font-size: 10px;
+	}
 	@media (min-width: 1000px) {
 		font-size: 18px;
 	}
@@ -54,6 +57,9 @@
 		transition: transform 0.3s;
 		vertical-align: top;
 		overflow: hidden;
+		p {
+			text-align: justify;
+		}
 	}
 	div.active-tab {
 		transform: translateX(0);

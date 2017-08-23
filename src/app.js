@@ -30,6 +30,7 @@ function App(props) {
 						path="/"
 						render={() => <Redirect to="/under-construction" />}
 					/>
+					<Route path="/competitions/:type" component={CompetitionDetail} />
 					<Route path="/spotlight/:type" component={WorkshopDetail} />
 					<Route path="/spotlight" component={Spotlight} />
 					<Route path="/events" component={Events} />
