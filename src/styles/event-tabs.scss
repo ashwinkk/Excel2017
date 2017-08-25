@@ -1,7 +1,16 @@
+.tab-container-main {
+	width: 100%;
+	overflow: hidden;
+	max-width: 980px;
+	margin: auto;
+}
 .tab-container {
 	width: 90%;
 	margin: 10px auto;
 	position: relative;
+	@media (min-width: 980px) {
+		width: 100%;
+	}
 }
 .tab-container .tab {
 	width: 100%;
@@ -65,16 +74,11 @@
 		transform: translateX(0);
 	}
 }
-.tab-container {
-	@media (min-width: 1000px) {
-		width: 50%;
-	}
-}
+
 #tab-content-container {
 	@media (min-width: 1000px) {
 		.tab-content {
 			& > * {
-				width: 50%;
 				margin: 20px auto;
 			}
 		}

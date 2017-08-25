@@ -28,20 +28,24 @@ class CompetitionDetail extends React.Component {
 		const competitionId = nextProps.match.params.type;
 		console.log(competitionId);
 		let competition = getObjectFromStore(nextProps.competitions, competitionId);
+		competition.description = ReactHtmlParser(competition.description);
+		competition.eventFormat = ReactHtmlParser(competition.eventFormat);
+		competition.rules = ReactHtmlParser(competition.rules);
+		competition.contact_details = ReactHtmlParser(competition.contact_details);
 		this.setState({ competition });
 	}
 	render() {
 		if (this.props.fetching) return <h1>Loading..</h1>;
 		let competition = this.state.competition;
-		let description = ReactHtmlParser(competition.description);
-		let eventFormat = ReactHtmlParser(competition.eventFormat);
-		let rules = ReactHtmlParser(competition.rules);
-		let contacts = ReactHtmlParser(competition.contact_details);
+		let description = competition.description;
+		let eventFormat = competition.eventFormat;
+		let rules = competition.rules;
+		let contacts = competition.contact_details;
 		let buttons = <div />;
 		if (competition.buttons)
 			buttons = competition.buttons.map((button, index) => {
 				return (
-					<a href={button.link} className="reg_button">
+					<a href={button.link} target="_blank" className="reg_button">
 						{button.name}
 					</a>
 				);

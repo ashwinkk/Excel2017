@@ -176,7 +176,7 @@ class EventTabs extends React.Component {
 		});
 		let pos = { left: 0, top: 0 };
 		return (
-			<div>
+			<div className="tab-container-main">
 				<div className="tab-container ">
 					<Draggable
 						position={pos}
