@@ -11,7 +11,7 @@
   margin-top: 20px; }
   .workshop-container img {
     margin: auto;
-    width: 50%;
+    width: 200px;
     display: block; }
   .workshop-container .reg_button {
     text-align: center;
@@ -33,6 +33,6 @@
     .workshop-container {
       margin-top: 0; }
       .workshop-container img {
-        width: 20%; }
+        width: 250px; }
       .workshop-container button {
         margin: 35px auto; } }

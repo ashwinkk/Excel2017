@@ -32,8 +32,7 @@ class WorkshopDetail extends React.Component {
 		workshop.schedule = ReactHtmlParser(workshop.schedule);
 		workshop.particulars = ReactHtmlParser(workshop.particulars);
 		this.setState({ workshop });
-		document.body.style.background =
-			'url("/static/images/circuitry.png") cadetblue';
+		document.body.style.background = `url(${workshop.background}) ${workshop.accentColour}`;
 		document.body.style.backgroundSize = "cover";
 	}
 	componentWillUnmount() {
@@ -52,7 +51,7 @@ class WorkshopDetail extends React.Component {
 				<a
 					className="reg_button"
 					target="_blank"
-					href="https://goo.gl/forms/zFkCmBTU1FQKSqeb2"
+					href={this.state.workshop.register_link}
 				>
 					Register
 				</a>

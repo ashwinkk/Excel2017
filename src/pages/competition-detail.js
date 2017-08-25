@@ -10,7 +10,8 @@ import "../styles/competition-detail.css";
 
 @connect(store => {
 	return {
-		competitions: store.competitions.competitions
+		competitions: store.competitions.competitions,
+		fetching: store.competitions.fetchingCompetitions
 	};
 })
 class CompetitionDetail extends React.Component {
@@ -25,31 +26,39 @@ class CompetitionDetail extends React.Component {
 	}
 	componentWillReceiveProps(nextProps) {
 		const competitionId = nextProps.match.params.type;
+		console.log(competitionId);
 		let competition = getObjectFromStore(nextProps.competitions, competitionId);
 		this.setState({ competition });
 	}
 	render() {
-		console.log(this.props.match);
-		let description = ReactHtmlParser(this.state.competition.description);
-		let eventFormat = ReactHtmlParser(this.state.competition.eventFormat);
-		let rules = ReactHtmlParser(this.state.competition.rules);
-		let contacts = ReactHtmlParser(this.state.competition.contact_details);
+		if (this.props.fetching) return <h1>Loading..</h1>;
+		let competition = this.state.competition;
+		let description = ReactHtmlParser(competition.description);
+		let eventFormat = ReactHtmlParser(competition.eventFormat);
+		let rules = ReactHtmlParser(competition.rules);
+		let contacts = ReactHtmlParser(competition.contact_details);
+		let buttons = <div />;
+		if (competition.buttons)
+			buttons = competition.buttons.map((button, index) => {
+				return (
+					<a href={button.link} className="reg_button">
+						{button.name}
+					</a>
+				);
+			});
 		return (
 			<div className="competitions-container">
-				<img src={this.state.competition.cover} />
+				<img src={competition.cover} />
 				<h2>
-					{this.state.competition.name}
+					{competition.name}
 				</h2>
-				<h3>
-					Prize pool: {this.state.competition.prize_pool}
+				<h3 className="container">
+					Prize pool: {competition.prize_pool}
 				</h3>
-				<a
-					className="reg_button"
-					target="_blank"
-					href="https://goo.gl/forms/pG14zHrTNhnkQVD42"
-				>
-					Register
-				</a>
+				<div className="button-container">
+					{buttons}
+				</div>
+
 				<EventTabs
 					tabLabels={["Description", "Event-Format", "Rules", "Contacts"]}
 					activeTab={index => console.log(index)}

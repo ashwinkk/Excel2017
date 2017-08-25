@@ -11,12 +11,22 @@
   text-align: center;
   color: #ebba16; }
 
+.competitions-container .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  @media (min-width: 600px) {
+    .competitions-container .button-container {
+      width: 50%;
+      margin: auto; } }
+
 ul li p {
   color: black; }
 
 .reg_button {
   text-align: center;
-  margin: 30px auto;
+  margin: 20px auto;
   display: block;
   border: none;
   background-color: white;

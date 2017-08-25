@@ -3,8 +3,23 @@
 		"id": "swarm-robotics",
 		"title": "Swarm Robotics",
 		"image": "/static/images/iconswarm.png",
+		"accentColour": "cadetblue",
+		"register_link": "https://goo.gl/forms/zFkCmBTU1FQKSqeb2",
+		"background": "/static/images/circuitry.png",
 		"overview": "<h3>Swarm Robotics</h3><p>A field of robotics technology in which groups of robots communicate with each other to carry out task more efficiently compared to a single robot carrying out the same task.The workshops will introduce the basics of swarm robotics by making two robots to communicate with each other.</p><h3>Conducted by</h3><p>HT india Labs-HT india is an organization who specializes in training students in latest trends in the tech space.They have specialized trainers who conducts workshops and training in several colleges across India. IIT Madras ,IIT Kanpur,IIT Guwahati,IIT BHU are several institutes in which HT India haveconducted workshops.</p>",
 		"schedule": "<h3>Day ONE</h3><ul><li><p>Introduction to robot</p></li><li><p>AVR series Microcontrollers</p></li><li><p>Programming AVR</p></li><li><p>Interface of Sensors</p></li><li><p>Actuators</p></li><li><p>Motor drivers</p></li><li><p>Programming and running line following robot algorithms</p></li><li><p>Introduction to swarm robots</p></li></ul><h3>Day TWO</h3><ul><li><p>Wireless communication concepts</p></li><li><p>Working with CC2500 Wireless Transceiver module</p></li><li><p>Programming and running grid solving algorithms on robot</p></li><li><p>Communication between two robots</p></li><li><p>Detecting obstacle on the grid</p></li></ul>",
 		"particulars": "<h3>Notes</h3><ul><li><p>Requirements: Laptops and Charger</p></li><li><p>2 Day Hands on workshop</p></li><li><p>Date: 16, 17 September 2017</p></li><li><p>Timing: 9:30 am to 4:30 pm</p></li><li><p>Govt. Model Engineering College</p></li><li><p>Cost: 1200 per person-Kit to be given to a group of 5</p></li></ul>"
+	},
+	{
+		"_id": "599c7bc91cc6720011bf8122",
+		"id": "quadcopter",
+		"category": "Workshops",
+		"title": "Quadcopter",
+		"register_link": "https://goo.gl/forms/zFkCmBTU1FQKSqeb2",
+		"accentColour": "cadetblue",
+		"overview": "<p>Quadcopter is an aerial robot combining a simple propeller mechanism with powerful electronics for limitless real-world applications. It is an embedded system comprising of microcontrollers, sensors, flight gear and other integrated components.This workshop helps participants to develop a Quadcopter project from scratch while understanding the various engineering concepts in making a working Unmanned Aerial Vehicle</p><p><br></p><p>Schedule</p><ul><li><p>Fundamentals of Rotor Dynamics.</p></li><li><p>Various components of a Quadcopter.</p></li><li><p>Stability and Control of a Quadcopter.</p></li><li><p>Introduction to Quadcopter Design.</p></li><li><p>Basics of PID tuning.</p></li><li><p>Introduction to Electronics and Sensor calibration.</p></li><li><p>Professional Flight lessons from TechEagle Pilots</p></li></ul>",
+		"schedule": "<p>Date: Sept 8th & 9th</p><p>Cost:1000 per person - ( Kit to be given to Team of 5,excluding transmitter and receiver )</p><p>Venue: Govt Model Engineering College</p><p>Timing: 9:30 am - 4:30 pm</p><p>Hands on 2 day workshop</p><p>Laptops and Chargers required</p><p>Accommodation can be provided to external participants ( Gents only ) at the men's hostel</p><p>Certificates to be provided</p>",
+		"particulars": "<h2>Contacts</h2><ul><li><p>Gautham Dinanath</p><p>+91 7736787858</p></li><li><p>Ananthkrishnan</p><p>+91 9747128937</p></li></ul>",
+		"image": "/static/images/quadcopter.png"
 	}
 ]
