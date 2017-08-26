@@ -1,0 +1,9 @@
+.flex-grid {
+  width: 95%;
+  margin: auto;
+  position: relative;
+  overflow: hidden; }
+  .flex-grid .flex-box {
+    margin: 20px 0px;
+    position: absolute;
+    box-sizing: border-box; }
