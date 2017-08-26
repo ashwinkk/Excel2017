@@ -26,7 +26,6 @@ class CompetitionDetail extends React.Component {
 	}
 	componentWillReceiveProps(nextProps) {
 		const competitionId = nextProps.match.params.type;
-		console.log(competitionId);
 		let competition = getObjectFromStore(nextProps.competitions, competitionId);
 		competition.description = ReactHtmlParser(competition.description);
 		competition.eventFormat = ReactHtmlParser(competition.eventFormat);
@@ -45,7 +44,12 @@ class CompetitionDetail extends React.Component {
 		if (competition.buttons)
 			buttons = competition.buttons.map((button, index) => {
 				return (
-					<a href={button.link} target="_blank" className="reg_button">
+					<a
+						href={button.link}
+						target="_blank"
+						className="reg_button"
+						key={index}
+					>
 						{button.name}
 					</a>
 				);
@@ -65,7 +69,7 @@ class CompetitionDetail extends React.Component {
 
 				<EventTabs
 					tabLabels={["Description", "Event-Format", "Rules", "Contacts"]}
-					activeTab={index => console.log(index)}
+					activeTab={index => index}
 				>
 					<div>
 						{description}

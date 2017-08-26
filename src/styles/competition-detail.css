@@ -1,7 +1,10 @@
 .competitions-container img {
   display: block;
   margin: 20px auto;
-  width: 250px; }
+  width: 150px; }
+  @media (min-width: 600px) {
+    .competitions-container img {
+      width: 250px; } }
 
 .competitions-container h2 {
   margin: 20px auto;
@@ -10,6 +13,9 @@
 .competitions-container h3 {
   text-align: center;
   color: #ebba16; }
+
+.competitions-container h4 {
+  color: #333; }
 
 .competitions-container .button-container {
   width: 100%;

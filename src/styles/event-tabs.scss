@@ -4,6 +4,24 @@
 	max-width: 980px;
 	margin: auto;
 }
+
+.event-contact {
+	display: flex;
+	flex-wrap: wrap;
+
+	li {
+		width: 60%;
+		& > h4 {
+			text-align: left;
+		}
+	}
+	@media (min-width: 600px) {
+		li {
+			width: auto;
+		}
+		justify-content: space-around;
+	}
+}
 .tab-container {
 	width: 90%;
 	margin: 10px auto;
@@ -16,7 +34,6 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	background-color: gray;
 	overflow: hidden;
 	border-radius: 20px;
 	height: 100%;
@@ -24,6 +41,16 @@
 }
 .tab-content ul {
 	color: #5d6c6b;
+}
+.tab-content {
+	& > img {
+		margin: 10px auto !important;
+		display: block;
+		width: 300px !important;
+		@media (max-width: 600px) {
+			width: 150px !important;
+		}
+	}
 }
 .tab-container p {
 	margin: auto;
@@ -41,7 +68,6 @@
 	}
 }
 #highlighter {
-	background-color: #5d6c6b;
 	cursor: pointer;
 	position: absolute;
 	height: 110%;

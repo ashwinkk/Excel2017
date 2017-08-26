@@ -158,6 +158,14 @@ class EventTabs extends React.Component {
 		let tabArray = this.props.tabLabels;
 		let childNodes = this.props.children;
 		let tabWidth = 100 / childNodes.length + "%";
+		let pos = { left: 0, top: 0 };
+		let trackTheme = {
+			backgroundColor: this.props.trackColor || "gray"
+		};
+		let highlighterTheme = {
+			color: this.props.color || "white",
+			backgroundColor: this.props.background || "#5d6c6b"
+		};
 		let tabs = tabArray.map((tab, index) => {
 			let className = "";
 			if (index == 0) className = "active";
@@ -174,7 +182,6 @@ class EventTabs extends React.Component {
 				</p>
 			);
 		});
-		let pos = { left: 0, top: 0 };
 		return (
 			<div className="tab-container-main">
 				<div className="tab-container ">
@@ -183,14 +190,14 @@ class EventTabs extends React.Component {
 						onDrag={this.handleDragTab}
 						onDragEnd={this.handleEndDragTab}
 					>
-						<div className="tab" ref="tab">
+						<div className="tab" ref="tab" style={trackTheme}>
 							{tabs}
 						</div>
 					</Draggable>
 					<div
 						id="highlighter"
 						ref="tab-highlighter"
-						style={{ width: tabWidth }}
+						style={{ width: tabWidth, ...highlighterTheme }}
 					/>
 				</div>
 				<Draggable

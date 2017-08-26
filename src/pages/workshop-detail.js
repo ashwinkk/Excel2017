@@ -45,7 +45,7 @@ class WorkshopDetail extends React.Component {
 		return (
 			<div className="workshop-container">
 				<img src={this.state.workshop.image} alt={this.state.workshop.image} />
-				<h2>
+				<h2 style={{ color: this.props.accentColour }}>
 					{this.state.workshop.title}
 				</h2>
 				<a

@@ -3,16 +3,20 @@
   color: white; }
 
 .workshop-container h2,
-.workshop-container h3 {
+.workshop-container h3,
+.workshop-container h4 {
   text-align: center;
   color: white; }
 
 .workshop-container {
   margin-top: 20px; }
-  .workshop-container img {
+  .workshop-container > img {
     margin: auto;
-    width: 200px;
+    width: 250px;
     display: block; }
+    @media (max-width: 600px) {
+      .workshop-container > img {
+        width: 150px; } }
   .workshop-container .reg_button {
     text-align: center;
     margin: 30px auto;
