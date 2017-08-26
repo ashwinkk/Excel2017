@@ -10,7 +10,8 @@ import "../styles/workshop-detail.css";
 
 @connect(store => {
 	return {
-		workshops: store.workshops.collection
+		workshops: store.workshops.collection,
+		fetching: store.workshops.fetchingWorkshops
 	};
 })
 class WorkshopDetail extends React.Component {
@@ -21,20 +22,22 @@ class WorkshopDetail extends React.Component {
 			activeIndex: 0
 		};
 		this.handleTab = this.handleTab.bind(this);
+		this.getWorkshop = this.getWorkshop.bind(this);
 	}
 	componentWillMount() {
-		this.props.dispatch(fetchWorkshops());
+		if (this.props.workshops.length === 0)
+			this.props.dispatch(fetchWorkshops());
 	}
-	componentWillReceiveProps(nextProps) {
-		const workshopId = nextProps.match.params.type;
-		let workshop = getObjectFromStore(nextProps.workshops, workshopId);
-		workshop.overview = ReactHtmlParser(workshop.overview);
-		workshop.schedule = ReactHtmlParser(workshop.schedule);
-		workshop.particulars = ReactHtmlParser(workshop.particulars);
-		this.setState({ workshop });
-		document.body.style.background = `url(${workshop.background}) ${workshop.accentColour}`;
+	getWorkshop() {
+		const workshopId = this.props.match.params.type;
+		return getObjectFromStore(this.props.workshops, workshopId);
+	}
+	updateTheme() {
+		document.body.style.background = `url(${this.workshop.background}) ${this
+			.workshop.accentColour}`;
 		document.body.style.backgroundSize = "cover";
 	}
+	componentWillReceiveProps(nextProps) {}
 	componentWillUnmount() {
 		document.body.style.background = "";
 	}
@@ -42,16 +45,19 @@ class WorkshopDetail extends React.Component {
 		this.setState({ activeIndex: tabIndex });
 	}
 	render() {
+		if (this.props.fetching) return <h2>Loading...</h2>;
+		this.workshop = this.getWorkshop();
+		this.updateTheme();
 		return (
 			<div className="workshop-container">
-				<img src={this.state.workshop.image} alt={this.state.workshop.image} />
+				<img src={this.workshop.image} alt={this.workshop.image} />
 				<h2 style={{ color: this.props.accentColour }}>
-					{this.state.workshop.title}
+					{this.workshop.title}
 				</h2>
 				<a
 					className="reg_button"
 					target="_blank"
-					href={this.state.workshop.register_link}
+					href={this.workshop.register_link}
 				>
 					Register
 				</a>
@@ -60,13 +66,13 @@ class WorkshopDetail extends React.Component {
 					tabLabels={["Overview", "Schedule", "Particulars"]}
 				>
 					<div className="active-tab">
-						{this.state.workshop.overview}
+						{this.workshop.overview}
 					</div>
 					<div>
-						{this.state.workshop.schedule}
+						{this.workshop.schedule}
 					</div>
 					<div>
-						{this.state.workshop.particulars}
+						{this.workshop.particulars}
 					</div>
 				</EventTabs>
 			</div>

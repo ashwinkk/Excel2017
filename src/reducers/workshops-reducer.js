@@ -1,3 +1,5 @@
+import ReactHtmlParser from "react-html-parser";
+
 const workshopsReducer = (
 	state = {
 		collection: [],
@@ -14,6 +16,11 @@ const workshopsReducer = (
 				fetchedWorkshops: false
 			};
 		case "FETCHED_WORKSHOPS":
+			action.payload.forEach((workshop, index) => {
+				workshop.overview = ReactHtmlParser(workshop.overview);
+				workshop.schedule = ReactHtmlParser(workshop.schedule);
+				workshop.particulars = ReactHtmlParser(workshop.particulars);
+			});
 			return {
 				...state,
 				fetchingWorkshops: false,

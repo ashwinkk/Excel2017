@@ -33,10 +33,11 @@
   .workshop-container button:focus,
   .workshop-container button:active {
     box-shadow: none; }
-  @media (min-width: 1000px) {
+  @media (min-width: 600px) {
     .workshop-container {
-      margin-top: 0; }
-      .workshop-container img {
-        width: 250px; }
-      .workshop-container button {
-        margin: 35px auto; } }
+      margin-top: 100px; } }
+  @media (min-width: 1000px) {
+    .workshop-container img {
+      width: 250px; }
+    .workshop-container button {
+      margin: 35px auto; } }

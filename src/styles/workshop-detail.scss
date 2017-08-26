@@ -11,7 +11,6 @@
 
 .workshop-container {
 	margin-top: 20px;
-
 	& > img {
 		margin: auto;
 		width: 250px;
@@ -38,8 +37,10 @@
 	button:active {
 		box-shadow: none;
 	}
+	@media (min-width: 600px) {
+		margin-top: 100px;
+	}
 	@media (min-width: 1000px) {
-		margin-top: 0;
 		img {
 			width: 250px;
 		}

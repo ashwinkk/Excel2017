@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import ReactHtmlParser from "react-html-parser";
 
 import EventTabs from "../partials/event-tabs";
 import { getObjectFromStore } from "../helpers/excel2017";
@@ -20,29 +19,22 @@ class CompetitionDetail extends React.Component {
 		this.state = {
 			competition: {}
 		};
+		this.getCompetition = this.getCompetition.bind(this);
 	}
 	componentWillMount() {
-		this.props.dispatch(fetchCompetitions());
+		if (this.props.competitions.length === 0)
+			this.props.dispatch(fetchCompetitions());
 	}
-	componentWillReceiveProps(nextProps) {
-		const competitionId = nextProps.match.params.type;
-		let competition = getObjectFromStore(nextProps.competitions, competitionId);
-		competition.description = ReactHtmlParser(competition.description);
-		competition.eventFormat = ReactHtmlParser(competition.eventFormat);
-		competition.rules = ReactHtmlParser(competition.rules);
-		competition.contact_details = ReactHtmlParser(competition.contact_details);
-		this.setState({ competition });
+	getCompetition() {
+		const competitionId = this.props.match.params.type;
+		return getObjectFromStore(this.props.competitions, competitionId);
 	}
 	render() {
 		if (this.props.fetching) return <h1>Loading..</h1>;
-		let competition = this.state.competition;
-		let description = competition.description;
-		let eventFormat = competition.eventFormat;
-		let rules = competition.rules;
-		let contacts = competition.contact_details;
+		this.competition = this.getCompetition();
 		let buttons = <div />;
-		if (competition.buttons)
-			buttons = competition.buttons.map((button, index) => {
+		if (this.competition.buttons)
+			buttons = this.competition.buttons.map((button, index) => {
 				return (
 					<a
 						href={button.link}
@@ -56,12 +48,12 @@ class CompetitionDetail extends React.Component {
 			});
 		return (
 			<div className="competitions-container">
-				<img src={competition.cover} />
+				<img src={this.competition.cover} />
 				<h2>
-					{competition.name}
+					{this.competition.name}
 				</h2>
 				<h3 className="container">
-					Prize pool: {competition.prize_pool}
+					Prize pool: {this.competition.prize_pool}
 				</h3>
 				<div className="button-container">
 					{buttons}
@@ -72,16 +64,16 @@ class CompetitionDetail extends React.Component {
 					activeTab={index => index}
 				>
 					<div>
-						{description}
+						{this.competition.description}
 					</div>
 					<div>
-						{eventFormat}
+						{this.competition.eventFormat}
 					</div>
 					<div>
-						{rules}
+						{this.competition.rules}
 					</div>
 					<div>
-						{contacts}
+						{this.competition.contact_details}
 					</div>
 				</EventTabs>
 			</div>

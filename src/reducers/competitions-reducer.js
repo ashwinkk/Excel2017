@@ -1,3 +1,5 @@
+import ReactHtmlParser from "react-html-parser";
+
 const compeitionsReducer = (
 	state = {
 		competitions: [],
@@ -14,11 +16,19 @@ const compeitionsReducer = (
 				fetchedCompetitions: false
 			};
 		case "FETCHED_COMPETITIONS":
+			action.payload.forEach((competition, index) => {
+				competition.description = ReactHtmlParser(competition.description);
+				competition.eventFormat = ReactHtmlParser(competition.eventFormat);
+				competition.rules = ReactHtmlParser(competition.rules);
+				competition.contact_details = ReactHtmlParser(
+					competition.contact_details
+				);
+			});
 			return {
 				...state,
 				fetchingCompetitions: false,
 				fetchedCompetitions: true,
-				competitions: action.payload
+				competitions: state.competitions.concat(action.payload)
 			};
 		default:
 			return state;
