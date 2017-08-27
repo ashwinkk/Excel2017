@@ -9,6 +9,7 @@ import Navbar from "./partials/navbar";
 import ComingSoon from "./pages/coming-soon";
 import Spotlight from "./pages/spotlight";
 import Events from "./pages/events";
+import Root from "./pages/root";
 
 import "./styles/defaults.css";
 import "./styles/test.scss";
@@ -25,11 +26,7 @@ function App(props) {
 			<Navbar />
 			<div className="content">
 				<Switch>
-					<Route
-						exact
-						path="/"
-						render={() => <Redirect to="/under-construction" />}
-					/>
+					<Route exact path="/" component={Root} />
 					<Route path="/competitions/:type" component={CompetitionDetail} />
 					<Route path="/spotlight/:type" component={WorkshopDetail} />
 					<Route path="/spotlight" component={Spotlight} />
