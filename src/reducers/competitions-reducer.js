@@ -3,6 +3,7 @@ import ReactHtmlParser from "react-html-parser";
 const compeitionsReducer = (
 	state = {
 		competitions: [],
+		priorities: [],
 		fetchingCompetitions: false,
 		fetchedCompetitions: false
 	},
@@ -29,6 +30,11 @@ const compeitionsReducer = (
 				fetchingCompetitions: false,
 				fetchedCompetitions: true,
 				competitions: state.competitions.concat(action.payload)
+			};
+		case "ASSIGN_PRIORITY":
+			return {
+				...state,
+				priorities: state.priorities.concat(action.payload)
 			};
 		default:
 			return state;

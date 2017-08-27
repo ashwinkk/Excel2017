@@ -3,7 +3,22 @@
   margin: auto;
   position: relative;
   overflow: hidden; }
-  .flex-grid .flex-box {
+  .flex-grid > div {
     margin: 20px 0px;
     position: absolute;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .flex-grid .portrait img {
+    height: 250px;
+    display: block;
+    margin: auto; }
+  .flex-grid .portrait h2 {
+    text-align: center; }
+  .flex-grid .landscape img {
+    height: 250px;
+    margin: auto; }
+  .flex-grid .landscape h2 {
+    margin: auto;
+    font-size: 50px; }
