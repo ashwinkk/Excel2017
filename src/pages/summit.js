@@ -81,34 +81,51 @@ class Summit extends React.Component {
 		});
 		let table1 = [
 			{
-				time: "09:55-10:25 am",
+				time: "09:30-10:00 am",
 				type: "Keynote address",
-				speaker: "Soj Thomas- Introduction to AI and The AI boom"
+				speaker: "Introduction to AI and The AI boom - Soj Thomas"
 			},
 			{
-				time: "10:30-11:00 am",
-				type: "Invited Speaker 1",
-				speaker: "Hiranmay Ghosh-Visual cognition in AI"
-			},
-			{
-				time: "11:00-11:10 am",
-				type: "",
-				speaker: "Trivia or Quiz / Break / Video session"
-			},
+				time: "10:10-11:50 am",
+				type: "Invited Speaker",
+				speaker: "Visual cognition in AI - Hiranmay Ghosh"
+			}
+		];
+		let table2 = [
 			{
 				time: "11:10-11:40 am",
-				type: "Invited Speaker 2",
-				speaker: "Lentin joseph- Robots and AI"
+				type: "Invited Speaker",
+				speaker:
+					"Financial​ ​security:​ ​AI​ ​a​ ​game​ ​changer​? - Prasanna Lohar"
 			},
 			{
-				time: "11:45-12:15 pm",
+				time: "11:50-12:20 am",
+				type: "Invited Speaker",
+				speaker: "Hybrid​ ​Workforce:​ ​Robots,Human​ ​and​ ​AI - Lentin joseph"
+			}
+		];
+		let table3 = [
+			{
+				time: "01:30-02:00 pm",
 				type: "Fireside chat",
-				speaker: "Tushar Chabra- Start up Scenario"
+				speaker: "AI​ ​in​ ​Defence - ​Tushar Chabra"
 			},
 			{
-				time: "12:15-12:30 pm",
-				type: "",
-				speaker: "Trivia or Quiz / Video session"
+				time: "02:10-02:40​ ​pm",
+				type: "Invited Speaker",
+				speaker: "How​ ​AI​ ​impacts​ ​business - L.V Subramaniam"
+			}
+		];
+		let table4 = [
+			{
+				time: "02:55-03:25​ ​pm",
+				type: "Invited Speaker",
+				speaker: "Stepping​ ​into​ ​AI - Fariz Rahman"
+			},
+			{
+				time: "03:40-04:10​ pm",
+				type: "Panel Discussion",
+				speaker: "The​ ​Future​ ​of​ ​AI:​ ​Good​ ​and​ ​the​ ​Ugly"
 			}
 		];
 		let tableMarkup1 = table1.map((value, index) => {
@@ -126,36 +143,37 @@ class Summit extends React.Component {
 				</tr>
 			);
 		});
-		let table2 = [
-			{
-				time: "01:35-02:05 pm",
-				type: "Invited Speaker 3",
-				speaker:
-					"L.V Subramaniam- How AI can be incorporated in business and related technologies"
-			},
-			{
-				time: "02:10-02:40 pm",
-				type: "Invited Speaker 4",
-				speaker:
-					"Prasanna Lohar-Blockchain and  effect of AI in financial security"
-			},
-			{
-				time: "02:40-02:50 pm",
-				type: "",
-				speaker: "Trivia or Quiz / Video session"
-			},
-			{
-				time: "02:50-03:20 pm",
-				type: "",
-				speaker: "Panel Discussion - { The Future of AI}"
-			},
-			{
-				time: "03:30-03:40 pm",
-				type: "",
-				speaker: "Closing note"
-			}
-		];
 		let tableMarkup2 = table2.map((value, index) => {
+			return (
+				<tr key={index}>
+					<td>
+						{value.time}
+					</td>
+					<td>
+						{value.type}
+					</td>
+					<td style={{ width: "60%" }}>
+						{value.speaker}
+					</td>
+				</tr>
+			);
+		});
+		let tableMarkup3 = table3.map((value, index) => {
+			return (
+				<tr key={index}>
+					<td>
+						{value.time}
+					</td>
+					<td>
+						{value.type}
+					</td>
+					<td style={{ width: "60%" }}>
+						{value.speaker}
+					</td>
+				</tr>
+			);
+		});
+		let tableMarkup4 = table4.map((value, index) => {
 			return (
 				<tr key={index}>
 					<td>
@@ -207,21 +225,21 @@ class Summit extends React.Component {
 				<div className="container-fluid ai-content">
 					<div className="container">
 						<section className="home-content">
-							<h4>
+							<h3>
 								Are machines actually better than us at creativity. So what is
 								left for us to do?
-							</h4>
-							<p>
+							</h3>
+							<p className="intro-content">
 								When it comes to the possibilities of Artificial Intelligence,
 								there may be a lot of opinions out there. It is a field which
 								expands human capability beyond our imagination. We’re entering
 								the world where AI will be ubiquitous.The pace of this progress
 								is incredible, and close to exponential. AI has been conquering
 								every sector imaginable and is being preached upon by leading
-								organisations who is looking to reach unrivalled efficiency.Is
-								AI the future ? Will decide the fate of humanity?
+								organisations who is looking to reach unrivalled efficiency. So
+								is AI the future? Will it decide the fate of humanity?
 							</p>
-							<p>
+							<p className="lead">
 								Excel 2017, presents 'The AI Summit' hoping to excite and
 								educate you about the numerous applications, possibilities and
 								perils in the field of AI.
@@ -249,9 +267,7 @@ class Summit extends React.Component {
 								</GoogleMap>
 							</div>
 							<div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 venue-desc">
-								<h1>
-									September 23<sup>rd</sup>
-								</h1>
+								<h1>Venue</h1>
 								<h2>IMA House,</h2>
 								<h3>Kaloor, Kochi</h3>
 							</div>
@@ -270,19 +286,34 @@ class Summit extends React.Component {
 						</section>
 						<section className="schedule-container">
 							<h2 className="text-center">Schedule</h2>
-							<h3>Session 1</h3>
+							<h4>Session 1</h4>
 							<table className="table table-condensed">
 								<tbody>
 									{tableMarkup1}
 								</tbody>
 							</table>
-							<p className="text-center lead">12:30-01:30 : Lunch Break</p>
-							<h3>Session 2</h3>
+							<p className="text-center ">11:00-11:10​ ​am​ : Tea ​Break</p>
+							<h4>Session 2</h4>
 							<table className="table table-condensed">
 								<tbody>
 									{tableMarkup2}
 								</tbody>
 							</table>
+							<p className="text-center ">​02:45-02:55​ ​pm : Lunch Break</p>
+							<h4>Session 3</h4>
+							<table className="table table-condensed">
+								<tbody>
+									{tableMarkup3}
+								</tbody>
+							</table>
+							<p className="text-center ">02:45-02:55​ ​pm​ ​ : Break</p>
+							<h4>Session 4</h4>
+							<table className="table table-condensed">
+								<tbody>
+									{tableMarkup4}
+								</tbody>
+							</table>
+							<p className="text-center ">04:20-4:25 pm : Closing Note</p>
 						</section>
 						<section className="contacts-container">
 							<div className="row">
