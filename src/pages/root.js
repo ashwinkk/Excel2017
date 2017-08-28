@@ -8,7 +8,12 @@ import RootSection5 from "../partials/root-section5";
 
 class Root extends React.Component {
 	render() {
-		return <div />;
+		return (
+			<div>
+				<RootSection1/>
+				<RootSection2/>
+				<RootSection1/>
+			</div>);
 	}
 }
 export default Root;
