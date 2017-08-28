@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="41469050-6115-4fbf-809d-afc7d049c619" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/OneSignalSDKUpdaterWorker.js" afterPath="$PROJECT_DIR$/public/OneSignalSDKUpdaterWorker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/OneSignalSDKWorker.js" afterPath="$PROJECT_DIR$/public/OneSignalSDKWorker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" afterPath="$PROJECT_DIR$/src/registerServiceWorker.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -330,12 +326,12 @@
       <updated>1503770805020</updated>
       <workItem from="1503770806745" duration="1485000" />
       <workItem from="1503799929580" duration="8229000" />
-      <workItem from="1503898467341" duration="3101000" />
+      <workItem from="1503898467341" duration="3337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12815000" />
+    <option name="totallyTimeSpent" value="13051000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
