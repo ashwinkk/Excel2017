@@ -18,7 +18,7 @@ class Summit extends React.Component {
 		};
 		let speakers = [
 			{
-				name: "Hiranmay Ghosh",
+				name: "Dr. Hiranmay Ghosh",
 				pic: "/static/summit/s1.png",
 				post: "Research Advisor",
 				company: "TCS"
@@ -48,7 +48,7 @@ class Summit extends React.Component {
 				company: "Cron Systems"
 			},
 			{
-				name: "L.V Subramaniam",
+				name: "Dr. L.V Subramaniam",
 				pic: "/static/summit/s6.png",
 				post: "Senior Manager of Engineering and Data Platforms",
 				company: "IBM"
@@ -57,7 +57,7 @@ class Summit extends React.Component {
 				name: "Fariz Rahman",
 				pic: "/static/summit/s7.png",
 				post: "Machine Learning Engineer",
-				company: "Datalogai"
+				company: "Datalog.ai"
 			}
 		];
 		let speakerMarkup = speakers.map((speaker, index) => {
@@ -113,7 +113,7 @@ class Summit extends React.Component {
 			{
 				time: "02:10-02:40​ ​pm",
 				type: "Invited Speaker",
-				speaker: "How​ ​AI​ ​impacts​ ​business - L.V Subramaniam"
+				speaker: "How​ ​AI​ ​impact​ ​businesses - L.V Subramaniam"
 			}
 		];
 		let table4 = [
@@ -129,6 +129,10 @@ class Summit extends React.Component {
 			}
 		];
 		let tableMarkup1 = table1.map((value, index) => {
+			let topic = value.speaker.split("-"),
+				speaker = "";
+			if (topic.length > 1) speaker = ` - ${topic[1]}`;
+			topic = topic[0];
 			return (
 				<tr key={index}>
 					<td>
@@ -138,12 +142,19 @@ class Summit extends React.Component {
 						{value.type}
 					</td>
 					<td style={{ width: "60%" }}>
-						{value.speaker}
+						<strong>
+							{topic}
+						</strong>
+						{speaker}
 					</td>
 				</tr>
 			);
 		});
 		let tableMarkup2 = table2.map((value, index) => {
+			let topic = value.speaker.split("-"),
+				speaker = "";
+			if (topic.length > 1) speaker = ` - ${topic[1]}`;
+			topic = topic[0];
 			return (
 				<tr key={index}>
 					<td>
@@ -153,12 +164,19 @@ class Summit extends React.Component {
 						{value.type}
 					</td>
 					<td style={{ width: "60%" }}>
-						{value.speaker}
+						<strong>
+							{topic}
+						</strong>
+						{speaker}
 					</td>
 				</tr>
 			);
 		});
 		let tableMarkup3 = table3.map((value, index) => {
+			let topic = value.speaker.split("-"),
+				speaker = "";
+			if (topic.length > 1) speaker = ` - ${topic[1]}`;
+			topic = topic[0];
 			return (
 				<tr key={index}>
 					<td>
@@ -168,12 +186,19 @@ class Summit extends React.Component {
 						{value.type}
 					</td>
 					<td style={{ width: "60%" }}>
-						{value.speaker}
+						<strong>
+							{topic}
+						</strong>
+						{speaker}
 					</td>
 				</tr>
 			);
 		});
 		let tableMarkup4 = table4.map((value, index) => {
+			let topic = value.speaker.split("-"),
+				speaker = "";
+			if (topic.length > 1) speaker = ` - ${topic[1]}`;
+			topic = topic[0];
 			return (
 				<tr key={index}>
 					<td>
@@ -183,7 +208,10 @@ class Summit extends React.Component {
 						{value.type}
 					</td>
 					<td style={{ width: "60%" }}>
-						{value.speaker}
+						<strong>
+							{topic}
+						</strong>
+						{speaker}
 					</td>
 				</tr>
 			);
@@ -286,34 +314,52 @@ class Summit extends React.Component {
 						</section>
 						<section className="schedule-container">
 							<h2 className="text-center">Schedule</h2>
-							<h4>Session 1</h4>
+							{/*<h4>
+								<strong>Session 1</strong>
+							</h4>*/}
 							<table className="table table-condensed">
 								<tbody>
 									{tableMarkup1}
 								</tbody>
 							</table>
 							<p className="text-center ">11:00-11:10​ ​am​ : Tea ​Break</p>
-							<h4>Session 2</h4>
+							{/*<h4>
+								<strong>Session 2</strong>
+							</h4>*/}
 							<table className="table table-condensed">
 								<tbody>
 									{tableMarkup2}
 								</tbody>
 							</table>
-							<p className="text-center ">​02:45-02:55​ ​pm : Lunch Break</p>
-							<h4>Session 3</h4>
+							<p className="text-center ">​12:30-01:30​ ​pm : Lunch Break</p>
+							{/*<h4>
+								<strong>Session 3</strong>
+							</h4>*/}
 							<table className="table table-condensed">
 								<tbody>
 									{tableMarkup3}
 								</tbody>
 							</table>
 							<p className="text-center ">02:45-02:55​ ​pm​ ​ : Break</p>
-							<h4>Session 4</h4>
+							{/*<h4>
+								<strong>Session 4</strong>
+							</h4>*/}
 							<table className="table table-condensed">
 								<tbody>
 									{tableMarkup4}
 								</tbody>
 							</table>
 							<p className="text-center ">04:20-4:25 pm : Closing Note</p>
+
+							<a
+								className="register_button"
+								target="_blank"
+								href="https://goo.gl/forms/xeiZh6D07AmthK8t1"
+							>
+								Register
+							</a>
+							<h4 className="text-center">Registration fees Rs 750/-</h4>
+							<p className="text-center">(inclusive of lunch and tea)</p>
 						</section>
 						<section className="contacts-container">
 							<div className="row">

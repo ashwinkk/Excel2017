@@ -18,6 +18,27 @@
   .summit {
     margin-top: -50px; } }
 
+table {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.register_button {
+  padding: 10px;
+  display: block;
+  margin: 40px auto;
+  border: 2px solid white;
+  width: 150px;
+  border-radius: 3px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  text-align: center; }
+
+.register_button:hover,
+.register_button:active,
+.register_button:focus {
+  background-color: white;
+  color: black; }
+
 .overlay {
   background-color: rgba(10, 10, 10, 0.7);
   position: absolute;
