@@ -8,7 +8,7 @@ ParallaxController.init();
 export default class RootSection2 extends React.Component {
     render(){
         return(
-                <div className="root-section" style={{position:"relative", background: "linear-gradient(#ffffff, #00b0ff)", verticalAlign: "middle", paddingTop:"100px"}}>
+                <div className="root-section" style={{position:"relative", background: "linear-gradient(#93ddff, #ffffff)", verticalAlign: "middle", paddingTop: "0px"}}>
                     <div className="about-section-box">
                         <Parallax
                             className="custom-class"
