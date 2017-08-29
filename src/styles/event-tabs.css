@@ -84,7 +84,8 @@
     overflow: auto;
     transition: transform 0.3s;
     vertical-align: top;
-    overflow: hidden; }
+    overflow: hidden;
+    overflow-y: auto; }
     #tab-content-container div.tab-content p {
       text-align: justify; }
   #tab-content-container div.active-tab {

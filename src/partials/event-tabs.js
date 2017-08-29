@@ -8,7 +8,8 @@ class EventTabs extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			height: 0
+			height: 0,
+			tabHeight: 0
 		};
 		this.dragHor = false;
 		this.dragVer = false;
@@ -42,6 +43,9 @@ class EventTabs extends React.Component {
 			cont.getBoundingClientRect().width / this.props.children.length;
 		let tabContainer = ReactDOM.findDOMNode(this.refs["tab"]);
 		this.tabContainer = tabContainer.getBoundingClientRect();
+		let windowHeight = window.innerHeight;
+		this.setState({ tabHeight: windowHeight - this.tabContainer.height - 120 });
+		console.log(windowHeight - this.tabContainer.height + "hello");
 	}
 
 	shiftTab(index) {
@@ -208,7 +212,9 @@ class EventTabs extends React.Component {
 					<div
 						id="tab-content-container"
 						ref="tab-content-container"
-						style={{ width: this.props.children.length * 100 + "%" }}
+						style={{
+							width: this.props.children.length * 100 + "%"
+						}}
 					>
 						{React.Children.map(childNodes, (child, index) => {
 							let classTab = "";
@@ -216,7 +222,7 @@ class EventTabs extends React.Component {
 							return React.cloneElement(child, {
 								className: classTab + " tab-content container",
 								ref: "tab-content",
-								style: { width: tabWidth }
+								style: { width: tabWidth, height: `${this.state.tabHeight}px` }
 							});
 						})}
 					</div>

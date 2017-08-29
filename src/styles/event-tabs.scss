@@ -92,6 +92,8 @@
 		transition: transform 0.3s;
 		vertical-align: top;
 		overflow: hidden;
+
+		overflow-y: auto;
 		p {
 			text-align: justify;
 		}
