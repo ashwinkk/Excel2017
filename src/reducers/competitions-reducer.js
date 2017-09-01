@@ -24,9 +24,11 @@ const compeitionsReducer = (
 				competition.contact_details = ReactHtmlParser(
 					competition.contact_details
 				);
+				competition.hidden = false;
 			});
 			return {
 				...state,
+				filter: [],
 				fetchingCompetitions: false,
 				fetchedCompetitions: true,
 				competitions: state.competitions.concat(action.payload)
@@ -34,7 +36,27 @@ const compeitionsReducer = (
 		case "ASSIGN_PRIORITY":
 			return {
 				...state,
-				priorities: state.priorities.concat(action.payload)
+				priorities: state.priorities.concat(action.payload),
+				competitions: state.competitions.map((competition, index) => {
+					return {
+						...competition,
+						priority: action.payload[index]
+					};
+				})
+			};
+		case "APPLY_FILTER":
+			return {
+				...state,
+				filter: state.filter.concat(action.payload)
+			};
+		case "HIDE_FILTERED":
+			return {
+				...state,
+				competitions: state.competitions.map((competition, index) => {
+					console.log(state.filter.includes(competition.category));
+					competition.hidden = !state.filter.includes(competition.category);
+					return competition;
+				})
 			};
 		default:
 			return state;

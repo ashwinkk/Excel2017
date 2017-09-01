@@ -9,7 +9,8 @@ import "../styles/competition.css";
 @connect(store => {
 	return {
 		competitions: store.competitions.competitions,
-		priorities: store.competitions.priorities
+		priorities: store.competitions.priorities,
+		filter: store.competitions.filter
 	};
 })
 class Competition extends React.Component {
@@ -22,8 +23,11 @@ class Competition extends React.Component {
 		this.unitWidth = 0;
 		this.unitHeight = 0;
 		this.priorities = [];
+		this.top = 0;
 		this.setConstants = this.setConstants.bind(this);
 		this.filterEvents = this.filterEvents.bind(this);
+		this.renderCards = this.renderCards.bind(this);
+		this.applyFilter = this.applyFilter.bind(this);
 	}
 
 	componentWillMount() {
@@ -60,10 +64,17 @@ class Competition extends React.Component {
 	}
 
 	filterEvents() {
-		this.setState({ filters: "CS" });
+		this.props.dispatch({ type: "APPLY_FILTER", payload: "CS" });
+		this.props.dispatch({ type: "HIDE_FILTERED" });
 	}
-	render() {
-		console.log(this.props.competitions);
+
+	applyFilter() {
+		return this.props.competitions.filter(competition => {
+			return true;
+		});
+	}
+
+	renderCards(filteredCards, opacity) {
 		let sum = 0,
 			width = 0,
 			left = 0,
@@ -72,40 +83,50 @@ class Competition extends React.Component {
 			className;
 		const marginLeft = 5,
 			marginTop = 20;
-		const priorities = this.props.priorities;
-		let cards = this.props.competitions.map((competition, index) => {
+		let cards = filteredCards.map((competition, index) => {
 			if (sum === this.boxNumber) {
 				top += this.unitHeight + marginTop;
 				left = 0;
 				sum = 0;
 				leftInc = 0;
 			}
-			width = this.unitWidth * priorities[index] - marginLeft;
-			sum += priorities[index];
+			width = this.unitWidth * competition.priority - marginLeft;
+			sum += competition.priority;
 			left = leftInc;
-			leftInc = left + this.unitWidth * priorities[index];
-			if (priorities[index] === 1) className = "portrait";
+			leftInc = left + this.unitWidth * competition.priority;
+			if (competition.priority === 1) className = "portrait";
 			else className = "landscape";
 			return (
 				<Card
 					className={className}
 					image={competition.cover}
 					eventName={competition.name}
+					key={index}
 					style={{
 						width: width + "px",
 						backgroundColor: "gray",
 						height: this.unitHeight + "px",
 						left: left + "px",
-						top: top + "px"
+						top: top + "px",
+						transform: `scale(${competition.hidden === true ? 0 : 1})`,
+						transition: "transform 0.3s"
 					}}
 				/>
 			);
 		});
-		top += this.unitHeight + marginTop * 2;
+		this.top = top;
+		return cards;
+	}
+
+	render() {
+		let filteredCards = this.applyFilter();
+		let cards = this.renderCards(filteredCards, 1);
+		let marginTop = 20;
+		this.top += this.unitHeight + marginTop * 2;
 		return (
 			<div>
 				<button onClick={this.filterEvents}>Hello</button>
-				<div className="flex-grid" ref="container" style={{ height: top }}>
+				<div className="flex-grid" ref="container" style={{ height: this.top }}>
 					{cards}
 				</div>
 			</div>
@@ -117,9 +138,7 @@ function Card(props) {
 	return (
 		<div className={props.className} style={props.style}>
 			<img src={props.image} />
-			<h2>
-				{props.eventName}
-			</h2>
+			<h2>{props.eventName}</h2>
 		</div>
 	);
 }
