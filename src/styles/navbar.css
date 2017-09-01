@@ -2,7 +2,7 @@
 	position: fixed;
 	width: 100%;
 	background: white;
-	z-index: 99;
+	z-index: 109;
 }
 
 @media (min-width: 300px) {

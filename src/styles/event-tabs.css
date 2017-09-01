@@ -20,7 +20,8 @@
 .tab-container {
   width: 90%;
   margin: 10px auto;
-  position: relative; }
+  position: relative;
+  z-index: 99; }
   @media (min-width: 980px) {
     .tab-container {
       width: 100%; } }
@@ -31,7 +32,6 @@
   justify-content: space-around;
   overflow: hidden;
   border-radius: 20px;
-  height: 100%;
   position: relative; }
 
 .tab-content ul {

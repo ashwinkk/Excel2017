@@ -26,6 +26,7 @@
 	width: 90%;
 	margin: 10px auto;
 	position: relative;
+	z-index: 99;
 	@media (min-width: 980px) {
 		width: 100%;
 	}
@@ -36,7 +37,6 @@
 	justify-content: space-around;
 	overflow: hidden;
 	border-radius: 20px;
-	height: 100%;
 	position: relative;
 }
 .tab-content ul {
@@ -92,7 +92,6 @@
 		transition: transform 0.3s;
 		vertical-align: top;
 		overflow: hidden;
-
 		overflow-y: auto;
 		p {
 			text-align: justify;
