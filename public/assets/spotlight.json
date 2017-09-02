@@ -1,0 +1,18 @@
+[
+	{
+		"id": "swarm-robotics",
+		"title": "Swarm Robotics",
+		"overview":
+			"Swarm robotics is a field of robotics technology which deals with the artificial swarm intelligence and involves the usage of multiple robots which coordinate among themselves to complete a task more efficiently compared to a single robot carrying out the same task.Swarm robots communicate with each other wirelessly and take decisions.This workshop involves development of autonomous swarm robots enabled with master-slave communication.",
+		"thumbnail": "/static/images/iconswarm.png",
+		"bgcolor": "#4cccc6"
+	},
+	{
+		"id": "quadcopter",
+		"title": "Quadcopter",
+		"overview":
+			"Swarm robotics is a field of robotics technology which deals with the artificial swarm intelligence and involves the usage of multiple robots which coordinate among themselves to complete a task more efficiently compared to a single robot carrying out the same task.Swarm robots communicate with each other wirelessly and take decisions.This workshop involves development of autonomous swarm robots enabled with master-slave communication.",
+		"thumbnail": "/static/images/quadcopter.png",
+		"bgcolor": "#9f76d6"
+	}
+]

@@ -5,7 +5,9 @@ const compeitionsReducer = (
 		competitions: [],
 		priorities: [],
 		fetchingCompetitions: false,
-		fetchedCompetitions: false
+		fetchedCompetitions: false,
+		filter: [],
+		filteredCompetitions: []
 	},
 	action
 ) => {
@@ -42,6 +44,12 @@ const compeitionsReducer = (
 						...competition,
 						priority: action.payload[index]
 					};
+				}),
+				filteredCompetitions: state.competitions.map((competition, index) => {
+					return {
+						...competition,
+						priority: action.payload[index]
+					};
 				})
 			};
 		case "APPLY_FILTER":
@@ -52,11 +60,16 @@ const compeitionsReducer = (
 		case "HIDE_FILTERED":
 			return {
 				...state,
-				competitions: state.competitions.map((competition, index) => {
+				filteredCompetitions: state.competitions.map((competition, index) => {
 					console.log(state.filter.includes(competition.category));
 					competition.hidden = !state.filter.includes(competition.category);
 					return competition;
 				})
+			};
+		case "FILTER_EVENTS":
+			return {
+				...state,
+				filteredCompetitions: Object.assign(action.payload)
 			};
 		default:
 			return state;

@@ -10,7 +10,8 @@ import "../styles/competition.css";
 	return {
 		competitions: store.competitions.competitions,
 		priorities: store.competitions.priorities,
-		filter: store.competitions.filter
+		filter: store.competitions.filter,
+		filteredCompetitions: store.competitions.filteredCompetitions
 	};
 })
 class Competition extends React.Component {
@@ -64,8 +65,54 @@ class Competition extends React.Component {
 	}
 
 	filterEvents() {
+		let filter = Object.assign(this.props.filter);
+		filter = filter.concat("CS");
 		this.props.dispatch({ type: "APPLY_FILTER", payload: "CS" });
-		this.props.dispatch({ type: "HIDE_FILTERED" });
+		let priorityCount = [0, 0];
+		console.log(filter);
+		let filteredCompis = this.props.competitions.filter(competition => {
+			console.log(filter.includes(competition.category));
+			if (!filter.includes(competition.category)) {
+				priorityCount[competition.priority - 1]++;
+				return true;
+			}
+			return false;
+		});
+		console.log(filteredCompis);
+		let loopCount = filteredCompis.length,
+			i = 0,
+			j,
+			sum = 0,
+			priority = 0;
+		let orderedCompis = [];
+		while (i < filteredCompis.length) {
+			console.log(filteredCompis);
+			priority = filteredCompis[i].priority;
+			priorityCount[priority - 1]--;
+			sum += priority;
+			if (sum % 2 === 1 && i != filteredCompis.length - 1) {
+				if (priorityCount[priority - 1] === 0) {
+					for (
+						j = i + 1;
+						j < loopCount || filteredCompis[j].priority % 2 === 0;
+						++j
+					);
+					sum -= priority;
+					priorityCount[priority - 1]++;
+					sum += filteredCompis[j].priority;
+					priorityCount[filteredCompis[j].priority - 1]--;
+					orderedCompis = orderedCompis.concat(filteredCompis[j]);
+					filteredCompis.splice(j, 1);
+					continue;
+				}
+			}
+			orderedCompis = orderedCompis.concat(filteredCompis[i]);
+			filteredCompis.splice(i, 1);
+			if (sum === 4) sum = 0;
+			i++;
+		}
+		console.log(orderedCompis);
+		this.props.dispatch({ type: "FILTER_EVENTS", payload: orderedCompis });
 	}
 
 	applyFilter() {
@@ -74,7 +121,7 @@ class Competition extends React.Component {
 		});
 	}
 
-	renderCards(filteredCards, opacity) {
+	renderCards(filteredCards) {
 		let sum = 0,
 			width = 0,
 			left = 0,
@@ -109,7 +156,7 @@ class Competition extends React.Component {
 						left: left + "px",
 						top: top + "px",
 						transform: `scale(${competition.hidden === true ? 0 : 1})`,
-						transition: "transform 0.3s"
+						transition: "all 0.5s"
 					}}
 				/>
 			);
@@ -119,8 +166,7 @@ class Competition extends React.Component {
 	}
 
 	render() {
-		let filteredCards = this.applyFilter();
-		let cards = this.renderCards(filteredCards, 1);
+		let cards = this.renderCards(this.props.filteredCompetitions);
 		let marginTop = 20;
 		this.top += this.unitHeight + marginTop * 2;
 		return (
