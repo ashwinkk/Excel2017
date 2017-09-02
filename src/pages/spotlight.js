@@ -26,7 +26,7 @@ class Spotlight extends React.Component {
 			<SpotlightCard
 				title={obj.title}
 				key={obj.id}
-				overview={`${obj.overview.substr(0, 200)}...`}
+				overview={`${obj.overview.substr(0, 200).trim()}...`}
 				thumbnail={obj.thumbnail}
 				bgcolor={obj.bgcolor}
 			/>
