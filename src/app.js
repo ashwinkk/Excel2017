@@ -4,6 +4,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Competitions from "./pages/competitions";
 import CompetitionDetail from "./pages/competition-detail";
 import WorkshopDetail from "./pages/workshop-detail";
+import Summit from "./pages/summit.js";
 // import Gallery from "./pages/gallery.js";
 import Navbar from "./partials/navbar";
 import ComingSoon from "./pages/coming-soon";
@@ -29,6 +30,7 @@ function App(props) {
 				<Switch>
 					<Route exact path="/" component={Root} />
 					<Route path="/competitions/:type" component={CompetitionDetail} />
+					<Route path="/spotlight/ai-summit" component={Summit} />
 					<Route path="/spotlight/:type" component={WorkshopDetail} />
 					<Route path="/spotlight" component={Spotlight} />
 					<Route path="/events" component={Events} />

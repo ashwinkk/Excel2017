@@ -1,7 +1,13 @@
+.competitions-container .titles-container {
+  position: relative; }
+  @media (max-width: 600px) {
+    .competitions-container .titles-container {
+      min-height: calc(100vh - 60px); } }
+
 .competitions-container img {
   display: block;
-  margin: 20px auto;
-  width: 150px; }
+  margin: 50px auto 60px auto;
+  width: 200px; }
   @media (min-width: 600px) {
     .competitions-container img {
       width: 250px; } }
@@ -11,8 +17,8 @@
   text-align: center; }
 
 .competitions-container h3 {
-  text-align: center;
-  color: #ebba16; }
+  margin: 20px auto;
+  text-align: center; }
 
 .competitions-container h4 {
   color: #333; }
