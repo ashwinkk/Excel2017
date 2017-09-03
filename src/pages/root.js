@@ -55,6 +55,7 @@ class Root extends Component {
 	render() {
 
 		const slides = [
+			// TODO: add padding-top to all the root sections
 			<Slide><RootSection1/></Slide>,
 			<Slide><RootSection2/></Slide>,
 			<Slide><RootSection3/></Slide>,
