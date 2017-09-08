@@ -1,15 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
 import BotChat from "./bot-area";
 
 import GoLock from "react-icons/lib/go/lock";
 import { FaCameraRetro, FaCalendar, FaMicrophone } from "react-icons/lib/fa";
 
-import { MdVideogameAsset, MdHighlight } from "react-icons/lib/md";
+import { MdVideogameAsset, MdHighlight, MdHome } from "react-icons/lib/md";
 
 import "../styles/navbar.css";
 
+@connect(store => {
+	return {
+		backgroundColor: store.navbar.backgroundColor,
+		fontColor: store.navbar.fontColor
+	};
+})
 class Navbar extends React.Component {
 	constructor(props) {
 		super(props);
@@ -25,13 +32,25 @@ class Navbar extends React.Component {
 		let micClass = "bot-spawn";
 		if (this.state.spawn) micClass = "bot-spawn record";
 		return (
-			<div className="navbar-container">
+			<div
+				className="navbar-container"
+				style={{ backgroundColor: this.props.backgroundColor }}
+			>
 				<div className="navbar">
-					<div className="icons">
+					<div
+						className="icons"
+						style={{
+							backgroundColor: this.props.backgroundColor,
+							color: this.props.color
+						}}
+					>
 						<div className="left">
 							<div className="lonely-home">
 								<Link to="/" className="nav-text">
 									Home
+								</Link>
+								<Link to="/">
+									<MdHome />
 								</Link>
 							</div>
 							<div>

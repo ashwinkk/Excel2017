@@ -24,13 +24,13 @@ p,
 ul,
 ol,
 h3 {
-	font-family: 'Muli', sans-serif;
+	font-family: "Muli", sans-serif;
 }
 
 h1,
 a,
 h2 {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
 #root {
@@ -46,7 +46,8 @@ h2 {
 
 @media (min-width: 600px) {
 	.content {
-		margin-top: 70px;
+		margin-left: 70px;
+		margin-top: 0;
 		margin-bottom: 0;
 	}
 }

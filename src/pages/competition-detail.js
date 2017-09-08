@@ -47,7 +47,7 @@ class CompetitionDetail extends React.Component {
 				);
 			});
 		return (
-			<div className="competitions-container">
+			<div className="competition-container">
 				<img src={this.competition.cover} />
 				<h2>{this.competition.name}</h2>
 				<h3 className="container">Prize pool: {this.competition.prize_pool}</h3>
