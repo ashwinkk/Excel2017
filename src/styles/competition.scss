@@ -13,7 +13,7 @@
 	}
 	.portrait {
 		img {
-			height: 250px;
+			height: 150px;
 			display: block;
 			margin: auto;
 		}
@@ -23,12 +23,102 @@
 	}
 	.landscape {
 		img {
-			height: 250px;
+			height: 150px;
 			margin: auto;
 		}
 		h2 {
 			margin: auto;
 			font-size: 50px;
 		}
+	}
+}
+
+.competitions-page {
+	.filters {
+		position: relative;
+		display: flex;
+		& > div {
+			width: 20%;
+		}
+	}
+}
+
+.competitions-container {
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	img {
+		width: 200px;
+		margin: 20px auto;
+		@media (max-width: 1000px) {
+			width: 100px;
+			margin: 10px auto;
+		}
+		@media (max-width: 600px) {
+			width: 75px;
+			margin: 2px auto;
+		}
+	}
+	h2 {
+		@media (max-width: 1000px) {
+			font-size: 20px;
+		}
+		@media (max-width: 600px) {
+			font-size: 15px;
+		}
+	}
+	p {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 18px;
+		padding: 20px;
+		color: white;
+	}
+}
+
+.cube-container {
+	height: 300px;
+	width: 300px;
+	transition: transform 0.1s;
+}
+
+.theCube {
+	margin: 0 auto;
+	width: 25%;
+	/** Prserve the 3D space for its child elements **/
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	/** Let's transfom in a smooth way **/
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s; /* Animate the transform properties */
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.topFlip,
+.bottomFlop {
+	// position: absolute;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+.topFlip {
+	background-color: red;
+	transform: translateZ(150px);
+}
+.bottomFlop {
+	-webkit-transform: rotateX(-90deg);
+	transform: rotateX(-90deg)translateZ(150px);
+}
+/** Now it is obvious, we need to rotate it around the x-axis to show the flopped box**/
+@media (min-width: 1000px) {
+	.cube-container:hover .theCube {
+		-webkit-transform: rotateX(90deg);
+		transform: rotateX(90deg);
 	}
 }

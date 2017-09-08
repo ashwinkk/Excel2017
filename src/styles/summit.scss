@@ -1,0 +1,259 @@
+.summit {
+	h2 {
+		margin: 50px auto;
+	}
+	section {
+		margin: 50px auto;
+	}
+	h3 {
+		font-weight: bolder;
+	}
+	h4 {
+		font-family: 'Raleway', sans-serif;
+	}
+	h2 {
+		color: #d25e47;
+		font-weight: bolder;
+	}
+	@media (max-width: 600px) {
+		margin-top: -50px;
+	}
+}
+
+table {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.register_button {
+	padding: 10px;
+	display: block;
+	margin: 40px auto;
+	border: 2px solid white;
+	width: 150px;
+	border-radius: 3px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.register_button:hover,
+.register_button:active,
+.register_button:focus {
+	background-color: white;
+	color: black;
+}
+.overlay {
+	background-color: rgba(10, 10, 10, 0.7);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-image: -webkit-linear-gradient(
+		bottom,
+		rgba(10, 10, 10, 1),
+		rgba(0, 0, 0, 0)
+	);
+}
+.cover {
+	position: relative;
+	background-image: url("/static/summit/cover.jpg");
+	background-position: bottom;
+	background-size: cover;
+	height: 600px;
+	.container {
+		height: 100%;
+		img {
+			position: relative;
+			z-index: 1;
+			margin: auto;
+			display: block;
+			height: 300px;
+			margin-top: 150px;
+			@media (max-width: 600px) {
+				width: 100%;
+				height: unset;
+			}
+		}
+	}
+	.overlay {
+		background-color: rgba(10, 10, 10, 0.7);
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background-image: -webkit-linear-gradient(
+			bottom,
+			rgba(10, 10, 10, 1),
+			rgba(0, 0, 0, 0)
+		);
+	}
+	@media (max-width: 600px) {
+		height: 500px;
+	}
+}
+
+section.venue-container {
+	// height: 300px;
+	background-color: rgba(10, 10, 10, 0.5);
+	background-image: url("/static/summit/ima.jpg");
+	padding-top: 50px;
+	background-position: center;
+	padding-bottom: 50px;
+	margin-top: 0px;
+	color: white;
+	margin-bottom: 0px;
+	background-size: cover;
+	position: relative;
+	.overlay-venue,
+	.overlay-venue1 {
+		position: absolute;
+		height: 100%;
+		background-color: rgba(10, 10, 0, 0);
+		width: 100%;
+		left: 0;
+		z-index: 0;
+		top: 0;
+		background-image: -webkit-linear-gradient(
+			bottom,
+			rgba(10, 10, 10, 1) 5%,
+			rgba(10, 10, 10, 0) 90%
+		);
+	}
+	.overlay-venue1 {
+		background-color: transparent;
+		background-image: -webkit-linear-gradient(
+			top,
+			rgba(10, 10, 10, 1),
+			rgba(10, 10, 10, 0)
+		);
+	}
+	h2 {
+		margin: 30px auto;
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+		margin-top: 30px;
+		margin-bottom: 80px;
+		div.venue-desc {
+			text-align: right;
+			h1 {
+				font-weight: bolder;
+				color: #d25e47;
+			}
+			h2 {
+				margin: 20px auto;
+			}
+			h3,
+			h2 {
+				color: #dcdcdc;
+				font-family: 'Raleway', sans-serif;
+				font-weight: normal;
+			}
+		}
+	}
+}
+
+.ai-content {
+	color: white;
+	background-color: rgba(10, 10, 10, 1);
+	h3 {
+		font-weight: normal;
+		font-family: 'Muli', sans-serif;
+	}
+	.home-content {
+		@media (min-width: 1000px) {
+			h3 {
+				font-size: 30px;
+			}
+			p.intro-content {
+				font-size: 18px;
+			}
+		}
+	}
+	.speakers-container {
+		.speaker {
+			text-align: center;
+			margin: 30px auto;
+			img {
+				width: 150px;
+			}
+			p,
+			h4 {
+				color: #dcdcdc;
+			}
+		}
+	}
+	.schedule-container {
+		td {
+			// color: rgb(172, 172, 172);
+			font-family: 'Raleway', sans-serif;
+			border-top-color: #353535;
+			text-align: center;
+		}
+	}
+}
+.contacts-container {
+	overflow: hidden;
+	.contact {
+		h3,
+		p {
+			text-align: center;
+			margin: auto;
+			display: block;
+		}
+		@media (max-width: 600px) {
+			margin: 20px auto;
+		}
+	}
+	.brain {
+		background-image: url("/static/summit/brain.png");
+		background-size: cover;
+		background-position: center;
+		.overlay {
+			background-color: transparent;
+			background-image: -webkit-linear-gradient(
+				top,
+				rgba(10, 10, 10, 1),
+				rgba(0, 0, 0, 0) 20%
+			);
+		}
+		img {
+			height: 300px;
+		}
+		@media (max-width: 600px) {
+			background-image: none;
+			img {
+				display: none;
+			}
+			.overlay {
+				background-image: -webkit-linear-gradient(
+					top,
+					rgba(10, 10, 10, 1),
+					rgba(0, 0, 0, 0) 50%
+				);
+			}
+		}
+	}
+}
+
+.map-container {
+	height: 300px;
+
+	width: 60%;
+	margin: auto;
+	@media (max-width: 600px) {
+		width: 100%;
+	}
+}
+
+.map-text {
+	// background-color: black;
+	img {
+		width: 100%;
+		transform: translateY(-100%);
+	}
+}

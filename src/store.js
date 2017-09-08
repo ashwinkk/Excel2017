@@ -6,12 +6,16 @@ import galleryReducer from "./reducers/gallery-reducer";
 import workshopReducer from "./reducers/workshops-reducer";
 import countdownReducer from "./reducers/countdown-reducer";
 import competitionsReducer from "./reducers/competitions-reducer";
+import spotlightReducer from "./reducers/spotlight-reducer";
+import navbarReducer from "./reducers/navbar-reducer";
 
 const app = combineReducers({
 	gallery: galleryReducer,
 	workshops: workshopReducer,
 	countdowns: countdownReducer,
-	competitions: competitionsReducer
+	competitions: competitionsReducer,
+	spotlight: spotlightReducer,
+	navbar: navbarReducer
 });
 
 const middleware = applyMiddleware(thunk);

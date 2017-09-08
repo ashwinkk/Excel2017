@@ -8,10 +8,15 @@ class EventTabs extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			height: 0
+			height: 0,
+			tabHeight: 0,
+			tabPosition: "relative",
+			offsetTop: "0px"
 		};
 		this.dragHor = false;
 		this.dragVer = false;
+		this.scrolling = false;
+		this.tabWidth = 0;
 		this.initial = 0;
 		this.width = 0;
 		this.contentPos = 0;
@@ -24,6 +29,7 @@ class EventTabs extends React.Component {
 		this.moveTab = this.moveTab.bind(this);
 		this.seekTab = this.seekTab.bind(this);
 		this.seekContent = this.seekContent.bind(this);
+		this.setScroll = this.setScroll.bind(this);
 	}
 	handleClick(e, index) {
 		this.props.activeTab(index);
@@ -36,12 +42,47 @@ class EventTabs extends React.Component {
 		this.seekTab(this.tabPos, true);
 	}
 
+	setScroll() {
+		this.scrolling = true;
+	}
+
+	calculateNavHeight() {
+		let windowHeight = window.innerWidth,
+			navHeight = 0;
+		if (windowHeight > 600) navHeight = 70;
+		else navHeight = 50;
+		return navHeight;
+	}
+
 	componentDidMount() {
-		let cont = ReactDOM.findDOMNode(this.refs["tab-content-container"]);
+		window.addEventListener("scroll", this.setScroll);
+		let scrollVal;
+		this.tabContent = ReactDOM.findDOMNode(this.refs["tab-content-container"]);
 		this.width =
-			cont.getBoundingClientRect().width / this.props.children.length;
-		let tabContainer = ReactDOM.findDOMNode(this.refs["tab"]);
-		this.tabContainer = tabContainer.getBoundingClientRect();
+			this.tabContent.getBoundingClientRect().width /
+			this.props.children.length;
+		this.tabContainer = ReactDOM.findDOMNode(this.refs["tab-container-main"]);
+		this.tabWidth = this.tabContainer.getBoundingClientRect().width;
+		let windowHeight = window.innerHeight;
+		this.navbarMargin = this.calculateNavHeight();
+		setInterval(() => {
+			if (this.scrolling === true) {
+				scrollVal = this.tabContainer.getBoundingClientRect().top;
+				if (scrollVal <= this.navbarMargin) {
+					this.setState({
+						tabPosition: "fixed",
+						offsetTop: `${this.navbarMargin}px`
+					});
+				} else this.setState({ tabPosition: "relative", offsetTop: "0px" });
+				this.scrolling = false;
+			}
+		}, 5);
+		this.setState({
+			tabHeight: windowHeight - this.tabContainer.height - 120
+		});
+	}
+	componentWillUnmount() {
+		window.removeEventListener("scroll", this.setScroll);
 	}
 
 	shiftTab(index) {
@@ -53,6 +94,7 @@ class EventTabs extends React.Component {
 	}
 
 	handleDragContainer(pos) {
+		console.log(pos);
 		if (Math.abs(pos.left) < Math.abs(pos.top)) this.dragVer = true;
 		else this.dragHor = true;
 		if (this.dragVer) return;
@@ -84,6 +126,7 @@ class EventTabs extends React.Component {
 		this.seekContent(this.contentPos, true);
 	}
 	moveContent(delta, transition) {
+		console.log(delta);
 		let cont = ReactDOM.findDOMNode(this.refs["tab-content-container"]);
 		if (transition) cont.style.transition = "transform 0.3s";
 		cont.style.transform = "translateX(" + delta + "px)";
@@ -102,6 +145,7 @@ class EventTabs extends React.Component {
 	}
 
 	handleDragTab(pos) {
+		console.log(pos);
 		this.contentNext = pos.left > 0;
 		this.tabPos += pos.left;
 		if (
@@ -139,7 +183,7 @@ class EventTabs extends React.Component {
 			-1 *
 			this.tabPos *
 			(this.width * this.props.children.length) /
-			this.tabContainer.width;
+			this.tabContainer.getBoundingClientRect().width;
 		this.moveContent(this.contentPos, transition);
 		this.moveTab(position, transition);
 	}
@@ -147,7 +191,7 @@ class EventTabs extends React.Component {
 	seekContent(position, transition) {
 		this.tabPos = Math.abs(
 			this.contentPos *
-				this.tabContainer.width /
+				this.tabContainer.getBoundingClientRect().width /
 				(this.props.children.length * this.width)
 		);
 		this.moveTab(this.tabPos, transition);
@@ -161,6 +205,11 @@ class EventTabs extends React.Component {
 		let pos = { left: 0, top: 0 };
 		let trackTheme = {
 			backgroundColor: this.props.trackColor || "gray"
+		};
+		let tabContainerStyle = {
+			position: this.state.tabPosition,
+			width: `${this.tabWidth}px`,
+			top: this.state.offsetTop
 		};
 		let highlighterTheme = {
 			color: this.props.color || "white",
@@ -183,8 +232,12 @@ class EventTabs extends React.Component {
 			);
 		});
 		return (
-			<div className="tab-container-main">
-				<div className="tab-container ">
+			<div className="tab-container-main" ref="tab-container-main">
+				<div
+					className="tab-container "
+					ref="tab-container"
+					style={tabContainerStyle}
+				>
 					<Draggable
 						position={pos}
 						onDrag={this.handleDragTab}
@@ -208,7 +261,9 @@ class EventTabs extends React.Component {
 					<div
 						id="tab-content-container"
 						ref="tab-content-container"
-						style={{ width: this.props.children.length * 100 + "%" }}
+						style={{
+							width: this.props.children.length * 100 + "%"
+						}}
 					>
 						{React.Children.map(childNodes, (child, index) => {
 							let classTab = "";

@@ -1,0 +1,187 @@
+.summit h2 {
+  margin: 50px auto; }
+
+.summit section {
+  margin: 50px auto; }
+
+.summit h3 {
+  font-weight: bolder; }
+
+.summit h4 {
+  font-family: 'Raleway', sans-serif; }
+
+.summit h2 {
+  color: #d25e47;
+  font-weight: bolder; }
+
+@media (max-width: 600px) {
+  .summit {
+    margin-top: -50px; } }
+
+table {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.register_button {
+  padding: 10px;
+  display: block;
+  margin: 40px auto;
+  border: 2px solid white;
+  width: 150px;
+  border-radius: 3px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  text-align: center; }
+
+.register_button:hover,
+.register_button:active,
+.register_button:focus {
+  background-color: white;
+  color: black; }
+
+.overlay {
+  background-color: rgba(10, 10, 10, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: -webkit-linear-gradient(bottom, #0a0a0a, transparent); }
+
+.cover {
+  position: relative;
+  background-image: url("/static/summit/cover.jpg");
+  background-position: bottom;
+  background-size: cover;
+  height: 600px; }
+  .cover .container {
+    height: 100%; }
+    .cover .container img {
+      position: relative;
+      z-index: 1;
+      margin: auto;
+      display: block;
+      height: 300px;
+      margin-top: 150px; }
+      @media (max-width: 600px) {
+        .cover .container img {
+          width: 100%;
+          height: unset; } }
+  .cover .overlay {
+    background-color: rgba(10, 10, 10, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: -webkit-linear-gradient(bottom, #0a0a0a, transparent); }
+  @media (max-width: 600px) {
+    .cover {
+      height: 500px; } }
+
+section.venue-container {
+  background-color: rgba(10, 10, 10, 0.5);
+  background-image: url("/static/summit/ima.jpg");
+  padding-top: 50px;
+  background-position: center;
+  padding-bottom: 50px;
+  margin-top: 0px;
+  color: white;
+  margin-bottom: 0px;
+  background-size: cover;
+  position: relative; }
+  section.venue-container .overlay-venue,
+  section.venue-container .overlay-venue1 {
+    position: absolute;
+    height: 100%;
+    background-color: rgba(10, 10, 0, 0);
+    width: 100%;
+    left: 0;
+    z-index: 0;
+    top: 0;
+    background-image: -webkit-linear-gradient(bottom, #0a0a0a 5%, rgba(10, 10, 10, 0) 90%); }
+  section.venue-container .overlay-venue1 {
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(top, #0a0a0a, rgba(10, 10, 10, 0)); }
+  section.venue-container h2 {
+    margin: 30px auto; }
+  section.venue-container .container {
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    margin-bottom: 80px; }
+    section.venue-container .container div.venue-desc {
+      text-align: right; }
+      section.venue-container .container div.venue-desc h1 {
+        font-weight: bolder;
+        color: #d25e47; }
+      section.venue-container .container div.venue-desc h2 {
+        margin: 20px auto; }
+      section.venue-container .container div.venue-desc h3,
+      section.venue-container .container div.venue-desc h2 {
+        color: #dcdcdc;
+        font-family: 'Raleway', sans-serif;
+        font-weight: normal; }
+
+.ai-content {
+  color: white;
+  background-color: #0a0a0a; }
+  .ai-content h3 {
+    font-weight: normal;
+    font-family: 'Muli', sans-serif; }
+  @media (min-width: 1000px) {
+    .ai-content .home-content h3 {
+      font-size: 30px; }
+    .ai-content .home-content p.intro-content {
+      font-size: 18px; } }
+  .ai-content .speakers-container .speaker {
+    text-align: center;
+    margin: 30px auto; }
+    .ai-content .speakers-container .speaker img {
+      width: 150px; }
+    .ai-content .speakers-container .speaker p,
+    .ai-content .speakers-container .speaker h4 {
+      color: #dcdcdc; }
+  .ai-content .schedule-container td {
+    font-family: 'Raleway', sans-serif;
+    border-top-color: #353535;
+    text-align: center; }
+
+.contacts-container {
+  overflow: hidden; }
+  .contacts-container .contact h3,
+  .contacts-container .contact p {
+    text-align: center;
+    margin: auto;
+    display: block; }
+  @media (max-width: 600px) {
+    .contacts-container .contact {
+      margin: 20px auto; } }
+  .contacts-container .brain {
+    background-image: url("/static/summit/brain.png");
+    background-size: cover;
+    background-position: center; }
+    .contacts-container .brain .overlay {
+      background-color: transparent;
+      background-image: -webkit-linear-gradient(top, #0a0a0a, transparent 20%); }
+    .contacts-container .brain img {
+      height: 300px; }
+    @media (max-width: 600px) {
+      .contacts-container .brain {
+        background-image: none; }
+        .contacts-container .brain img {
+          display: none; }
+        .contacts-container .brain .overlay {
+          background-image: -webkit-linear-gradient(top, #0a0a0a, transparent 50%); } }
+
+.map-container {
+  height: 300px;
+  width: 60%;
+  margin: auto; }
+  @media (max-width: 600px) {
+    .map-container {
+      width: 100%; } }
+
+.map-text img {
+  width: 100%;
+  transform: translateY(-100%); }

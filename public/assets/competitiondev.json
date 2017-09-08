@@ -1,52 +1,82 @@
 [
 	{
 		"name": "Techathon",
+		"id": "techathon",
 		"cover": "/static/images/techathon.png",
-		"category": "CS"
+		"category": "CS",
+		"type": "off",
+		"color": "#F44336"
 	},
 	{
 		"name": "Techathon",
+		"id": "techathon",
 		"cover": "/static/images/techathon.png",
-		"category": "CS"
+		"category": "CS",
+		"type": "on",
+		"color": "#E91E63"
 	},
 	{
 		"name": "Techathon",
+		"id": "techathon",
 		"cover": "/static/images/techathon.png",
-		"category": "EC"
+		"category": "EC",
+		"type": "on",
+		"color": "#9C27B0"
 	},
 	{
 		"name": "Techathon",
+		"id": "techathon",
 		"cover": "/static/images/techathon.png",
-		"category": "EC"
+		"category": "EC",
+		"type": "off",
+		"color": "#673AB7"
 	},
 	{
 		"name": "Techathon",
+		"id": "techathon",
 		"cover": "/static/images/techathon.png",
-		"category": "CS"
+		"category": "CS",
+		"type": "off",
+		"color": "#3F51B5"
 	},
 	{
 		"name": "Techathon",
+		"id": "techathon",
 		"cover": "/static/images/techathon.png",
-		"category": "EC"
+		"category": "EC",
+		"type": "off",
+		"color": "#2196F3"
 	},
 	{
 		"name": "Techathon",
+		"id": "techathon",
 		"cover": "/static/images/techathon.png",
-		"category": "CS"
+		"category": "CS",
+		"type": "off",
+		"color": "#009688"
 	},
 	{
 		"name": "Techathon",
+		"id": "techathon",
 		"cover": "/static/images/techathon.png",
-		"category": "CS"
+		"category": "CS",
+		"type": "off",
+		"color": "#4CAF50"
 	},
 	{
 		"name": "Techathon",
+		"id": "techathon",
 		"cover": "/static/images/techathon.png",
-		"category": "EC"
+		"category": "EC",
+		"type": "off",
+		"color": "#CDDC39"
 	},
 	{
 		"name": "Techathon",
+		"id": "techathon",
 		"cover": "/static/images/techathon.png",
-		"category": "EC"
+		"category": "EC",
+		"type": "off",
+		"color": "#FF5722"
 	}
 ]

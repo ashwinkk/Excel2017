@@ -3,7 +3,7 @@ import { Redirect } from "react-router";
 
 import DribbbleThumbnail from "../partials/dribbble-thumbnail";
 
-import "../styles/competitions.css";
+import "../styles/competition.css";
 
 class Competitions extends Component {
 	constructor(props) {

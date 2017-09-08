@@ -47,34 +47,20 @@ class CompetitionDetail extends React.Component {
 				);
 			});
 		return (
-			<div className="competitions-container">
+			<div className="competition-container">
 				<img src={this.competition.cover} />
-				<h2>
-					{this.competition.name}
-				</h2>
-				<h3 className="container">
-					Prize pool: {this.competition.prize_pool}
-				</h3>
-				<div className="button-container">
-					{buttons}
-				</div>
+				<h2>{this.competition.name}</h2>
+				<h3 className="container">Prize pool: {this.competition.prize_pool}</h3>
+				<div className="button-container">{buttons}</div>
 
 				<EventTabs
 					tabLabels={["Description", "Event-Format", "Rules", "Contacts"]}
 					activeTab={index => index}
 				>
-					<div>
-						{this.competition.description}
-					</div>
-					<div>
-						{this.competition.eventFormat}
-					</div>
-					<div>
-						{this.competition.rules}
-					</div>
-					<div>
-						{this.competition.contact_details}
-					</div>
+					<div>{this.competition.description}</div>
+					<div>{this.competition.eventFormat}</div>
+					<div>{this.competition.rules}</div>
+					<div>{this.competition.contact_details}</div>
 				</EventTabs>
 			</div>
 		);

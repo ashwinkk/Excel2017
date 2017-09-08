@@ -1,0 +1,63 @@
+.spotlight-card {
+	width: 50%;
+	padding: 20px;
+	display: inline-block;
+}
+
+.spotlight-card-left {
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.spotlight-card-right {
+	display: inline-block;
+	text-align: right;
+	width: 50%;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.spotlight-card-thumbnail {
+	height: 250px;
+}
+
+.spotlight-card-title {
+	display: block;
+	font-weight: 900;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.spotlight-card-overview {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.spotlight-card-register {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	border: solid 1px;
+	width: 150px;
+	margin: auto;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+	.spotlight-card {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 650px) and (orientation: portrait) {
+	.spotlight-card-left {
+		width: 100%;
+	}
+
+	.spotlight-card-right {
+		width: 100%;
+	}
+}

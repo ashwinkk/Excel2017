@@ -1,34 +1,40 @@
-.competitions-container img {
+.competition-container .titles-container {
+  position: relative; }
+  @media (max-width: 600px) {
+    .competition-container .titles-container {
+      min-height: calc(100vh - 60px); } }
+
+.competition-container img {
   display: block;
-  margin: 20px auto;
-  width: 150px; }
+  margin: 50px auto 60px auto;
+  width: 200px; }
   @media (min-width: 600px) {
-    .competitions-container img {
+    .competition-container img {
       width: 250px; } }
 
-.competitions-container h2 {
+.competition-container h2 {
   margin: 20px auto;
   text-align: center; }
 
-.competitions-container h3 {
-  text-align: center;
-  color: #ebba16; }
+.competition-container h3 {
+  margin: 20px auto;
+  text-align: center; }
 
-.competitions-container h4 {
+.competition-container h4 {
   color: #333; }
 
-.competitions-container .button-container {
+.competition-container .button-container {
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
   @media (min-width: 600px) {
-    .competitions-container .button-container {
+    .competition-container .button-container {
       width: 50%;
       margin: auto; } }
 
 @media (min-width: 600px) {
-  .competitions-container {
+  .competition-container {
     margin-top: 100px; } }
 
 ul li p {
