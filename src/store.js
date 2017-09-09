@@ -7,6 +7,7 @@ import workshopReducer from "./reducers/workshops-reducer";
 import countdownReducer from "./reducers/countdown-reducer";
 import competitionsReducer from "./reducers/competitions-reducer";
 import spotlightReducer from "./reducers/spotlight-reducer";
+import eventsReducer from "./reducers/events-reducer";
 import navbarReducer from "./reducers/navbar-reducer";
 
 const app = combineReducers({
@@ -15,6 +16,7 @@ const app = combineReducers({
 	countdowns: countdownReducer,
 	competitions: competitionsReducer,
 	spotlight: spotlightReducer,
+	events: eventsReducer,
 	navbar: navbarReducer
 });
 
