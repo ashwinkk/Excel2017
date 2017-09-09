@@ -29,6 +29,7 @@ class Spotlight extends React.Component {
 				overview={`${obj.overview.substr(0, 200).trim()}...`}
 				thumbnail={obj.thumbnail}
 				bgcolor={obj.bgcolor}
+				registerLink={obj.registerLink}
 			/>
 		));
 		this.setState({ spotlight });
