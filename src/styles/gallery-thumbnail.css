@@ -1,8 +1,10 @@
-.gallery-thumbnail{
-    width: 30%;
-    margin: auto 0;
-    position: absolute;
+.gallery-thumbnail {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	margin: auto 0;
+	position: relative;
 }
-.gallery-thumbnail>img{
-    width: 100%;
+.gallery-thumbnail > img {
+	width: 100%;
 }

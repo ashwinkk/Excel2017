@@ -1,0 +1,85 @@
+.gallery-container {
+	width: 100%;
+	background-color: white;
+	@media (min-width: 1000px) {
+		display: flex;
+		height: 100vh;
+		overflow-y: hidden;
+	}
+}
+
+.gallery {
+	width: 40%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	position: relative;
+	justify-content: space-around;
+	max-height: 100%;
+	overflow-y: auto;
+}
+
+.viewport-container {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	left: 0;
+	z-index: -1;
+	@media (min-width: 1000px) {
+		position: relative;
+		width: 60%;
+		z-index: 1;
+	}
+}
+
+.viewport {
+	height: 100vh;
+	padding: 60px;
+	box-sizing: border-box;
+	display: grid;
+	@media (min-width: 1000px) {
+		height: auto;
+		.viewport-description {
+			margin-top: 30px;
+			transition-duration: 0.3s, 0.3s;
+			transition-delay: 0.1s, 0.1s;
+		}
+	}
+}
+.animate-entry {
+	transform: translate(200px);
+	opacity: 0;
+}
+.animate-exit {
+	transform: translate(-200px);
+	opacity: 0;
+}
+.viewport img {
+	transform-origin: 0 0;
+	will-change: transform;
+	@media (min-width: 1000px) {
+		height: 350px;
+	}
+}
+.close-button {
+	color: black;
+	position: fixed;
+	top: 0;
+	right: 0;
+	font-size: 40px;
+	margin: 20px;
+	z-index: 99;
+	@media (min-width: 1000px) {
+		display: none;
+	}
+}
+
+.portrait {
+	height: 100%;
+	margin: auto;
+}
+
+.landscape {
+	width: 100%;
+	margin: auto;
+}

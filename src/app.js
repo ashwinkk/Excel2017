@@ -5,13 +5,13 @@ import Competitions from "./pages/competitions";
 import CompetitionDetail from "./pages/competition-detail";
 import WorkshopDetail from "./pages/workshop-detail";
 import Summit from "./pages/summit.js";
-// import Gallery from "./pages/gallery.js";
+import Gallery from "./pages/gallery.js";
 import Navbar from "./partials/navbar";
 import ComingSoon from "./pages/coming-soon";
 import Spotlight from "./pages/spotlight";
 import Events from "./pages/events";
 import Root from "./pages/root";
-import PageNotFound from "./pages/pagenotfound"
+import PageNotFound from "./pages/pagenotfound";
 
 import "./styles/defaults.css";
 import "./styles/test.scss";
@@ -35,7 +35,7 @@ function App(props) {
 					<Route path="/spotlight" component={Spotlight} />
 					<Route path="/events" component={Events} />
 					<Route path="/competitions" component={Competitions} />
-					{/*<Route path="/gallery" component={Gallery} />*/}
+					<Route path="/gallery" component={Gallery} />
 					<Route path="/under-construction" component={ComingSoon} />
 					<Route path="*" component={PageNotFound} />
 				</Switch>
