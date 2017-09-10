@@ -1,0 +1,65 @@
+.usr-left-panel{
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.usr-right-panel{
+    display: inline-block;
+    width: calc(90% - 240px);
+    vertical-align: top;
+}
+
+.usr-img-box{
+    width:200px;
+    height:200px;
+    position: relative;
+    display: inline-block;
+}
+
+.usr-img{
+    width: 100%;
+}
+
+.usr-img-overlay{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.usr-name{
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    color: #b91103;
+}
+
+@media screen and (orientation:portrait){
+    .usr-left-panel{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+    }
+    .usr-img-box{
+        margin-top: 20px;
+    }
+    .usr-right-panel{
+        display: block;
+        width: 100%;
+    }
+    .usr-scorecard{
+        width:100%;
+        height: auto;
+    }
+    .scorecard-game-img{
+        width: 50%;
+    }
+    .scorecard-right{
+        width: 50%;
+    }
+}

@@ -1,0 +1,60 @@
+.scorecard{
+    width: 50%;
+    padding: 30px;
+    display: inline-block;
+}
+
+.scorecard-game-img{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.scorecard-right{
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.scorecard-game{
+    margin: 0px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #b91103;
+}
+
+.scorecard-score{
+    margin: 0px;
+    margin-left: 10px;
+    color: #bc3428;
+}
+
+.scorecard-play{
+    display: inline-block;
+    background: #bc3428;
+    padding: 8px 36px;
+    margin-top: 15px;
+    border-radius: 9px;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.scorecard-play:hover{
+    color: white;
+}
+
+@media screen and (orientation:portrait){
+    .scorecard{
+        width:100%;
+        height: auto;
+    }
+    .scorecard-game-img{
+        width: 50%;
+    }
+    .scorecard-right{
+        width: 50%;
+    }
+}
