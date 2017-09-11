@@ -1,0 +1,21 @@
+.about-heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-container{
+    background-color: #eee;
+    padding: 10px;
+}
+
+.about-wrapper{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+
+@media (max-width:967px){
+    .about-wrapper{
+        padding: 5px 8%;
+    }
+}

@@ -1,0 +1,103 @@
+.about-card {
+	margin-bottom: 8px;
+	margin-top: 5px;
+	width: 100%;
+	max-height: 364px;
+}
+
+.about-container {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.about-card .card-img {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	height: 300px;
+	overflow: hidden;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.about-card .card-desc {
+	background-color: #fff;
+	position: relative;
+	bottom: 0;
+	height: 64px;
+	overflow: hidden;
+	width: 100%;
+	border-radius: 0 0 4px 4px;
+	transition: all 0.3s;
+	padding-left: 20px;
+}
+
+.about-card:hover .card-desc {
+	bottom: 70px;
+	height: 134px;
+}
+
+.about-card .card-desc .name {
+	font-weight: 500;
+	font-family: Raleway, sans-serif;
+	text-transform: capitalize;
+}
+
+.about-card .card-desc .designation,
+.about-card .card-desc .phone,
+.about-card .card-desc .email {
+	opacity: 0;
+	transition: opacity 0.1s ease-in;
+}
+
+.about-card:hover .card-desc .designation,
+.about-card:hover .card-desc .phone,
+.about-card:hover .card-desc .email {
+	opacity: 1;
+}
+
+.about-card .card-desc .designation {
+	color: #b7b4b4;
+	text-transform: uppercase;
+	font-size: small;
+	padding-left: 2px;
+}
+
+.about-card .card-desc .phone a,
+.about-card .card-desc .email a {
+	font: inherit;
+}
+
+.about-card .social-icons {
+	position: absolute;
+	top: 23px;
+	right: 15px;
+	display: flex;
+}
+
+.about-card .social-icons a {
+	width: 15px;
+	margin: 0 4px;
+}
+
+.about-card .social-icons .icon-list {
+	list-style-type: inline;
+}
+
+@media (max-width: 967px) {
+	.about-card {
+		margin-bottom: 31px;
+	}
+
+	.about-card .card-desc .designation,
+	.about-card .card-desc .phone,
+	.about-card .card-desc .email {
+		opacity: 1;
+	}
+
+	.about-card .card-desc {
+		bottom: 70px;
+		height: 134px;
+	}
+}
