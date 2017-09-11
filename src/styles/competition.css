@@ -25,9 +25,21 @@
 
 .competitions-page .filters {
   position: relative;
-  display: flex; }
+  display: flex;
+  height: 80px; }
   .competitions-page .filters > div {
+    margin: auto 15px auto 15px;
     width: 20%; }
+  .competitions-page .filters .page-head {
+    width: 50%; }
+  .competitions-page .filters .filter-list {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end; }
+    .competitions-page .filters .filter-list > div {
+      width: 25%;
+      margin-left: 20px;
+      margin-right: 20px; }
 
 .competitions-container {
   display: flex;
@@ -44,12 +56,15 @@
       .competitions-container img {
         width: 75px;
         margin: 2px auto; } }
-  @media (max-width: 1000px) {
-    .competitions-container h2 {
-      font-size: 20px; } }
-  @media (max-width: 600px) {
-    .competitions-container h2 {
-      font-size: 15px; } }
+  .competitions-container h2 {
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.7); }
+    @media (max-width: 1000px) {
+      .competitions-container h2 {
+        font-size: 20px; } }
+    @media (max-width: 600px) {
+      .competitions-container h2 {
+        font-size: 15px; } }
   .competitions-container p {
     position: relative;
     top: 50%;
@@ -76,6 +91,11 @@
   position: relative;
   width: 100%;
   height: 100%; }
+
+.topFlip .competition-front {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
 
 .topFlip,
 .bottomFlop {

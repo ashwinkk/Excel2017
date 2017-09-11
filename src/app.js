@@ -34,6 +34,7 @@ function App(props) {
 					<Route path="/spotlight/:type" component={WorkshopDetail} />
 					<Route path="/spotlight" component={Spotlight} />
 					<Route path="/events" component={Events} />
+					<Route path="/competitions?" component={Competitions} />
 					<Route path="/competitions" component={Competitions} />
 					<Route path="/gallery" component={Gallery} />
 					<Route path="/under-construction" component={ComingSoon} />

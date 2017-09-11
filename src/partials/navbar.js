@@ -28,6 +28,31 @@ class Navbar extends React.Component {
 	handleSpawn() {
 		this.setState({ spawn: !this.state.spawn });
 	}
+
+	componentDidMount() {
+		console.log(window.location.hash.split("/")[1] !== "");
+		if (window.location.hash.split("/")[1] !== "") {
+			this.removeFullpage();
+		}
+	}
+
+	removeFullpage() {
+		let fullpage = document.getElementById("fullpage");
+		fullpage.style.position = "absolute";
+		fullpage.style.opacity = 0;
+		fullpage.style.height = 0;
+		fullpage.style.width = 0;
+		document.getElementById("root").style.zIndex = 99;
+	}
+
+	showfullpage() {
+		let fullpage = document.getElementById("fullpage");
+		fullpage.style.position = "absolute";
+		fullpage.style.opacity = 1;
+		fullpage.style.height = "100%";
+		fullpage.style.width = "unset";
+		document.getElementById("root").style.zIndex = 99;
+	}
 	render() {
 		let micClass = "bot-spawn";
 		if (this.state.spawn) micClass = "bot-spawn record";
@@ -46,44 +71,44 @@ class Navbar extends React.Component {
 					>
 						<div className="left">
 							<div className="lonely-home">
-								<Link to="/" className="nav-text">
-									Home
-								</Link>
-								<Link to="/">
+								<div className="nav-text">
+									<Link to="/">Home</Link>
+								</div>
+								<Link to="/" onClick={this.showfullpage}>
 									<MdHome />
 								</Link>
 							</div>
 							<div>
-								<Link to="/competitions" className="nav-text">
-									Competitions
-								</Link>
-								<Link to="/competitions">
+								<div className="nav-text">
+									<Link to="/competitions">Competitions</Link>
+								</div>
+								<Link to="/competitions" onClick={this.removeFullpage}>
 									<MdVideogameAsset />
 								</Link>
 							</div>
 							<div>
-								<Link to="/spotlight" className="nav-text">
-									Spotlight
-								</Link>
-								<Link to="/spotlight">
+								<div className="nav-text">
+									<Link to="/spotlight">Spotlight</Link>
+								</div>
+								<Link to="/spotlight" onClick={this.removeFullpage}>
 									<MdHighlight />
 								</Link>
 							</div>
 						</div>
 						<div className="right">
 							<div>
-								<Link to="/events" className="nav-text">
-									Events
-								</Link>
-								<Link to="/events">
+								<div className="nav-text">
+									<Link to="/events">Events</Link>
+								</div>
+								<Link to="/events" onClick={this.removeFullpage}>
 									<FaCalendar />
 								</Link>
 							</div>
 							<div>
-								<Link to="/gallery" className="nav-text">
-									Gallery
-								</Link>
-								<Link to="/gallery">
+								<div className="nav-text">
+									<Link to="/gallery">Gallery</Link>
+								</div>
+								<Link to="/gallery" onClick={this.removeFullpage}>
 									<FaCameraRetro />
 								</Link>
 							</div>

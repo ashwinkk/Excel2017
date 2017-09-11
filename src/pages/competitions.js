@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import { Redirect } from "react-router";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 import { connect } from "react-redux";
+import queryString from "query-string";
 
 import "react-select/dist/react-select.css";
 import { fetchCompetitions } from "../actions/competition-actions";
-import DribbbleThumbnail from "../partials/dribbble-thumbnail";
 
 import "../styles/competition.css";
 
@@ -28,13 +27,18 @@ class Competitions extends Component {
 		} else if (window.innerWidth > 300) {
 			rowNum = 3;
 		}
+
 		this.state = {
 			hide: "",
 			unitWidth: Math.floor(width / rowNum),
 			filterDept: "all",
-			filterCateg: "all"
+			filterCateg: "all",
+			applyFilter: false
 		};
+
+		console.log(this.state);
 		this.setWidths = this.setWidths.bind(this);
+		this.setFilters = this.setFilters.bind(this);
 	}
 
 	setWidths() {
@@ -45,9 +49,9 @@ class Competitions extends Component {
 		let width = competitionsContainer.getBoundingClientRect().width,
 			rowNum = 0,
 			scrollBar = 0;
-		if (window.innerWidth > 1000) {
-			scrollBar = 12;
-		}
+		// if (window.innerWidth > 1000) {
+		// 	scrollBar = 12;
+		// }
 		if (window.innerWidth > 600) {
 			rowNum = 4;
 		} else if (window.innerWidth > 300) {
@@ -59,6 +63,17 @@ class Competitions extends Component {
 
 	componentDidMount() {
 		this.setWidths();
+		this.setFilters();
+	}
+
+	setFilters() {
+		if (window.location.hash.indexOf("?") !== -1) {
+			let query = queryString.parse(window.location.hash.split("?")[1]);
+			this.setState({
+				filterDept: query.dept || "all",
+				filterCateg: query.category || "all"
+			});
+		}
 	}
 
 	componentWillMount() {}
@@ -78,13 +93,12 @@ class Competitions extends Component {
 			filter = {
 				value: "all"
 			};
-		console.log(type);
 		switch (type) {
 			case "dept":
-				this.setState({ filterDept: filter.value });
+				this.setState({ filterDept: filter.value, applyFilter: true });
 				break;
 			case "categ":
-				this.setState({ filterCateg: filter.value });
+				this.setState({ filterCateg: filter.value, applyFilter: true });
 				break;
 			default:
 				return;
@@ -92,14 +106,18 @@ class Competitions extends Component {
 	}
 
 	render() {
-		console.log(this.state.filterCateg, this.state.filterDept);
+		// console.log(this.state.applyFilter);
+		// if (this.state.applyFilter) {
+		// 	console.log("hehh");
+		// 	let urlQuery = {};
+		// 	if (this.state.filterCateg != "all")
+		// 		urlQuery.categ = this.state.filterCateg;
+		// 	if (this.state.filterDept != "all") urlQuery.dept = this.state.filterDept;
+		// 	let queryParam = queryString.stringify(urlQuery);
+		// 	return <Redirect to="competitions" params={{}} />;
+		// }
 		var boxes = this.props.competitions
 			.filter(competition => {
-				console.log(
-					this.state.filterDept !== competition.category &&
-						this.state.filterDept !== "all",
-					this.state.filterDept != "all"
-				);
 				if (this.state.filterDept === "all" && this.state.filterCateg === "all")
 					return true;
 				if (
@@ -135,11 +153,13 @@ class Competitions extends Component {
 									className="topFlip"
 									style={{ backgroundColor: competition.color }}
 								>
-									<img
-										src={competition.cover}
-										alt={competition.cover.split("/")[-1]}
-									/>
-									<h2>{competition.name}</h2>
+									<div className="competition-front">
+										<img
+											src={competition.cover}
+											alt={competition.cover.split("/")[-1]}
+										/>
+										<h2>{competition.name}</h2>
+									</div>
 								</div>
 								<div
 									className="bottomFlop"
@@ -170,21 +190,28 @@ class Competitions extends Component {
 		return (
 			<div className="competitions-page">
 				<div className="filters">
-					<div>
-						<Select
-							onChange={filter => this.applyFilter("dept", filter)}
-							options={filterDepts}
-							name="Department"
-							value={this.state.filterDept}
-						/>
+					<div className="page-head">
+						<h2>Competitions</h2>
 					</div>
-					<div>
-						<Select
-							onChange={filter => this.applyFilter("categ", filter)}
-							options={filterCateg}
-							name="Category"
-							value={this.state.filterCateg}
-						/>
+					<div className="filter-list">
+						<div>
+							<span>Department: </span>
+							<Select
+								onChange={filter => this.applyFilter("dept", filter)}
+								options={filterDepts}
+								name="Department"
+								value={this.state.filterDept}
+							/>
+						</div>
+						<div>
+							<span>Type:</span>
+							<Select
+								onChange={filter => this.applyFilter("categ", filter)}
+								options={filterCateg}
+								name="Category"
+								value={this.state.filterCateg}
+							/>
+						</div>
 					</div>
 				</div>
 				<div className="competitions-container" ref="competitions-container">
