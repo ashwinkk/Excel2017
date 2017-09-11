@@ -44,6 +44,7 @@
         <div class="section">
             <img src="/static/anim-assets/header.png" class="parallax-layer-0 parallax" id="para1" />
             <img src="/static/anim-assets/header.png" class="parallax-layer-1 parallax" id="para" />
+            <img src="/static/anim-assets/header.png" class="parallax-layer-2" id="par" />
         </div>
         <div class="section">Some section</div>
         <div class="section">Some section</div>
@@ -67,14 +68,12 @@
             transitionText = "";
         $('#fullpage').fullpage({
             onLeave: function(index, nextIndex, direction) {
-                console.log(index);
-                if (direction == "down")
-                    transitionText = "translateY(-";
-                else
-                    transitionText = "translateY(";
-                if (index == 1) {
-                    parallax.style.transform = transitionText + 20 + "%)";
-                    parallax1.style.transform = transitionText + 20 + "%)";
+                console.log(nextIndex + " " + index);
+                if (nextIndex == 2) {
+                    $(".parallax").addClass("active");
+                }
+                if (index == 2) {
+                    $(".parallax").removeClass("active");
                 }
             }
         });
