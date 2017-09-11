@@ -11,7 +11,8 @@ import ComingSoon from "./pages/coming-soon";
 import Spotlight from "./pages/spotlight";
 import Events from "./pages/events";
 import Root from "./pages/root";
-import PageNotFound from "./pages/pagenotfound"
+import PageNotFound from "./pages/pagenotfound";
+import About from './pages/about';
 
 import "./styles/defaults.css";
 import "./styles/test.scss";
@@ -37,6 +38,7 @@ function App(props) {
 					<Route path="/competitions" component={Competitions} />
 					{/*<Route path="/gallery" component={Gallery} />*/}
 					<Route path="/under-construction" component={ComingSoon} />
+					<Route path="/about" component={About} />
 					<Route path="*" component={PageNotFound} />
 				</Switch>
 			</div>
