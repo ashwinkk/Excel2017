@@ -4,6 +4,7 @@ import { FaFacebook,FaGithub,FaLinkedin } from "react-icons/lib/fa";
 
 import "../styles/about-card.css";
 
+
 const AboutCard = (props) => (
     <div className="col-xs-12 col-sm-6 col-md-4 about-card-container">
         <div className="about-card">
@@ -18,9 +19,19 @@ const AboutCard = (props) => (
                     </div>
                 </div>
                 <div className="social-icons">
-                    <a href="#" target="_blank"><FaFacebook /></a>
-                    <a href="#" target="_blank"><FaGithub /></a>
-                    <a href="#" target="_blank"><FaLinkedin /></a>                        
+                    {['facebook','github','linkedin'].map((val,i) => {
+                        const icons = {
+                            'facebook': <FaFacebook/>,
+                            'linkedin': <FaLinkedin/>,
+                            'github': <FaGithub/>
+                        };
+                        const url = props.social[val];
+
+                        if(url){
+                            return (<a key={i} href={url} target="_blank">{icons[val]}</a>);
+                        }
+                        return "";
+                    })}                       
                 </div>
             </div>
             

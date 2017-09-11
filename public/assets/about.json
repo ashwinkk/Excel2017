@@ -1,0 +1,106 @@
+[
+    {
+        "id": 1,
+        "image":{
+            "src": "https://dummyimage.com/453x385/2363a3/fff.png",
+            "alt":"dummy"
+        },
+        "contact":{
+            "email": "someone@somewhere.com",
+            "phone": "+91 8989898989"
+        },
+        "name": "Your Name",
+        "designation": "lorem ipsum",
+        "social":{
+                "linkedin" : "#linkedin",
+                "github" : "#github",
+                "facebook": "#facebook"
+        }
+    },
+    {
+        "id": 2,
+        "image":{
+            "src": "https://dummyimage.com/453x385/2363a3/fff.png",
+            "alt":"dummy"
+        },
+        "contact":{
+            "email": "someone@somewhere.com",
+            "phone": "+91 8989898989"
+        },
+        "name": "Your Name",
+        "designation": "lorem ipsum",
+        "social":{
+                "linkedin" : "#linkedin",
+                "github" : "#github"
+        }
+    },
+    {
+        "id": 3,
+        "image":{
+            "src": "https://dummyimage.com/453x385/2363a3/fff.png",
+            "alt":"dummy"
+        },
+        "contact":{
+            "email": "someone@somewhere.com",
+            "phone": "+91 8989898989"
+        },
+        "name": "Your Name",
+        "designation": "lorem ipsum",
+        "social":{
+                "linkedin" : "#linkedin",
+                "github" : "#github"
+        }
+    },
+    {
+        "id": 4,
+        "image":{
+            "src": "https://dummyimage.com/453x385/2363a3/fff.png",
+            "alt":"dummy"
+        },
+        "contact":{
+            "email": "someone@somewhere.com",
+            "phone": "+91 8989898989"
+        },
+        "name": "Your Name",
+        "designation": "lorem ipsum",
+        "social":{
+                "linkedin" : "#linkedin",
+                "github" : "#github"
+        }
+    },
+    {
+        "id": 5,
+        "image":{
+            "src": "https://dummyimage.com/453x385/2363a3/fff.png",
+            "alt":"dummy"
+        },
+        "contact":{
+            "email": "someone@somewhere.com",
+            "phone": "+91 8989898989"
+        },
+        "name": "Your Name",
+        "designation": "lorem ipsum",
+        "social":{
+                "linkedin" : "#linkedin",
+                "github" : "#github"
+        }
+    },
+    {
+        "id": 6,
+        "image":{
+            "src": "https://dummyimage.com/453x385/2363a3/fff.png",
+            "alt":"dummy"
+        },
+        "contact":{
+            "email": "someone@somewhere.com",
+            "phone": "+91 8989898989"
+        },
+        "name": "Your Name",
+        "designation": "lorem ipsum",
+        "social":{
+                "linkedin" : "#linkedin",
+                "github" : "#github"
+        }
+    }
+
+]
