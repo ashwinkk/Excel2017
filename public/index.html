@@ -66,15 +66,14 @@
         var parallax = document.getElementById("para"),
             parallax1 = document.getElementById("para1"),
             transitionText = "";
+        var state = {"down": "prev", "up": "next"}
         $('#fullpage').fullpage({
             onLeave: function(index, nextIndex, direction) {
-                console.log(nextIndex + " " + index);
-                if (nextIndex == 2) {
-                    $(".parallax").addClass("active");
-                }
-                if (index == 2) {
-                    $(".parallax").removeClass("active");
-                }
+                console.log("Next index:" + nextIndex + " Index: " + index + " Direction: " + direction);
+                $('#fullpage').children().eq(index-1).find('.parallax').removeClass("active");
+                $('#fullpage').children().eq(index-1).find('.parallax').addClass(state[direction]);
+                $('#fullpage').children().eq(nextIndex-1).find('.parallax').removeClass("next prev");
+                $('#fullpage').children().eq(nextIndex-1).find('.parallax').addClass("active");
             }
         });
     });
