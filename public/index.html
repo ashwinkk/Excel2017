@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/stylesheets/bootstrap.min.css">
     <link rel="shortcut icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Muli|Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/javas/jquery.fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/javas/index.css" />
+    <script type="text/javascript" src="/static/javas/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/static/javas/jquery.fullpage.min.js"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -22,12 +26,28 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Excel 2017</title>
+    <style>
+
+    </style>
 </head>
 
 <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <div class="inline-container" id="fullpage">
+        <div class="section">
+            <div class="header-image">
+                <img src="/static/anim-assets/header.png" />
+            </div>
+        </div>
+        <div class="section">
+            <img src="/static/anim-assets/header.png" class="parallax-layer-0 parallax" id="para1" />
+            <img src="/static/anim-assets/header.png" class="parallax-layer-1 parallax" id="para" />
+        </div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+    </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -40,5 +60,25 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 </body>
+<script>
+    $(document).ready(function() {
+        var parallax = document.getElementById("para"),
+            parallax1 = document.getElementById("para1"),
+            transitionText = "";
+        $('#fullpage').fullpage({
+            onLeave: function(index, nextIndex, direction) {
+                console.log(index);
+                if (direction == "down")
+                    transitionText = "translateY(-";
+                else
+                    transitionText = "translateY(";
+                if (index == 1) {
+                    parallax.style.transform = transitionText + 20 + "%)";
+                    parallax1.style.transform = transitionText + 20 + "%)";
+                }
+            }
+        });
+    });
+</script>
 
 </html>

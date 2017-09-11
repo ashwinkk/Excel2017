@@ -1,0 +1,32 @@
+.inline-container {
+	margin-left: 70px;
+}
+.section {
+	position: relative;
+}
+.header-image {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.header-image img {
+	width: 100%;
+}
+.parallax-trial {
+	position: absolute;
+	transition: transform 0.5s;
+}
+
+.parallax-layer-0 {
+	transition: transform 2s;
+	/*transition-delay: 0.5s;*/
+}
+.parallax-layer-1 {
+	transition: transform 0.7s;
+	/*transition-delay: 0.s;*/
+}
+
+.parallax {
+	width: 500px;
+	transform: translateY(60%);
+}
