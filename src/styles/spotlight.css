@@ -18,6 +18,7 @@
 	display: inline-block;
 	text-align: right;
 	width: 50%;
+	color: white;
 	vertical-align: middle;
 	padding: 10px;
 }
@@ -65,7 +66,7 @@
 }
 
 @media screen and (max-width: 650px) and (orientation: portrait) {
-	.spotlight-card{
+	.spotlight-card {
 		height: auto;
 	}
 	.spotlight-card-left {

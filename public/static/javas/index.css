@@ -26,6 +26,19 @@
 	top: 0;
 }
 
+.excel-logo {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	z-index: 99;
+}
+.mec-logo {
+	top: 10px;
+	position: absolute;
+	right: 10px;
+	width: 170px;
+}
+
 /*element positioning*/
 .cloud-header {
 	position: absolute;
@@ -50,19 +63,26 @@
 	width: 77%;
 	position: absolute;
 }
-.cloud-4{
+.cloud-4 {
 	bottom: -1%;
 	left: 0%;
 	width: 32%;
 	position: absolute;
 }
-.plane-layer{
+.blur-branch {
+	left: 0%;
+	z-index: 99;
+	width: 400px;
+	position: absolute;
+	top: 40%;
+}
+.plane-layer {
 	position: absolute;
 	display: block;
 	margin: auto;
 	top: 30%;
 	left: calc(50% - 185px);
-	width: 100%;
+	width: 90%;
 	max-width: 370px;
 	transform: rotate(0deg);
 	transform-origin: 100% 50%;
@@ -71,25 +91,25 @@
 	/*transform: rotate(45deg) translate(-25%, -100%) scale(0.4);*/
 	animation: plane 2s ease-in-out infinite, flyIn 1.4s ease-in-out 1;
 }
-.plane-layer.layer-2-prev{
+.plane-layer.layer-2-prev {
 	transform: translateY(-400px);
 }
 @keyframes plane {
-	0%{
+	0% {
 		transform: translateY(-10px);
 	}
-	50%{
+	50% {
 		transform: translateY(10px);
 	}
-	100%{
+	100% {
 		transform: translateY(-10px);
 	}
 }
-@keyframes flyIn{
-	0%{
+@keyframes flyIn {
+	0% {
 		transform: rotate(45deg) translate(+25%, -25%) scale(0.4);
 	}
-	100%{
+	100% {
 		transform: none;
 	}
 }
@@ -157,19 +177,44 @@
 		background-image: url("/static/anim-assets/branch2.png");
 	}
 }
-@media (min-width: 300px){
-	.section{
-		padding-bottom: 50px;
-	}
-	#fullpage{
+@media (min-width: 300px) {
+	#fullpage {
 		margin-left: 0px;
+	}
+	.excel-logo {
+		width: 80px;
+	}
+	.mec-logo {
+		width: 100px;
+	}
+	.owl-mid {
+		width: 300px;
+		height: 300px;
+	}
+}
+@media (min-width: 700px) {
+	#fullpage {
+		margin-left: 70px;
+	}
+}
+@media (min-width: 1000px) {
+	.owl-mid {
+		width: 500px;
+		height: 500px;
+	}
+	.excel-logo {
+		width: 200px;
+	}
+	.mec-logo {
+		width: 150px;
 	}
 }
 
 /*parallax-styling*/
 .layer-0,
 .layer-1,
-.layer-2 {
+.layer-2,
+.layer-blur {
 	transition: transform 1.2s;
 }
 .layer-0-prev {
@@ -179,7 +224,10 @@
 	transform: translateY(-200px);
 }
 .layer-2-prev {
-	transform: translateY(-400px);
+	transform: translateY(-300px);
+}
+.layer-blur-prev {
+	transform: translateY(-1000px);
 }
 
 .layer-0-next {
@@ -189,5 +237,8 @@
 	transform: translateY(200px);
 }
 .layer-2-next {
-	transform: translateY(400px);
+	transform: translateY(300px);
+}
+.layer-blur-next {
+	transform: translateY(1000px);
 }

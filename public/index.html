@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/stylesheets/bootstrap.min.css">
     <link rel="shortcut icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Muli|Raleway" rel="stylesheet">
-    <!--<link rel="stylesheet" type="text/css" href="/static/javas/jquery.fullpage.min.css" />-->
+    <link rel="stylesheet" type="text/css" href="/static/javas/jquery.fullpage.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/javas/index.css" />
     <script type="text/javascript" src="/static/javas/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="/static/javas/jquery.fullpage.min.js"></script>
@@ -41,16 +41,25 @@
             <div class="header-image">
                 <img class="cloud-header parallax-2" src="/static/anim-assets/cld1.png" />
             </div>
-            <img class="plane-layer layer-2" src="/static/anim-assets/ffs.gif"/>
-            <img class="layer-2 cloud-footer " src="/static/anim-assets/cld2.png" />
+            <img class="plane-layer layer-2" src="/static/anim-assets/ffs.gif" />
+            <!--<img class="layer-2 cloud-footer " src="/static/anim-assets/cld2.png" />-->
             <img class="layer-1 cloud-2" src="/static/anim-assets/cld5.png" />
             <img class="layer-0 cloud-3 " src="/static/anim-assets/cld3.png" />
             <img class="layer-0 cloud-4 " src="/static/anim-assets/cld4.png" />
+            <img class="layer-2 excel-logo" src="/static/anim-assets/excel2017.png" />
+            <img class="layer-2 mec-logo" src="/static/anim-assets/mec_logo.png" />
         </div>
         <div class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Excel, the nation’s second and South India’s first ever fest of its kind started in 2001 by the students of Govt. Model Engineering College with a motto, Inspire, Innovate, Engineer. Over the years, Excel has grown exponentially, consistently
+                    playing host to some of the most talented students, the most illustrious speakers and the most reputed companies. Now gearing towards its 17th edition, Excel continues to excite the participants with its wide array of technical and
+                    non-technical events and with a promise to live upto its motto.</p>
+            </div>
             <img class="tree-upper" src="/static/anim-assets/tree-upper.png" />
         </div>
         <div class="section">
+            <img class="blur-branch layer-blur" src="/static/anim-assets/blurbranch.png" />
             <img class="tree-mid" src="/static/anim-assets/tree-middle.png" />
             <div class="layer-2 layer-2-next owl-mid">
                 <img class="calender" src="/static/anim-assets/calendar.png" />
@@ -87,9 +96,11 @@
                 $('#fullpage').children().eq(index - 1).find('.layer-0').addClass("layer-0-" + state[direction]);
                 $('#fullpage').children().eq(index - 1).find('.layer-1').addClass("layer-1-" + state[direction]);
                 $('#fullpage').children().eq(index - 1).find('.layer-2').addClass("layer-2-" + state[direction]);
+                $('#fullpage').children().eq(index - 1).find('.layer-blur').addClass("layer-blur-" + state[direction]);
                 $('#fullpage').children().eq(nextIndex - 1).find('.layer-0').removeClass("layer-0-next layer-0-prev");
                 $('#fullpage').children().eq(nextIndex - 1).find('.layer-1').removeClass("layer-1-next layer-1-prev");
                 $('#fullpage').children().eq(nextIndex - 1).find('.layer-2').removeClass("layer-2-next layer-2-prev");
+                $('#fullpage').children().eq(nextIndex - 1).find('.layer-blur').removeClass("layer-blur-next layer-blur-prev");
             }
         });
     });
