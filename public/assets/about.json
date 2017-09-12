@@ -2,15 +2,15 @@
     {
         "id": 1,
         "image":{
-            "src": "https://dummyimage.com/453x385/2363a3/fff.png",
+            "src": "/static/about/sivar.jpg",
             "alt":"dummy"
         },
         "contact":{
-            "email": "someone@somewhere.com",
+            "email": "karthikshenoy.mec@gmail.com",
             "phone": "+91 8989898989"
         },
-        "name": "Your Name",
-        "designation": "lorem ipsum",
+        "name": "Karthik Shenoy",
+        "designation": "General Tech Manager",
         "social":{
                 "linkedin" : "#linkedin",
                 "github" : "#github",
@@ -20,15 +20,15 @@
     {
         "id": 2,
         "image":{
-            "src": "https://dummyimage.com/453x385/2363a3/fff.png",
+            "src": "/static/about/gopi.jpg",
             "alt":"dummy"
         },
         "contact":{
-            "email": "someone@somewhere.com",
+            "email": "gopikrishnanmohan3@gmail.com",
             "phone": "+91 8989898989"
         },
-        "name": "Your Name",
-        "designation": "lorem ipsum",
+        "name": "Gopikrishnan Mohan",
+        "designation": "CS Tech Head",
         "social":{
                 "linkedin" : "#linkedin",
                 "github" : "#github"
@@ -37,15 +37,15 @@
     {
         "id": 3,
         "image":{
-            "src": "https://dummyimage.com/453x385/2363a3/fff.png",
+            "src": "/static/about/malavika.jpg",
             "alt":"dummy"
         },
         "contact":{
-            "email": "someone@somewhere.com",
-            "phone": "+91 8989898989"
+            "email": "malavikavasudevan.mec@gmail.com",
+            "phone": "+91 9400242440"
         },
-        "name": "Your Name",
-        "designation": "lorem ipsum",
+        "name": "Malavika Vasudevan",
+        "designation": "Talks Manager",
         "social":{
                 "linkedin" : "#linkedin",
                 "github" : "#github"
@@ -54,32 +54,32 @@
     {
         "id": 4,
         "image":{
-            "src": "https://dummyimage.com/453x385/2363a3/fff.png",
+            "src": "/static/about/aravind.jpg",
             "alt":"dummy"
         },
         "contact":{
-            "email": "someone@somewhere.com",
-            "phone": "+91 8989898989"
+            "email": "aravindrmenon96@gmail.com",
+            "phone": "+91 9744463145"
         },
-        "name": "Your Name",
-        "designation": "lorem ipsum",
+        "name": "Aravind R Menon",
+        "designation": "Content Head",
         "social":{
-                "linkedin" : "#linkedin",
+                "linkedin" : "https://www.linkedin.com/in/aravind-r-menon-b427b2110",
                 "github" : "#github"
         }
     },
     {
         "id": 5,
         "image":{
-            "src": "https://dummyimage.com/453x385/2363a3/fff.png",
+            "src": "/static/about/elza.jpg",
             "alt":"dummy"
         },
         "contact":{
-            "email": "someone@somewhere.com",
-            "phone": "+91 8989898989"
+            "email": "elzatessvarkey.mec@gmail.com",
+            "phone": "+91 9562391591"
         },
-        "name": "Your Name",
-        "designation": "lorem ipsum",
+        "name": "Elza Tess Varkey",
+        "designation": "Social Initiatives Manager",
         "social":{
                 "linkedin" : "#linkedin",
                 "github" : "#github"
@@ -88,15 +88,15 @@
     {
         "id": 6,
         "image":{
-            "src": "https://dummyimage.com/453x385/2363a3/fff.png",
+            "src": "/static/about/shantala.jpg",
             "alt":"dummy"
         },
         "contact":{
-            "email": "someone@somewhere.com",
-            "phone": "+91 8989898989"
+            "email": "shantalar.mec@gmail.com",
+            "phone": "+91 9847366598"
         },
-        "name": "Your Name",
-        "designation": "lorem ipsum",
+        "name": "Shantala Ramesh",
+        "designation": "Media Head",
         "social":{
                 "linkedin" : "#linkedin",
                 "github" : "#github"

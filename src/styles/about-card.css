@@ -42,6 +42,8 @@
 	font-weight: 500;
 	font-family: Raleway, sans-serif;
 	text-transform: capitalize;
+	font-size: 18px;
+	line-height: 1.6;
 }
 
 .about-card .card-desc .designation,
