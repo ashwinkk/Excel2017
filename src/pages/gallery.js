@@ -63,7 +63,7 @@ class Gallery extends React.Component {
 		let width = competitionsContainer.getBoundingClientRect().width,
 			rowNum = 0,
 			scrollBar = 0;
-		if (window.innerWidth > 1000) {
+		if (window.innerWidth > 700) {
 			scrollBar = 12;
 		}
 		if (window.innerWidth > 700) {
@@ -96,6 +96,7 @@ class Gallery extends React.Component {
 		);
 		console.log(viewportContainer);
 		let element = e.target;
+		clearInterval(this.interval);
 		let elem = document.getElementById("viewport-image");
 		if (window.innerWidth < 600) {
 			elem.src = element.src;
@@ -152,7 +153,6 @@ class Gallery extends React.Component {
 			}, 100);
 		} else {
 			if (this.props.images.length - 1 === index) index = -1;
-			clearInterval(this.interval);
 			this.setState({ selectedImage: element.src, selectedIndex: index + 1 });
 			setInterval(this.slideShow, 4000);
 		}

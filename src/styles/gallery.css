@@ -16,12 +16,14 @@
     flex-wrap: wrap;
     margin: auto;
     position: relative;
-    overflow-y: auto; } }
+    overflow-y: auto;
+    max-height: 50%;
+    margin: 10px; } }
 
 @media (min-width: 1000px) {
   .gallery {
     width: 40%;
-    max-height: 100%; } }
+    max-height: calc(100% - 20px); } }
 
 .viewport-container {
   position: absolute;
@@ -73,7 +75,8 @@
       height: 100%; } }
   @media (min-width: 1000px) {
     .viewport img {
-      height: 350px; } }
+      width: 100%;
+      height: auto; } }
 
 .close-button {
   color: black;
