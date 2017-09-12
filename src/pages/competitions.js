@@ -9,6 +9,8 @@ import "react-select/dist/react-select.css";
 import { fetchCompetitions } from "../actions/competition-actions";
 import CompetitionsDropdown from "../partials/CompetitionsDropdown";
 
+import { MdVideogameAsset } from "react-icons/lib/md";
+
 import "../styles/competition.css";
 
 @connect(store => {
@@ -213,7 +215,7 @@ class Competitions extends Component {
 			<div className="competitions-page">
 				<div className="filters">
 					<div className="page-head">
-						<h2>Competitions</h2>
+						<h2 style={{fontWeight: "600" , color:"#000751" , marginTop:"10px"}}><MdVideogameAsset style={{fontSize: "60px"}}/> Competitions</h2>
 					</div>
 					<div className="filter-list">
 						<div>
@@ -231,7 +233,7 @@ class Competitions extends Component {
 					</div>
 				</div>
 				<div className="competitions-container" ref="competitions-container">
-					{boxes}
+					{boxes}{boxes}{boxes}
 				</div>
 			</div>
 		);
