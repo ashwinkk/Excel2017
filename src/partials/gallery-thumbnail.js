@@ -8,7 +8,8 @@ export default class GalleryThumbnail extends React.Component {
 		super(props);
 		this.state = {
 			left: 0,
-			style: {}
+			style: {},
+			render: false
 		};
 		this.setWidths = this.setWidths.bind(this);
 	}
@@ -32,7 +33,7 @@ export default class GalleryThumbnail extends React.Component {
 		this.setWidths();
 	}
 
-	componentWillReceiveProps() {
+	componentWillReceiveProps(nextProps) {
 		this.setWidths();
 	}
 

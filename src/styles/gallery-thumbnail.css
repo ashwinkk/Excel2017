@@ -5,3 +5,6 @@
 	margin: auto 0;
 	position: relative;
 }
+.gallery-thumbnail img {
+	cursor: pointer;
+}
