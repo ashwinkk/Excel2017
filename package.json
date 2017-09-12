@@ -8,6 +8,7 @@
     "google-map-react": "^0.24.0",
     "history": "^4.7.2",
     "lodash": "^4.17.4",
+    "material-ui": "^0.19.1",
     "object-assign": "4.1.1",
     "promise": "8.0.1",
     "query-string": "^5.0.0",

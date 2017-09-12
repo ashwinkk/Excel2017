@@ -7,6 +7,7 @@ import queryString from "query-string";
 
 import "react-select/dist/react-select.css";
 import { fetchCompetitions } from "../actions/competition-actions";
+import CompetitionsDropdown from "../partials/CompetitionsDropdown";
 
 import "../styles/competition.css";
 
@@ -135,11 +136,12 @@ class Competitions extends Component {
 			.map((competition, index) => {
 				let cubeDimensions;
 				cubeDimensions = {
-					width: this.state.unitWidth,
-					height: this.state.unitWidth
+					width: 2*Math.floor((this.state.unitWidth+1)/2),
+					height: 2*Math.floor((this.state.unitWidth+1)/2)
 				};
+				const translateZVal = Math.round(cubeDimensions.width / 2);
 				return (
-					<Link to={`competitions/${competition.id}`}>
+					<Link key={index} to={`competitions/${competition.id}`}>
 						<div
 							className="cube-container"
 							key={index}
@@ -151,19 +153,20 @@ class Competitions extends Component {
 							<div className="theCube">
 								<div
 									className="topFlip"
-									style={{ backgroundColor: competition.color }}
+									style={{ backgroundColor: competition.color,transform:`translateZ(${translateZVal}px)` }}
 								>
 									<div className="competition-front">
 										<img
 											src={competition.cover}
 											alt={competition.cover.split("/")[-1]}
+											style={{ width: `${translateZVal}px`}}
 										/>
 										<h2>{competition.name}</h2>
 									</div>
 								</div>
 								<div
 									className="bottomFlop"
-									style={{ backgroundColor: competition.color }}
+									style={{ backgroundColor: competition.color,transform:`rotateX(-90deg)translateZ(${translateZVal}px)` }}
 								>
 									<p>{competition.shortDes}</p>
 								</div>
@@ -195,21 +198,15 @@ class Competitions extends Component {
 					</div>
 					<div className="filter-list">
 						<div>
-							<span>Department: </span>
-							<Select
-								onChange={filter => this.applyFilter("dept", filter)}
-								options={filterDepts}
-								name="Department"
-								value={this.state.filterDept}
+							<CompetitionsDropdown
+								items={filterDepts}
+								getValue={ value => this.applyFilter("dept",{value})}
 							/>
 						</div>
 						<div>
-							<span>Type:</span>
-							<Select
-								onChange={filter => this.applyFilter("categ", filter)}
-								options={filterCateg}
-								name="Category"
-								value={this.state.filterCateg}
+							<CompetitionsDropdown
+								items={filterCateg}
+								getValue={ value => this.applyFilter("categ",{value})}
 							/>
 						</div>
 					</div>
