@@ -34,9 +34,9 @@ class Competitions extends Component {
 			unitWidth: Math.floor(width / rowNum),
 			filterDept: "all",
 			filterCateg: "all",
-			applyFilter: false
+			applyFilter: false,
+			scale: 0
 		};
-
 		console.log(this.state);
 		this.setWidths = this.setWidths.bind(this);
 		this.setFilters = this.setFilters.bind(this);
@@ -59,12 +59,21 @@ class Competitions extends Component {
 			rowNum = 3;
 		}
 		width -= scrollBar;
-		this.setState({ unitWidth: Math.floor(width / rowNum) });
+		this.setState({ unitWidth: Math.floor(width / rowNum), render: false });
 	}
 
 	componentDidMount() {
 		this.setWidths();
 		this.setFilters();
+	}
+
+	componentDidUpdate() {
+		if (this.state.render === false) {
+			this.setState({ render: true });
+			setTimeout(() => {
+				this.setState({ scale: 1 });
+			}, 500);
+		}
 	}
 
 	setFilters() {
@@ -136,8 +145,9 @@ class Competitions extends Component {
 			.map((competition, index) => {
 				let cubeDimensions;
 				cubeDimensions = {
-					width: 2*Math.floor((this.state.unitWidth+1)/2),
-					height: 2*Math.floor((this.state.unitWidth+1)/2)
+					width: 2 * Math.floor((this.state.unitWidth + 1) / 2),
+					height: 2 * Math.floor((this.state.unitWidth + 1) / 2),
+					transitionDelay: `${1 + index * 0.1}s`
 				};
 				const translateZVal = Math.round(cubeDimensions.width / 2);
 				return (
@@ -146,27 +156,36 @@ class Competitions extends Component {
 							className="cube-container"
 							key={index}
 							ref={`cube${index}`}
-							style={cubeDimensions}
+							style={{
+								...cubeDimensions,
+								transform: `scale(${this.state.scale})`
+							}}
 							onTouchStart={e => this.handleTouchStart(`cube${index}`)}
 							onTouchEnd={e => this.handleTouchEnd(`cube${index}`)}
 						>
 							<div className="theCube">
 								<div
 									className="topFlip"
-									style={{ backgroundColor: competition.color,transform:`translateZ(${translateZVal}px)` }}
+									style={{
+										backgroundColor: competition.color,
+										transform: `translateZ(${translateZVal}px)`
+									}}
 								>
 									<div className="competition-front">
 										<img
 											src={competition.cover}
 											alt={competition.cover.split("/")[-1]}
-											style={{ width: `${translateZVal}px`}}
+											style={{ width: `${translateZVal}px` }}
 										/>
 										<h2>{competition.name}</h2>
 									</div>
 								</div>
 								<div
 									className="bottomFlop"
-									style={{ backgroundColor: competition.color,transform:`rotateX(-90deg)translateZ(${translateZVal}px)` }}
+									style={{
+										backgroundColor: competition.color,
+										transform: `rotateX(-90deg)translateZ(${translateZVal}px)`
+									}}
 								>
 									<p>{competition.shortDes}</p>
 								</div>
@@ -200,13 +219,13 @@ class Competitions extends Component {
 						<div>
 							<CompetitionsDropdown
 								items={filterDepts}
-								getValue={ value => this.applyFilter("dept",{value})}
+								getValue={value => this.applyFilter("dept", { value })}
 							/>
 						</div>
 						<div>
 							<CompetitionsDropdown
 								items={filterCateg}
-								getValue={ value => this.applyFilter("categ",{value})}
+								getValue={value => this.applyFilter("categ", { value })}
 							/>
 						</div>
 					</div>

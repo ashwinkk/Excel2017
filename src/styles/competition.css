@@ -43,8 +43,7 @@
 
 .competitions-container {
   display: flex;
-  flex-wrap: wrap;
-  overflow: hidden; }
+  flex-wrap: wrap; }
   .competitions-container img {
     width: 200px;
     margin: 20px auto; }
@@ -76,7 +75,8 @@
 .cube-container {
   height: 300px;
   width: 300px;
-  transition: transform 0.1s; }
+  transition: transform 0.1s;
+  transform: scale(0.5); }
 
 .theCube {
   margin: 0 auto;
