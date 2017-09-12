@@ -31,7 +31,7 @@
     </style>
 </head>
 
-<body>
+<body>anim
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
@@ -39,16 +39,24 @@
     <div class="inline-container" id="fullpage">
         <div class="section">
             <div class="header-image">
-                <img src="/static/anim-assets/header.png" />
+                <img class="cloud-header parallax-2" src="/static/anim-assets/header.png" />
+            </div>
+            <img class="layer-2 cloud-footer " src="/static/anim-assets/cloud1.png" />
+            <img class="layer-1 cloud-2" src="/static/anim-assets/cloud2.png" />
+            <img class="layer-0 cloud-3 " src="/static/anim-assets/cloud3.png" />
+        </div>
+        <div class="section">
+            <img class="tree-upper" src="/static/anim-assets/tree-upper.png" />
+        </div>
+        <div class="section">
+            <img class="tree-mid" src="/static/anim-assets/tree-middle.png" />
+            <div class="layer-2 layer-2-next owl-mid">
+                <img class="calender" src="/static/anim-assets/calendar.png" />
             </div>
         </div>
         <div class="section">
-            <img src="/static/anim-assets/header.png" class="parallax-layer-0 parallax" id="para1" />
-            <img src="/static/anim-assets/header.png" class="parallax-layer-1 parallax" id="para" />
-            <img src="/static/anim-assets/header.png" class="parallax-layer-2" id="par" />
+            <img class="tree-low" src="/static/anim-assets/tree-lower.png" />
         </div>
-        <div class="section">Some section</div>
-        <div class="section">Some section</div>
     </div>
     <!--
       This HTML file is a template.
@@ -66,14 +74,20 @@
         var parallax = document.getElementById("para"),
             parallax1 = document.getElementById("para1"),
             transitionText = "";
-        var state = {"down": "prev", "up": "next"}
+        var state = {
+            "down": "prev",
+            "up": "next"
+        }
         $('#fullpage').fullpage({
+            scrollingSpeed: 1000,
             onLeave: function(index, nextIndex, direction) {
                 console.log("Next index:" + nextIndex + " Index: " + index + " Direction: " + direction);
-                $('#fullpage').children().eq(index-1).find('.parallax').removeClass("active");
-                $('#fullpage').children().eq(index-1).find('.parallax').addClass(state[direction]);
-                $('#fullpage').children().eq(nextIndex-1).find('.parallax').removeClass("next prev");
-                $('#fullpage').children().eq(nextIndex-1).find('.parallax').addClass("active");
+                $('#fullpage').children().eq(index - 1).find('.layer-0').addClass("layer-0-" + state[direction]);
+                $('#fullpage').children().eq(index - 1).find('.layer-1').addClass("layer-1-" + state[direction]);
+                $('#fullpage').children().eq(index - 1).find('.layer-2').addClass("layer-2-" + state[direction]);
+                $('#fullpage').children().eq(nextIndex - 1).find('.layer-0').removeClass("layer-0-next layer-0-prev");
+                $('#fullpage').children().eq(nextIndex - 1).find('.layer-1').removeClass("layer-1-next layer-1-prev");
+                $('#fullpage').children().eq(nextIndex - 1).find('.layer-2').removeClass("layer-2-next layer-2-prev");
             }
         });
     });

@@ -1,22 +1,28 @@
 .gallery-container {
 	width: 100%;
 	background-color: white;
-	@media (min-width: 1000px) {
-		display: flex;
+	@media (min-width: 700px) {
+		display: block;
 		height: 100vh;
 		overflow-y: hidden;
+	}
+	@media (min-width: 1000px) {
+		display: flex;
 	}
 }
 
 .gallery {
-	width: 40%;
-	display: flex;
-	flex-wrap: wrap;
-	margin: auto;
-	position: relative;
-	justify-content: space-around;
-	max-height: 100%;
-	overflow-y: auto;
+	@media (min-width: 700px) {
+		display: flex;
+		flex-wrap: wrap;
+		margin: auto;
+		position: relative;
+		overflow-y: auto;
+	}
+	@media (min-width: 1000px) {
+		width: 40%;
+		max-height: 100%;
+	}
 }
 
 .viewport-container {
@@ -25,6 +31,12 @@
 	width: 100%;
 	left: 0;
 	z-index: -1;
+	@media (min-width: 700px) {
+		position: relative;
+		width: 100%;
+		height: 50%;
+		z-index: 1;
+	}
 	@media (min-width: 1000px) {
 		position: relative;
 		width: 60%;
@@ -37,6 +49,9 @@
 	padding: 60px;
 	box-sizing: border-box;
 	display: grid;
+	@media (min-width: 700px) {
+		height: 100%;
+	}
 	@media (min-width: 1000px) {
 		height: auto;
 		.viewport-description {
@@ -57,6 +72,9 @@
 .viewport img {
 	transform-origin: 0 0;
 	will-change: transform;
+	@media (min-width: 700px) {
+		height: 100%;
+	}
 	@media (min-width: 1000px) {
 		height: 350px;
 	}
@@ -69,7 +87,7 @@
 	font-size: 40px;
 	margin: 20px;
 	z-index: 99;
-	@media (min-width: 1000px) {
+	@media (min-width: 700px) {
 		display: none;
 	}
 }

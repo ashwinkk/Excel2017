@@ -1,3 +1,4 @@
+/*container styles*/
 .inline-container {
 	margin-left: 70px;
 }
@@ -12,38 +13,6 @@
 .header-image img {
 	width: 100%;
 }
-.parallax-trial {
-	position: absolute;
-	transition: transform 0.5s;
-}
-
-.parallax-layer-0 {
-	transition: transform 1s;
-	transform: translateY(100%);
-	/*transition-delay: 0.5s;*/
-}
-.parallax-layer-1 {
-	transform: translateY(100%);
-	left: -20px;
-	position: relative;
-	transition: transform 0.8s;
-	/*transition-delay: 0.s;*/
-}
-.parallax-layer-2 {
-	width: 500px;
-}
-.next {
-	transform: translateY(100%);
-}
-.active {
-	transform: translateY(0%) !important;
-}
-.prev {
-	transform: translateY(-100%);
-}
-.parallax {
-	width: 500px;
-}
 #root {
 	overflow: auto !important;
 	overflow-x: hidden;
@@ -54,4 +23,117 @@
 #fullpage {
 	position: absolute !important;
 	top: 0;
+}
+
+/*element positioning*/
+.cloud-header {
+	position: absolute;
+	top: 0;
+}
+.cloud-2 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.cloud-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	z-index: 3;
+}
+.cloud-3 {
+	bottom: 10%;
+	width: 300px;
+	position: absolute;
+}
+.tree-upper {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.tree-mid {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 100%;
+}
+
+.owl-mid {
+	width: 500px;
+	position: absolute;
+	top: 25%;
+	background-image: url("/static/anim-assets/branch1.png");
+	animation-name: owl-micro;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	right: 0;
+}
+.tree-low {
+	width: 100%;
+	top: 0%;
+	position: absolute;
+}
+.calender {
+	top: 250px;
+	width: 50%;
+	animation-name: swing;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	left: 50%;
+	animation-timing-function: ease-in-out;
+	transform-origin: 50% 0;
+	position: absolute;
+}
+@keyframes swing {
+	0% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+@keyframes owl-micro {
+	0% {
+		background-image: url("/static/anim-assets/branch1.png");
+	}
+	80% {
+		background-image: url("/static/anim-assets/branch1.png");
+	}
+	100% {
+		background-image: url("/static/anim-assets/branch2.png");
+	}
+}
+
+/*parallax-styling*/
+.layer-0,
+.layer-1,
+.layer-2 {
+	transition: transform 1.2s;
+}
+.layer-0-prev {
+	transform: translateY(-50px);
+}
+.layer-1-prev {
+	transform: translateY(-200px);
+}
+.layer-2-prev {
+	transform: translateY(-400px);
+}
+
+.layer-0-next {
+	transform: translateY(50px);
+}
+.layer-1-next {
+	transform: translateY(200px);
+}
+.layer-2-next {
+	transform: translateY(400px);
 }

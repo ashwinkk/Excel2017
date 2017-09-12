@@ -24,7 +24,8 @@ class Gallery extends React.Component {
 			viewPort: {},
 			selectedImage: "",
 			selectedIndex: 0,
-			pos: 0
+			pos: 0,
+			unitWidth: 0
 		};
 		this.prevWidth = 0;
 		this.pos = 0;
@@ -34,6 +35,7 @@ class Gallery extends React.Component {
 		this.handleClose = this.handleClose.bind(this);
 		this.collectWidth = this.collectWidth.bind(this);
 		this.slideShow = this.slideShow.bind(this);
+		this.setWidths = this.setWidths.bind(this);
 	}
 
 	componentWillMount() {
@@ -55,7 +57,26 @@ class Gallery extends React.Component {
 		});
 	}
 
+	setWidths() {
+		let competitionsContainer = ReactDOM.findDOMNode(this.refs["gallery"]);
+		if (competitionsContainer === null) return;
+		let width = competitionsContainer.getBoundingClientRect().width,
+			rowNum = 0,
+			scrollBar = 0;
+		if (window.innerWidth > 1000) {
+			scrollBar = 12;
+		}
+		if (window.innerWidth > 700) {
+			rowNum = 3;
+		} else if (window.innerWidth > 300) {
+			rowNum = 3;
+		}
+		width -= scrollBar;
+		this.setState({ unitWidth: Math.floor(width / rowNum) });
+	}
+
 	componentDidMount() {
+		this.setWidths();
 		if (window.innerWidth > 800)
 			this.interval = setInterval(this.slideShow, 4000);
 		// let height = document.getElementById("gallery-container").offsetHeight;
@@ -202,6 +223,7 @@ class Gallery extends React.Component {
 				<GalleryThumbnail
 					key={index}
 					url={link.url}
+					style={{ width: this.state.unitWidth, height: this.state.unitWidth }}
 					onClick={e => this.imageView(e, index)}
 				/>
 			);
@@ -217,7 +239,9 @@ class Gallery extends React.Component {
 					onClose={this.handleClose}
 					imageStyle={this.state.imageStyle}
 				/>
-				<div className="gallery">{images}</div>
+				<div className="gallery" ref="gallery">
+					{images}
+				</div>
 			</div>
 		);
 	}
