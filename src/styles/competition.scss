@@ -61,7 +61,6 @@
 .competitions-container {
 	display: flex;
 	flex-wrap: wrap;
-	overflow: hidden;
 	img {
 		width: 200px;
 		margin: 20px auto;
@@ -98,6 +97,7 @@
 	height: 300px;
 	width: 300px;
 	transition: transform 0.1s;
+	transform: scale(0.5);
 }
 
 .theCube {
