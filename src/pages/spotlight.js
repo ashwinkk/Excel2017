@@ -25,7 +25,7 @@ class Spotlight extends React.Component {
 		let spotlight = nextProps.spotlight.map((obj, i) => (
 			<SpotlightCard
 				title={obj.title}
-				key={obj.id}
+				id={obj.id}
 				overview={`${obj.overview.substr(0, 200).trim()}...`}
 				thumbnail={obj.thumbnail}
 				bgcolor={obj.bgcolor}
@@ -39,7 +39,7 @@ class Spotlight extends React.Component {
 	}
 	render() {
 		return (
-			<div className="spotlight-container" style={{ textAlign: "center" }}>
+			<div className="spotlight-container" style={{ textAlign: "left" }}>
 				{this.state.spotlight}
 			</div>
 		);

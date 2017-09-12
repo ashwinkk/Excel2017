@@ -39,7 +39,7 @@ class Events extends React.Component {
 	}
 	render() {
 		return (
-			<div className="spotlight-container" style={{ textAlign: "center" }}>
+			<div className="spotlight-container" style={{ textAlign: "left" }}>
 				{this.state.events}
 			</div>
 		);
@@ -47,4 +47,3 @@ class Events extends React.Component {
 }
 
 export default Events;
-
