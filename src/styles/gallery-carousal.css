@@ -1,0 +1,18 @@
+.slider-container{
+    margin-left: 5px;
+}
+
+.slider-image{
+    height: 400px;
+    margin: 0 auto;
+}
+
+.slider-desc{
+    text-align: center;
+}
+
+@media (max-width:967px){
+    .slider-container{
+        margin: 0 10px;
+    }
+}

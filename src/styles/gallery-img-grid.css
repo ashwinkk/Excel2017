@@ -1,0 +1,26 @@
+.grid-img img{
+    display: block;
+    padding: 5px;
+    height: 80px;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+.gallery-grid-container{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+@media (min-width:967px){
+    .gallery-grid-container{
+        position: fixed;
+        padding-right: 15px; 
+    }
+}
+
+@media (max-width:967px){
+    .grid-img img{
+        height: 60px;
+    }
+}
