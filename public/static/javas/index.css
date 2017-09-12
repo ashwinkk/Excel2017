@@ -4,6 +4,7 @@
 }
 .section {
 	position: relative;
+	overflow: hidden;
 }
 .header-image {
 	position: absolute;
@@ -32,19 +33,27 @@
 }
 .cloud-2 {
 	position: absolute;
-	bottom: 0;
+	bottom: -8%;
+	width: 42%;
 	right: 0;
 }
 .cloud-footer {
 	position: absolute;
-	bottom: 0;
+	bottom: -1%;
 	width: 100%;
 	left: 0;
 	z-index: 3;
 }
 .cloud-3 {
-	bottom: 10%;
-	width: 300px;
+	bottom: -1%;
+	right: 0%;
+	width: 77%;
+	position: absolute;
+}
+.cloud-4{
+	bottom: -1%;
+	left: 0%;
+	width: 32%;
 	position: absolute;
 }
 .tree-upper {
