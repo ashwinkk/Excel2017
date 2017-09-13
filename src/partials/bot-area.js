@@ -58,10 +58,12 @@ class BotChat extends React.Component {
 			typed: ""
 		});
 		//TODO:  Trigger this after the api call is made
-		setTimeout(this.props.resetTranscript, 2000);
+		setTimeout(() => {
+			this.props.resetTranscript;
+			this.props.dispatch(fetchReply(text));
+		}, 2000);
 
 		//TODO: make the API calls here and update the state
-		this.props.dispatch(fetchReply(text));
 		let area = ReactDOM.findDOMNode(this.refs["text-area"]);
 		area.classList.add("text-area-exit");
 		setTimeout(() => {
@@ -91,6 +93,9 @@ class BotChat extends React.Component {
 		// 	this.props.resetTranscript();
 		// }
 		let displayQuery = this.state.something;
+		let displayText = this.props.replyText.response === undefined;
+		if (this.props.replyText.response === undefined)
+			return <Redirect to={`/`} />;
 		return (
 			<div className={className}>
 				<div className="bot-chat">
