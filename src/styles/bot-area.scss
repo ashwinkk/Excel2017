@@ -74,9 +74,16 @@ div#wave {
 	}
 }
 
-
-.listen-btn{
+.listen-btn {
 	border-radius: 50%;
 	border: 2px solid #000;
 	height: 30px;
+}
+
+.text-input {
+	position: absolute;
+	display: flex;
+	left: 50%;
+	top: 70%;
+	transform: translateX(-50%);
 }
