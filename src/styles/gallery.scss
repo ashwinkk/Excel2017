@@ -74,6 +74,7 @@
 .viewport img {
 	transform-origin: 0 0;
 	will-change: transform;
+	height: 300px;
 	@media (min-width: 700px) {
 		height: 100%;
 	}

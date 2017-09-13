@@ -1,9 +1,12 @@
 [
 	{
-		"url": "/static/gallery/3eye.png"
+		"url": "/static/gallery/3eye.png",
+		"desc": "some desc"
 	},
 	{
-		"url": "/static/gallery/22.jpg"
+		"url": "/static/gallery/22.jpg",
+		"desc": "some desc"
+		
 	},
 	{
 		"url": "/static/gallery/23.jpg"

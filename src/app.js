@@ -5,7 +5,7 @@ import Competitions from "./pages/competitions";
 import CompetitionDetail from "./pages/competition-detail";
 import WorkshopDetail from "./pages/workshop-detail";
 import Summit from "./pages/summit.js";
-import Gallery from "./pages/gallery.js";
+import Gallery from "./pages/gallery1";
 import Navbar from "./partials/navbar";
 import ComingSoon from "./pages/coming-soon";
 import Spotlight from "./pages/spotlight";

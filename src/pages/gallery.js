@@ -154,7 +154,7 @@ class Gallery extends React.Component {
 		} else {
 			if (this.props.images.length - 1 === index) index = -1;
 			this.setState({ selectedImage: element.src, selectedIndex: index + 1 });
-			setInterval(this.slideShow, 4000);
+			setInterval(this.slideShow, 9000);
 		}
 	}
 
