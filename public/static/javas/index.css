@@ -188,24 +188,28 @@
 	color: rgba(256,256,256,0.9);
 }
 	.sec-3-container>h1{
+		font-weight: 900;
 		color: rgb(256,256,256);
 		color: rgba(256,256,256,0.9);
 	}
-@media (max-width: 700px){
-	.sec-3-container{
-		line-height: 24px;
-		font-size: 14px;
-		color: rgba(0,0,0,0.6);
-	}
-		.sec-3-container>h1{
-		color: rgba(0,0,0,0.6);
-		}
-}
+
 @media (max-width: 400px){
 	.sec-3-container{
-		line-height: 25px;
-		font-size: 15px;
+		line-height: 20px;
+		font-size: 14px;
+		position: relative;
+		top: 20px;
 	}
+	.sec-3-first{
+		width:60%;
+	}
+		.sec-3-container>h1{
+		font-size: 20px;
+		font-weight: 900;
+		}
+		.sec-3-none{
+			display: none;
+		}
 }
 @keyframes swing {
 	0% {
