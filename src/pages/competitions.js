@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Select from "react-select";
 import { connect } from "react-redux";
 import queryString from "query-string";
+import LogoBar from "../partials/logo-bar";
 
 import "react-select/dist/react-select.css";
 import { fetchCompetitions } from "../actions/competition-actions";
@@ -214,6 +215,7 @@ class Competitions extends Component {
 		];
 		return (
 			<div className="competitions-page">
+				<LogoBar />
 				<div className="filters">
 					<div className="page-head">
 						<h2

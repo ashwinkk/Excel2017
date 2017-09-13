@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import EventTabs from "../partials/event-tabs";
+import LogoBar from "../partials/logo-bar";
 import { getObjectFromStore } from "../helpers/excel2017";
 import { fetchCompetitions } from "../actions/competition-actions";
 
@@ -69,7 +70,11 @@ class CompetitionDetail extends React.Component {
 		let textTransition = this.state.renderElements ? 1 : 0;
 		return (
 			<div className="competition-container">
-				<img src={this.competition.cover} className={transitionClassCover} />
+				<LogoBar />
+				<img
+					src={this.competition.cover}
+					className={`cover-img ${transitionClassCover}`}
+				/>
 				<h2 style={{ opacity: textTransition }}>{this.competition.name}</h2>
 				<h3 className="container" style={{ opacity: textTransition }}>
 					Prize pool: {this.competition.prize_pool}

@@ -187,9 +187,30 @@
 	.mec-logo {
 		width: 100px;
 	}
+}
+@media (max-width: 700px) {
+	.plane-layer {
+		width: 200px;
+		left: 50%;
+		margin-left: -100px;
+	}
+	.tree-mid {
+		height: 100%;
+		width: auto;
+		transform: translate(-25%);
+	}
+	.tree-low {
+		height: 100%;
+		transform: translateX(-50%);
+		width: auto;
+	}
 	.owl-mid {
 		width: 300px;
 		height: 300px;
+		top: 0;
+	}
+	.owl-mid .calender {
+		top: 150px;
 	}
 }
 @media (min-width: 700px) {
@@ -203,7 +224,7 @@
 		height: 500px;
 	}
 	.excel-logo {
-		width: 200px;
+		width: 150px;
 	}
 	.mec-logo {
 		width: 150px;

@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import { fetchEvent } from "../actions/event-actions";
 import EventCard from "../partials/event-card.js";
+import LogoBar from "../partials/logo-bar";
 
 import "../styles/workshop-detail.css";
 
@@ -54,6 +55,7 @@ class Events extends React.Component {
 		));
 		return (
 			<div className="spotlight-container" style={{ textAlign: "left" }}>
+				<LogoBar />
 				{events}
 			</div>
 		);
