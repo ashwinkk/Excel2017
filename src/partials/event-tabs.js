@@ -231,8 +231,13 @@ class EventTabs extends React.Component {
 				</p>
 			);
 		});
+		let transitionVal = this.props.render ? 0 : 50;
 		return (
-			<div className="tab-container-main" ref="tab-container-main">
+			<div
+				className="tab-container-main"
+				ref="tab-container-main"
+				style={{ transform: `translateY(${transitionVal}%)` }}
+			>
 				<div
 					className="tab-container "
 					ref="tab-container"

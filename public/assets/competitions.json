@@ -2,7 +2,8 @@
 	{
 		"_id": "599c6cd5bd5e5600110f9a4b",
 		"id": "techathon",
-		"category": "Electronics",
+		"category": "EC",
+		"type": "off",
 		"buttons": [
 			{
 				"name": "Register",
@@ -27,7 +28,8 @@
 	{
 		"_id": "59a814b5ed376300113a6f54",
 		"id": "papyrus-of-ani",
-		"category": "General",
+		"category": "GE",
+		"type": "off",
 		"name": "Papyrus of Ani",
 		"color": "#673AB7",
 		"buttons": [

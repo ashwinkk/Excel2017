@@ -139,21 +139,34 @@
 	.left > div,
 	.right > div {
 		position: relative;
-		margin: 35px auto;
+		margin: 10px auto;
+		padding: 15px 0px;
 	}
 	.left > div:hover .nav-text,
 	.right > div:hover .nav-text {
 		opacity: 1;
-		transform: translateX(5px);
+		transform: translate(0%, 0%);
 	}
 	.nav-text {
 		position: absolute;
 		z-index: -1;
+		height: 100%;
+		top: 0;
+		background-color: rgba(255, 255, 255, 0.7);
 		left: 100%;
-		transform: translateX(-100%);
+		transform: translate(-100%, 0%);
 		opacity: 0;
 		will-change: transform;
 		transition: transform 0.3s, opacity 0.3s;
+		border-bottom-right-radius: 20px;
+		border-top-right-radius: 2px;
+	}
+	.nav-text a {
+		top: 25%;
+		position: relative;
+		padding-left: 10px;
+		padding-right: 10px;
+		transform: translate(0, -50%);
 	}
 }
 

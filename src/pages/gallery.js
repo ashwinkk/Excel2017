@@ -23,87 +23,139 @@ class Gallery extends React.Component {
 			render: false,
 			viewPort: {},
 			selectedImage: "",
-			pos: 0
+			selectedIndex: 0,
+			pos: 0,
+			unitWidth: 0
 		};
 		this.prevWidth = 0;
 		this.pos = 0;
 		this.thumbnails = [];
+		this.selectedIndex = -1;
 		this.imageView = this.imageView.bind(this);
 		this.handleClose = this.handleClose.bind(this);
 		this.collectWidth = this.collectWidth.bind(this);
+		this.slideShow = this.slideShow.bind(this);
+		this.setWidths = this.setWidths.bind(this);
 	}
 
 	componentWillMount() {
 		this.props.dispatch(fetchImages());
 	}
 
-	componentDidMount() {
-		let height = document.getElementById("gallery-container").offsetHeight;
-		console.log(height);
-		if (window.innerWidth > 1000) {
-			this.unitHeight = height / 6;
-			console.log("something");
-		} else {
-			this.unitHeight = height / 3;
-		}
-		this.setState({ renderPosition: true });
+	componentWillUnMount() {
+		clearInterval(this.interval);
 	}
 
-	imageView(e) {
-		let element = e.target;
-		let elem = document.getElementById("viewport-image");
-		elem.src = element.src;
-		this.thumbPosition = element.getBoundingClientRect();
-		let viewPosition = elem.getBoundingClientRect();
-		let orientation =
-			window.innerWidth - viewPosition.width <
-			window.innerHeight - viewPosition.height
-				? "landscape"
-				: "portrait";
-		if (!elem.classList.contains(orientation)) {
-			elem.classList.remove("landscape", "portrait");
-			elem.classList.add(orientation);
+	slideShow() {
+		let update =
+			this.state.selectedIndex === this.props.images.length - 1
+				? 0
+				: this.state.selectedIndex + 1;
+		this.setState({
+			selectedImage: this.props.images[this.state.selectedIndex].url,
+			selectedIndex: update
+		});
+	}
+
+	setWidths() {
+		let competitionsContainer = ReactDOM.findDOMNode(this.refs["gallery"]);
+		if (competitionsContainer === null) return;
+		let width = competitionsContainer.getBoundingClientRect().width,
+			rowNum = 0,
+			scrollBar = 0;
+		if (window.innerWidth > 700) {
+			scrollBar = 12;
 		}
-		viewPosition = elem.getBoundingClientRect();
-		this.scale = this.thumbPosition.height / viewPosition.height;
-		this.setState((prevState, props) => {
-			return {
-				...prevState,
-				imageStyle: {
-					transform:
-						"translate(" +
-						(this.thumbPosition.left - viewPosition.left) +
-						"px," +
-						(this.thumbPosition.top - viewPosition.top) +
-						"px)scale(" +
-						this.scale +
-						")"
-				}
-			};
-		});
-		let animatedStyle = "";
-		this.setState((prevState, props) => {
-			return {
-				...prevState,
-				viewPort: {
-					zIndex: 1
-				}
-			};
-		});
-		setTimeout(() => {
+		if (window.innerWidth > 700) {
+			rowNum = 3;
+		} else if (window.innerWidth > 300) {
+			rowNum = 3;
+		}
+		width -= scrollBar;
+		this.setState({ unitWidth: Math.floor(width / rowNum) });
+	}
+
+	componentDidMount() {
+		this.setWidths();
+		if (window.innerWidth > 800)
+			this.interval = setInterval(this.slideShow, 4000);
+		// let height = document.getElementById("gallery-container").offsetHeight;
+		// console.log(height);
+		// if (window.innerWidth > 1000) {
+		// 	this.unitHeight = height / 6;
+		// 	console.log("something");
+		// } else {
+		// 	this.unitHeight = height / 3;
+		// }
+		// this.setState({ renderPosition: true });
+	}
+
+	imageView(e, index) {
+		let viewportContainer = ReactDOM.findDOMNode(
+			this.refs["viewport-container"]
+		);
+		console.log(viewportContainer);
+		let element = e.target;
+		clearInterval(this.interval);
+		let elem = document.getElementById("viewport-image");
+		if (window.innerWidth < 600) {
+			elem.src = element.src;
+			this.thumbPosition = element.getBoundingClientRect();
+			let viewPosition = elem.getBoundingClientRect();
+			let orientation =
+				window.innerWidth - viewPosition.width <
+				window.innerHeight - viewPosition.height
+					? "landscape"
+					: "portrait";
+			if (!elem.classList.contains(orientation)) {
+				elem.classList.remove("landscape", "portrait");
+				elem.classList.add(orientation);
+			}
+			viewPosition = elem.getBoundingClientRect();
+			this.scale = this.thumbPosition.height / viewPosition.height;
 			this.setState((prevState, props) => {
-				this.viewPosition = document
-					.getElementById("viewport-image")
-					.getBoundingClientRect();
 				return {
 					...prevState,
 					imageStyle: {
-						transition: "all 0.5s",
-						transform: "translate(0,0)scale(1)"
+						transform:
+							"translate(" +
+							(this.thumbPosition.left - viewPosition.left) +
+							"px," +
+							(this.thumbPosition.top - viewPosition.top) +
+							"px)scale(" +
+							this.scale +
+							")"
 					}
 				};
 			});
-		}, 100);
+			let animatedStyle = "";
+			this.setState((prevState, props) => {
+				return {
+					...prevState,
+					viewPort: {
+						zIndex: 1
+					}
+				};
+			});
+			setTimeout(() => {
+				this.setState((prevState, props) => {
+					this.viewPosition = document
+						.getElementById("viewport-image")
+						.getBoundingClientRect();
+					return {
+						...prevState,
+						imageStyle: {
+							transition: "all 0.5s",
+							transform: "translate(0,0)scale(1)"
+						}
+					};
+				});
+			}, 100);
+		} else {
+			if (this.props.images.length - 1 === index) index = -1;
+			this.setState({ selectedImage: element.src, selectedIndex: index + 1 });
+			setInterval(this.slideShow, 4000);
+		}
 	}
 
 	handleClose() {
@@ -162,65 +214,97 @@ class Gallery extends React.Component {
 	}
 
 	render() {
-		return <Redirect to="/under-construction" />;
 		if (this.props.fetching) {
 			return <h1>Loading....</h1>;
 		}
 		let pos = 0;
-		console.log(this.unitHeight);
 		let images = this.props.images.map((link, index) => {
-			let styleCSS = {};
-			if (this.state.renderPosition) {
-				styleCSS = {
-					left: pos,
-					width: this.unitHeight,
-					height: this.unitHeight
-				};
-				pos += this.unitHeight;
-			}
-
 			let thumb = (
 				<GalleryThumbnail
 					key={index}
 					url={link.url}
-					onClick={this.imageView}
-					style={styleCSS}
+					style={{ width: this.state.unitWidth, height: this.state.unitWidth }}
+					onClick={e => this.imageView(e, index)}
 				/>
 			);
 			return thumb;
 		});
 		return (
-			<div
-				className="gallery-container"
-				id="gallery-container"
-				style={{ width: pos }}
-			>
-				<div className="gallery">
-					{images}
-				</div>
+			<div className="gallery-container" id="gallery-container">
 				<ViewPort
+					ref="viewport-container"
 					src={this.state.selectedImage}
 					alt={this.state.selectedImage}
 					style={this.state.viewPort}
 					onClose={this.handleClose}
 					imageStyle={this.state.imageStyle}
 				/>
+				<div className="gallery" ref="gallery">
+					{images}
+				</div>
 			</div>
 		);
 	}
 }
 
-function ViewPort(props) {
-	return (
-		<div className="viewport-container" style={props.style}>
-			<div className="viewport">
-				<img id="viewport-image" src={props.src} style={props.imageStyle} />
+function GridRight(props) {}
+
+class ViewPort extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			imageSrc: ""
+		};
+	}
+	componentWillReceiveProps(nextProps) {
+		let viewportImage = ReactDOM.findDOMNode(this.refs["viewport-image"]);
+		let viewportDescription = ReactDOM.findDOMNode(
+			this.refs["viewport-description"]
+		);
+		viewportImage.classList.add("animate-exit");
+		viewportDescription.classList.add("animate-exit");
+		setTimeout(() => {
+			viewportImage.style.transition = "none";
+			viewportDescription.style.transitionProperty = "none";
+			viewportImage.classList.remove("animate-exit");
+			viewportDescription.classList.remove("animate-exit");
+			// elem.src = element.src;
+			this.setState({ imageSrc: nextProps.src });
+			viewportImage.classList.add("animate-entry");
+			viewportDescription.classList.add("animate-entry");
+		}, 500);
+		setTimeout(() => {
+			viewportImage.style.transition = "opacity 0.3s, transform 0.3s";
+			viewportDescription.style.transitionProperty = "opacity, transform";
+			viewportImage.classList.remove("animate-entry");
+			viewportDescription.classList.remove("animate-entry");
+		}, 600);
+	}
+	render() {
+		return (
+			<div
+				className="viewport-container"
+				style={this.props.style}
+				ref="viewport-container"
+			>
+				<div className="viewport">
+					<img
+						id="viewport-image"
+						src={this.state.imageSrc}
+						style={this.props.imageStyle}
+						alt={this.props.src}
+						ref="viewport-image"
+					/>
+					<div className="viewport-description" ref="viewport-description">
+						<p>{this.props.src}</p>
+					</div>
+				</div>
+				<div className="close-button">
+					<span onClick={this.props.onClose}>&times;</span>
+				</div>
 			</div>
-			<div className="close-button">
-				<span onClick={props.onClose}>&times;</span>
-			</div>
-		</div>
-	);
+		);
+	}
 }
 
 export default Gallery;

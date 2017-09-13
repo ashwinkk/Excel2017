@@ -2,6 +2,15 @@
 	width: 50%;
 	padding: 20px;
 	display: inline-block;
+	height: 310px;
+	vertical-align: top;
+	transform: translateY(50%);
+	opacity: 0;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.spotlight-box-container {
+	display: inline-block;
 }
 
 .spotlight-card-left {
@@ -16,12 +25,14 @@
 	display: inline-block;
 	text-align: right;
 	width: 50%;
+	color: white;
 	vertical-align: middle;
 	padding: 10px;
 }
 
 .spotlight-card-thumbnail {
-	height: 250px;
+	max-height: 250px;
+	max-width: 70%;
 }
 
 .spotlight-card-title {
@@ -40,10 +51,19 @@
 	display: block;
 	padding: 10px;
 	text-align: center;
-	border: solid 1px;
+	border: solid 2px white;
+	border-radius: 30px;
+	color: white !important;
+	font-weight: 600;
 	width: 150px;
 	margin: auto;
 	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+.spotlight-card-register:hover {
+	background: white;
+	color: black !important;
 }
 
 @media screen and (max-width: 1080px) {
@@ -53,6 +73,9 @@
 }
 
 @media screen and (max-width: 650px) and (orientation: portrait) {
+	.spotlight-card {
+		height: auto;
+	}
 	.spotlight-card-left {
 		width: 100%;
 	}

@@ -4,28 +4,34 @@
     .competition-container .titles-container {
       min-height: calc(100vh - 60px); } }
 
-.competition-container img {
+.competition-container img.cover-img {
+  transition: transform 0.5s;
   display: block;
   margin: 50px auto 60px auto;
-  width: 200px; }
+  width: 200px;
+  opacity: 0; }
   @media (min-width: 600px) {
-    .competition-container img {
+    .competition-container img.cover-img {
       width: 250px; } }
 
 .competition-container h2 {
   margin: 20px auto;
-  text-align: center; }
+  text-align: center;
+  transition: opacity 0.5s; }
 
 .competition-container h3 {
   margin: 20px auto;
-  text-align: center; }
+  text-align: center;
+  transition: opacity 0.5s; }
 
 .competition-container h4 {
-  color: #333; }
+  color: #333;
+  transition: opacity 0.5s; }
 
 .competition-container .button-container {
   width: 100%;
   display: flex;
+  transition: opacity 0.5s;
   justify-content: space-around;
   flex-wrap: wrap; }
   @media (min-width: 600px) {
@@ -35,7 +41,7 @@
 
 @media (min-width: 600px) {
   .competition-container {
-    margin-top: 100px; } }
+    margin-top: 0px; } }
 
 ul li p {
   color: black; }
@@ -53,3 +59,17 @@ ul li p {
   color: rgba(0, 0, 0, 0.7);
   width: 150px;
   transition: box-shadow 0.1s; }
+
+.animate-bounce {
+  opacity: 1 !important;
+  animation: bounce 0.5s; }
+
+@keyframes bounce {
+  0% {
+    transform: scale(0); }
+  80% {
+    transform: scale(1.1); }
+  98% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1); } }

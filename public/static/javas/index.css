@@ -1,0 +1,265 @@
+/*container styles*/
+.inline-container {
+	margin-left: 70px;
+}
+.section {
+	position: relative;
+	overflow: hidden;
+}
+.header-image {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.header-image img {
+	width: 100%;
+}
+#root {
+	overflow: auto !important;
+	overflow-x: hidden;
+	height: 100%;
+	overflow-y: auto !important;
+	position: relative;
+}
+#fullpage {
+	position: absolute !important;
+	top: 0;
+}
+
+.excel-logo {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	z-index: 99;
+}
+.mec-logo {
+	top: 10px;
+	position: absolute;
+	right: 10px;
+	width: 170px;
+}
+
+/*element positioning*/
+.cloud-header {
+	position: absolute;
+	top: 0;
+}
+.cloud-2 {
+	position: absolute;
+	bottom: -8%;
+	width: 42%;
+	right: 0;
+}
+.cloud-footer {
+	position: absolute;
+	bottom: -1%;
+	width: 100%;
+	left: 0;
+	z-index: 3;
+}
+.cloud-3 {
+	bottom: -1%;
+	right: 0%;
+	width: 77%;
+	position: absolute;
+}
+.cloud-4 {
+	bottom: -1%;
+	left: 0%;
+	width: 32%;
+	position: absolute;
+}
+.blur-branch {
+	left: 0%;
+	z-index: 99;
+	width: 400px;
+	position: absolute;
+	top: 40%;
+}
+.plane-layer {
+	position: absolute;
+	display: block;
+	margin: auto;
+	top: 30%;
+	left: calc(50% - 185px);
+	width: 90%;
+	max-width: 370px;
+	transform: rotate(0deg);
+	transform-origin: 100% 50%;
+	transition: transform 10s ease-in-out !important;
+	/*animation: plane 1.5s ease-in-out infinite;*/
+	/*transform: rotate(45deg) translate(-25%, -100%) scale(0.4);*/
+	animation: plane 2s ease-in-out infinite, flyIn 1.4s ease-in-out 1;
+}
+.plane-layer.layer-2-prev {
+	transform: translateY(-400px);
+}
+@keyframes plane {
+	0% {
+		transform: translateY(-10px);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(-10px);
+	}
+}
+@keyframes flyIn {
+	0% {
+		transform: rotate(45deg) translate(+25%, -25%) scale(0.4);
+	}
+	100% {
+		transform: none;
+	}
+}
+.tree-upper {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.tree-mid {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 100%;
+}
+
+.owl-mid {
+	width: 500px;
+	position: absolute;
+	top: 25%;
+	background-image: url("/static/anim-assets/branch1.png");
+	animation-name: owl-micro;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	right: 0;
+}
+.tree-low {
+	width: 100%;
+	top: 0%;
+	position: absolute;
+}
+.calender {
+	top: 250px;
+	width: 50%;
+	animation-name: swing;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	left: 50%;
+	animation-timing-function: ease-in-out;
+	transform-origin: 50% 0;
+	position: absolute;
+}
+@keyframes swing {
+	0% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);
+	}
+}
+@keyframes owl-micro {
+	0% {
+		background-image: url("/static/anim-assets/branch1.png");
+	}
+	80% {
+		background-image: url("/static/anim-assets/branch1.png");
+	}
+	100% {
+		background-image: url("/static/anim-assets/branch2.png");
+	}
+}
+@media (min-width: 300px) {
+	#fullpage {
+		margin-left: 0px;
+	}
+	.excel-logo {
+		width: 80px;
+	}
+	.mec-logo {
+		width: 100px;
+	}
+}
+@media (max-width: 700px) {
+	.plane-layer {
+		width: 200px;
+		left: 50%;
+		margin-left: -100px;
+	}
+	.tree-mid {
+		height: 100%;
+		width: auto;
+		transform: translate(-25%);
+	}
+	.tree-low {
+		height: 100%;
+		transform: translateX(-50%);
+		width: auto;
+	}
+	.owl-mid {
+		width: 300px;
+		height: 300px;
+		top: 0;
+	}
+	.owl-mid .calender {
+		top: 150px;
+	}
+}
+@media (min-width: 700px) {
+	#fullpage {
+		margin-left: 70px;
+	}
+}
+@media (min-width: 1000px) {
+	.owl-mid {
+		width: 500px;
+		height: 500px;
+	}
+	.excel-logo {
+		width: 150px;
+	}
+	.mec-logo {
+		width: 150px;
+	}
+}
+
+/*parallax-styling*/
+.layer-0,
+.layer-1,
+.layer-2,
+.layer-blur {
+	transition: transform 1.2s;
+}
+.layer-0-prev {
+	transform: translateY(-50px);
+}
+.layer-1-prev {
+	transform: translateY(-200px);
+}
+.layer-2-prev {
+	transform: translateY(-300px);
+}
+.layer-blur-prev {
+	transform: translateY(-1000px);
+}
+
+.layer-0-next {
+	transform: translateY(50px);
+}
+.layer-1-next {
+	transform: translateY(200px);
+}
+.layer-2-next {
+	transform: translateY(300px);
+}
+.layer-blur-next {
+	transform: translateY(1000px);
+}

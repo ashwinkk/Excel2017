@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import EventTabs from "../partials/event-tabs";
+import LogoBar from "../partials/logo-bar";
 import { getObjectFromStore } from "../helpers/excel2017";
 import { fetchCompetitions } from "../actions/competition-actions";
 
@@ -17,13 +18,27 @@ class CompetitionDetail extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			competition: {}
+			competition: {},
+			render: false,
+			renderElements: false,
+			mounted: false
 		};
 		this.getCompetition = this.getCompetition.bind(this);
+	}
+	componentDidMount() {
+		this.setState({ mounted: true });
 	}
 	componentWillMount() {
 		if (this.props.competitions.length === 0)
 			this.props.dispatch(fetchCompetitions());
+	}
+	componentDidUpdate() {
+		if (this.state.render === false) {
+			this.setState({ render: true });
+			setTimeout(() => {
+				this.setState({ renderElements: true });
+			}, 200);
+		}
 	}
 	getCompetition() {
 		const competitionId = this.props.match.params.type;
@@ -46,16 +61,32 @@ class CompetitionDetail extends React.Component {
 					</a>
 				);
 			});
+		let coverAnim = {
+			transform: `scale(${this.state.renderElements ? 1 : 0})`
+		};
+		let transitionClassCover = this.state.renderElements
+			? "animate-bounce"
+			: "";
+		let textTransition = this.state.renderElements ? 1 : 0;
 		return (
 			<div className="competition-container">
-				<img src={this.competition.cover} />
-				<h2>{this.competition.name}</h2>
-				<h3 className="container">Prize pool: {this.competition.prize_pool}</h3>
-				<div className="button-container">{buttons}</div>
+				<LogoBar />
+				<img
+					src={this.competition.cover}
+					className={`cover-img ${transitionClassCover}`}
+				/>
+				<h2 style={{ opacity: textTransition }}>{this.competition.name}</h2>
+				<h3 className="container" style={{ opacity: textTransition }}>
+					Prize pool: {this.competition.prize_pool}
+				</h3>
+				<div className="button-container" style={{ opacity: textTransition }}>
+					{buttons}
+				</div>
 
 				<EventTabs
 					tabLabels={["Description", "Event-Format", "Rules", "Contacts"]}
 					activeTab={index => index}
+					render={this.state.renderElements}
 				>
 					<div>{this.competition.description}</div>
 					<div>{this.competition.eventFormat}</div>
