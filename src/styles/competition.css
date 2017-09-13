@@ -40,6 +40,15 @@
       width: 25%;
       margin-left: 20px;
       margin-right: 20px; }
+  @media (max-width: 800px){
+    .filters{
+      height: 130px !important;
+      display: block !important;
+    }
+    .page-head .filter-list{
+      width: 100% !important;
+    }
+  }
 
 .competitions-container {
   display: flex;
