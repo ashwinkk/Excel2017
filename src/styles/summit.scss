@@ -70,10 +70,39 @@ table {
 			margin: auto;
 			display: block;
 			height: 300px;
-			margin-top: 150px;
 			@media (max-width: 600px) {
 				width: 100%;
 				height: unset;
+			}
+		}
+		img.sponsor{
+			width: 430px;
+			padding-right: 215px;
+			position: relative;
+			z-index: 1;
+			margin: auto;
+			display: block;
+			height: unset;
+			margin-top: 170px;
+			@media (max-width: 600px) {
+				width: 100%;
+				padding-right: 50%;
+				height: unset;
+			}
+		}
+		span{
+			display:block;
+			width: 430px;
+			padding-right: 200px;
+			position: relative;
+			left: 10px;
+			font-size: 20px;
+			font-weight: 100;
+			color: #ffffff;
+			margin: auto;
+			@media (max-width: 600px) {
+				width: 100%;
+				padding-right: 45%;
 			}
 		}
 	}

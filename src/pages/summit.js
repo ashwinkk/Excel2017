@@ -247,6 +247,8 @@ class Summit extends React.Component {
 				<div className="container-fluid cover">
 					<div className="overlay" />
 					<div className="container">
+						<img src="/static/sponsors/bosch.png" className="sponsor"/>
+						<span>presents</span>
 						<img src="/static/summit/ai.png" />
 					</div>
 				</div>

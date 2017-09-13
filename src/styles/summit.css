@@ -61,12 +61,39 @@ table {
       z-index: 1;
       margin: auto;
       display: block;
-      height: 300px;
-      margin-top: 150px; }
+      height: 300px; }
       @media (max-width: 600px) {
         .cover .container img {
           width: 100%;
           height: unset; } }
+    .cover .container img.sponsor {
+      width: 430px;
+      padding-right: 215px;
+      position: relative;
+      z-index: 1;
+      margin: auto;
+      display: block;
+      height: unset;
+      margin-top: 170px; }
+      @media (max-width: 600px) {
+        .cover .container img.sponsor {
+          width: 100%;
+          padding-right: 50%;
+          height: unset; } }
+    .cover .container span {
+      display: block;
+      width: 430px;
+      padding-right: 200px;
+      position: relative;
+      left: 10px;
+      font-size: 20px;
+      font-weight: 100;
+      color: #ffffff;
+      margin: auto; }
+      @media (max-width: 600px) {
+        .cover .container span {
+          width: 100%;
+          padding-right: 45%; } }
   .cover .overlay {
     background-color: rgba(10, 10, 10, 0.7);
     position: absolute;
