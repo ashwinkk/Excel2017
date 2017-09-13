@@ -1,7 +1,10 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import SpeechRecognition from "react-speech-recognition";
 import { FaMicrophone } from "react-icons/lib/fa";
+import { connect } from "react-redux";
 
+import { fetchReply } from "../actions/bot-actions.js";
 import "../styles/bot-area.css";
 
 const Dots = props => (
@@ -18,13 +21,19 @@ const Dots = props => (
 // 	</div>
 // );
 
+@connect(store => {
+	return {
+		replyText: store.bot.replyText
+	};
+})
 @SpeechRecognition({
 	autoStart: false
 })
 class BotChat extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { userText: "", useVoiceInput: false };
+		this.state = { userText: "", useVoiceInput: false, typed: "" };
+		this.handleChange = this.handleChange.bind(this);
 	}
 
 	componentDidMount() {
@@ -45,12 +54,25 @@ class BotChat extends React.Component {
 		console.log("speech:", text);
 		this.setState({
 			...this.state,
-			userText: text
+			userText: text,
+			typed: ""
 		});
 		//TODO:  Trigger this after the api call is made
 		setTimeout(this.props.resetTranscript, 2000);
 
 		//TODO: make the API calls here and update the state
+		this.props.dispatch(fetchReply(text));
+		let area = ReactDOM.findDOMNode(this.refs["text-area"]);
+		area.classList.add("text-area-exit");
+		setTimeout(() => {
+			area.classList.remove("text-area-exit");
+			area.classList.add("text-area-add");
+		}, 400);
+	}
+
+	handleChange(e) {
+		console.log(e.target.value);
+		this.setState({ typed: e.target.value });
 	}
 
 	render() {
@@ -72,10 +94,10 @@ class BotChat extends React.Component {
 		return (
 			<div className={className}>
 				<div className="bot-chat">
-					<div className="text-area">
+					<div className="text-area" ref="text-area">
 						<h3 className="text-center">How may I help you?</h3>
 						<h3>{this.state.userText}</h3>
-						<h3>{this.props.reply}</h3>
+						<h3>{this.props.replyText}</h3>
 					</div>
 					<div className="text-input">
 						{this.state.useVoiceInput && (
@@ -85,6 +107,8 @@ class BotChat extends React.Component {
 							type="text"
 							class="form-control"
 							placeholder="Search for..."
+							value={this.state.typed}
+							onChange={this.handleChange}
 							ref={e => (this.inputText = e)}
 						/>
 						<span className="input-group-btn">
