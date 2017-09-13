@@ -26,15 +26,20 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Excel 2017</title>
-    <style>
-
-    </style>
+    <script>
+        window.onload = function() {
+            $("#loader").fadeOut(500);
+        }
+    </script>
 </head>
 
 <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <div class="loader" id="loader">
+        <img src="/static/anim-assets/logo.png" alt="logo" />
+    </div>
     <div id="root"></div>
     <div class="inline-container" id="fullpage">
         <div class="section" style="background: lightblue;">
@@ -50,7 +55,7 @@
             <img class="layer-2 mec-logo" src="/static/anim-assets/mec_logo.png" />
         </div>
         <div class="section" style="background: lightblue;">
-            <div class="container">
+            <div class="container about-us">
                 <h2>About Us</h2>
                 <p>Excel, the nation’s second and South India’s first ever fest of its kind started in 2001 by the students of Govt. Model Engineering College with a motto, Inspire, Innovate, Engineer. Over the years, Excel has grown exponentially, consistently
                     playing host to some of the most talented students, the most illustrious speakers and the most reputed companies. Now gearing towards its 17th edition, Excel continues to excite the participants with its wide array of technical and
@@ -59,7 +64,7 @@
             <img class="tree-upper" src="/static/anim-assets/tree-upper.png" />
         </div>
         <div class="section" style="background: lightblue;">
-            <img class="blur-branch layer-blur" src="/static/anim-assets/blurbranch.png" />
+            <img class="blur-branch layer-blur layer-blur-next" src="/static/anim-assets/leaves.png" />
             <img class="tree-mid" src="/static/anim-assets/tree-mid.png" />
             <div class="layer-2 layer-2-next owl-mid">
                 <img class="calender" src="/static/anim-assets/calendar.png" />
@@ -67,7 +72,41 @@
         </div>
         <div class="section" style="background: lightblue;">
             <img class="tree-low" src="/static/anim-assets/tree-lower.png" />
+            <div class="bottom-content">
+                <div class="footer">
+                    <h2>Legacy</h2>
+                    <div class="parts legacy-part">
+                        <ul class="legacy">
+                            <li id="e2016">
+                                <a href="http://excelmec.org/excel2016/" target="_blank">
+                                    <img src="/static/anim-assets/2016.png" alt="excel-logo">
+                                </a>
+                                <div class="tooltip">
+                                    Excel 2016
+                                </div>
+                            </li>
+                            <li id="e2015">
+                                <a href="http://www.excelmec.org/excel2015/" target="_blank">
+                                    <img src="http://excelmec.org/excel2016/images/legacy/excel15.png" alt="excel-logo">
+                                </a>
+                                <div class="tooltip">
+                                    Excel 2015
+                                </div>
+                            </li>
+                            <li id="e2014">
+                                <a href="http://www.excelmec.org/excel2014/" target="_blank">
+                                    <img src="http://excelmec.org/excel2016/images/legacy/excel14.png" alt="excel-logo">
+                                </a>
+                                <div class="tooltip">
+                                    Excel 2014
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
     <!--
       This HTML file is a template.

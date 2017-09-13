@@ -1,7 +1,8 @@
 const navbarReducer = (
 	state = {
 		fontColor: "black",
-		backgroundColor: "white"
+		backgroundColor: "white",
+		showLoader: false
 	},
 	action
 ) => {
@@ -17,6 +18,16 @@ const navbarReducer = (
 				...state,
 				fontColor: "black",
 				backgroundColor: "white"
+			};
+		case "SHOW_LOADER":
+			return {
+				...state,
+				showLoader: true
+			};
+		case "HIDE_LOADER":
+			return {
+				...state,
+				showLoader: false
 			};
 		default:
 			return state;

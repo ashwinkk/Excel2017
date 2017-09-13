@@ -156,6 +156,7 @@
 		left: 100%;
 		transform: translate(-100%, 0%);
 		opacity: 0;
+		color: black;
 		will-change: transform;
 		transition: transform 0.3s, opacity 0.3s;
 		border-bottom-right-radius: 20px;

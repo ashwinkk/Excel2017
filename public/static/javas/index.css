@@ -12,7 +12,6 @@
 	width: 100%;
 }
 .header-image img {
-	width: 100%;
 }
 #root {
 	overflow: auto !important;
@@ -33,7 +32,7 @@
 	z-index: 99;
 }
 .mec-logo {
-	top: 10px;
+	top: 5px;
 	position: absolute;
 	right: 10px;
 	width: 170px;
@@ -72,9 +71,7 @@
 .blur-branch {
 	left: 0%;
 	z-index: 99;
-	width: 400px;
 	position: absolute;
-	top: 40%;
 }
 .plane-layer {
 	position: absolute;
@@ -212,6 +209,19 @@
 	.owl-mid .calender {
 		top: 150px;
 	}
+	.tree-upper {
+		width: auto;
+		transform: translateX(-50%);
+		height: 100%;
+	}
+	.cloud-header {
+		height: 130px;
+		width: auto;
+	}
+	.blur-branch {
+		bottom: 0;
+		width: 150px;
+	}
 }
 @media (min-width: 700px) {
 	#fullpage {
@@ -229,14 +239,24 @@
 	.mec-logo {
 		width: 150px;
 	}
+	.cloud-header {
+		width: 100%;
+		height: auto;
+	}
+	.blur-branch {
+		width: 350px;
+		top: 40%;
+	}
 }
 
 /*parallax-styling*/
 .layer-0,
 .layer-1,
-.layer-2,
-.layer-blur {
+.layer-2 {
 	transition: transform 1.2s;
+}
+.layer-blur {
+	transition: transform 1s;
 }
 .layer-0-prev {
 	transform: translateY(-50px);
@@ -262,4 +282,149 @@
 }
 .layer-blur-next {
 	transform: translateY(1000px);
+}
+
+/*footer*/
+.bottom-content {
+	position: absolute;
+	bottom: 0;
+	width: auto;
+	margin: auto;
+	width: 100%;
+}
+.footer {
+	bottom: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: unset;
+	width: 100%;
+	position: absolute;
+}
+.footer h2 {
+	margin: auto;
+	color: rgba(255, 255, 255, 0.7);
+	font-weight: bolder;
+}
+.footer ul.legacy > a {
+	padding: 20px;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	border: 3px solid rgba(236, 160, 59, 0.5);
+	border-radius: 50%;
+	background-color: white;
+	margin: 20px;
+	transition: border 0.3s;
+	cursor: pointer;
+}
+.footer ul.legacy > a:hover {
+	border-color: rgba(236, 160, 59, 1);
+}
+.parts {
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
+
+.copyrt {
+	font-size: 14px;
+	position: fixed;
+	bottom: 5px;
+	left: 50%;
+	color: rgba(206, 164, 108, 0.9);
+	transform: translateX(-50%);
+	font-family: "Josefin Slab", serif;
+}
+
+.copyrt span {
+	/*display: inline-block;*/
+	font-size: 25px;
+	/*line-height: 1;*/
+	position: relative;
+	top: 6px;
+	font-weight: 400;
+}
+
+.label {
+	color: rgba(206, 164, 108, 0.7);
+	margin-bottom: 0;
+}
+
+.footer ul.legacy i {
+	line-height: 13px;
+	transform: translateX(-50%);
+	position: relative;
+	left: 50%;
+}
+
+.footer ul.social a {
+	border: none;
+	background: none;
+	padding: 2px;
+	padding-bottom: 30px;
+}
+
+.footer ul.social i {
+	font-size: 1.5em;
+}
+
+.footer ul.social {
+	margin-bottom: 1px;
+}
+ul.legacy {
+	padding: 0;
+	margin: auto;
+}
+
+ul.legacy li {
+	display: inline-block;
+	margin: 20px;
+}
+
+ul.legacy li img {
+	border: 3px solid rgba(236, 160, 59, 0.5);
+	border-radius: 50%;
+	cursor: pointer;
+	padding: 0;
+	transition: border-color 0.3s;
+}
+
+ul.legacy li img:hover {
+	border-color: rgba(236, 160, 59, 1);
+}
+
+ul.legacy li img {
+	height: 50px;
+	padding: 0;
+	margin: 0;
+}
+ul.legacy li:hover .tooltip {
+	visibility: visible;
+	color: rgba(0, 0, 0, 1);
+}
+ul.legacy li .tooltip {
+	position: absolute;
+	font-weight: lighter;
+	text-align: center;
+	font-size: 12px;
+	visibility: hidden;
+	color: rgba(255, 255, 255, 0);
+	transition: all 0.3s;
+	width: 60px;
+}
+ul.legacy li:hover .tooltip {
+	visibility: visible;
+	color: rgba(0, 0, 0, 1);
+}
+/*loading screen*/
+
+.loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	top: 0;
+	left: 0;
+	z-index: 99;
 }

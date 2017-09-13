@@ -66,7 +66,7 @@ class Navbar extends React.Component {
 						className="icons"
 						style={{
 							backgroundColor: this.props.backgroundColor,
-							color: this.props.color
+							color: this.props.fontColor
 						}}
 					>
 						<div className="left">
