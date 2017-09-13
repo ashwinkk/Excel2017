@@ -37,7 +37,8 @@ class Competitions extends Component {
 			filterDept: "all",
 			filterCateg: "all",
 			applyFilter: false,
-			scale: 0
+			scale: 0,
+			render: false
 		};
 		console.log(this.state);
 		this.setWidths = this.setWidths.bind(this);
@@ -52,9 +53,9 @@ class Competitions extends Component {
 		let width = competitionsContainer.getBoundingClientRect().width,
 			rowNum = 0,
 			scrollBar = 0;
-		// if (window.innerWidth > 1000) {
-		// 	scrollBar = 12;
-		// }
+		if (window.innerWidth > 1000) {
+			scrollBar = 12;
+		}
 		if (window.innerWidth > 600) {
 			rowNum = 4;
 		} else if (window.innerWidth > 300) {
@@ -74,7 +75,7 @@ class Competitions extends Component {
 			this.setState({ render: true });
 			setTimeout(() => {
 				this.setState({ scale: 1 });
-			}, 500);
+			}, 200);
 		}
 	}
 
@@ -215,7 +216,11 @@ class Competitions extends Component {
 			<div className="competitions-page">
 				<div className="filters">
 					<div className="page-head">
-						<h2 style={{fontWeight: "600" , color:"#000751" , marginTop:"10px"}}><MdVideogameAsset style={{fontSize: "60px"}}/> Competitions</h2>
+						<h2
+							style={{ fontWeight: "600", color: "#000751", marginTop: "10px" }}
+						>
+							<MdVideogameAsset style={{ fontSize: "60px" }} /> Competitions
+						</h2>
 					</div>
 					<div className="filter-list">
 						<div>
@@ -233,7 +238,7 @@ class Competitions extends Component {
 					</div>
 				</div>
 				<div className="competitions-container" ref="competitions-container">
-					{boxes}{boxes}{boxes}
+					{boxes}
 				</div>
 			</div>
 		);

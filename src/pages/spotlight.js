@@ -15,32 +15,47 @@ class Spotlight extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			spotlight: []
+			spotlight: [],
+			render: false,
+			renderCard: false,
+			mounted: false
 		};
 	}
-	componentWillMount() {
-		this.props.dispatch(fetchSpotlight());
+	componentDidMount() {
+		this.setState({ mounted: true });
 	}
-	componentWillReceiveProps(nextProps) {
-		let spotlight = nextProps.spotlight.map((obj, i) => (
+	componentWillMount() {
+		if (this.props.spotlight.length === 0)
+			this.props.dispatch(fetchSpotlight());
+	}
+	componentDidUpdate() {
+		if (this.state.render === false) {
+			this.setState({ render: true });
+			setTimeout(() => {
+				this.setState({ renderCard: true });
+			}, 200);
+		}
+	}
+	componentWillUnmount() {
+		this.setState({ render: false, renderCard: false });
+		document.body.style.background = "";
+	}
+	render() {
+		let spotlight = this.props.spotlight.map((obj, i) => (
 			<SpotlightCard
 				title={obj.title}
 				id={obj.id}
+				render={this.state.renderCard}
+				style={{ transitionDelay: `${1 + (i + 1) * 0.1}s` }}
 				overview={`${obj.overview.substr(0, 200).trim()}...`}
 				thumbnail={obj.thumbnail}
 				bgcolor={obj.bgcolor}
 				registerLink={obj.registerLink}
 			/>
 		));
-		this.setState({ spotlight });
-	}
-	componentWillUnmount() {
-		document.body.style.background = "";
-	}
-	render() {
 		return (
 			<div className="spotlight-container" style={{ textAlign: "left" }}>
-				{this.state.spotlight}
+				{spotlight}
 			</div>
 		);
 	}

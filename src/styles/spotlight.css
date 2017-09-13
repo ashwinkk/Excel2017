@@ -4,6 +4,13 @@
 	display: inline-block;
 	height: 310px;
 	vertical-align: top;
+	transform: translateY(50%);
+	opacity: 0;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.spotlight-box-container {
+	display: inline-block;
 }
 
 .spotlight-card-left {

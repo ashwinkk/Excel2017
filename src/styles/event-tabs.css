@@ -2,7 +2,9 @@
   width: 100%;
   overflow: hidden;
   max-width: 980px;
-  margin: auto; }
+  margin: auto;
+  transition: transform 0.5s;
+  transform: translateY(50%); }
 
 .event-contact {
   display: flex;

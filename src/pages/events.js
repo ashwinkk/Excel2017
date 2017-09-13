@@ -15,32 +15,46 @@ class Events extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			events: []
+			events: [],
+			render: false,
+			renderCard: false,
+			mounted: false
 		};
+	}
+	componentDidMount() {
+		this.setState({ mounted: true });
 	}
 	componentWillMount() {
 		this.props.dispatch(fetchEvent());
 	}
-	componentWillReceiveProps(nextProps) {
-		let events = nextProps.events.map((obj, i) => (
+	componentDidUpdate() {
+		if (this.state.render === false) {
+			this.setState({ render: true });
+			setTimeout(() => {
+				this.setState({ renderCard: true });
+			}, 200);
+		}
+	}
+	componentWillUnmount() {
+		document.body.style.background = "";
+	}
+	render() {
+		let events = this.props.events.map((obj, i) => (
 			<EventCard
 				title={obj.title}
 				key={obj.id}
+				id={obj.id}
+				render={this.state.renderCard}
+				style={{ transitionDelay: `${1 + (i + 1) * 0.1}s` }}
 				overview={`${obj.overview.substr(0, 200).trim()}...`}
 				thumbnail={obj.thumbnail}
 				bgcolor={obj.bgcolor}
 				registerLink={obj.registerLink}
 			/>
 		));
-		this.setState({ events });
-	}
-	componentWillUnmount() {
-		document.body.style.background = "";
-	}
-	render() {
 		return (
 			<div className="spotlight-container" style={{ textAlign: "left" }}>
-				{this.state.events}
+				{events}
 			</div>
 		);
 	}

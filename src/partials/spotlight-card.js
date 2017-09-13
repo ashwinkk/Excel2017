@@ -1,21 +1,50 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../styles/spotlight.css"
+import "../styles/spotlight.css";
 
-export default class SpotlightCard extends React.Component{
-    render(){
-        return(
-            <div className="spotlight-card" style={{background: this.props.bgcolor}}>
-                <div className="spotlight-card-left">
-                    <a href={"/spotlight/" + this.props.id}><img className="spotlight-card-thumbnail" src={this.props.thumbnail}></img></a>
-                </div>
-                <div className="spotlight-card-right">
-                    <a href={"/spotlight/" + this.props.id}><h1 className="spotlight-card-title">{this.props.title}</h1></a>
-                    <a className="spotlight-card-overview">{this.props.overview}</a>
-                    <Link className="spotlight-card-register" to={this.props.registerLink}>Register</Link>
-                </div>
-            </div>
-        );
-    }
+export default class SpotlightCard extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+	render() {
+		let style = {};
+		console.log(this.props.render);
+		if (this.props.render) {
+			style.opacity = 1;
+			style.transform = "translateY(0)";
+		}
+		return (
+			<div
+				className="spotlight-card"
+				style={{
+					background: this.props.bgcolor,
+					...style,
+					...this.props.style
+				}}
+			>
+				<div className="spotlight-card-left">
+					<Link to={"/spotlight/" + this.props.id}>
+						<img
+							className="spotlight-card-thumbnail"
+							src={this.props.thumbnail}
+						/>
+					</Link>
+				</div>
+				<div className="spotlight-card-right">
+					<Link to={"/spotlight/" + this.props.id}>
+						<h1 className="spotlight-card-title">{this.props.title}</h1>
+					</Link>
+					<a className="spotlight-card-overview">{this.props.overview}</a>
+					<a
+						target="_blank"
+						className="spotlight-card-register"
+						href={this.props.registerLink}
+					>
+						Register
+					</a>
+				</div>
+			</div>
+		);
+	}
 }
