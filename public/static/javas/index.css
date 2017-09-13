@@ -92,7 +92,7 @@
 	animation: plane 2s ease-in-out infinite, flyIn 1.4s ease-in-out 1;
 }
 .plane-layer.layer-2-prev {
-	transform: translateY(-400px);
+	animation: flyOut 1.4s ease-in-out 1;
 }
 @keyframes plane {
 	0% {
@@ -107,12 +107,34 @@
 }
 @keyframes flyIn {
 	0% {
-		transform: rotate(45deg) translate(+25%, -25%) scale(0.4);
+		transform: translate(100%, -100%) rotate(-90deg) scale(0.4);
+		/*transform: rotate(45deg) translate(+25%, -25%) scale(0.4);*/
 	}
 	100% {
 		transform: none;
 	}
 }
+
+@keyframes flyOut {
+	100% {
+		transform: translate(-300%, -100%) rotate(+90deg) scale(1.4);
+		/*transform: rotate(45deg) translate(+25%, -25%) scale(0.4);*/
+	}
+	0% {
+		transform: none;
+	}
+}
+
+@keyframes flyOutReverse {
+	0% {
+		transform: translate(-300%, -100%) rotate(+90deg) scale(1.4);
+		/*transform: rotate(45deg) translate(+25%, -25%) scale(0.4);*/
+	}
+	100% {
+		transform: none;
+	}
+}
+
 .tree-upper {
 	position: absolute;
 	bottom: 0;
