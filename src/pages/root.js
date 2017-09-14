@@ -47,7 +47,21 @@ class Root extends Component {
 		console.log("change slide ended", e);
 	}
 
+	componentWillUnmount() {
+		let fullpage = document.getElementById("fullpage");
+		fullpage.style.position = "absolute";
+		fullpage.style.opacity = 0;
+		fullpage.style.height = 0;
+		fullpage.style.width = 0;
+		document.getElementById("root").style.zIndex = 99;
+	}
+
 	componentDidMount() {
+		let fullpage = document.getElementById("fullpage");
+		fullpage.style.position = "absolute";
+		fullpage.style.opacity = 1;
+		fullpage.style.height = "100%";
+		fullpage.style.width = "unset";
 		console.log("");
 		this.props.dispatch({
 			type: "SET_THEME",
