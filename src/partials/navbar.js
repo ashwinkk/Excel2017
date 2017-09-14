@@ -104,14 +104,14 @@ class Navbar extends React.Component {
 									<FaCalendar />
 								</Link>
 							</div>
-							<div>
+							{/* <div>
 								<div className="nav-text">
 									<Link to="/user">User</Link>
 								</div>
 								<Link to="/user" onClick={this.removeFullpage}>
 									<FaUserSecret />
 								</Link>
-							</div>
+							</div> */}
 						</div>
 					</div>
 					<div className={micClass}>

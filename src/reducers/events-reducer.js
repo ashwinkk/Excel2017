@@ -1,3 +1,5 @@
+import ReactHtmlParser from "react-html-parser";
+
 const eventsReducer = (
 	state = {
 		collection: [],
@@ -14,6 +16,10 @@ const eventsReducer = (
 				fetchedEvents: false
 			};
 		case "FETCHED_EVENTS":
+			action.payload.forEach((event) => {
+				event.content = ReactHtmlParser(event.content);
+				event.tagLine = ReactHtmlParser(event.tagLine);
+			});
 			return {
 				...state,
 				fetchingEvents: false,
