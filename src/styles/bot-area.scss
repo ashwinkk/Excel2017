@@ -22,6 +22,46 @@
 	transform: none;
 }
 
+.look-around {
+	transition: opacity 0.3s;
+	animation: floatup 0.3s;
+}
+
+@keyframes floatup {
+	0% {
+		opacity: 0;
+		transform: translateY(300%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.text-typed {
+	transform: translateY(300%);
+	opacity: 0;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.animate-typed-entry {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.title-style {
+	transform: translateY(300%);
+	opacity: 0;
+	transition: opacity 0.3s, transform 0.3s;
+	transition-delay: 0.5s, 0.5s;
+	color: #d34355;
+}
+
+.animate-init-entry {
+	transform: translateY(0);
+	opacity: 1;
+}
+
 @keyframes spawn-animation {
 	0% {
 		transform: translateY(100%);
@@ -32,6 +72,28 @@
 	100% {
 		transform: translateY(0%);
 	}
+}
+
+@keyframes new-chat {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	49% {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	50% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.reply {
+	text-align: right;
 }
 
 div#wave {
@@ -62,6 +124,17 @@ div#wave {
 	}
 }
 
+.bot-start-rec,
+.bot-start-rec:hover,
+.bot-start-rec:active,
+.bot-start-rec:focus {
+	border-radius: 50%;
+	overflow: hidden;
+	font-size: 21px;
+	border: none;
+	outline: none !important;
+}
+
 @keyframes wave {
 	0%,
 	60%,
@@ -72,6 +145,10 @@ div#wave {
 	30% {
 		transform: translateY(-15px);
 	}
+}
+
+.voice-section {
+	margin-right: 10px;
 }
 
 .listen-btn {
@@ -86,8 +163,21 @@ div#wave {
 	left: 50%;
 	top: 70%;
 	transform: translateX(-50%);
+	input {
+		border: none;
+	}
+	@media (max-width: 700px) {
+		top: unset;
+		bottom: calc(20% + 70px);
+	}
 }
 .text-area {
 	width: 40%;
 	margin: auto;
+	@media (max-width: 700px) {
+		width: 100%;
+	}
+	@media (max-width: 1400px) {
+		width: 60%;
+	}
 }

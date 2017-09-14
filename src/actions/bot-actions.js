@@ -1,10 +1,11 @@
 export function fetchReply(text) {
 	return dispatch => {
+		console.log("fetching" + text);
 		dispatch({ type: "FETCHING_REPLY" });
 		let data = {
 			query: text
 		};
-		fetch(`http://192.168.43.4:3000/`, {
+		fetch(`http://192.168.225.140:3000`, {
 			headers: {
 				Accept: "application/json",
 				"Content-Type": "application/json"

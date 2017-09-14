@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Redirect } from "react-router";
 import SpeechRecognition from "react-speech-recognition";
 import { FaMicrophone } from "react-icons/lib/fa";
 import { connect } from "react-redux";
@@ -23,7 +24,8 @@ const Dots = props => (
 
 @connect(store => {
 	return {
-		replyText: store.bot.replyText
+		replyText: store.bot.replyText,
+		fetchingReply: store.bot.fetchingReply
 	};
 })
 @SpeechRecognition({
@@ -32,8 +34,16 @@ const Dots = props => (
 class BotChat extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { userText: "", useVoiceInput: false, typed: "" };
+		this.state = {
+			userText: "",
+			useVoiceInput: false,
+			typedEntry: false,
+			redirect: false,
+			mounted: false
+		};
 		this.handleChange = this.handleChange.bind(this);
+		this.handleTheSpeechInput = this.handleTheSpeechInput.bind(this);
+		this.recordToggle = this.recordToggle.bind(this);
 	}
 
 	componentDidMount() {
@@ -46,16 +56,25 @@ class BotChat extends React.Component {
 
 		this.setState({
 			...this.state,
-			useVoiceInput: this.props.browserSupportsSpeechRecognition
+			useVoiceInput: this.props.browserSupportsSpeechRecognition,
+			mounted: true
 		});
 	}
 
+	componentWillReceiveProps(nextProps) {
+		if (nextProps.spawn === false) {
+			this.setState({ mounted: false, typedEntry: false });
+		}
+	}
+
 	handleTheSpeechInput(text) {
+		this.inputText.value = "";
 		console.log("speech:", text);
 		this.setState({
 			...this.state,
 			userText: text,
-			typed: ""
+			typed: "",
+			typedEntry: true
 		});
 		//TODO:  Trigger this after the api call is made
 		setTimeout(() => {
@@ -77,56 +96,80 @@ class BotChat extends React.Component {
 		this.setState({ typed: e.target.value });
 	}
 
+	recordToggle() {
+		if (this.props.listening) this.props.stopListening();
+		else this.props.startListening();
+	}
+
 	render() {
 		let className = "container bot-chat-container";
 		if (this.props.spawn) className += " spawn";
-
-		const status = this.props.listening ? (
-			<Dots />
-		) : (
-			<button className="btn btn-default" onClick={this.props.startListening}>
+		let recordClass = this.props.listening ? "btn-danger" : "";
+		const status = (
+			<button
+				className={`btn btn-default bot-start-rec ${recordClass}`}
+				onClick={this.recordToggle}
+			>
 				<FaMicrophone />
 			</button>
 		);
-
+		// if (this.props.spawn) return <Redirect to="/competitions" />;
 		// if(this.props.interimTranscript === ""){
 		// 	this.props.resetTranscript();
 		// }
-		let displayQuery = this.state.something;
-		let displayText = this.props.replyText.response === undefined;
-		if (this.props.replyText.response === undefined)
-			return <Redirect to={`/`} />;
+		const responseAreaText = this.props.replyText.response;
+		let textDisplayEntry = this.props.spawn ? "animate-init-entry" : "";
+		let lookAround =
+			this.props.fetchingReply && this.props.spawn ? (
+				<div className={`look-around `}>
+					<Dots />
+					<h3 className="text-center">Looking Around</h3>
+				</div>
+			) : this.props.spawn ? (
+				<div className="reply look-around">
+					<h3>{responseAreaText}</h3>
+				</div>
+			) : (
+				<div />
+			);
+		console.log(this.state.typedEntry);
+		let typedEntryAnimate = this.state.typedEntry ? "animate-typed-entry" : "";
 		return (
-			<div className={className}>
+			<div className={`${className} ${typedEntryAnimate}`}>
 				<div className="bot-chat">
+					<h2 className={`text-center title-style ${textDisplayEntry}`}>
+						How may I help you?
+					</h2>
 					<div className="text-area" ref="text-area">
-						<h3 className="text-center">How may I help you?</h3>
-						<h3>{this.state.userText}</h3>
-						<h3>{this.props.replyText}</h3>
+						<h3 className={`text-typed ${typedEntryAnimate}`}>
+							{this.state.userText}
+						</h3>
+						{lookAround}
 					</div>
 					<div className="text-input">
 						{this.state.useVoiceInput && (
 							<div className="voice-section">{status}</div>
 						)}
-						<input
-							type="text"
-							class="form-control"
-							placeholder="Search for..."
-							value={this.state.typed}
-							onChange={this.handleChange}
-							ref={e => (this.inputText = e)}
-						/>
-						<span className="input-group-btn">
+						<form
+							style={{ display: "flex" }}
+							onSubmit={e => e.preventDefault()}
+						>
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Search for..."
+								ref={e => (this.inputText = e)}
+							/>
 							<button
 								className="btn btn-default"
-								type="button"
+								type="submit"
 								onClick={() => {
 									this.handleTheSpeechInput(this.inputText.value);
 								}}
 							>
 								Send
 							</button>
-						</span>
+						</form>
 					</div>
 				</div>
 			</div>
