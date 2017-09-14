@@ -156,7 +156,47 @@
 	top: 0;
 	height: 100%;
 }
+.lower-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 15px;
+	margin-left: 15px;
+	background-color: white;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	display: flex;
+	justify-content: space-around;
+	border-radius: 10px;
+}
+.lower-content .cover-content {
+	background: #ca5177;
+	color: white;
+	padding: 10px;
+	font-size: 25px;
+}
 
+.lower-content a {
+	font-size: 20px;
+}
+
+.lower-content img {
+	width: 100px;
+}
+
+.lower-content h3 {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.lower-content .links {
+	padding: 10px 10px;
+	background: #b97087;
+	color: white;
+}
+.links div {
+	width: 100%;
+}
 .owl-mid {
 	width: 500px;
 	position: absolute;
@@ -509,7 +549,7 @@ ul.legacy li:hover .tooltip {
 	background-color: white;
 	top: 0;
 	left: 0;
-	z-index: 99;
+	z-index: 999;
 }
 .loader img {
 	left: 50%;
