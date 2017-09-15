@@ -77,8 +77,8 @@
             <img src="/static/anim-assets/cloudgen.png" class="cloud-slide" style="width: 100px;animation-duration: 170s;top: 30%;animation-delay: -85s;" />
             <div class="container about">
                 <h2>About Us</h2>
-                <p style="font-size:20px">Excel, the nation’s second and South India’s first ever fest of its kind started in 2001 by the students of Govt. Model Engineering College with a motto, Inspire, Innovate, Engineer. Over the years, Excel has grown exponentially, consistently
-                    playing host to some of the most talented students, the most illustrious speakers and the most reputed companies. Now gearing towards its 17th edition, Excel continues to excite the participants with its wide array of technical and
+                <p>Excel, the nation’s second and South India’s first ever fest of its kind started in 2001 by the students of Govt. Model Engineering College with a motto, Inspire, Innovate, Engineer. Over the years, Excel has grown exponentially, consistently
+                    playing host to some of the most talented students, the most illustrious speakers and the most reputed companies. Now gearing towards its 18th edition, Excel continues to excite the participants with its wide array of technical and
                     non-technical events and with a promise to live upto its motto.</p>
             </div>
             <img class="tree-upper" src="/static/anim-assets/tree-upper.png" />
@@ -104,18 +104,13 @@
             <img src="/static/anim-assets/cloudgen.png" class="cloud-slide" style="width: 200px;animation-duration: 150s;top: 10%;animation-delay: -10s;" />
             <img src="/static/anim-assets/cloudgen.png" class="cloud-slide" style="width: 100px;animation-duration: 170s;top: 19%;animation-delay: -120s;" />
             <img class="tree-low" src="/static/anim-assets/tree-lower.png" />
-            <div class="lower-content">
-                <div class="cover-content">
-                    <h3>#Redefining_Lines</h3>
-                </div>
-                <div class="links">
-                    <!--<div class="gallery-button">
-                        <a href="/#/gallery"><img src="/static/images/3eye.png" /> Contacts</a>
-                    </div>-->
-                    <div class="about-button">
-                        <a href="/#/contacts"><img src="/static/images/3eye.png " /> About</a>
+            <div class="contacts-us layer-blur layer-blur-next">
+                <a href="#/contacts" class="contacts-link">
+                    <img src="/static/anim-assets/logo.png" />
+                    <div class="link">
+                        <h3>Contacts</h3>
                     </div>
-                </div>
+                </a>
             </div>
             <!--<div class="map-container ">
                 <iframe width="100% " height="300 " frameborder="0 " style="border:0 " src="https://www.google.com/maps/embed/v1/place?q=Model%20Engineering%20college&key=AIzaSyB8LtSX1XwbeW-xFYjudX8GB-Fwt7G237I&zoom=10 " allowtransparency="n ">
@@ -174,21 +169,21 @@
             parallax1 = document.getElementById("para1 "),
             transitionText = " ";
         var state = {
-            "down ": "prev ",
-            "up ": "next "
+            "down": "prev",
+            "up": "next"
         }
         $('#fullpage').fullpage({
             scrollingSpeed: 1000,
             onLeave: function(index, nextIndex, direction) {
                 console.log("Next index: " + nextIndex + " Index: " + index + " Direction: " + direction);
-                $('#fullpage').children().eq(index - 1).find('.layer-0').addClass("layer-0- " + state[direction]);
-                $('#fullpage').children().eq(index - 1).find('.layer-1').addClass("layer-1- " + state[direction]);
-                $('#fullpage').children().eq(index - 1).find('.layer-2').addClass("layer-2- " + state[direction]);
-                $('#fullpage').children().eq(index - 1).find('.layer-blur').addClass("layer-blur- " + state[direction]);
-                $('#fullpage').children().eq(nextIndex - 1).find('.layer-0').removeClass("layer-0-next layer-0-prev ");
-                $('#fullpage').children().eq(nextIndex - 1).find('.layer-1').removeClass("layer-1-next layer-1-prev ");
-                $('#fullpage').children().eq(nextIndex - 1).find('.layer-2').removeClass("layer-2-next layer-2-prev ");
-                $('#fullpage').children().eq(nextIndex - 1).find('.layer-blur').removeClass("layer-blur-next layer-blur-prev ");
+                $('#fullpage').children().eq(index - 1).find('.layer-0').addClass("layer-0-" + state[direction]);
+                $('#fullpage').children().eq(index - 1).find('.layer-1').addClass("layer-1-" + state[direction]);
+                $('#fullpage').children().eq(index - 1).find('.layer-2').addClass("layer-2-" + state[direction]);
+                $('#fullpage').children().eq(index - 1).find('.layer-blur').addClass("layer-blur-" + state[direction]);
+                $('#fullpage').children().eq(nextIndex - 1).find('.layer-0').removeClass("layer-0-next layer-0-prev");
+                $('#fullpage').children().eq(nextIndex - 1).find('.layer-1').removeClass("layer-1-next layer-1-prev");
+                $('#fullpage').children().eq(nextIndex - 1).find('.layer-2').removeClass("layer-2-next layer-2-prev");
+                $('#fullpage').children().eq(nextIndex - 1).find('.layer-blur').removeClass("layer-blur-next layer-blur-prev");
                 $('#fullpage').children().eq(nextIndex - 1).find('.layer-2').addClass("layer-2-active ");
             }
         });

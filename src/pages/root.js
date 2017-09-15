@@ -53,7 +53,7 @@ class Root extends Component {
 		fullpage.style.opacity = 0;
 		fullpage.style.height = 0;
 		fullpage.style.width = 0;
-		document.getElementById("root").style.zIndex = 99;
+		fullpage.style.zIndex = -1;
 	}
 
 	componentDidMount() {
@@ -62,6 +62,7 @@ class Root extends Component {
 		fullpage.style.opacity = 1;
 		fullpage.style.height = "100%";
 		fullpage.style.width = "unset";
+		fullpage.style.zIndex = 98;
 		console.log("");
 		this.props.dispatch({
 			type: "SET_THEME",

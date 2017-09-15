@@ -202,7 +202,7 @@ class Competitions extends Component {
 			{ value: "all", label: "All" },
 			{
 				value: "CS",
-				label: "Compter Science"
+				label: "Computer Science"
 			},
 			{ value: "EC", label: "Electronics" },
 			{ value: "RB", label: "Robotics" },

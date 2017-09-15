@@ -7,7 +7,7 @@
 		},
 		"contact": {
 			"email": "arjunsaju@excelmec.org",
-			"phone": "+91 9847366598"
+			"phone": "+91 8943239997"
 		},
 		"name": "Arjun Saju",
 		"designation": "Chairman",
@@ -23,8 +23,8 @@
 			"alt": "dummy"
 		},
 		"contact": {
-			"email": "rahulvargheseroy@excelmec.org",
-			"phone": "+91 9847366598"
+			"email": "rahulvarghese@excelmec.org",
+			"phone": "+91 9349558200"
 		},
 		"name": "Rahul Varghese Roy",
 		"designation": "Secretary",
@@ -41,7 +41,7 @@
 		},
 		"contact": {
 			"email": "sharonrachelmanu@excelmec.org",
-			"phone": "+91 9847366598"
+			"phone": "+91 9633554696"
 		},
 		"name": "Sharon Rachel Manu",
 		"designation": "Joint Secretary",
@@ -58,7 +58,7 @@
 		},
 		"contact": {
 			"email": "karthikshenoy@excelmec.org",
-			"phone": "+91 8989898989"
+			"phone": "+91 9496610668"
 		},
 		"name": "Karthik Shenoy",
 		"designation": "General Tech Manager",
@@ -76,7 +76,7 @@
 		},
 		"contact": {
 			"email": "gopikrishnanmohan@excelmec.org",
-			"phone": "+91 8989898989"
+			"phone": "+91 9605104040"
 		},
 		"name": "Gopikrishnan Mohan",
 		"designation": "CS Tech Head",
@@ -88,7 +88,7 @@
 	{
 		"id": 3,
 		"image": {
-			"src": "/static/about/malavika.jpg",
+			"src": "/static/about/malu.jpg",
 			"alt": "dummy"
 		},
 		"contact": {
@@ -143,7 +143,7 @@
 			"alt": "dummy"
 		},
 		"contact": {
-			"email": "shantalar@excelmec.org",
+			"email": "shantalaramesh@excelmec.org",
 			"phone": "+91 9847366598"
 		},
 		"name": "Shantala Ramesh",
@@ -160,11 +160,11 @@
 			"alt": "dummy"
 		},
 		"contact": {
-			"email": "shantalar@excelmec.org",
+			"email": "gokulharikumar@excelmec.org",
 			"phone": "+91 9847366598"
 		},
 		"name": "Gokul Harikumar",
-		"designation": "Design Head",
+		"designation": "Design Manager",
 		"social": {
 			"linkedin": "#linkedin",
 			"github": "#github"
@@ -178,10 +178,10 @@
 		},
 		"contact": {
 			"email": "geovin@excelmec.org",
-			"phone": "+91 9847366598"
+			"phone": "+91 8547202121"
 		},
 		"name": "Geovin Parol",
-		"designation": "Media Head",
+		"designation": "Online Media Manager",
 		"social": {
 			"linkedin": "#linkedin",
 			"github": "#github"
@@ -195,9 +195,9 @@
 		},
 		"contact": {
 			"email": "joelcheison@excelmec.org",
-			"phone": "+91 9847366598"
+			"phone": "+91 9746270878"
 		},
-		"name": "Joel Cheison",
+		"name": "K Joel Cheison",
 		"designation": "Marketing Manager",
 		"social": {
 			"linkedin": "#linkedin",
@@ -212,10 +212,146 @@
 		},
 		"contact": {
 			"email": "aswinshaji@excelmec.org",
-			"phone": "+91 9847366598"
+			"phone": "+91 9995787411"
 		},
 		"name": "Aswin Shaji",
 		"designation": "Management Head",
+		"social": {
+			"linkedin": "#linkedin",
+			"github": "#github"
+		}
+	},
+	{
+		"id": 6,
+		"image": {
+			"src": "/static/about/adil.jpg",
+			"alt": "dummy"
+		},
+		"contact": {
+			"email": "adilkasima@excelmec.org",
+			"phone": "+91 986423825"
+		},
+		"name": "Mohamed Adil K",
+		"designation": "Management Head",
+		"social": {
+			"linkedin": "#linkedin",
+			"github": "#github"
+		}
+	},
+	{
+		"id": 6,
+		"image": {
+			"src": "/static/about/aliya.jpg",
+			"alt": "dummy"
+		},
+		"contact": {
+			"email": "adil@excelmec.org",
+			"phone": "+91 8289977949"
+		},
+		"name": "Aliya Anil",
+		"designation": "Marketing Manager",
+		"social": {
+			"linkedin": "#linkedin",
+			"github": "#github"
+		}
+	},
+	{
+		"id": 6,
+		"image": {
+			"src": "/static/about/mufeed.jpg",
+			"alt": "dummy"
+		},
+		"contact": {
+			"email": "mufeedsabah@excelmec.org",
+			"phone": "+91 9633470350"
+		},
+		"name": "Mufeed Sabah",
+		"designation": "Finance Manager",
+		"social": {
+			"linkedin": "#linkedin",
+			"github": "#github"
+		}
+	},
+	{
+		"id": 6,
+		"image": {
+			"src": "/static/about/aby.jpg",
+			"alt": "dummy"
+		},
+		"contact": {
+			"email": "abrahamthomas@excelmec.org",
+			"phone": "+91 9544206113"
+		},
+		"name": "Abraham Thomas",
+		"designation": "Non Tech Manager",
+		"social": {
+			"linkedin": "#linkedin",
+			"github": "#github"
+		}
+	},
+	{
+		"id": 6,
+		"image": {
+			"src": "/static/about/gautu.jpg",
+			"alt": "dummy"
+		},
+		"contact": {
+			"email": "gautamdinanath@excelmec.org",
+			"phone": "+91 7736787858"
+		},
+		"name": "Gautam Dinanath",
+		"designation": "Conferences and Workshops manager",
+		"social": {
+			"linkedin": "#linkedin",
+			"github": "#github"
+		}
+	},
+	{
+		"id": 6,
+		"image": {
+			"src": "/static/about/bombay.jpg",
+			"alt": "dummy"
+		},
+		"contact": {
+			"email": "caanandshankar@excelmec.org",
+			"phone": "+91 8281410562"
+		},
+		"name": "Anand Shankar",
+		"designation": "Industrial Connect",
+		"social": {
+			"linkedin": "#linkedin",
+			"github": "#github"
+		}
+	},
+	{
+		"id": 6,
+		"image": {
+			"src": "/static/about/kiran.jpg",
+			"alt": "dummy"
+		},
+		"contact": {
+			"email": "kiranmohan@excelmec.org",
+			"phone": "+91 9496897537"
+		},
+		"name": "Kiran Mohan",
+		"designation": "Publicity Manager",
+		"social": {
+			"linkedin": "#linkedin",
+			"github": "#github"
+		}
+	},
+	{
+		"id": 6,
+		"image": {
+			"src": "/static/about/ash.jpg",
+			"alt": "dummy"
+		},
+		"contact": {
+			"email": "ashwinkailas@excelmec.org",
+			"phone": "+91 9746919337"
+		},
+		"name": "Ashwin Kailas",
+		"designation": "Web Administrator",
 		"social": {
 			"linkedin": "#linkedin",
 			"github": "#github"

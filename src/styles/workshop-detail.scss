@@ -7,6 +7,18 @@
 .workshop-container h4 {
 	text-align: center;
 	color: white;
+	transition: opacity 0.3s;
+}
+
+img.cover-img {
+	transition: transform 0.5s;
+	display: block;
+	margin: 50px auto 60px auto;
+	width: 200px;
+	opacity: 0;
+	@media (min-width: 600px) {
+		width: 250px;
+	}
 }
 
 .workshop-container {
