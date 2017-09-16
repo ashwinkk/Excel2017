@@ -40,6 +40,8 @@ class CompetitionDetail extends React.Component {
 			}, 200);
 		}
 	}
+
+	componentWillReceiveProps(nextProps) {}
 	getCompetition() {
 		const competitionId = this.props.match.params.type;
 		return getObjectFromStore(this.props.competitions, competitionId);
@@ -47,6 +49,7 @@ class CompetitionDetail extends React.Component {
 	render() {
 		if (this.props.fetching) return <h1>Loading..</h1>;
 		this.competition = this.getCompetition();
+		console.log(this.competition);
 		let buttons = <div />;
 		if (this.competition.buttons)
 			buttons = this.competition.buttons.map((button, index) => {

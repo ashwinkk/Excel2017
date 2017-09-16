@@ -39,7 +39,14 @@ class BotChat extends React.Component {
 			useVoiceInput: false,
 			typedEntry: false,
 			redirect: false,
-			mounted: false
+			mounted: false,
+			url: ""
+		};
+		this.urls = {
+			General: "competitions",
+			Robotics: "competitions",
+			Workshops: "spotlight",
+			Electronics: "competitions"
 		};
 		this.handleChange = this.handleChange.bind(this);
 		this.handleTheSpeechInput = this.handleTheSpeechInput.bind(this);
@@ -62,6 +69,19 @@ class BotChat extends React.Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
+		if (nextProps.replyText.url !== undefined) {
+			console.log("redirect");
+			setTimeout(() => {
+				let generatedId = nextProps.replyText.url
+					.split(" ")
+					.join("-")
+					.toLowerCase();
+				this.setState({
+					redirect: true,
+					url: generatedId
+				});
+			}, 1000);
+		}
 		if (nextProps.spawn === false) {
 			this.setState({ mounted: false, typedEntry: false });
 		}
@@ -102,6 +122,9 @@ class BotChat extends React.Component {
 	}
 
 	render() {
+		if (this.state.redirect) {
+			window.location = `https://excelmec.org/${this.state.url}`;
+		}
 		let className = "container bot-chat-container";
 		if (this.props.spawn) className += " spawn";
 		let recordClass = this.props.listening ? "btn-danger" : "";
@@ -117,7 +140,11 @@ class BotChat extends React.Component {
 		// if(this.props.interimTranscript === ""){
 		// 	this.props.resetTranscript();
 		// }
-		const responseAreaText = this.props.replyText.response;
+		let responseAreaText = "";
+		if (this.props.replyText.url !== undefined)
+			responseAreaText = "Redirecting you in a moment..";
+		else responseAreaText = this.props.replyText.response;
+		if (responseAreaText === undefined) responseAreaText = "";
 		let textDisplayEntry = this.props.spawn ? "animate-init-entry" : "";
 		let lookAround =
 			this.props.fetchingReply && this.props.spawn ? (
@@ -127,7 +154,13 @@ class BotChat extends React.Component {
 				</div>
 			) : this.props.spawn ? (
 				<div className="reply look-around">
-					<h3>{responseAreaText}</h3>
+					<h3>
+						{responseAreaText.length > 200 ? (
+							`${responseAreaText.substring(0, 200)}...`
+						) : (
+							responseAreaText
+						)}
+					</h3>
 				</div>
 			) : (
 				<div />

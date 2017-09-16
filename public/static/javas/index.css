@@ -16,9 +16,9 @@
 }
 #root {
 	/*overflow: hidden !important;*/
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	height: 100%;
-	/* overflow-y: hidden !important; */
+	overflow-y: auto !important;
 	position: relative;
 }
 #fullpage {

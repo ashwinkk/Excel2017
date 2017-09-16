@@ -5,7 +5,7 @@ export function fetchReply(text) {
 		let data = {
 			query: text
 		};
-		fetch(`http://192.168.225.140:3000`, {
+		fetch(`https://chatbot.excelmec.org/`, {
 			headers: {
 				Accept: "application/json",
 				"Content-Type": "application/json"
