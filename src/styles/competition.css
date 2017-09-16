@@ -30,8 +30,15 @@
   .competitions-page .filters > div {
     margin: auto 15px auto 15px;
     width: 20%; }
+  @media (max-width: 800px) {
+    .competitions-page .filters {
+      display: block !important;
+      height: 130px !important; } }
   .competitions-page .filters .page-head {
     width: 50%; }
+    @media (max-width: 800px) {
+      .competitions-page .filters .page-head {
+        width: 100% !important; } }
   .competitions-page .filters .filter-list {
     width: 50%;
     display: flex;
@@ -40,6 +47,9 @@
       width: 25%;
       margin-left: 20px;
       margin-right: 20px; }
+    @media (max-width: 800px) {
+      .competitions-page .filters .filter-list {
+        width: 100% !important; } }
 
 .competitions-container {
   display: flex;

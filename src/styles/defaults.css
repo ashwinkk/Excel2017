@@ -33,9 +33,10 @@ h2 {
 	font-family: "Raleway", sans-serif;
 }
 
-/* #root {
-	overflow: hidden;
-} */
+#root {
+	overflow-x: hidden !important;
+	/* overflow-x: hidden; */
+}
 
 @media (min-width: 300px) {
 	.content {

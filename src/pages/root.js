@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Fullpage, Slide } from "fullpage-react";
+import { connect } from "react-redux";
 
 import RootSection1 from "../partials/root-section1";
 import RootSection2 from "../partials/root-section2";
@@ -7,6 +8,12 @@ import RootSection3 from "../partials/root-section3";
 import RootSection4 from "../partials/root-section4";
 import RootSection5 from "../partials/root-section5";
 
+@connect(store => {
+	return {
+		fontColor: store.fontColor,
+		backgroundColor: store.backgroundColor
+	};
+})
 class Root extends Component {
 	constructor(props) {
 		super(props);
@@ -42,6 +49,10 @@ class Root extends Component {
 
 	componentDidMount() {
 		console.log("");
+		this.props.dispatch({
+			type: "SET_THEME",
+			payload: { fontColor: "#625f5f", backgroundColor: "lightblue" }
+		});
 	}
 
 	render() {
