@@ -14,8 +14,8 @@
 .header-image img {
 }
 #root {
-	overflow: hidden !important;
-	/* overflow-x: hidden; */
+	/*overflow: hidden !important;*/
+	overflow-x: hidden;
 	height: 100%;
 	/* overflow-y: hidden !important; */
 	position: relative;
