@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Fullpage, Slide } from "fullpage-react";
+import { connect } from "react-redux";
 
 import RootSection1 from "../partials/root-section1";
 import RootSection2 from "../partials/root-section2";
@@ -7,6 +8,12 @@ import RootSection3 from "../partials/root-section3";
 import RootSection4 from "../partials/root-section4";
 import RootSection5 from "../partials/root-section5";
 
+@connect(store => {
+	return {
+		fontColor: store.fontColor,
+		backgroundColor: store.backgroundColor
+	};
+})
 class Root extends Component {
 	constructor(props) {
 		super(props);
@@ -40,8 +47,27 @@ class Root extends Component {
 		console.log("change slide ended", e);
 	}
 
+	componentWillUnmount() {
+		let fullpage = document.getElementById("fullpage");
+		fullpage.style.position = "absolute";
+		fullpage.style.opacity = 0;
+		fullpage.style.height = 0;
+		fullpage.style.width = 0;
+		fullpage.style.zIndex = -1;
+	}
+
 	componentDidMount() {
+		let fullpage = document.getElementById("fullpage");
+		fullpage.style.position = "absolute";
+		fullpage.style.opacity = 1;
+		fullpage.style.height = "100%";
+		fullpage.style.width = "unset";
+		fullpage.style.zIndex = 98;
 		console.log("");
+		this.props.dispatch({
+			type: "SET_THEME",
+			payload: { fontColor: "#625f5f", backgroundColor: "lightblue" }
+		});
 	}
 
 	render() {

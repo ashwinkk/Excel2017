@@ -37,21 +37,19 @@ class Navbar extends React.Component {
 	}
 
 	removeFullpage() {
-		let fullpage = document.getElementById("fullpage");
-		fullpage.style.position = "absolute";
-		fullpage.style.opacity = 0;
-		fullpage.style.height = 0;
-		fullpage.style.width = 0;
-		document.getElementById("root").style.zIndex = 99;
+		// let fullpage = document.getElementById("fullpage");
+		// fullpage.style.position = "absolute";
+		// fullpage.style.opacity = 0;
+		// fullpage.style.height = 0;
+		// fullpage.style.width = 0;
 	}
 
 	showfullpage() {
-		let fullpage = document.getElementById("fullpage");
-		fullpage.style.position = "absolute";
-		fullpage.style.opacity = 1;
-		fullpage.style.height = "100%";
-		fullpage.style.width = "unset";
-		document.getElementById("root").style.zIndex = 99;
+		// let fullpage = document.getElementById("fullpage");
+		// fullpage.style.position = "absolute";
+		// fullpage.style.opacity = 1;
+		// fullpage.style.height = "100%";
+		// fullpage.style.width = "unset";
 	}
 	render() {
 		let micClass = "bot-spawn";
@@ -66,7 +64,7 @@ class Navbar extends React.Component {
 						className="icons"
 						style={{
 							backgroundColor: this.props.backgroundColor,
-							color: this.props.color
+							color: this.props.fontColor
 						}}
 					>
 						<div className="left">
@@ -104,14 +102,14 @@ class Navbar extends React.Component {
 									<FaCalendar />
 								</Link>
 							</div>
-							<div>
+							{/* <div>
 								<div className="nav-text">
 									<Link to="/user">User</Link>
 								</div>
 								<Link to="/user" onClick={this.removeFullpage}>
 									<FaUserSecret />
 								</Link>
-							</div>
+							</div> */}
 						</div>
 					</div>
 					<div className={micClass}>

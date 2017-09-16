@@ -156,6 +156,7 @@
 		left: 100%;
 		transform: translate(-100%, 0%);
 		opacity: 0;
+		color: black;
 		will-change: transform;
 		transition: transform 0.3s, opacity 0.3s;
 		border-bottom-right-radius: 20px;
@@ -187,5 +188,11 @@
 	100% {
 		box-shadow: 0 1px 10px rgba(255, 0, 0, 0.12),
 			0 1px 5px rgba(255, 0, 0, 0.24);
+	}
+}
+
+@media (max-width:800px) and (min-width:600px){
+	.nav-text{
+		visibility: hidden;
 	}
 }

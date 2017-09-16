@@ -13,6 +13,7 @@ import Events from "./pages/events";
 import Root from "./pages/root";
 import PageNotFound from "./pages/pagenotfound";
 import About from "./pages/about";
+import EventDetail from "./pages/event-detail";
 
 import "./styles/defaults.css";
 import "./styles/test.scss";
@@ -34,6 +35,7 @@ function App(props) {
 					<Route path="/spotlight/ai-summit" component={Summit} />
 					<Route path="/spotlight/:type" component={WorkshopDetail} />
 					<Route path="/spotlight" component={Spotlight} />
+					{/* <Route path="/events/:type" component={EventDetail} />					 */}
 					<Route path="/events" component={Events} />
 					<Route path="/competitions?" component={Competitions} />
 					<Route path="/competitions" component={Competitions} />

@@ -6,7 +6,7 @@
 			"Swarm robotics is a field of robotics technology which deals with the artificial swarm intelligence and involves the usage of multiple robots which coordinate among themselves to complete a task more efficiently compared to a single robot carrying out the same task.Swarm robots communicate with each other wirelessly and take decisions.This workshop involves development of autonomous swarm robots enabled with master-slave communication.",
 		"thumbnail": "/static/images/iconswarm.png",
 		"bgcolor": "#4cccc6",
-		"registerLink":"https://google.com"
+		"registerLink": "https://goo.gl/forms/zFkCmBTU1FQKSqeb2"
 	},
 	{
 		"id": "quadcopter",
@@ -15,8 +15,7 @@
 			"Quadcopter is an aerial robot combining a simple propeller mechanism with powerful electronics for limitless real-world applications. It is an embedded system comprising of microcontrollers, sensors, flight gear and other integrated components.This workshop helps participants to develop a Quadcopter project from scratch while understanding the various engineering concepts in making a working Unmanned Aerial Vehicle.",
 		"thumbnail": "/static/images/quadcopter.png",
 		"bgcolor": "#9f76d6",
-		"registerLink":"https://google.com"
-		
+		"registerLink": "https://goo.gl/forms/nLC6thd4GbUcAsDu2"
 	},
 	{
 		"id": "ai-summit",
@@ -25,6 +24,6 @@
 			"When it comes to the possibilities of Artificial Intelligence, there may be a lot of opinions out there. It is a field which expands human capability beyond our imagination. We’re entering the world where AI will be ubiquitous.The pace of this progress is incredible, and close to exponential. AI has been conquering every sector imaginable and is being preached upon by leading organisations who is looking to reach unrivalled efficiency.",
 		"thumbnail": "/static/summit/ai.png",
 		"bgcolor": "#9f76d6",
-		"registerLink":"https://google.com"		
+		"registerLink": "https://goo.gl/forms/xeiZh6D07AmthK8t1"
 	}
 ]

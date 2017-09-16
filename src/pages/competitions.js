@@ -55,7 +55,7 @@ class Competitions extends Component {
 			rowNum = 0,
 			scrollBar = 0;
 		if (window.innerWidth > 1000) {
-			scrollBar = 12;
+			scrollBar = 15;
 		}
 		if (window.innerWidth > 600) {
 			rowNum = 4;
@@ -202,7 +202,7 @@ class Competitions extends Component {
 			{ value: "all", label: "All" },
 			{
 				value: "CS",
-				label: "Compter Science"
+				label: "Computer Science"
 			},
 			{ value: "EC", label: "Electronics" },
 			{ value: "RB", label: "Robotics" },

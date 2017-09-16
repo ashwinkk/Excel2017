@@ -1,15 +1,26 @@
 import React from "react";
 import GoogleMap from "google-map-react";
+import { connect } from "react-redux";
 
 import "../styles/summit.css";
 
+@connect(store => {
+	store.navbar.backgroundColor;
+})
 class Summit extends React.Component {
 	componentDidMount() {
 		document.getElementById("root").style.backgroundColor =
 			"rgba(10, 10, 10, 1)";
+		this.props.dispatch({
+			type: "SET_THEME",
+			payload: { fontColor: "white", backgroundColor: "#171717" }
+		});
 	}
 	componentWillUnmount() {
 		document.getElementById("root").style.backgroundColor = "transparent";
+		this.props.dispatch({
+			type: "RESET_THEME"
+		});
 	}
 	render() {
 		let defaultLoc = {
@@ -42,7 +53,7 @@ class Summit extends React.Component {
 				company: "Qbotics Labs"
 			},
 			{
-				name: "Tushar Chabra",
+				name: "Tushar Chhabra",
 				pic: "/static/summit/s5.png",
 				post: "CEO",
 				company: "Cron Systems"
@@ -57,7 +68,7 @@ class Summit extends React.Component {
 				name: "Fariz Rahman",
 				pic: "/static/summit/s7.png",
 				post: "Machine Learning Engineer",
-				company: "Datalog.ai"
+				company: "OlaSearch"
 			}
 		];
 		let speakerMarkup = speakers.map((speaker, index) => {
@@ -67,15 +78,9 @@ class Summit extends React.Component {
 					key={index}
 				>
 					<img src={speaker.pic} />
-					<h3>
-						{speaker.name}
-					</h3>
-					<h4>
-						{speaker.post}
-					</h4>
-					<p>
-						{speaker.company}
-					</p>
+					<h3>{speaker.name}</h3>
+					<h4>{speaker.post}</h4>
+					<p>{speaker.company}</p>
 				</div>
 			);
 		});
@@ -88,7 +93,7 @@ class Summit extends React.Component {
 			{
 				time: "10:10-11:50 am",
 				type: "Invited Speaker",
-				speaker: "Visual cognition in AI - Hiranmay Ghosh"
+				speaker: "AI Cognitive Computer Vision - Hiranmay Ghosh"
 			}
 		];
 		let table2 = [
@@ -135,16 +140,10 @@ class Summit extends React.Component {
 			topic = topic[0];
 			return (
 				<tr key={index}>
-					<td>
-						{value.time}
-					</td>
-					<td>
-						{value.type}
-					</td>
+					<td>{value.time}</td>
+					<td>{value.type}</td>
 					<td style={{ width: "60%" }}>
-						<strong>
-							{topic}
-						</strong>
+						<strong>{topic}</strong>
 						{speaker}
 					</td>
 				</tr>
@@ -157,16 +156,10 @@ class Summit extends React.Component {
 			topic = topic[0];
 			return (
 				<tr key={index}>
-					<td>
-						{value.time}
-					</td>
-					<td>
-						{value.type}
-					</td>
+					<td>{value.time}</td>
+					<td>{value.type}</td>
 					<td style={{ width: "60%" }}>
-						<strong>
-							{topic}
-						</strong>
+						<strong>{topic}</strong>
 						{speaker}
 					</td>
 				</tr>
@@ -179,16 +172,10 @@ class Summit extends React.Component {
 			topic = topic[0];
 			return (
 				<tr key={index}>
-					<td>
-						{value.time}
-					</td>
-					<td>
-						{value.type}
-					</td>
+					<td>{value.time}</td>
+					<td>{value.type}</td>
 					<td style={{ width: "60%" }}>
-						<strong>
-							{topic}
-						</strong>
+						<strong>{topic}</strong>
 						{speaker}
 					</td>
 				</tr>
@@ -201,16 +188,10 @@ class Summit extends React.Component {
 			topic = topic[0];
 			return (
 				<tr key={index}>
-					<td>
-						{value.time}
-					</td>
-					<td>
-						{value.type}
-					</td>
+					<td>{value.time}</td>
+					<td>{value.type}</td>
 					<td style={{ width: "60%" }}>
-						<strong>
-							{topic}
-						</strong>
+						<strong>{topic}</strong>
 						{speaker}
 					</td>
 				</tr>
@@ -232,12 +213,8 @@ class Summit extends React.Component {
 					className="col-lg-6 col-md-6 col-sm-6 col-xs-12 contact"
 					key={index}
 				>
-					<h3>
-						{contact.name}
-					</h3>
-					<p>
-						{contact.phno}
-					</p>
+					<h3>{contact.name}</h3>
+					<p>{contact.phno}</p>
 				</div>
 			);
 		});
@@ -247,6 +224,8 @@ class Summit extends React.Component {
 				<div className="container-fluid cover">
 					<div className="overlay" />
 					<div className="container">
+						<img src="/static/sponsors/bosch.png" className="sponsor" />
+						<span>presents</span>
 						<img src="/static/summit/ai.png" />
 					</div>
 				</div>
@@ -308,9 +287,7 @@ class Summit extends React.Component {
 					<div className="container">
 						<section className="speakers-container">
 							<h2 className="text-center">Speakers</h2>
-							<div className="row">
-								{speakerMarkup}
-							</div>
+							<div className="row">{speakerMarkup}</div>
 						</section>
 						<section className="schedule-container">
 							<h2 className="text-center">Schedule</h2>
@@ -318,36 +295,28 @@ class Summit extends React.Component {
 								<strong>Session 1</strong>
 							</h4>*/}
 							<table className="table table-condensed">
-								<tbody>
-									{tableMarkup1}
-								</tbody>
+								<tbody>{tableMarkup1}</tbody>
 							</table>
 							<p className="text-center ">11:00-11:10​ ​am​ : Tea ​Break</p>
 							{/*<h4>
 								<strong>Session 2</strong>
 							</h4>*/}
 							<table className="table table-condensed">
-								<tbody>
-									{tableMarkup2}
-								</tbody>
+								<tbody>{tableMarkup2}</tbody>
 							</table>
 							<p className="text-center ">​12:30-01:30​ ​pm : Lunch Break</p>
 							{/*<h4>
 								<strong>Session 3</strong>
 							</h4>*/}
 							<table className="table table-condensed">
-								<tbody>
-									{tableMarkup3}
-								</tbody>
+								<tbody>{tableMarkup3}</tbody>
 							</table>
 							<p className="text-center ">02:45-02:55​ ​pm​ ​ : Break</p>
 							{/*<h4>
 								<strong>Session 4</strong>
 							</h4>*/}
 							<table className="table table-condensed">
-								<tbody>
-									{tableMarkup4}
-								</tbody>
+								<tbody>{tableMarkup4}</tbody>
 							</table>
 							<p className="text-center ">04:20-4:25 pm : Closing Note</p>
 
