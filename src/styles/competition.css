@@ -51,6 +51,10 @@
       .competitions-page .filters .filter-list {
         width: 100% !important; } }
 
+.competitions-wrapper {
+  overflow-y: auto;
+  height: 76vh; }
+
 .competitions-container {
   display: flex;
   flex-wrap: wrap; }

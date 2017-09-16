@@ -68,9 +68,16 @@
 	}
 }
 
+.competitions-wrapper{
+	overflow-y: auto;
+	height: 76vh;
+}
+
 .competitions-container {
 	display: flex;
 	flex-wrap: wrap;
+	// overflow-y: scroll;
+	// height: 100vh;
 	img {
 		width: 200px;
 		margin: 20px auto;
