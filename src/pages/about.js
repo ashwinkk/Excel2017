@@ -32,7 +32,7 @@ export default class About extends Component {
 				name={obj.name}
 				designation={obj.designation}
 				social={obj.social}
-				key={obj.key}
+				key={i}
 			/>
 		));
 		this.setState({ about });
