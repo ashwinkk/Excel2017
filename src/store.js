@@ -22,11 +22,8 @@ const app = combineReducers({
 	events: eventsReducer,
 	navbar: navbarReducer,
 	about: aboutReducer,
-<<<<<<< HEAD
-	bot: botReducer
-=======
+	bot: botReducer,
 	sponsors: sponsorsReducer
->>>>>>> origin/competition-filter
 });
 
 const middleware = applyMiddleware(thunk);
