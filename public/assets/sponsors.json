@@ -1,42 +1,22 @@
 [
     {
-        "cover": "/static/sponsors/htlabs.png",
-        "name": "HT Labs",
+        "cover": "/static/sponsors/bosch.png",
+        "name": "Bosch",
+        "designation": "AI Summit Sponsor"
+    },
+    {
+        "cover": "/static/sponsors/ieee.jpg",
+        "name": "IEEE",
         "designation": "Event Sponsor"
     },
     {
-        "cover": "/static/sponsors/htlabs.png",
-        "name": "HT Labs",
-        "designation": "Event Sponsor"
+        "cover": "/static/sponsors/tomson.png",
+        "name": "Tomson Electronics",
+        "designation": "Component Sponsor"
     },
     {
-        "cover": "/static/sponsors/htlabs.png",
-        "name": "HT Labs",
-        "designation": "Event Sponsor"
-    },
-    {
-        "cover": "/static/sponsors/htlabs.png",
-        "name": "HT Labs",
-        "designation": "Event Sponsor"
-    },
-    {
-        "cover": "/static/sponsors/htlabs.png",
-        "name": "HT Labs",
-        "designation": "Event Sponsor"
-    },
-    {
-        "cover": "/static/sponsors/htlabs.png",
-        "name": "HT Labs",
-        "designation": "Event Sponsor"
-    },
-    {
-        "cover": "/static/sponsors/htlabs.png",
-        "name": "HT Labs",
-        "designation": "Event Sponsor"
-    },
-    {
-        "cover": "/static/sponsors/htlabs.png",
-        "name": "HT Labs",
-        "designation": "Event Sponsor"
+        "cover": "/static/sponsors/ges.jpg",
+        "name": "GES",
+        "designation": "Techathon Sponsor"
     }
 ]
