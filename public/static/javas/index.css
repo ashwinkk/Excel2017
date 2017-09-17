@@ -655,6 +655,15 @@ ul.legacy li:hover .tooltip {
 	transform: translateY(-50%);
 	margin: 0;
 }
+.sponsors {
+	right: 0;
+	left: unset;
+}
+.sponsors-link .link {
+	padding-right: 80px;
+	transform: translateX(75px);
+	padding-left: 20px;
+}
 
 @media (max-width: 900px) {
 	.contacts-us img {
