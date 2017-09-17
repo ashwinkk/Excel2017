@@ -61,7 +61,7 @@ table {
 	background-image: url("/static/summit/cover.jpg");
 	background-position: bottom;
 	background-size: cover;
-	height: 600px;
+	height: 650px;
 	.container {
 		height: 100%;
 		img {
@@ -69,30 +69,29 @@ table {
 			z-index: 1;
 			margin: auto;
 			display: block;
-			height: 300px;
+			width: 400px;
+			height: auto;
+			margin-top: 150px;
 			@media (max-width: 600px) {
 				width: 100%;
 				height: unset;
 			}
 		}
 		img.sponsor {
-			width: 430px;
-			padding-right: 215px;
+			width: 400px;
 			position: relative;
 			z-index: 1;
 			margin: auto;
 			display: block;
 			height: unset;
-			margin-top: 170px;
 			@media (max-width: 600px) {
 				width: 100%;
-				padding-right: 50%;
 				height: unset;
 			}
 		}
 		span {
 			display: block;
-			width: 430px;
+			width: 400px;
 			padding-right: 200px;
 			position: relative;
 			left: 10px;
@@ -120,7 +119,7 @@ table {
 		);
 	}
 	@media (max-width: 600px) {
-		height: 500px;
+		height: 550px;
 	}
 }
 

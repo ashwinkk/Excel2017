@@ -5,20 +5,18 @@
 .section {
 	position: relative;
 	overflow: hidden;
+	background: lightblue;
 }
 .header-image {
 	position: absolute;
 	top: 0;
 	width: 100%;
 }
-.header-image img {
-}
 #root {
-	overflow: auto !important;
+	/*overflow: auto !important;*/
 	overflow-x: hidden;
 	height: 100%;
 	overflow-y: auto !important;
-	position: relative;
 }
 #fullpage {
 	position: absolute !important;
@@ -586,13 +584,6 @@ ul.legacy li:hover .tooltip {
 	position: absolute;
 	animation: move 100s linear infinite;
 	z-index: 0;
-}
-
-.map-container {
-	z-index: 1;
-	width: 40%;
-	position: absolute;
-	margin-bottom: 10px;
 }
 
 @keyframes move {

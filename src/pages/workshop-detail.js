@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import ReactHtmlParser from "react-html-parser";
 
 import { fetchWorkshops } from "../actions/workshop-actions";
+import Logobar from "../partials/logo-bar";
 import { getObjectFromStore } from "../helpers/excel2017";
 import EventTabs from "../partials/event-tabs";
 
@@ -69,8 +70,10 @@ class WorkshopDetail extends React.Component {
 			? "animate-bounce"
 			: "";
 		let textTransition = this.state.renderElements ? 1 : 0;
+		const eventTabNames = ["Overview", "Schedule", "Particulars"];
 		return (
 			<div className="workshop-container">
+				<Logobar />
 				<img
 					src={this.workshop.image}
 					alt={this.workshop.image}
@@ -90,7 +93,7 @@ class WorkshopDetail extends React.Component {
 				<EventTabs
 					render={this.state.renderElements}
 					activeTab={this.handleTab}
-					tabLabels={["Overview", "Schedule", "Particulars"]}
+					tabLabels={eventTabNames}
 				>
 					<div className="active-tab">{this.workshop.overview}</div>
 					<div>{this.workshop.schedule}</div>

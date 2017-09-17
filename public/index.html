@@ -42,7 +42,7 @@
     </div>
     <div id="root"></div>
     <div class="inline-container" id="fullpage">
-        <div class="section" style="background: lightblue;">
+        <div class="section">
             <img src="/static/anim-assets/cloudgen.png" class="cloud-slide" style="width: 100px;animation-duration: 200s;top: 40%;animation-delay: -50s;" />
             <img src="/static/anim-assets/cloudgen.png" class="cloud-slide" style="width: 120px;animation-duration: 120s;top: 25%;animation-delay: -100s;" />
             <img src="/static/anim-assets/cloudgen.png" class="cloud-slide" style="width: 80px;animation-duration: 150s;top: 50%;animation-delay: -150s;" />
@@ -58,7 +58,6 @@
                 <img class="cloud-header parallax-2" src="/static/anim-assets/cld1.png" />
             </div>
             <img class="plane-layer layer-2" src="/static/anim-assets/ffs.gif" />
-            <!--<img class="layer-2 cloud-footer " src="/static/anim-assets/cld2.png" />-->
             <img class="layer-1 cloud-2" src="/static/anim-assets/cld5.png" />
             <img class="layer-0 cloud-3 " src="/static/anim-assets/cld3.png" />
             <img class="layer-0 cloud-4 " src="/static/anim-assets/cld4.png" />
@@ -170,15 +169,15 @@
     -->
 </body>
 <script>
-	var OneSignal = window.OneSignal || [];
-	OneSignal.push(["init", {
-		appId: "74618c63-2ed8-4b6b-9235-a1cf548c94cd",
-		autoRegister: true,
-		notifyButton: {
-			enable: false /* Set to false to hide */
-		},
-		allowLocalhostAsSecureOrigin:true
-	}]);
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+        appId: "74618c63-2ed8-4b6b-9235-a1cf548c94cd",
+        autoRegister: true,
+        notifyButton: {
+            enable: false /* Set to false to hide */
+        },
+        allowLocalhostAsSecureOrigin: true
+    }]);
     $(document).ready(function() {
         var parallax = document.getElementById("para "),
             parallax1 = document.getElementById("para1 "),
@@ -202,6 +201,27 @@
                 $('#fullpage').children().eq(nextIndex - 1).find('.layer-2').addClass("layer-2-active ");
             }
         });
+        setTimeout(function() {
+            if (window.location.hash !== "#/") {
+                $.fn.fullpage.destroy("all");
+                console.log("called");
+            }
+        });
+        var nav = document.getElementById("navbar");
+        console.log(nav);
+        nav.addEventListener("click", function() {
+            setTimeout(function() {
+                console.log(window.location.hash);
+                if (window.location.hash == "#/") {;
+                } else {
+                    $.fn.fullpage.destroy('all');
+                }
+            }, 500);
+
+            console.log(document.getElementsByTagName("html")[0].classList.contains("fp-enabled"));
+
+        });
+
     });
 </script>
 

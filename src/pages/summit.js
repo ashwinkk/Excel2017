@@ -40,12 +40,12 @@ class Summit extends React.Component {
 				post: "Chief Technology Expert",
 				company: "Bosch"
 			},
-			{
-				name: "Prasanna Lohar",
-				pic: "/static/summit/s3.png",
-				post: "Head of Technology",
-				company: "DCB Bank"
-			},
+			// {
+			// 	name: "Prasanna Lohar",
+			// 	pic: "/static/summit/s3.png",
+			// 	post: "Head of Technology",
+			// 	company: "DCB Bank"
+			// },
 			{
 				name: "Lentin Joseph",
 				pic: "/static/summit/s4.png",
@@ -97,12 +97,12 @@ class Summit extends React.Component {
 			}
 		];
 		let table2 = [
-			{
-				time: "11:10-11:40 am",
-				type: "Invited Speaker",
-				speaker:
-					"Financial​ ​security:​ ​AI​ ​a​ ​game​ ​changer​? - Prasanna Lohar"
-			},
+			// {
+			// 	time: "11:10-11:40 am",
+			// 	type: "Invited Speaker",
+			// 	speaker:
+			// 		"Financial​ ​security:​ ​AI​ ​a​ ​game​ ​changer​? - Prasanna Lohar"
+			// },
 			{
 				time: "11:50-12:20 am",
 				type: "Invited Speaker",
@@ -224,9 +224,9 @@ class Summit extends React.Component {
 				<div className="container-fluid cover">
 					<div className="overlay" />
 					<div className="container">
-						<img src="/static/sponsors/bosch.png" className="sponsor" />
-						<span>presents</span>
 						<img src="/static/summit/ai.png" />
+						<span>Presented By</span>
+						<img src="/static/sponsors/bosch.png" className="sponsor" />
 					</div>
 				</div>
 				<div className="container-fluid ai-content">

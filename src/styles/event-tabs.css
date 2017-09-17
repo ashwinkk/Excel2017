@@ -39,12 +39,12 @@
 .tab-content ul {
   color: #5d6c6b; }
 
-.tab-content > img {
+.tab-content img {
   margin: 10px auto !important;
   display: block;
   width: 300px !important; }
   @media (max-width: 600px) {
-    .tab-content > img {
+    .tab-content img {
       width: 150px !important; } }
 
 .tab-container p {

@@ -54,6 +54,8 @@ class Root extends Component {
 		fullpage.style.height = 0;
 		fullpage.style.width = 0;
 		fullpage.style.zIndex = -1;
+		document.body.removeChild(fullpage);
+		// fullpage.removeChild();
 	}
 
 	componentDidMount() {

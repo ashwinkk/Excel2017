@@ -58,6 +58,7 @@ class Navbar extends React.Component {
 			<div
 				className="navbar-container"
 				style={{ backgroundColor: this.props.backgroundColor }}
+				id="navbar"
 			>
 				<div className="navbar">
 					<div
@@ -70,11 +71,14 @@ class Navbar extends React.Component {
 						<div className="left">
 							<div className="lonely-home">
 								<div className="nav-text">
-									<Link to="/">Home</Link>
+									<a href="https://excelmec.org/excel2017">Home</a>
 								</div>
-								<Link to="/" onClick={this.showfullpage}>
+								<a
+									href="https://excelmec.org/excel2017"
+									onClick={this.showfullpage}
+								>
 									<MdHome />
-								</Link>
+								</a>
 							</div>
 							<div>
 								<div className="nav-text">

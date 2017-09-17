@@ -2,7 +2,7 @@
   position: relative; }
   @media (max-width: 600px) {
     .competition-container .titles-container {
-      min-height: calc(100vh - 60px); } }
+      height: calc(100vh - 60px); } }
 
 .competition-container img.cover-img {
   transition: transform 0.5s;

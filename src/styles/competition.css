@@ -1,8 +1,7 @@
 .flex-grid {
   width: 95%;
   margin: auto;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   .flex-grid > div {
     margin: 20px 0px;
     position: absolute;
@@ -23,43 +22,44 @@
     margin: auto;
     font-size: 50px; }
 
-.competitions-page .filters {
-  position: relative;
-  display: flex;
-  height: 80px; }
-  .competitions-page .filters > div {
-    margin: auto 15px auto 15px;
-    width: 20%; }
-  @media (max-width: 800px) {
-    .competitions-page .filters {
-      display: block !important;
-      height: 130px !important; } }
-  .competitions-page .filters .page-head {
-    width: 50%; }
-    @media (max-width: 800px) {
-      .competitions-page .filters .page-head {
-        width: 100% !important; } }
-  .competitions-page .filters .filter-list {
-    width: 50%;
+.competitions-page {
+  overflow-x: hidden;
+  height: 100%; }
+  .competitions-page .filters {
+    position: relative;
     display: flex;
-    justify-content: flex-end; }
-    .competitions-page .filters .filter-list > div {
-      width: 25%;
-      margin-left: 20px;
-      margin-right: 20px; }
+    height: 80px; }
+    .competitions-page .filters > div {
+      margin: auto 15px auto 15px;
+      width: 20%; }
     @media (max-width: 800px) {
-      .competitions-page .filters .filter-list {
-        width: 100% !important; }
-        .competitions-page .filters .filter-list > div {
-          width: 50%; } }
-
-.competitions-wrapper {
-  overflow-y: auto; }
+      .competitions-page .filters {
+        display: block !important;
+        height: 130px !important; } }
+    .competitions-page .filters .page-head {
+      width: 50%; }
+      @media (max-width: 800px) {
+        .competitions-page .filters .page-head {
+          width: 100% !important; } }
+    .competitions-page .filters .filter-list {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end; }
+      .competitions-page .filters .filter-list > div {
+        width: 25%;
+        margin-left: 20px;
+        margin-right: 20px; }
+      @media (max-width: 800px) {
+        .competitions-page .filters .filter-list {
+          width: 100% !important; }
+          .competitions-page .filters .filter-list > div {
+            width: 50%; } }
 
 .competitions-container {
   display: flex;
   flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
   .competitions-container img {
     width: 200px;
     margin: 20px auto; }
