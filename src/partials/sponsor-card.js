@@ -26,15 +26,14 @@ export default class SponsorCard extends React.Component {
 				}}
 			>
 				<div className="sponsor-img-container">
-	                <img
-						className="sponsor-img"
-						src={this.props.cover}
-					/>
+					<a href={this.props.link} target="_blank">
+						<img className="sponsor-img" src={this.props.cover} />
+					</a>
 				</div>
 				<div className="sponsor-desc">
-	                <span className="sponsor-name">{this.props.name}</span>
-					<br/>
-	                <span className="sponsor-designation">{this.props.designation}</span>
+					<span className="sponsor-name">{this.props.name}</span>
+					<br />
+					<span className="sponsor-designation">{this.props.designation}</span>
 				</div>
 			</div>
 		);

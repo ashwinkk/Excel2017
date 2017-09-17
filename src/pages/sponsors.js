@@ -5,14 +5,13 @@ import { fetchSponsors } from "../actions/sponsors-actions";
 import LogoBar from "../partials/logo-bar";
 import SponsorCard from "../partials/sponsor-card";
 
-
 @connect(store => {
 	return {
 		sponsors: store.sponsors.collection
 	};
 })
 export default class Sponsors extends Component {
-    constructor(props) {
+	constructor(props) {
 		super(props);
 		this.state = {
 			sponsors: [],
@@ -25,8 +24,7 @@ export default class Sponsors extends Component {
 		this.setState({ mounted: true });
 	}
 	componentWillMount() {
-		if (this.props.sponsors.length === 0)
-			this.props.dispatch(fetchSponsors());
+		if (this.props.sponsors.length === 0) this.props.dispatch(fetchSponsors());
 	}
 	componentDidUpdate() {
 		if (this.state.render === false) {
@@ -45,16 +43,18 @@ export default class Sponsors extends Component {
 	render() {
 		let sponsors = this.props.sponsors.map((obj, i) => (
 			<SponsorCard
-                cover={obj.cover}
-                name={obj.name}
-                designation={obj.designation}
+				cover={obj.cover}
+				name={obj.name}
+				link={obj.link}
+				designation={obj.designation}
 				render={this.state.renderCard}
-                style={{ transitionDelay: `${1 + (i + 1) * 0.1}s` }}
-            />
+				style={{ transitionDelay: `${1 + (i + 1) * 0.1}s` }}
+			/>
 		));
 		return (
-			<div className="sponsors-container" style={{ textAlign: "left"}}>
+			<div className="sponsors-container" style={{ textAlign: "left" }}>
 				<LogoBar />
+				<h1 className="text-center">Sponsors</h1>
 				{sponsors}
 			</div>
 		);
