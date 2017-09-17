@@ -83,7 +83,7 @@ class BotChat extends React.Component {
 			}, 1000);
 		}
 		if (nextProps.spawn === false) {
-			this.setState({ mounted: false, typedEntry: false });
+			this.setState({ mounted: false, typedEntry: false,userText: "" });
 		}
 	}
 
@@ -144,13 +144,18 @@ class BotChat extends React.Component {
 		if (this.props.replyText.url !== undefined)
 			responseAreaText = "Redirecting you in a moment..";
 		else responseAreaText = this.props.replyText.response;
-		if (responseAreaText === undefined) responseAreaText = "";
+		if (
+			responseAreaText === undefined ||
+			this.props.fetchingReply ||
+			this.state.userText === ""
+		)
+			responseAreaText = "";
 		let textDisplayEntry = this.props.spawn ? "animate-init-entry" : "";
 		let lookAround =
 			this.props.fetchingReply && this.props.spawn ? (
 				<div className={`look-around `}>
 					<Dots />
-					<h3 className="text-center">Looking Around</h3>
+					<h3 className="text-center">Please wait..</h3>
 				</div>
 			) : this.props.spawn ? (
 				<div className="reply look-around">
