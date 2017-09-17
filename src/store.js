@@ -11,6 +11,7 @@ import eventsReducer from "./reducers/events-reducer";
 import navbarReducer from "./reducers/navbar-reducer";
 import aboutReducer from "./reducers/about-reducer";
 import botReducer from "./reducers/bot-reducer";
+import sponsorsReducer from "./reducers/sponsors-reducer";
 
 const app = combineReducers({
 	gallery: galleryReducer,
@@ -21,7 +22,11 @@ const app = combineReducers({
 	events: eventsReducer,
 	navbar: navbarReducer,
 	about: aboutReducer,
+<<<<<<< HEAD
 	bot: botReducer
+=======
+	sponsors: sponsorsReducer
+>>>>>>> origin/competition-filter
 });
 
 const middleware = applyMiddleware(thunk);

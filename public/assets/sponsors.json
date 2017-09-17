@@ -1,0 +1,26 @@
+[
+	{
+		"cover": "/static/sponsors/bosch.png",
+		"name": "Bosch",
+		"designation": "AI Summit Sponsor",
+		"link": "http://www.boschindia.com"
+	},
+	{
+		"cover": "/static/sponsors/ieee.jpg",
+		"name": "IEEE",
+		"designation": "Event Sponsor",
+		"link": "https://www.ieee.org"
+	},
+	{
+		"cover": "/static/sponsors/tomson.png",
+		"name": "Tomson Electronics",
+		"designation": "Component Sponsor",
+		"link": "https://www.tomsonelectronics.com/"
+	},
+	{
+		"cover": "/static/sponsors/ges.jpg",
+		"name": "GES",
+		"designation": "Techathon Sponsor",
+		"link": "http://www.gesinfotek.com/"
+	}
+]
