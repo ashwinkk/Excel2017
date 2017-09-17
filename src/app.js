@@ -41,7 +41,7 @@ function App(props) {
 					<Route path="/competitions?" component={Competitions} />
 					<Route path="/competitions" component={Competitions} />
 					<Route path="/gallery" component={Gallery} />
-					<Route path="/under-construction" component={ComingSoon} />
+					<Route path="/under-construction" render={()=><Redirect to="/" />} />
 					<Route path="/contacts" component={About} />
 					<Route path="/sponsors" component={Sponsors} />
 					<Route path="*" component={PageNotFound} />
