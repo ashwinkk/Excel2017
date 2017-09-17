@@ -239,8 +239,10 @@ class Competitions extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="competitions-container" ref="competitions-container">
-					{boxes}
+				<div className="competitions-wrapper">
+					<div className="competitions-container" ref="competitions-container">
+						{boxes}
+					</div>
 				</div>
 			</div>
 		);

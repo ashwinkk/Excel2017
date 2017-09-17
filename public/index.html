@@ -9,6 +9,7 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/stylesheets/bootstrap.min.css">
     <link rel="shortcut icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Muli|Raleway" rel="stylesheet">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="/static/javas/index.css" />
     <script type="text/javascript" src="/static/javas/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="/static/javas/jquery.fullpage.min.js"></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -164,6 +166,15 @@
     -->
 </body>
 <script>
+	var OneSignal = window.OneSignal || [];
+	OneSignal.push(["init", {
+		appId: "74618c63-2ed8-4b6b-9235-a1cf548c94cd",
+		autoRegister: true,
+		notifyButton: {
+			enable: false /* Set to false to hide */
+		},
+		allowLocalhostAsSecureOrigin:true
+	}]);
     $(document).ready(function() {
         var parallax = document.getElementById("para "),
             parallax1 = document.getElementById("para1 "),

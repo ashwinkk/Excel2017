@@ -56,16 +56,19 @@ class BotChat extends React.Component {
 	componentDidMount() {
 		this.handleTheSpeechInput = this.handleTheSpeechInput.bind(this);
 
-		this.props.recognition.onresult = result => {
-			let text = result.results.length ? result.results[0]["0"].transcript : "";
-			this.handleTheSpeechInput(text);
-		};
-
 		this.setState({
 			...this.state,
 			useVoiceInput: this.props.browserSupportsSpeechRecognition,
 			mounted: true
 		});
+
+		if (this.props.browserSupportsSpeechRecognition){
+			this.props.recognition.onresult = result => {
+				let text = result.results.length ? result.results[0]["0"].transcript : "";
+				this.handleTheSpeechInput(text);
+			};
+		}
+		
 	}
 
 	componentWillReceiveProps(nextProps) {

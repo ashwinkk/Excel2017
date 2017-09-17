@@ -34,8 +34,7 @@ h2 {
 }
 
 #root {
-	/*overflow: hidden !important;*/
-	/* overflow-x: hidden; */
+	overflow: hidden;
 }
 
 @media (min-width: 300px) {
