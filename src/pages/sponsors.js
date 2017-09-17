@@ -53,7 +53,7 @@ export default class Sponsors extends Component {
             />
 		));
 		return (
-			<div className="sponsors-container" style={{ textAlign: "left" , background: "#eee" }}>
+			<div className="sponsors-container" style={{ textAlign: "left"}}>
 				<LogoBar />
 				{sponsors}
 			</div>
