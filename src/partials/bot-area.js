@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Redirect } from "react-router";
 import SpeechRecognition from "react-speech-recognition";
 import { FaMicrophone } from "react-icons/lib/fa";
 import { connect } from "react-redux";
@@ -62,13 +61,14 @@ class BotChat extends React.Component {
 			mounted: true
 		});
 
-		if (this.props.browserSupportsSpeechRecognition){
+		if (this.props.browserSupportsSpeechRecognition) {
 			this.props.recognition.onresult = result => {
-				let text = result.results.length ? result.results[0]["0"].transcript : "";
+				let text = result.results.length
+					? result.results[0]["0"].transcript
+					: "";
 				this.handleTheSpeechInput(text);
 			};
 		}
-		
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -86,7 +86,7 @@ class BotChat extends React.Component {
 			}, 1000);
 		}
 		if (nextProps.spawn === false) {
-			this.setState({ mounted: false, typedEntry: false,userText: "" });
+			this.setState({ mounted: false, typedEntry: false, userText: "" });
 		}
 	}
 
