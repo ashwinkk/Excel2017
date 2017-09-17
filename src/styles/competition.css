@@ -49,15 +49,17 @@
       margin-right: 20px; }
     @media (max-width: 800px) {
       .competitions-page .filters .filter-list {
-        width: 100% !important; } }
+        width: 100% !important; }
+        .competitions-page .filters .filter-list > div {
+          width: 50%; } }
 
 .competitions-wrapper {
-  overflow-y: auto;
-  height: 76vh; }
+  overflow-y: auto; }
 
 .competitions-container {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 100%; }
   .competitions-container img {
     width: 200px;
     margin: 20px auto; }

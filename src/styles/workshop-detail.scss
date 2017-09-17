@@ -1,12 +1,21 @@
-.workshop-container p {
+.workshop-container > p {
 	text-align: justify;
-	color: white;
+	color: #333;
+}
+ul {
+	color: #333;
+	li {
+		font-size: 18px;
+		p {
+			color: #333;
+		}
+	}
 }
 .workshop-container h2,
 .workshop-container h3,
 .workshop-container h4 {
 	text-align: center;
-	color: white;
+	color: #333;
 	transition: opacity 0.3s;
 }
 

@@ -28,8 +28,10 @@ class Competitions extends Component {
 			rowNum = 0;
 		if (window.innerWidth > 600) {
 			rowNum = 4;
-		} else if (window.innerWidth > 300) {
+		} else if (window.innerWidth > 400) {
 			rowNum = 3;
+		} else if (window.innerWidth > 300) {
+			rowNum = 2;
 		}
 
 		this.state = {
@@ -59,8 +61,10 @@ class Competitions extends Component {
 		}
 		if (window.innerWidth > 600) {
 			rowNum = 4;
-		} else if (window.innerWidth > 300) {
+		} else if (window.innerWidth > 400) {
 			rowNum = 3;
+		} else if (window.innerWidth > 300) {
+			rowNum = 2;
 		}
 		width -= scrollBar;
 		this.setState({ unitWidth: Math.floor(width / rowNum), render: false });

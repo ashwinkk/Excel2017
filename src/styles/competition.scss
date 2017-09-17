@@ -42,14 +42,14 @@
 			margin: auto 15px auto 15px;
 			width: 20%;
 		}
-		@media (max-width: 800px){
+		@media (max-width: 800px) {
 			display: block !important;
 			height: 130px !important;
 		}
 		.page-head {
 			width: 50%;
-			@media (max-width: 800px){
-					width: 100% !important;
+			@media (max-width: 800px) {
+				width: 100% !important;
 			}
 		}
 		.filter-list {
@@ -61,21 +61,25 @@
 				margin-left: 20px;
 				margin-right: 20px;
 			}
-			@media (max-width: 800px){
-					width: 100% !important;
+			@media (max-width: 800px) {
+				width: 100% !important;
+				& > div {
+					width: 50%;
+				}
 			}
 		}
 	}
 }
 
-.competitions-wrapper{
+.competitions-wrapper {
 	overflow-y: auto;
-	height: 76vh;
+	// height: 76vh;
 }
 
 .competitions-container {
 	display: flex;
 	flex-wrap: wrap;
+	width: 100%;
 	// overflow-y: scroll;
 	// height: 100vh;
 	img {

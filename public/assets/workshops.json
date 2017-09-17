@@ -1,25 +1,47 @@
 [
 	{
-		"id": "swarm-robotics",
-		"title": "Swarm Robotics",
-		"image": "/static/images/iconswarm.png",
-		"accentColour": "cadetblue",
-		"register_link": "https://goo.gl/forms/zFkCmBTU1FQKSqeb2",
-		"background": "/static/images/circuitry.png",
-		"overview": "<img src=\"/static/sponsors/htlabs.png\" /><h3>Swarm Robotics</h3><p>Swarm robotics is a field of robotics technology which deals with the artificial swarm intelligence and involves the usage of multiple robots which coordinate among themselves to complete a task more efficiently compared to a single robot carrying out the same task.Swarm robots communicate with each other wirelessly and take decisions.This workshop involves development of autonomous swarm robots enabled with master-slave communication.</p>",
-		"schedule": "<h3>Schedule</h3><ul><li><p>Introduction to robot</p></li><li><p>AVR series Microcontrollers</p></li><li><p>Programming AVR</p></li><li><p>Interface of Sensors</p></li><li><p>Actuators</p></li><li><p>Motor drivers</p></li><li><p>Programming and running line following robot algorithms</p></li><li><p>Introduction to swarm robots</p></li><li><p>Wireless communication concepts</p></li><li><p>Working with CC2500 Wireless Transceiver module</p></li><li><p>Programming and running grid solving algorithms on robot</p></li><li><p>Communication between two robots</p></li><li><p>Detecting obstacle on the grid</p></li></ul>",
-		"particulars": "<h3>Particulars</h3><ul><li><p>Requirements: Laptops and Charger</p></li><li><p>2 Day Hands on workshop</p></li><li><p>Date: September 16th & 17th</p></li><li><p>Registration Fee: 1200 per person - ( Kit to be given to Team of 5)</p></li><li><p>Venue: Govt Model Engineering College</p></li><li><p>Timing: 9:30 am - 4:30 pm</p></li><li><p>Hands on 2 day workshop</p></li><li><p>Laptops and Chargers required</p></li><li><p>Accommodation can be provided to external participants ( Gents only ) at the men's hostel</p></li><li><p>Certificates to be provided</p></ul></ul><h3>Contacts</h3><ul class=\"event-contact\"><li><h4>Gautham Dinanath</h4><p>+91 7736787858</p></li><li><h4>Ananthkrishnan</h4><p>+91 9747128937</p></li></ul>"
-	},
-	{
 		"_id": "599c7bc91cc6720011bf8122",
 		"id": "quadcopter",
 		"category": "Workshops",
 		"title": "Quadcopter",
 		"register_link": "https://goo.gl/forms/nLC6thd4GbUcAsDu2",
 		"accentColour": "cadetblue",
-		"overview": "<img src=\"/static/sponsors/techeagle.gif\" /><p>Quadcopter is an aerial robot combining a simple propeller mechanism with powerful electronics for limitless real-world applications. It is an embedded system comprising of microcontrollers, sensors, flight gear and other integrated components.This workshop helps participants to develop a Quadcopter project from scratch while understanding the various engineering concepts in making a working Unmanned Aerial Vehicle</p>",
-		"schedule": "<ul><li><p>Fundamentals of Rotor Dynamics.</p></li><li><p>Various components of a Quadcopter.</p></li><li><p>Stability and Control of a Quadcopter.</p></li><li><p>Introduction to Quadcopter Design.</p></li><li><p>Basics of PID tuning.</p></li><li><p>Introduction to Electronics and Sensor calibration.</p></li><li><p>Professional Flight lessons from TechEagle Pilots</p></li></ul>",
-		"particulars": "<h3>Particulars</h3><ul><li><p>Date: Sept 8th & 9th</p></li><li><p>Cost: 1000 per person - ( Kit to be given to Team of 5,excluding transmitter and receiver )</p></li><li><p>Venue: Govt Model Engineering College</p></li><li><p>Timing: 9:30 am - 4:30 pm</p></li><li><p>Hands on 2 day workshop</p></li><li><p>Laptops and Chargers required</p></li><li><p>Accommodation can be provided to external participants ( Gents only ) at the men's hostel</p></li><li><p>Certificates to be provided</p></li></ul><h3>Contacts</h3><ul class=\"event-contact\"><li><h4>Gautham Dinanath</h4><p>+91 7736787858</p></li><li><h4>Ananthkrishnan</h4><p>+91 9747128937</p></li></ul>",
+		"overview":
+			"<img src=\"/static/sponsors/techeagle.gif\" /><p>Quadcopter is an aerial robot combining a simple propeller mechanism with powerful electronics for limitless real-world applications. It is an embedded system comprising of microcontrollers, sensors, flight gear and other integrated components.This workshop helps participants to develop a Quadcopter project from scratch while understanding the various engineering concepts in making a working Unmanned Aerial Vehicle</p>",
+		"schedule":
+			"<ul><li><p>Fundamentals of Rotor Dynamics.</p></li><li><p>Various components of a Quadcopter.</p></li><li><p>Stability and Control of a Quadcopter.</p></li><li><p>Introduction to Quadcopter Design.</p></li><li><p>Basics of PID tuning.</p></li><li><p>Introduction to Electronics and Sensor calibration.</p></li><li><p>Professional Flight lessons from TechEagle Pilots</p></li></ul>",
+		"particulars":
+			"<h3>Particulars</h3><ul><li><p>Date: Sept 8th & 9th</p></li><li><p>Cost: 1000 per person - ( Kit to be given to Team of 5,excluding transmitter and receiver )</p></li><li><p>Venue: Govt Model Engineering College</p></li><li><p>Timing: 9:30 am - 4:30 pm</p></li><li><p>Hands on 2 day workshop</p></li><li><p>Laptops and Chargers required</p></li><li><p>Accommodation can be provided to external participants ( Gents only ) at the men's hostel</p></li><li><p>Certificates to be provided</p></li></ul><h3>Contacts</h3><ul class=\"event-contact\"><li><h4>Gautham Dinanath</h4><p>+91 7736787858</p></li><li><h4>Ananthkrishnan</h4><p>+91 9747128937</p></li></ul>",
 		"image": "/static/images/quadcopter.png"
+	},
+	{
+		"_id": "59ba1967cc67f600120e773a",
+		"id": "augmented-reality",
+		"category": "Workshops",
+		"name": "Augmented Reality ",
+		"overview":
+			"<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Augmented reality is one of the present cutting edge technology. Which allows for a digitally manipulable, enhanced and interactive view of users real world</span><span style=\"color: rgb(0, 0, 0);\">.</span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Among the other reality technologies, augmented reality lies in the middle of the mixed reality spectrum, being between the real and virtual world</span>.<span style=\"color: rgb(0, 0, 0);\">This workshop will enable participants to work with AR modules, build modules including overlaying text, video, 2D and 3D elements. Animation and interaction with elements by making responsive AR.</span></p>",
+		"contact_details":
+			"<h4>Gautham Dinanath</h4><p>+91 7736787858</p><p><br></p><h4>Ananthkrishnan</h4><p>+91 9747128937</p>",
+		"cover": "/static/images/augmented-reality.png",
+		"schedule":
+			"<ul><li><span style=\"background-color: transparent;\">Introduction to UNITY</span></li><li><span style=\"background-color: transparent;\">Why UNITY ?</span></li><li><span style=\"background-color: transparent;\">Getting Started with UNITY.</span></li><li><span style=\"background-color: transparent;\">Learning the interface.</span></li><li><span style=\"background-color: transparent;\">Introduction to UNITY Scripting</span></li><li><span style=\"background-color: transparent;\">Scripting Tools.</span></li><li><span style=\"background-color: transparent;\">Unity Programming Syntax.</span></li><li><span style=\"background-color: transparent;\">Touch Inputs.</span></li><li><span style=\"background-color: transparent;\">Moving 2D/3D objects with touch Inputs.</span></li><li><span style=\"background-color: transparent;\">Augmented Reality</span></li><li><span style=\"background-color: transparent;\">Introduction.</span></li><li><span style=\"background-color: transparent;\">Different AR degrees.</span></li><li><span style=\"background-color: transparent;\">Augmented / Virtual Reality.</span></li><li><span style=\"background-color: transparent;\">Google Cardboard.</span></li><li><span style=\"background-color: transparent;\">Plugins for Augmented Reality</span></li><li><span style=\"background-color: transparent;\">Introduction to Vuforia.</span></li><li><span style=\"background-color: transparent;\">Creating a tracker.</span></li><li><span style=\"background-color: transparent;\">Detecting tracker.</span></li><li><span style=\"background-color: transparent;\">Interacting with 3D Objects in Augmented Reality.</span></li></ul>",
+		"particulars":
+			"<ul><li>Date: October 6th &amp; 7th</li><li>Registration Fee: ₹900 per person</li><li>Venue: Govt. Model Engineering College</li><li>Timing: 9:30 AM - 4:30 PM</li><li>Laptops and Chargers required</li><li>Accommodation can be provided to external participants (Gents only) at the men's hostel</li><li>Certificates will be provided</li></ul>"
+	},
+	{
+		"_id": "59ba2071cc67f600120e773b",
+		"id": "artificial-intelligence",
+		"category": "Workshops",
+		"name": "Artificial Intelligence",
+		"description":
+			"<p>Artificial Intelligence (AI) is a field that has a long history but is still constantly and actively growing and changing. In this workshop you’ll learn the basics of modern AI as well as some of the representative applications of AI. An introduction to Software tool used for AI will also be covered in the workshop</p>",
+		"contact_details":
+			"<h4>Gautham Dinanath</h4><p>+91 7736787858</p><p><br></p><h4>Ananthkrishnan</h4><p>+91 9747128937</p>",
+		"cover": "/static/images/artificial-intelligence.png",
+		"schedule":
+			"<ul><li>Introduction to AI</li><li>Different areas in AI</li><li>Major players in AI</li><li>Introduction to Mahcine learning</li><li>Supervised and Unsupervised learning</li><li>The Different ML Algortihms</li><li>Introduction to Deep learning</li><li>Liner regression</li><li>Logistic regression</li><li>Artificial Neural Networks</li><li>Concepts in Deep Learning</li><li>Different Types of Networks</li><li>Introduction to Software tools used</li></ul><p><br></p>",
+		"particulars":
+			"<ul><li>Date: October 5th &amp; 6th</li><li>Registration Fee: ₹700 per person</li><li>Venue: Govt. Model Engineering College</li><li>Timing: 9:30 AM - 4:30 PM</li><li>Laptops and Chargers required</li><li>Basic knowledge in Python and Linux</li><li>Accommodation can be provided to external participants (Gents only) at the men's hostel</li><li>Certificates will be provided</li></ul><p><br></p>"
 	}
 ]

@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import BotChat from "./bot-area";
 
 import GoLock from "react-icons/lib/go/lock";
-import { FaUserSecret, FaCalendar, FaMicrophone } from "react-icons/lib/fa";
+import { FaCameraRetro, FaCalendar, FaMicrophone } from "react-icons/lib/fa";
 
 import { MdVideogameAsset, MdHighlight, MdHome } from "react-icons/lib/md";
 
@@ -102,14 +102,14 @@ class Navbar extends React.Component {
 									<FaCalendar />
 								</Link>
 							</div>
-							{/* <div>
+							<div>
 								<div className="nav-text">
-									<Link to="/user">User</Link>
+									<Link to="/gallery">Gallery</Link>
 								</div>
-								<Link to="/user" onClick={this.removeFullpage}>
-									<FaUserSecret />
+								<Link to="/gallery" onClick={this.removeFullpage}>
+									<FaCameraRetro />
 								</Link>
-							</div> */}
+							</div>
 						</div>
 					</div>
 					<div className={micClass}>
