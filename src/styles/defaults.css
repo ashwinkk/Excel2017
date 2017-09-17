@@ -34,7 +34,7 @@ h2 {
 }
 
 #root {
-	overflow-x: hidden !important;
+	/*overflow: hidden !important;*/
 	/* overflow-x: hidden; */
 }
 

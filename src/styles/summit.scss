@@ -9,7 +9,7 @@
 		font-weight: bolder;
 	}
 	h4 {
-		font-family: 'Raleway', sans-serif;
+		font-family: "Raleway", sans-serif;
 	}
 	h2 {
 		color: #d25e47;
@@ -32,7 +32,7 @@ table {
 	border: 2px solid white;
 	width: 150px;
 	border-radius: 3px;
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-weight: bolder;
 	text-align: center;
 }
@@ -70,10 +70,39 @@ table {
 			margin: auto;
 			display: block;
 			height: 300px;
-			margin-top: 150px;
 			@media (max-width: 600px) {
 				width: 100%;
 				height: unset;
+			}
+		}
+		img.sponsor {
+			width: 430px;
+			padding-right: 215px;
+			position: relative;
+			z-index: 1;
+			margin: auto;
+			display: block;
+			height: unset;
+			margin-top: 170px;
+			@media (max-width: 600px) {
+				width: 100%;
+				padding-right: 50%;
+				height: unset;
+			}
+		}
+		span {
+			display: block;
+			width: 430px;
+			padding-right: 200px;
+			position: relative;
+			left: 10px;
+			font-size: 20px;
+			font-weight: 100;
+			color: #ffffff;
+			margin: auto;
+			@media (max-width: 600px) {
+				width: 100%;
+				padding-right: 45%;
 			}
 		}
 	}
@@ -150,7 +179,7 @@ section.venue-container {
 			h3,
 			h2 {
 				color: #dcdcdc;
-				font-family: 'Raleway', sans-serif;
+				font-family: "Raleway", sans-serif;
 				font-weight: normal;
 			}
 		}
@@ -162,7 +191,7 @@ section.venue-container {
 	background-color: rgba(10, 10, 10, 1);
 	h3 {
 		font-weight: normal;
-		font-family: 'Muli', sans-serif;
+		font-family: "Muli", sans-serif;
 	}
 	.home-content {
 		@media (min-width: 1000px) {
@@ -190,7 +219,7 @@ section.venue-container {
 	.schedule-container {
 		td {
 			// color: rgb(172, 172, 172);
-			font-family: 'Raleway', sans-serif;
+			font-family: "Raleway", sans-serif;
 			border-top-color: #353535;
 			text-align: center;
 		}
