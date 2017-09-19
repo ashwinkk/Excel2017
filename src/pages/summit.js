@@ -5,7 +5,9 @@ import { connect } from "react-redux";
 import "../styles/summit.css";
 
 @connect(store => {
-	store.navbar.backgroundColor;
+	return {
+		bg: store.navbar.backgroundColor
+	};
 })
 class Summit extends React.Component {
 	componentDidMount() {
@@ -319,14 +321,22 @@ class Summit extends React.Component {
 								<tbody>{tableMarkup4}</tbody>
 							</table>
 							<p className="text-center ">04:20-4:25 pm : Closing Note</p>
-
-							<a
-								className="register_button"
-								target="_blank"
-								href="https://goo.gl/forms/xeiZh6D07AmthK8t1"
-							>
-								Register
-							</a>
+							<div className="payment-links">
+								<a
+									className="register_button"
+									target="_blank"
+									href="https://goo.gl/forms/xeiZh6D07AmthK8t1"
+								>
+									Register
+								</a>
+								<a
+									className="register_button"
+									href="https://imjo.in/DqQKbp"
+									target="_blank"
+								>
+									Pay Here
+								</a>
+							</div>
 							<h4 className="text-center">Registration fees Rs 750/-</h4>
 							<p className="text-center">(inclusive of lunch and tea)</p>
 						</section>

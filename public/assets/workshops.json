@@ -18,12 +18,12 @@
 		"_id": "59ba1967cc67f600120e773a",
 		"id": "augmented-reality",
 		"category": "WS",
-		"name": "Augmented Reality ",
+		"title": "Augmented Reality",
 		"overview":
 			"<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Augmented reality is one of the present cutting edge technology. Which allows for a digitally manipulable, enhanced and interactive view of users real world</span><span style=\"color: rgb(0, 0, 0);\">.</span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Among the other reality technologies, augmented reality lies in the middle of the mixed reality spectrum, being between the real and virtual world</span>.<span style=\"color: rgb(0, 0, 0);\">This workshop will enable participants to work with AR modules, build modules including overlaying text, video, 2D and 3D elements. Animation and interaction with elements by making responsive AR.</span></p>",
 		"contact_details":
 			"<h4>Gautham Dinanath</h4><p>+91 7736787858</p><p><br></p><h4>Ananthkrishnan</h4><p>+91 9747128937</p>",
-		"cover": "/static/images/augmented-reality.png",
+		"image": "/static/images/augmented-reality.png",
 		"schedule":
 			"<ul><li><span style=\"background-color: transparent;\">Introduction to UNITY</span></li><li><span style=\"background-color: transparent;\">Why UNITY ?</span></li><li><span style=\"background-color: transparent;\">Getting Started with UNITY.</span></li><li><span style=\"background-color: transparent;\">Learning the interface.</span></li><li><span style=\"background-color: transparent;\">Introduction to UNITY Scripting</span></li><li><span style=\"background-color: transparent;\">Scripting Tools.</span></li><li><span style=\"background-color: transparent;\">Unity Programming Syntax.</span></li><li><span style=\"background-color: transparent;\">Touch Inputs.</span></li><li><span style=\"background-color: transparent;\">Moving 2D/3D objects with touch Inputs.</span></li><li><span style=\"background-color: transparent;\">Augmented Reality</span></li><li><span style=\"background-color: transparent;\">Introduction.</span></li><li><span style=\"background-color: transparent;\">Different AR degrees.</span></li><li><span style=\"background-color: transparent;\">Augmented / Virtual Reality.</span></li><li><span style=\"background-color: transparent;\">Google Cardboard.</span></li><li><span style=\"background-color: transparent;\">Plugins for Augmented Reality</span></li><li><span style=\"background-color: transparent;\">Introduction to Vuforia.</span></li><li><span style=\"background-color: transparent;\">Creating a tracker.</span></li><li><span style=\"background-color: transparent;\">Detecting tracker.</span></li><li><span style=\"background-color: transparent;\">Interacting with 3D Objects in Augmented Reality.</span></li></ul>",
 		"particulars":
@@ -33,12 +33,12 @@
 		"_id": "59ba2071cc67f600120e773b",
 		"id": "artificial-intelligence",
 		"category": "WS",
-		"name": "Artificial Intelligence",
-		"description":
+		"title": "Artificial Intelligence",
+		"overview":
 			"<p>Artificial Intelligence (AI) is a field that has a long history but is still constantly and actively growing and changing. In this workshop you’ll learn the basics of modern AI as well as some of the representative applications of AI. An introduction to Software tool used for AI will also be covered in the workshop</p>",
 		"contact_details":
 			"<h4>Gautham Dinanath</h4><p>+91 7736787858</p><p><br></p><h4>Ananthkrishnan</h4><p>+91 9747128937</p>",
-		"cover": "/static/images/artificial-intelligence.png",
+		"image": "/static/images/artificial-intelligence.png",
 		"schedule":
 			"<ul><li>Introduction to AI</li><li>Different areas in AI</li><li>Major players in AI</li><li>Introduction to Mahcine learning</li><li>Supervised and Unsupervised learning</li><li>The Different ML Algortihms</li><li>Introduction to Deep learning</li><li>Liner regression</li><li>Logistic regression</li><li>Artificial Neural Networks</li><li>Concepts in Deep Learning</li><li>Different Types of Networks</li><li>Introduction to Software tools used</li></ul><p><br></p>",
 		"particulars":
@@ -48,12 +48,12 @@
 		"_id": "59be81d0724a590012c46871",
 		"id": "guest-lectures",
 		"category": "Talks",
-		"name": "Guest Lectures",
+		"title": "Guest Lectures",
 		"overview":
 			"<p>\t<span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Behold curious minds. Ever wondered how scientific or technological breakthroughs occur? Dreamt of interacting with minds who have brought new dimensions to conventions? Introducing the Guest Lectures of Excel 2017, all new with the theme “Discover|Define|Defy, lines”. </span></p><p>\t<span style=\"background-color: transparent; color: rgb(0, 0, 0);\">A line represents a path we follow. A path that defines us as we explore it. Focussing on new technical ideas and aspects, we bring in a set of diverse speakers who would enlighten us with their experiences on traversing these paths.</span></p><p><br></p>",
 		"particulars":
-			"<p><strong>Venue</strong>: College Auditorium</p><p>Malavika Vasudevan : 9400242440</p><p>Joe Varghese Kurien : 9995294391</p>",
-		"cover": "/static/images/guest-lectures.png",
+			"<h3>Speakers</h3><p>To be announced soon</p><h3>Contacts</h3><p><strong>Venue</strong>: College Auditorium</p><p>Malavika Vasudevan : 9400242440</p><p>Joe Varghese Kurien : 9995294391</p>",
+		"image": "/static/images/guest-lectures.png",
 		"schedule":
 			"<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Day 1 : Discover: Explore the latest technologies and realise how each one of them can bring out a change. To discover the real shift that needs to happen to go from believing that you have some innate calling, something you were \"meant\" to do, to understanding that you create your own sense of meaning and purpose in life.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Day 2 : Define: Get to know the &nbsp;latest innovations and get dissolved into them. Develop a &nbsp;perspective on career objective, what one has to aspire to be and where one should hope to go in their work life. Taking in account practical and objective views, reflect a career dream as success follows a well thought out plan.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Day 3 : Defy: A guide to venture into something out of the box. Giving up well off jobs to venture into the unknown or overcoming stereotypes that control our society is the leap of faith being glorified. Get to realise that life make or break moments which are hinged on the crucial step of “Deciding to Act”.</span></p><p><br></p>"
 	}

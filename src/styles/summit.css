@@ -25,7 +25,7 @@ table {
 .register_button {
   padding: 10px;
   display: block;
-  margin: 40px auto;
+  margin: 20px 30px;
   border: 2px solid white;
   width: 150px;
   border-radius: 3px;
@@ -104,6 +104,11 @@ table {
   @media (max-width: 600px) {
     .cover {
       height: 550px; } }
+
+.payment-links {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center; }
 
 section.venue-container {
   background-color: rgba(10, 10, 10, 0.5);

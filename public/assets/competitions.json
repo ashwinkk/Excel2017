@@ -80,7 +80,7 @@
 	},
 	{
 		"cover": "/static/images/game-of-drones.png",
-		"prize_pool": "24K",
+		"prize_pool": "30k",
 		"buttons": [
 			{
 				"link": "https://goo.gl/forms/bW7cHQ7Abx4pRU4p1",
@@ -168,10 +168,10 @@
 			"<ul><li>From the incoming entries, 20 films will shortlisted by a panel.</li><li>The top 20 films will be played on the day of the event in front of the esteemed filmmakers who will be selecting the winners.</li><li>Along with the screening, there will be an interactive session where the makers can talk to the audience about their film and their journey as a team.</li><li>Certificates and gift vouchers will be also given for Best Actor, Best Actress, Best Director, Best story,Best cinematographer and Best Editor.</li><li>Online certificates will be awarded to all the shortlisted entries.</li></ul>",
 		"id": "reel-life",
 		"_id": "59b8c86bf82f9600123938f5",
+		"type": "off",
 		"rules":
 			"<ul><li>It is an open event. Entries are invited from all.</li><li>The entries have to be original. Content copied from any external source can lead to direct disqualification.</li><li>Only films shot/released after October 2016 are eligible for entry.</li><li>Entry fee is Rs 250 per team which can be send through Paytm (9633554696) or can be sent along with the DVD.</li><li>The film cannot exceed a total time of 25 mins (Including title card and credits).</li><li>Entries can be in any language but suitable subtitles must be furnished for languages other than Malayalam.</li><li>There is no subject/theme for the competition.</li><li>Entries previously published online may share respective Youtube links. All other entries must be submitted in a single DVD(DVD-R,DVD+R,DVD-R DL,DVD+RDL), encoded in industry standard video format viz.AVI,VOB,MP4,MKV,WMV,MOV or MPEG.</li><li>The entries must be sent along with a filled up registration form and a copy of the ID proof of one of the crew members (preferably director, cinematographer or an actor).</li><li>Last date for sending entries is September 30th 2017.</li><li>If the film has already been released, a YouTube link of the video should be send to the coordinators of the event.</li><li>Entries may also be mailed via post to</li></ul><p>Ananth Krishnan</p><p>Sree, JRA 05, Jayanagar</p><p>Maradu P.O</p><p>Ernakulam</p><p>682304</p>",
 		"category": "NT",
-		"type": "off",
 		"shortDes":
 			"'REEL LIFE' is a short film contest that aims to bring out talents who are passionate about cinema and provide them a chance to showcase their work in front of an esteemed panel of filmmakers",
 		"contact_details":
@@ -182,6 +182,7 @@
 		"name": "Reel Life"
 	},
 	{
+		"color": "#F44336",
 		"buttons": [
 			{
 				"link": "http://ue.excelmec.org/",
@@ -192,7 +193,8 @@
 			"An inventive event that recognizes that creativity is the genius of the mind. An electro-mechanical DIY,this event is all about ideation and creation. Problems to test the basics of your electrical and mechanical proficiency will require you to build a gadget using the components provided and a time constraint.",
 		"_id": "59ac00bc39d8b90011e525d7",
 		"id": "ultimate-engineer",
-		"category": "General",
+		"category": "EC",
+		"type": "off",
 		"name": "Ultimate Engineer",
 		"description":
 			"<p><em>Scientists dream about doing great things. Engineers do them.</em></p><p><em><span class=\"ql-cursor\">﻿</span></em></p><p>Combining smart and art is a tough job, but if you're ready to test your grit, skill and knowledge, you're at the right place.</p><p>Can you beat the clock to build the gadget you envisioned?</p><p>They say, creativity is the genius of the mind. And what could be more creative than a little bit of Engineering?</p><p>Do you have what it takes to be the Ultimate Engineer?</p>",
@@ -206,292 +208,216 @@
 			"<p><strong>Round 1 (Online Prelims):</strong></p><p>The participants will have to answer 18 MCQ questions in 20 mins and 2 descriptive questions in another 20 mins.</p><p>The questions will be based on basic electrical, electronics, mechanical and computer science concepts.</p><p>Top 18 participants will be shortlisted.</p><p><br></p><p><strong>Round 2:</strong></p><p><strong>Group discussion</strong></p><p>The individual participants will be partnered up in teams of 3 on the day of the event and they will have to attend a group discussion.</p><p>The rules and the topic for discussion will be announced before the session commences</p><p><br></p><p><strong>Round 3:</strong></p><p><strong>Design</strong></p><p>The teams will be given a problem statement, and will have to come up with a solution along with a design using the given software tools like proteus and Autocad.</p><p>The participants may use softwares other than the ones provided and can bring their own laptops for this round.</p><p><br></p><p><strong>Round 4:</strong></p><p><strong>Presentation</strong></p><p>The participants will have to present their design in front of a judging panel at the end of the design round.</p>"
 	},
 	{
+		"_id": "59b8ec6fa5ee43001294d48e",
+		"id": "alohomora",
+		"type": "off",
+		"shortDes":
+			"ALOHOMORA! The magic words have been said. The doors have opened. It's;s time to hunt for the treasure. The most participated non-tech event in Excel which saw more than 350 teams participating last year and a tremendous success.",
+		"category": "NT",
+		"name": "ALOHOMORA-The hunt begins",
+		"description":
+			"<p>ALOHOMORA! The magic words have been said. The doors have opened. It's;s time to hunt for the treasure. The most participated non-tech event in Excel which saw more than 350 teams participating last year and a tremendous success. This year, its back with greater energy and vigour. Covering a much bigger area and scheduled for two days, its bigger and much more fascinating. So get ready to set your grey cells to work and get your adrenaline levels soaring.</p>",
+		"color": "#7f8c8d",
+		"contact_details":
+			"<p>James Mathews: 8547984757</p><p><a href=\"mailto:jamesmathews.mec@gmail.com\" target=\"_blank\">jamesmathews.mec@gmail.com</a></p><p><br></p><p>Ashma M J: 7907561079</p><p><a href=\"mailto:ashmamj.mec@gmail.com\" target=\"_blank\">ashmamj.mec@gmail.com</a></p>",
+		"cover": "/static/images/alohomora.png",
+		"prize_pool": "13k",
+		"rules":
+			"<p><strong>Rules</strong></p><ul><li>Each team <strong>must </strong>comprise of 4 members.</li><li>The participants must carry their <strong>valid id cards</strong> at each round of the game.</li><li>Teams clearing the 1st round should report at the place announced before the <strong>time deadline</strong>. Failing to report at the specified time will be considered a disqualification.</li><li>Picking up fights with other teams or the authority will lead to disqualification of the team.</li><li>Since the event is scheduled for two days the participants clearing the first day must look after the arrangements for their accomodation on their own.</li><li>Each round has its own set of rules and participants are strictly adviced to stick to those rules and instructions.</li><li>Any malpractice during the event will lead to disqualification of the team.</li><li>The decision of the authority on any matter will be final.</li></ul><p><br></p>",
+		"eventFormat":
+			"<p><strong>Event format</strong></p><p><br></p><p><br></p><p><u>Peliminary</u></p><p><br></p><p>The preliminary round is in theform of a paper test conducted inside the college.</p><p><br></p><p><u>Consecutive rounds</u></p><p><br></p><p>The rest of Alohomora will comprise a compete treasure hunt conducted in various rounds and a vast span of area in and around college.</p><p>These rounds conducted in a span of <strong>two days</strong> will comprise of eliminations and the successful team moves on to the next round.</p><p>A team has to survive through all these rounds till the end to find the Treasure.</p>"
+	},
+	{
 		"_id": "59ac005d39d8b90011e525d1",
 		"id": "extrinsicity",
-		"category": "Electronics",
+		"category": "EC",
+		"type": "off",
 		"name": "Extrinsicity",
+		"color": "#8BC34A",
 		"description":
-			"<p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Love messing around and playing with circuits, bugs and all things electronics? Look no further, Extrinsicity is your cup of tea mate! Wind your way through intriguing analogue circuits and calculated signals to win the great war of circuitry and prove your devotion to electronics.</span></p>",
+			"<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Love messing around and playing with circuits, bugs and all things electronics? Look no further, Extrinsicity is your cup of tea mate! Wind your way through intriguing analogue circuits and calculated signals to win the great war of circuitry and prove your devotion to electronics.</span></p>",
+		"shortDes":
+			"Love messing around and playing with circuits, bugs and all things electronics? Look no further, Extrinsicity is your cup of tea mate!",
 		"contact_details":
 			"<p>Jayasanker Jayaprakash</p><p>+91-8891712763</p><p>Akhil T Joy</p><p>+91-8129775971</p>",
 		"cover": "/static/images/extrinsicity.png",
-		"prize_pool": "10k",
+		"prize_pool": "11k",
 		"rules":
 			"<ol><li>This will be a team event with each team having not more than three members.</li><li>All members of the team need not be from the same college.</li><li>All members are expected to exhibit their college ID and Excel ID cards.</li><li>All items required for the event will be provided by the coordinators.</li><li>Use of mobile phone is strictly prohibited.</li><li>Decision of coordinators will be final.</li><li>Excel team will not bear responsibility for any loss of property, injury or delay caused by participants during the event.</li><li>Teams violating the above rules will be suspended immediately.</li><li>Cross-college teams are allowed.</li><li>Malpractices and sabotaging other teams' machines will lead to immediate disqualification.</li><li>Judges' decision will be final.</li><li>Organizers reserve the right to make decisions in case of conflicts and other issues.</li><li>Rules are subject to change at any point in time. All rules will be explained at the event as well</li></ol>",
-		"eventFormat": "<p><br></p>"
-	},
-	{
-		"_id": "59ac007d39d8b90011e525d3",
-		"id": "circuimstance",
-		"category": "Electronics",
-		"name": "CIRCUImsTance",
-		"description":
-			"<p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">The ultimate Sci-Fi geek fantasy has finally come true! Rediscover your passion for electronics through this compelling online narrative, set in a fictitious world. Battle real time hurdles and emerge victorious as the plot unfolds to become the master of circumstances. Wait with bated breath! The story has just began folks!</span></p>",
-		"contact_details":
-			"<p>Mishel Jyothis Paul</p><p>+91-8289837546</p><p>Abu Jose George</p><p>+91-9497336167</p><p>Ebin B Plackal</p><p>+91-8281484093</p>",
-		"cover": "/static/images/circuimstance.png",
-		"prize_pool": "3k",
-		"rules": "<p><br></p>",
-		"eventFormat": "<p><br></p>"
-	},
-	{
-		"_id": "59ac00c839d8b90011e525d8",
-		"id": "meclabs",
-		"category": "General",
-		"name": "MECLabs",
-		"description":
-			"<p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Engineering ain’t all about classes and exams, it’s also about going beyond textbooks and getting your hands dirty! Stuck with an idea? Ever longed to turn them into reality? Well, MECLabs is undeniably the event for MECians to take that leap into the world of making! Here’s the chance to flaunt your technical prowess, implement your innovative ideas, fortify your knowledge and forge a lead in the art of designing and making. Build, test and troubleshoot, which is nothing but the quintessence of learning.</span></p>",
-		"contact_details": "<p><br></p>",
-		"cover": "/static/images/meclabs.png",
-		"prize_pool": "",
-		"rules": "<p><br></p>",
-		"eventFormat": "<p><br></p>"
-	},
-	{
-		"_id": "59b8c5dff82f9600123938f4",
-		"id": "defacto",
-		"category": "General",
-		"name": "Defacto",
-		"description":
-			"<p><span style=\"color: rgb(34, 34, 34);\">A quiz solely aimed at school students, Defacto promises to be fun and interactive session, combining the innovation of college quizzing and the inquisitiveness of school quizzing consisting of a variety of interactive sessions, Defacto wishes to reach out to the young Einsteins and Madam Curies in school.</span></p>",
-		"contact_details": "<p><br></p>",
-		"cover": "/static/images/defacto.png",
-		"prize_pool": "",
-		"rules":
-			"<ul><li>School students from classes 7-12 can participate.</li><li>A team should comprise of 2 members.</li><li>Cross school teams allowed.</li><li>Online registration and spot registration available for the teams. Spot registration will be closed half an hour before the prelims.</li><li>School ID cards is mandatory.</li><li>Winners and runners up of the quiz will be rewarded.</li><li>The team with the most innovative ‘name’ will be rewarded.</li><li>Decision of the quizmaster will be final and binding.</li></ul>",
-		"eventFormat": "<p><br></p>"
-	},
-	{
-		"_id": "59b8ec6fa5ee43001294d48e",
-		"id": "alohomora",
-		"category": "General",
-		"name": "ALOHOMORA - The hunt begins",
-		"description":
-			"<p>ALOHOMORA! The magic words have been said. The doors have opened. It's;s time to hunt for the treasure. The most participated non-tech event in Excel which saw more than 350 teams participating last year and a tremendous success. This year, its back with greater energy and vigour. Covering a much bigger area and scheduled for two days, its bigger and much more fascinating. So get ready to set your grey cells to work and get your adrenaline levels soaring.</p>",
-		"contact_details":
-			"<p>James Mathews: 8547984757</p><p><a href=\"mailto:jamesmathews.mec@gmail.com\" target=\"_blank\">jamesmathews.mec@gmail.com</a></p><p><br></p><p>Ashma M J: 7907561079</p><p><a href=\"mailto:ashmamj.mec@gmail.com\" target=\"_blank\">ashmamj.mec@gmail.com</a></p>",
-		"cover": "/static/images/alohomora",
-		"prize_pool": "",
-		"rules": "<p><br></p>",
-		"eventFormat": "<p><br></p>"
+		"eventFormat":
+			"<p><strong>Round 1 (Prelims):</strong></p><p>Participants will have to answer a set of questions based on Analog electronic circuits and signals. Top 8 teams will qualify for the next round.</p><p><br></p><p><strong>Round 2:</strong></p><p><strong>Rapid Fire </strong></p><p>The shortlisted teams will be given a set of design questions consecutively The first 6 teams to answer all the questions will advance to the next round.</p><p><br></p><p><strong>Round 3:</strong></p><p><strong>Debugging</strong></p><p>The shortlisted teams will be given a circuit which they'll have to identify, debug and redesign. The first 4 teams to complete the task will advance to the next round.</p><p><br></p><p><strong>Round 4:</strong></p><p><strong>Wave cloning</strong></p><p>The final round will test how good you are with the CRO. A sample pattern will be given on the CRO. The team which will replicate the given pattern first will be declared the winner.</p>"
 	},
 	{
 		"_id": "59ac006a39d8b90011e525d2",
 		"id": "defuse-101",
-		"category": "Electronics",
+		"color": "#FF9800",
+		"category": "EC",
+		"type": "off",
 		"name": "Defuse 101",
+		"shortDes":
+			"Have you ever wondered how bombs are defused? How would it feel to stand there,right at the edge -dancing with danger? What if each passing second is ticking away on the dial of a live bomb.",
 		"description":
-			"<p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Have you ever wondered how bombs are defused? How would it feel to stand there,right at the edge -dancing with danger? What if each passing second is ticking away on the dial of a live bomb. </span></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Battle against time to disarm a live ticking bomb. Decipher the secrets of binary and digital electronics to crack the code.</span><span style=\"color: rgb(0, 0, 0);\">Step up and be the hero! </span></p>",
+			"<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Have you ever wondered how bombs are defused? How would it feel to stand there,right at the edge -dancing with danger? What if each passing second is ticking away on the dial of a live bomb. </span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Battle against time to disarm a live ticking bomb. Decipher the secrets of binary and digital electronics to crack the code.</span><span style=\"color: rgb(0, 0, 0);\">Step up and be the hero! </span></p>",
 		"contact_details":
 			"<p>Renjith NA</p><p>+91-9744174542</p><p>Arjun Thambi</p><p>+91-8129213546</p>",
 		"cover": "/static/images/defuse-101.png",
 		"prize_pool": "11k",
 		"rules":
 			"<ol><li>A team may have a maximum of three members.</li><li>It is not mandatory that all the members of the team be the students of the same institution.</li><li>All participants should present their College ID and Excel ID cards.</li><li>No competitive aids must be brought to college. Calculators are prohibited.</li><li>Use of mobile phone is prohibited during the event.</li><li>Any team not abiding by the rules shall be disqualified.</li><li>Datasheet and other component details will be provided, no external materials are allowed during the event.</li><li>In case of no output from any team or tie, judgement shall be made based on a viva-voce by the judges.</li><li>Decision of the judges shall be final.</li><li>Rules are subject to change at any time.</li><li>Cross-college teams are allowed.</li><li>Malpractices and sabotaging other teams' machines will lead to immediate disqualification.</li><li>Judges' decision will be final.</li><li>Organizers reserve the right to make decisions in case of conflicts and other issues.</li></ol>",
-		"eventFormat": "<p><br></p>"
+		"eventFormat":
+			"<p><strong>Round 1(Prelims):</strong></p><p>The teams will have to answer a set of questions based on digital electronics. The top 10 teams will advance to the net round.</p><p><br></p><p><strong>Round 2</strong></p><p><strong>Circuit realization</strong></p><p>The shortlisted teams will be given a circuit which they will have to realize using logic gates. first 8 teams to realize the circuit advance to the next round.</p><p><br></p><p><strong>Round 3</strong></p><p><strong>Debugging and design</strong></p><p>The shortlisted teams will  have to debug/design the given digital circuit to get the required output. Top 4 teams will advance to the next round. </p><p><br></p><p><strong>Round 4:</strong></p><p><strong>Defuse</strong></p><p>The teams will have to defuse a live time bomb by analyzing the circuit before the time runs out. The prize will be based on a viva voce if no one defuses the bomb in time.</p>"
 	},
 	{
-		"_id": "59ac00a439d8b90011e525d6",
-		"id": "lifeline",
-		"category": "Biomedical",
-		"name": "Lifeline",
+		"_id": "59b8d8f11368910012bde120",
+		"color": "#FF8A80",
+		"id": "4x120",
+		"category": "CS",
+		"type": "off",
+		"name": "4x120",
+		"shortDes":
+			"4 people and 120 seconds of synchronous understanding and unrivalled teamwork separate the winners from the others.",
 		"description":
-			"<p><span style=\"background-color: transparent;\">Get your act&nbsp;together before the patient flat-lines. Scrutinise the inner workings of an impaired medical instrument to keep a soul alive. An exclusive event which provides an opportunity to assert your proficiency in debugging and endow yourself with the honour of being a life saver. </span></p>",
+			"<p>4 people and 120 seconds of synchronous understanding and unrivalled teamwork separate the winners from the others. The best teams that we have encountered have a few things in common :teamwork, impeccable sync, immeasurable confidence in each other and the ability to pick up from where his predecessor left, better his effort and win the title</p>",
 		"contact_details":
-			"<p>Nithin Raj</p><p>+91-8089791044</p><p>Paulson Paul</p><p>+91-9895183049</p>",
-		"cover": "/static/images/lifeline.png",
-		"prize_pool": "11k",
+			"<ul><li>Vysakh Induchoodan: +91 98472 65840</li><li>Vaishak Pisharody: +91 9496710584</li></ul>",
+		"cover": "/static/images/4x120.png",
+		"prize_pool": "12k",
 		"rules":
-			"<ol><li>The competition is held for teams of 2 members.</li><li>Cross-college teams <strong>are</strong> allowed.</li><li>Failing to save the patient in given time results in immediate elimination.</li><li>The coordinators of the event reserve the right to take appropriate decisions in case of any issues/conflicts.</li><li>Rules are subject to change at any point in time. All rules will be explained at the event as well.</li><li>The decision of the judges would be final and binding.</li><li>Base knowledge in proteus simulation will be an advantage.</li><li>Malpractices and sabotaging other teams' machines will lead to immediate disqualification.</li></ol>",
-		"eventFormat": "<p><br></p>"
+			"<ul><li>Each team should have exactly four members.</li><li> It is not mandatory that the team members should be from the same college.</li><li>Participants will need to know C or C++.</li><li>The participants of a team will not be allowed to communicate with one another once the time begins.</li><li>Use of mobile phones will not be allowed during the event.</li><li>The team that codes the most optimal solution in the shortest time will be declared as winners.</li><li>Programs with least complexity would be given preference.</li><li>Rules are subject to change at any point in time. All rules will be explained at the event.</li><li>Decision of the judges will be final.</li></ul>",
+		"eventFormat":
+			"<p><strong>Preliminary Round</strong></p><p>MCQ round of 30 questions for 30 minutes. Top 8 teams will be Shortlisting to the final round. Correct answer will get 2 marks each. Wrong answers will have a negative mark of 1 marks.</p><p><br></p><p><strong>Final Round</strong></p><p>Finalroundcomprisesof3questions. The team members must decide which order they wishto  follow before the final round question has been provided, and will not be allowed to change this order.</p><p>The question will be provided to each member only at the start of their own time slot. Once the question has been provided, each member can code for 5 mins initially, then the time slots vary to 10mins, 5mins and 10mins again. After one person’s time slot is complete the next person of the team is expected to continue coding from where his teammate had left off.</p><p>Duration for the final round is 120 minutes in total.</p><p>The teams that gets the desired output in the shortest time stand a chance to win the prize money.</p>"
 	},
 	{
 		"_id": "59ac008b39d8b90011e525d4",
 		"id": "lumiere",
-		"category": "Electrical",
+		"category": "EC",
+		"type": "off",
+		"shortDes":
+			"Knowledge is power, but enthusiasm pulls the switch” From untangling earphone wires to solving complicated wiring circuits, do you think you have a natural flair in wiring up electrical circuits?",
 		"name": "Lumiere",
 		"description":
-			"<p><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\">“</strong><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Knowledge is power, but enthusiasm pulls the switch” From untangling earphone wires to solving complicated wiring circuits, do you think you have a natural flair in wiring up electrical circuits? If so&nbsp;lumiere is the right platform for you. Enlighten the world with the sparks of your wiring knowledge. Unleash the wiring wizard in you, before you lose track of time!</span></p>",
+			"<p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">“</strong><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Knowledge is power, but enthusiasm pulls the switch” From untangling earphone wires to solving complicated wiring circuits, do you think you have a natural flair in wiring up electrical circuits? If so&nbsp;lumiere is the right platform for you. Enlighten the world with the sparks of your wiring knowledge. Unleash the wiring wizard in you, before you lose track of time!</span></p>",
+		"color": "#E91E63",
 		"contact_details":
 			"<p>Rohin John Mathews</p><p>+91-9447597473</p><p>Lakshmy R</p><p>+91-9497282399</p>",
 		"cover": "/static/images/lumiere.png",
 		"prize_pool": "11k",
 		"rules":
 			"<ol><li>It is a Team event with 3 members per team.</li><li>Cross college teams are allowed.</li><li>All participants must have an EXCEL ID. Separate registration is not required for this event.</li><li>The event comprises of 4 rounds.</li><li>Excel team reserves the right to take final decisions in case of any dispute.</li><li>Contestants should present their college ID cards.</li><li>Cross-college teams are allowed.</li><li>Malpractices and sabotaging other teams' machines will lead to immediate disqualification.</li><li>Judges' decision will be final.</li><li>Organizers reserve the right to make decisions in case of conflicts and other issues.</li></ol>",
-		"eventFormat": "<p><br></p>"
+		"eventFormat":
+			"<p><strong>Round 1 (Prelims):</strong></p><p>The participants will have to answer a set of questions based on electrical engineering concepts. Top 8 teams will advance to the next round.</p><p><br></p><p><strong>Round 2</strong></p><p><strong>The Big Picture</strong></p><p>The shortlisted teams will be given a set of pictures/clues using which they have to deduce the answer related to the pictures.</p><p>Top 6 teams will advance to the next round.</p><p><br></p><p><strong>Round 3</strong></p><p><strong>Design</strong></p><p>The shortlisted teams will have to design an electrical wiring diagram from the given problem. The first 4 teams  to design the circuit will advance to the next round.</p><p><br></p><p><strong>Round 4:</strong></p><p><strong>Wiring</strong></p><p>The teams will have to wire the circuit designed by them in the previous round. The team that wires the correct circuit first will be declared the winner.</p>"
 	},
 	{
 		"_id": "59ac009839d8b90011e525d5",
 		"id": "elecquest",
-		"category": "Electrical",
+		"category": "EC",
 		"name": "Elecquest",
+		"shortDes":
+			"Are you game for an evening of brainstorming? If yes then brace yourselves as you embark on a journey through a sea of clues and puzzles in the quest for ultimate knowledge and power.",
 		"description":
-			"<p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Are you game for an evening of brainstorming? If yes then brace yourselves as you embark on a journey through a sea of clues and puzzles in the quest for ultimate knowledge and power. Try hard to hit the jackpot for glory awaits!</span></p>",
+			"<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Are you game for an evening of brainstorming? If yes then brace yourselves as you embark on a journey through a sea of clues and puzzles in the quest for ultimate knowledge and power. Try hard to hit the jackpot for glory awaits!</span></p>",
 		"contact_details":
 			"<p>Ananthu Haridas</p><p>+91-8281394935</p><p>Aiswarya P</p><p>+91-9539680138</p>",
 		"cover": "/static/images/elecquest.png",
 		"prize_pool": "9k",
+		"color": "#4A148C",
 		"rules":
 			"<ol><li>A team of 3 is required.</li><li>The decision of the organizers will be final.</li><li>Rules are subject to change at any point of time.Participants will be duly notified of any change.</li><li>Cross college teams are allowed.</li><li>Contestants should present their college ID cards.</li><li>Any team not abiding by the rules of the event will be immediately disqualified.</li><li>Cross-college teams are allowed.</li><li>a basic knowledge on proteus and arduino will be an advantage.</li><li>Judges' decision will be final.</li><li>Organizers reserve the right to make decisions in case of conflicts and other issues.</li></ol>",
-		"eventFormat": "<p><br></p>"
-	},
-	{
-		"_id": "59b8c23ef82f9600123938f1",
-		"id": "tiki-taka",
-		"category": "General",
-		"name": "Tiki Taka",
-		"description":
-			"<p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">A</span> 3 on 3 football tournament<span style=\"color: rgb(0, 0, 0); background-color: transparent;\"> played the MEC way! </span>The matches will be played in the knockout format. Contestants can register exclusively for this event at the venue, i.e., no need for Excel registration. <span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Huddle together into groups of three and get in on the football action!</span></p><p><br></p>",
-		"contact_details":
-			"<p>Vishal John Varghese - +91 9400994345</p><p>Mohammed Ziyad - +91 9567723877</p>",
-		"cover": "/static/images/tiki-taka.png",
-		"prize_pool": "",
-		"rules":
-			"<ul><li>Each team consists of 3 players plus 2 substitutes. Substitutes are not necessary.</li><li>Each team must register at the registration desk.</li><li>Match length is 10 minutes, two halves of 5 minutes each.</li><li>If a player misbehaves or violates the rules and regulations, a yellow card or red card will be shown to him. If a yellow card is shown it’s a warning to the player. If a second yellow is shown it will lead to a red card and the player must leave the field immediately. The player won’t be allowed to play the current match. A substitution is allowed in place of him. A direct red card may be shown by the referee at some crucial points of the game which leads to the above mentioned procedures.</li><li>The team which scores the maximum goal at end will win the match. If the game ends in a tie, we move on to penalty shootout where each team gets 3 penalties. Penalties should be taken by the players who were currently on the field. If penalty shootout leads to a tie, then we proceed to a coin toss which finally decides the winner.</li><li>Each half of the game will start with a kick-off from the center of the field.</li><li>Captains should toss a coin to decide ends and kick off. After a goal is scored the game will be restarted by the opposing team from the center spot.</li><li>Any ball kicked above 4 ft results in a free kick against the offending team to be taken from where the ball was kicked.When any free kick is awarded, all players from the infringing team must be at least 1 meter away from where the ball is placed.</li><li>Rolling substitution is allowed in the match. The substitute must get on to the field only after the substituting player had left the field.</li><li>There are no offside rules.</li><li>Headers are not allowed.</li><li>Hand ball will lead to a free kick.</li><li>Penalty area is a semi-circular region. If a defending player touches the ball while he is partially or fully inside the region then the other team will get a penalty which will be taken from the center.</li><li>The decisions taken by the referee will be final.</li><li>If a player misbehaves in or out the field his team can be disqualified.</li><li>All teams must register with a team name and list of team members and are supposed to pay the registration fees.</li><li>A team can re-register if the team is out of the tournament at any stage of the group matches.</li><li>A team cannot be registered once all the group rounds are over.</li><li>A player from a team cannot move to another team during the time of the tournament.</li><li>A team must play with the team members registered.</li><li>Fixture will be decided by the organising committee.</li></ul>",
-		"eventFormat": "<p><br></p>"
-	},
-	{
-		"_id": "59b8c315f82f9600123938f2",
-		"id": "best-manager",
-		"category": "General",
-		"name": "Best Manager",
-		"description":
-			"<p>A good manager sees the big picture even in the smallest instance .They are the true leaders, leading in the front, inspiring and educating the support system. They have the ability to bring out magical outputs at extremely critical situation. If you see such a fire in you just be a part of BEST MANAGER to discover the real manager in you!!!</p>",
-		"contact_details":
-			"<p>Joseph Thomas Thachil - +91 9946525909</p><p>Joel Varghese P - +91 8547167746</p><p>Aishwarya V Chandran - +91 9349311751</p>",
-		"cover": "/static/images/best-manager.png",
-		"prize_pool": "",
-		"rules":
-			"<ul><li>Individual participation only.</li><li>Improper behaviour or unfair use of any means at any stage will lead to immediate disqualification.</li><li>The decision of the organisers and Judges will be final.</li><li>Rules are subject to change at any point in time.</li><li>Participants will be duly notified of any change.</li></ul>",
-		"eventFormat": "<p><br></p>"
-	},
-	{
-		"_id": "59b8c550f82f9600123938f3",
-		"id": "game-zone",
-		"category": "General",
-		"name": "Game Zone",
-		"description":
-			"<p>What would it be like to live a dream in reality? Game zone is the ultimate platform which provides you with such an opportunity. Let your fingers take on the battle on the screen.</p>",
-		"contact_details":
-			"<p>Linn Zacharias</p><p>9895527537</p><p>linnzacharias@gmail.com</p><p><br></p><p>Sebin C Wilson</p><p>854755755</p><p>sebincw@gmail.com</p>",
-		"cover": "/static/images/game-zone.png",
-		"prize_pool": "",
-		"rules":
-			"<p><strong>COUNTER STRIKE GLOBAL OFFENSIVE</strong></p><ul><li>The team may consist of up to 5 members.</li><li>Participants can bring their own headphones, USB keyboards and USB mice.</li><li>Participants are strictly advised not to bring any sort of configuration files to the event. If any participant is found trying to use their own configuration files during the event, their team will be disqualified without any warning.</li><li>The event will be controlled by an administrator who monitors the game server. The decision of the admin will be final and binding.</li><li>A knife round will decide which team starts as Counter-Terrorist or Terrorist, the team who wins the knife round chooses the team. Both teams meet up at the knife-spot on the map. You are not allowed to go around the map to attack the other team from behind. It is forbidden to boost up on boxes or do similar things to get an advantage.</li><li>$800 will be set as the starting money for each match.</li><li>Players can write to each other only during game play and indecent language will not be tolerated.</li></ul><p><br></p><p><strong>FIFA</strong></p><ul><li>Number of Players: 2</li><li>Teams: Any team international or club with some exceptions .</li></ul><p><br></p><p>Kindly note due FIFA’s inconsistency the combination of certain teams may lead to the game crashing, in which case either of the players may be asked to changed teams.</p>",
-		"eventFormat": "<p><br></p>"
-	},
-	{
-		"_id": "59b8ca2cf82f9600123938f6",
-		"id": "kluge",
-		"category": "General",
-		"name": "Kluge",
-		"description":
-			"<p>Remember those Tom &amp; Jerry cartoons where Tom created the most intricate and convoluted contraptions just to catch Jerry? Well, here you have a chance to design something similar. Use the most twisted and convoluted logic possible and the laws of Physics to create machines that do the simplest of things like open a door or switch on a light bulb. Complexity is the winning mantra here.</p>",
-		"contact_details":
-			"<p>Adithya Suresh-9746146268</p><p>Anet Luciya Davis-9895872022</p><p>Anjana Emmanuel-8281619964</p><p>Mathew P Abraham-9496913813</p><p>Sarah Babu-9449160820</p>",
-		"cover": "/static/images/kluge.png",
-		"prize_pool": "",
-		"rules":
-			"<ul><li>Event is open for all.</li><li>Teams can have 4-5 members.</li><li>Cross-college teams are allowed.</li><li>Only the provided set of materials may be used in the creation of the machines.</li><li>Malpractices and sabotaging other teams' machines will lead to immediate disqualification.</li><li>Judges' decision will be final.</li><li>Organizers reserve the right to make decisions in case of conflicts and other issues.</li><li>Rules are subject to change at any point in time.</li><li>All rules will be explained at the event as well.</li></ul>",
-		"eventFormat": "<p><br></p>"
-	},
-	{
-		"_id": "59b8cec4f82f9600123938f7",
-		"id": "excelsior",
-		"category": "General",
-		"name": "Excelsior",
-		"description":
-			"<p>The battle of brains at the excel quiz guarantees a delightful experience to the participants and the audience alike. The event is open exclusively for college students. With questions related to anything under the sun, a sharp mind and quick wit will see you through with flying colours.</p>",
-		"contact_details": "<p><br></p>",
-		"cover": "/static/images/excelsior.png",
-		"prize_pool": "10K",
-		"rules":
-			"<ul><li>This is a general quiz.</li><li>The quiz is open only to college students.</li><li>College ID cards are mandatory. Drivers license,electoral IDs and other forms of identification shall not be entertained.</li><li>A team shall comprise of 2 members. Cross college teams are allowed.</li><li>In the event of a tie,a tie breaker would be the deciding factor.</li><li>The decision of the quiz master and the organisers shall be final and binding.</li><li>Rules are subject to change at any point of time.</li><li>Participants will be duly notified of any changes.</li></ul>",
-		"eventFormat": "<p><br></p>"
-	},
-	{
-		"_id": "59b8d8f11368910012bde120",
-		"id": "4x120",
-		"category": "Computer",
-		"name": "4x120",
-		"description":
-			"<p>4 people and 120 seconds of synchronous understanding and unrivalled teamwork separate the winners from the others. The best teams that we have encountered have a few things in common :teamwork, impeccable sync, immeasurable confidence in each other and the ability to pick up from where his predecessor left, better his effort and win the title</p>",
-		"contact_details": "<p>Vysakh: +91 98472 65840</p>",
-		"cover": "/static/images/4x120.png",
-		"prize_pool": "",
-		"rules":
-			"<ul><li>Each team should have exactly four members.</li><li>&nbsp;It is not mandatory that the team members should be from the same college.</li><li>Participants will need to know C or C++.</li><li>The participants of a team will not be allowed to communicate with one another once the time begins.</li><li>Use of mobile phones will not be allowed during the event.</li><li>The team that codes the most optimal solution in the shortest time will be declared as winners.</li><li>Programs with least complexity would be given preference.</li><li>Rules are subject to change at any point in time. All rules will be explained at the event.</li><li>Decision of the judges will be final.</li></ul>",
 		"eventFormat":
-			"<p><strong>Preliminary Round</strong></p><p>MCQ round of 30 questions for 30 minutes. Top 8 teams will be Shortlisting to the final round. Correct answer will get 2 marks each. Wrong answers will have a negative mark of 1 marks.</p><p><br></p><p><strong>Final Round</strong></p><p>Final&nbsp;round&nbsp;comprises&nbsp;of&nbsp;3&nbsp;questions. The&nbsp;team&nbsp;members&nbsp;must&nbsp;decide&nbsp;which&nbsp;order&nbsp;they&nbsp;wish&nbsp;to&nbsp;follow&nbsp;before&nbsp;the&nbsp;final&nbsp;round&nbsp;question&nbsp;has been&nbsp;provided,&nbsp;and&nbsp;will&nbsp;not&nbsp;be&nbsp;allowed&nbsp;to&nbsp;change&nbsp;this&nbsp;order.</p><p>The&nbsp;question&nbsp;will&nbsp;be&nbsp;provided&nbsp;to&nbsp;each&nbsp;member&nbsp;only&nbsp;at&nbsp;the&nbsp;start&nbsp;of&nbsp;their own&nbsp;time&nbsp;slot. Once&nbsp;the&nbsp;question&nbsp;has&nbsp;been&nbsp;provided, each&nbsp;member&nbsp;can&nbsp;code&nbsp;for&nbsp;5&nbsp;mins initially, then the time slots vary to 10mins, 5mins and 10mins again. After one person’s time slot is complete the next person of the team is expected to continue coding from where his teammate had left off.</p><p>Duration&nbsp;for&nbsp;the&nbsp;final&nbsp;round&nbsp;is&nbsp;120&nbsp;minutes in total.</p><p>The&nbsp;teams&nbsp;that&nbsp;gets&nbsp;the&nbsp;desired&nbsp;output&nbsp;in&nbsp;the&nbsp;shortest&nbsp;time stand&nbsp;a&nbsp;chance&nbsp;to&nbsp;win&nbsp;the&nbsp;prize&nbsp;money.</p>"
+			"<p><strong>Round 1 (Prelims):</strong></p><p>The participants will have to face a set of questions based on electrical and electronics concepts. Top 7 teams will advance to the next round.</p><p> </p><p><strong>Round 2</strong></p><p><strong>Analysis</strong></p><p>The shortlisted teams will have to analyse and correct the given circuit diagram. First 6 teams to correctly analyse the given circuit will advance to the next round.</p><p><br></p><p><strong>Round 3</strong></p><p><strong>Signal Synthesis</strong></p><p>The shortlisted teams will be given a continuous function to be synthesized on proteus. The first 4 teams to complete the task will advance to the next round.</p><p><br></p><p><strong>Round 4</strong></p><p><strong>The Quest</strong></p><p>The teams shortlisted will have to collect clues that are spread all over the campus and have to complete the final task based on the clues collected. The first team to complete the task will be declared the winner.</p>"
 	},
 	{
 		"_id": "59b8d8b31368910012bde11e",
 		"id": "algorithms",
-		"category": "Computer",
+		"category": "CS",
+		"color": "#009688",
 		"name": "Algorithms",
+		"shortDes":
+			"Get ready to show off your coding skills and you’re in depth knowledge of Algorithms at ‘Algorithms’.",
 		"description":
 			"<p>Get ready to show off your coding skills and you’re in depth knowledge of Algorithms at ‘Algorithms’. Defying the usual norms, this event will challenge you, surprise you and test you till you break or fight back! Get –Set- code!</p>",
-		"contact_details": "<p><br></p>",
+		"contact_details":
+			"<ul><li>Asif Ali: +91 8594014280</li><li>Bhagirathi R: +91 8281814772</li></ul>",
 		"cover": "/static/images/algorithms.png",
-		"prize_pool": "",
+		"prize_pool": "8k",
 		"rules":
-			"<ul><li>&nbsp;Participants can code in C, C++, Java or Python.</li><li>Use of mobile phones will not be allowed during the event.</li><li>The individual that codes the most optimal solution in the shortest time will be declared as the winner (Highest points).</li><li>Programs with least complexity will be given preference.</li><li>The decision of the judges will be final and rules are subject to change at any point of time.&nbsp;</li></ul><p><br></p><p> </p>",
+			"<ul><li>Participants can code in C, C++, Java or Python.</li><li>Use of mobile phones will not be allowed during the event.</li><li>The individual that codes the most optimal solution in the shortest time will be declared as the winner (Highest points).</li><li>Programs with least complexity will be given preference.</li><li>The decision of the judges will be final and rules are subject to change at any point of time.&nbsp;</li></ul>",
 		"eventFormat":
-			"<p><strong>Preliminary Round</strong></p><ul><li>This is an individual event.</li><li>General Tech based MCQ Questions to be solved in 30mins.</li><li>The top few contestants move on to the final stage.</li></ul><p><br></p><p> </p><p><strong>Final Round</strong></p><ul><li>Consists of a pure coding competition with a 2 hour time limit.</li><li>The person with the highest score will be the winner, in cases of a tie of points, complexity of the programs will be considered.</li></ul><p><br></p>"
+			"<p><strong>Preliminary Round</strong></p><ul><li>This is an individual event.</li><li>General Tech based MCQ Questions to be solved in 30mins.</li><li>The top few contestants move on to the final stage.</li></ul><p><br></p><p><br></p><p><strong>Final Round</strong></p><ul><li>Consists of a pure coding competition with a 2 hour time limit.</li><li>The person with the highest score will be the winner, in cases of a tie of points, complexity of the programs will be considered.</li></ul>"
 	},
 	{
 		"_id": "59b8d8cb1368910012bde11f",
 		"id": "lord-of-code",
-		"category": "Computer",
+		"category": "CS",
 		"name": "Lord of Code",
+		"type": "off",
+		"shortDes":
+			"It takes grit, expertise, and mastery to crack the most twisted of codes and complex of logics. Do you have what it takes to win the title, the ‘Lord of the Code’? Bring it on!",
 		"description":
 			"<p>If you control the code, you control the world!</p><p>It takes grit, expertise, and mastery to crack the most twisted of codes and complex of logics. Do you have what it takes to win the title, the ‘Lord of the Code’? Bring it on!</p>",
-		"contact_details": "<p><br></p>",
+		"contact_details":
+			"<ul><li>Haritha Muralidharan:n+91 9495889488 </li><li>Hassan K Salim: +91 8848624154</li></ul>",
 		"cover": "/static/images/lord-of-code.png",
-		"prize_pool": "",
+		"prize_pool": "9k",
 		"rules":
-			"<ul><li>Each team can have a maximum of two members. Cross - college teams are allowed.</li><li>Decision of the judges and organizers will be final.</li><li>Final round participants can use C, C++, Java or Python for coding.</li><li>Logical questions focus more on better logic and less on completion time.</li><li>Coding focuses equally on the completion time and the logic.</li><li>Rules are subject to change at any point in time. All rules will be explained at the event.</li></ul><p><br></p>",
+			"<ul><li>Each team can have a maximum of two members. Cross - college teams are allowed.</li><li>Decision of the judges and organizers will be final.</li><li>Final round participants can use C, C++, Java or Python for coding.</li><li>Logical questions focus more on better logic and less on completion time.</li><li>Coding focuses equally on the completion time and the logic.</li><li>Rules are subject to change at any point in time. All rules will be explained at the event.</li></ul>",
 		"eventFormat":
-			"<p><strong>Preliminary Round</strong></p><p>MCQ round of 30 questions for 30 minutes. Top 8 teams will be Shortlisting to the final round. Correct answer will get 2 marks each. Wrong answers will have a negative mark of 1 marks.</p><p><br></p><p> </p><p><strong>Final Round</strong></p><p>Two rounds running parallel, half of the team will solve the logical questions, other one will solve the coding question. Exactly after 60 minutes, the roles will be switched, and the winner is the team who scores the maximum points. There will be 5 logical questions and 2 coding questions, marks will be provided on the basis of logic and completion. The maximum marks for each of the logic question is 5, maximum marks for each of the coding question is 25.</p>"
+			"<p><strong>Preliminary Round</strong></p><p>MCQ round of 30 questions for 30 minutes. Top 8 teams will be Shortlisting to the final round. Correct answer will get 2 marks each. Wrong answers will have a negative mark of 1 marks.</p><p><br></p><p><br></p><p><strong>Final Round</strong></p><p>Two rounds running parallel, half of the team will solve the logical questions, other one will solve the coding question. Exactly after 60 minutes, the roles will be switched, and the winner is the team who scores the maximum points. There will be 5 logical questions and 2 coding questions, marks will be provided on the basis of logic and completion. The maximum marks for each of the logic question is 5, maximum marks for each of the coding question is 25.</p>",
+		"color": "#546E7A"
 	},
 	{
 		"_id": "59b8d9171368910012bde121",
 		"id": "gradle-build",
-		"category": "Computer",
+		"category": "CS",
+		"type": "off",
 		"name": "Gradle-Build",
+		"color": "#3F51B5",
+		"shortDes":
+			"As the world today finds itself revolving around apps, do you possess the skills to make apps revolve around you?",
 		"description":
-			"<p>&nbsp;As the world today finds itself revolving around apps, do you possess the skills to make apps revolve around you? Bring out the genius in you and prove how skilled you are when it comes to App Development.</p>",
-		"contact_details": "<p><br></p>",
+			"<p>As the world today finds itself revolving around apps, do you possess the skills to make apps revolve around you? Bring out the genius in you and prove how skilled you are when it comes to App Development.</p>",
+		"contact_details":
+			"<ul><li>Midhun Menon: +91 9037664699</li><li>Jayaraj Balagopal: +91 9497062849</li></ul>",
 		"cover": "/static/images/gradle-build.png",
-		"prize_pool": "",
+		"prize_pool": "9k",
 		"rules":
-			"<ul><li>&nbsp;As the world today finds itself revolving around apps, do you possess the skills to make apps revolve around you? Bring out the genius in you and prove how skilled you are when it comes to App Development.A team can have a maximum of 3 members.</li><li>Students from any engineering branch can participate.</li><li>The students can use internet for reference but code snippets cannot be copied from websites.</li><li>Systems and devices will not be provided. Candidates should bring their own laptops and devices.</li><li>Judges decision will be final.</li><li>Rules are subject to change at any point in time. All rules will be explained at the event as well.</li><li>Organizers reserve the right to take decisions in case of conflicts and issues.</li></ul>",
+			"<ul><li>As the world today finds itself revolving around apps, do you possess the skills to make apps revolve around you? Bring out the genius in you and prove how skilled you are when it comes to App Development.A team can have a maximum of 3 members.</li><li>Students from any engineering branch can participate.</li><li>The students can use internet for reference but code snippets cannot be copied from websites.</li><li>Systems and devices will not be provided. Candidates should bring their own laptops and devices.</li><li>Judges decision will be final.</li><li>Rules are subject to change at any point in time. All rules will be explained at the event as well.</li><li>Organizers reserve the right to take decisions in case of conflicts and issues.</li></ul>",
 		"eventFormat":
-			"<p>&nbsp;<strong>Preliminary Round</strong></p><p>Use your basic knowledge of programming and debugging in Android Studio to get through the preliminary round.</p><p><br></p><p> </p><p><strong>Final Round</strong></p><p>Teams must replicate the App provided in both functionality and UI. Apps will be judged based on the progress made at the end of the competition</p>"
+			"<p><strong>Preliminary Round</strong></p><p>Use your basic knowledge of programming and debugging in Android Studio to get through the preliminary round.</p><p><br></p><p><br></p><p><strong>Final Round</strong></p><p>Teams must replicate the App provided in both functionality and UI. Apps will be judged based on the progress made at the end of the competition</p>"
 	},
 	{
-		"_id": "59b8db231368910012bde12a",
-		"id": "kryptos",
-		"category": "General",
-		"name": "Kryptos",
+		"_id": "59ac00a439d8b90011e525d6",
+		"id": "lifeline",
+		"type": "off",
+		"category": "EC",
+		"name": "Lifeline",
+		"color": "#1B5E20",
 		"description":
-			"<p>Unravel the mysteries of the crypt.</p><p>The most popular online event of Excel, Kryptos brings to life the online miniature version of the world’s favorite game-the treasure hunt. From simple images to cryptic keys hidden in the pages Kryptos is all set to take you to a world of clues, codes and yes, cryptography!</p><p>P.S. Knowledge of basic features available in all major web browsers is a plus.</p>",
-		"contact_details": "<p><br></p>",
-		"cover": "/static/images/kryptos.png",
-		"prize_pool": "10k",
+			"<p><span style=\"background-color: transparent;\">Get your act&nbsp;together before the patient flat-lines. Scrutinise the inner workings of an impaired medical instrument to keep a soul alive. An exclusive event which provides an opportunity to assert your proficiency in debugging and endow yourself with the honour of being a life saver. </span></p>",
+		"shortDes":
+			"Get your act&nbsp;together before the patient flat-lines. Scrutinise the inner workings of an impaired medical instrument to keep a soul alive.",
+		"contact_details":
+			"<p>Nithin Raj</p><p>+91-8089791044</p><p>Paulson Paul</p><p>+91-9895183049</p>",
+		"cover": "/static/images/lifeline.png",
+		"prize_pool": "11k",
 		"rules":
-			"<ul><li>Admin's decisions are final and should not be questioned.</li><li>Malpractices or any sort of practices which grant advantages over other players are strictly prohibited. This includes accessing restricted files/brute forcing/sharing answers etc.</li><li>Any user other than the admin found sharing answers or clues will be immediately banned from the hunt.</li><li>Clues can be found anywhere in the webpage, use all your resources accordingly. This can be anything from Image Name/Source/Cookies etc.</li><li>Admins will provide timely hints for all levels as per schedule. Do not beg for hints or spam the page's Direct Messages.</li><li>The hunt will end on 28 September 2017. The user on top of the scoreboard at that time will be declared as the winner regardless of whether all the levels have been completed.</li><li>The leaderboard is based purely on time completed to maintain equality. First to solve the level will be on top.</li><li>The hunt can be extended or shortened (with prior notification) according to time constraints.</li><li>The rules may be modified or changed at any moment before or during the hunt.</li><li>Failure to comply with any of the rules will result in immediate disqualification.</li></ul>",
+			"<ol><li>The competition is held for teams of 2 members.</li><li>Cross-college teams <strong>are</strong> allowed.</li><li>Failing to save the patient in given time results in immediate elimination.</li><li>The coordinators of the event reserve the right to take appropriate decisions in case of any issues/conflicts.</li><li>Rules are subject to change at any point in time. All rules will be explained at the event as well.</li><li>The decision of the judges would be final and binding.</li><li>Base knowledge in proteus simulation will be an advantage.</li><li>Malpractices and sabotaging other teams' machines will lead to immediate disqualification.</li></ol>",
 		"eventFormat":
-			"<ul><li>The game is conducted in time span of 2 weeks and each week a set of questions are released. No point is awarded for solving a level. Instead winners are calculated on the basis of maximum level he/she has reached and time taken.</li><li>User can register online on the website with his Facebook/Google account.</li></ul><p><br></p>"
+			"<p><strong>Round 1(Prelims):</strong></p><p>The Teams will have to face a set of questions based on electronics and biomedical engineering concepts. Top 8 teams will advance to the next round.</p><p><br></p><p><strong>Round 2</strong></p><p><strong>Bio-signal Synthesis</strong></p><p>The shortlisted teams will have to synthesize the given set of bio signals. top 4 teams will advance to the next round.</p><p><br></p><p><strong>Round 3</strong></p><p><strong>The life saver</strong></p><p>Saving a life is the only thing that matters now. Design and debug circuits to make sure the patient survives.</p><p>The team to design/debug the given circuit will be declared the winner. </p>"
 	},
 	{
 		"_id": "59b8dab71368910012bde125",
 		"id": "dalalbull",
-		"category": "General",
+		"shortDes":
+			"Take risks and expect the unexpected cause it's all about amateurism.</p><p>Dalal Bull is an online stock marketing event. It is the ultimate stock exchange event and it tests the individuals trading skills.",
+		"category": "NT",
+		"type": "on",
+		"color": "#F57F17",
 		"name": "DalalBull",
 		"description":
 			"<p>Fortune favors the brave.</p><p>Take risks and expect the unexpected cause it's all about amateurism.</p><p>Dalal Bull is an online stock marketing event. It is the ultimate stock exchange event and it tests the individuals trading skills. Each participant will be provided with a fixed amount as initial capital. This amount can be used to buy shares of different NIFTY50 firms. Actual market fluctuations decides the share price. This game is reality and when stock value rise, you rise with it.</p>",
-		"contact_details": "<p><br></p>",
+		"contact_details":
+			"<ul><li>Hassan K Salim: +91 8848624154</li><li>Prince Mathew: +91 9497247908</li></ul>",
 		"cover": "/static/images/dalalbull.png",
 		"prize_pool": "",
 		"rules":
