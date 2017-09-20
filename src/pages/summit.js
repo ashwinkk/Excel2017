@@ -42,12 +42,12 @@ class Summit extends React.Component {
 				post: "Chief Technology Expert",
 				company: "Bosch"
 			},
-			// {
-			// 	name: "Prasanna Lohar",
-			// 	pic: "/static/summit/s3.png",
-			// 	post: "Head of Technology",
-			// 	company: "DCB Bank"
-			// },
+			{
+				name: "Aravind Devarajan",
+				pic: "/static/summit/S3.png",
+				post: "Technical Expert",
+				company: "Bosch"
+			},
 			{
 				name: "Lentin Joseph",
 				pic: "/static/summit/s4.png",
@@ -99,12 +99,11 @@ class Summit extends React.Component {
 			}
 		];
 		let table2 = [
-			// {
-			// 	time: "11:10-11:40 am",
-			// 	type: "Invited Speaker",
-			// 	speaker:
-			// 		"Financial​ ​security:​ ​AI​ ​a​ ​game​ ​changer​? - Prasanna Lohar"
-			// },
+			{
+				time: "11:10-11:40 am",
+				type: "Invited Speaker",
+				speaker: "Machine learning​ - Aravind Devarajan"
+			},
 			{
 				time: "11:50-12:20 am",
 				type: "Invited Speaker",

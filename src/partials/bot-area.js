@@ -50,6 +50,7 @@ class BotChat extends React.Component {
 		this.handleChange = this.handleChange.bind(this);
 		this.handleTheSpeechInput = this.handleTheSpeechInput.bind(this);
 		this.recordToggle = this.recordToggle.bind(this);
+		this.close = this.close.bind(this);
 	}
 
 	componentDidMount() {
@@ -74,14 +75,21 @@ class BotChat extends React.Component {
 	componentWillReceiveProps(nextProps) {
 		if (nextProps.replyText.url !== undefined) {
 			console.log("redirect");
+			let generatedId = nextProps.replyText.url
+				.split(" ")
+				.join("-")
+				.toLowerCase();
+			this.setState({
+				url: generatedId
+			});
+		}
+		if (
+			nextProps.replyText.url !== undefined &&
+			nextProps.replyText.response === undefined
+		) {
 			setTimeout(() => {
-				let generatedId = nextProps.replyText.url
-					.split(" ")
-					.join("-")
-					.toLowerCase();
 				this.setState({
-					redirect: true,
-					url: generatedId
+					redirect: true
 				});
 			}, 1000);
 		}
@@ -100,10 +108,7 @@ class BotChat extends React.Component {
 			typedEntry: true
 		});
 		//TODO:  Trigger this after the api call is made
-		setTimeout(() => {
-			this.props.resetTranscript;
-			this.props.dispatch(fetchReply(text));
-		}, 2000);
+		this.props.dispatch(fetchReply(text));
 
 		//TODO: make the API calls here and update the state
 		let area = ReactDOM.findDOMNode(this.refs["text-area"]);
@@ -119,6 +124,10 @@ class BotChat extends React.Component {
 		this.setState({ typed: e.target.value });
 	}
 
+	close() {
+		this.props.close();
+	}
+
 	recordToggle() {
 		if (this.props.listening) this.props.stopListening();
 		else this.props.startListening();
@@ -128,32 +137,29 @@ class BotChat extends React.Component {
 		if (this.state.redirect) {
 			window.location = `https://excelmec.org/${this.state.url}`;
 		}
+
 		let className = "container bot-chat-container";
+
 		if (this.props.spawn) className += " spawn";
-		let recordClass = this.props.listening ? "btn-danger" : "";
-		const status = (
-			<button
-				className={`btn btn-default bot-start-rec ${recordClass}`}
-				onClick={this.recordToggle}
-			>
-				<FaMicrophone />
-			</button>
-		);
-		// if (this.props.spawn) return <Redirect to="/competitions" />;
-		// if(this.props.interimTranscript === ""){
-		// 	this.props.resetTranscript();
-		// }
+
 		let responseAreaText = "";
-		if (this.props.replyText.url !== undefined)
+
+		if (
+			this.props.replyText.url !== undefined &&
+			this.props.replyText.response === undefined
+		)
 			responseAreaText = "Redirecting you in a moment..";
 		else responseAreaText = this.props.replyText.response;
+
 		if (
 			responseAreaText === undefined ||
 			this.props.fetchingReply ||
 			this.state.userText === ""
 		)
 			responseAreaText = "";
+
 		let textDisplayEntry = this.props.spawn ? "animate-init-entry" : "";
+
 		let lookAround =
 			this.props.fetchingReply && this.props.spawn ? (
 				<div className={`look-around `}>
@@ -169,14 +175,27 @@ class BotChat extends React.Component {
 							responseAreaText
 						)}
 					</h3>
+					{this.props.replyText.url !== undefined &&
+					this.props.replyText.response !== undefined ? (
+						<a href={`https://excelmec.org/${this.state.url}`}>
+							Click here to view more
+						</a>
+					) : (
+						<div />
+					)}
+					<br />
 				</div>
 			) : (
 				<div />
 			);
-		console.log(this.state.typedEntry);
+
 		let typedEntryAnimate = this.state.typedEntry ? "animate-typed-entry" : "";
+
 		return (
 			<div className={`${className} ${typedEntryAnimate}`}>
+				<div className="close-button" onClick={this.close}>
+					<span>&times;</span>
+				</div>
 				<div className="bot-chat">
 					<h2 className={`text-center title-style ${textDisplayEntry}`}>
 						How may I help you?
@@ -188,9 +207,6 @@ class BotChat extends React.Component {
 						{lookAround}
 					</div>
 					<div className="text-input">
-						{this.state.useVoiceInput && (
-							<div className="voice-section">{status}</div>
-						)}
 						<form
 							style={{ display: "flex" }}
 							onSubmit={e => e.preventDefault()}
@@ -204,6 +220,7 @@ class BotChat extends React.Component {
 							<button
 								className="btn btn-default"
 								type="submit"
+								style={{ marginLeft: "10px" }}
 								onClick={() => {
 									this.handleTheSpeechInput(this.inputText.value);
 								}}

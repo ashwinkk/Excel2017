@@ -18,6 +18,21 @@
 	@media (min-width: 600px) {
 		background: rgba(255, 255, 255, 0.9);
 	}
+	.close-button {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin: 30px;
+		font-size: 30px;
+		color: #3a3a3a;
+		cursor: pointer;
+		padding: 10px 20px;
+		border-radius: 50%;
+		&:hover {
+			color: red;
+			background: #fbfbfb;
+		}
+	}
 }
 
 .spawn {
@@ -26,8 +41,9 @@
 }
 
 .look-around {
-	transition: opacity 0.3s;
-	animation: floatup 0.3s;
+	// transition: opacity 0.3s;
+	animation: floatup 0.5s 0.3s;
+	animation-iteration-count: 1;
 }
 
 @keyframes floatup {

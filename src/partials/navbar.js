@@ -116,14 +116,19 @@ class Navbar extends React.Component {
 							</div>
 						</div>
 					</div>
-					<div className={micClass}>
-						<div onClick={this.handleSpawn}>
+					<div className={micClass} onClick={this.handleSpawn}>
+						<div>
 							<FaMicrophone />
 						</div>
 					</div>
 				</div>
 
-				<BotChat spawn={this.state.spawn} />
+				<BotChat
+					spawn={this.state.spawn}
+					close={() => {
+						this.setState({ spawn: false });
+					}}
+				/>
 			</div>
 		);
 	}
