@@ -1,7 +1,8 @@
 const botReducer = (
 	state = {
 		replyText: "",
-		fetchingReply: false
+		fetchingReply: false,
+		fetchedReply: false
 	},
 	action
 ) => {
@@ -9,13 +10,15 @@ const botReducer = (
 		case "FETCHING_REPLY":
 			return {
 				...state,
-				fetchingReply: true
+				fetchingReply: true,
+				fetchedReply: false
 			};
 		case "FETCHED_REPLY":
 			return {
 				...state,
 				replyText: action.payload,
-				fetchingReply: false
+				fetchingReply: false,
+				fetchedReply: true
 			};
 		default:
 			return state;

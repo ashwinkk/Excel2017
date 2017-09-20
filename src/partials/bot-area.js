@@ -24,7 +24,8 @@ const Dots = props => (
 @connect(store => {
 	return {
 		replyText: store.bot.replyText,
-		fetchingReply: store.bot.fetchingReply
+		fetchingReply: store.bot.fetchingReply,
+		fetchedReply: store.bot.fetchedReply
 	};
 })
 @SpeechRecognition({
@@ -96,6 +97,25 @@ class BotChat extends React.Component {
 		if (nextProps.spawn === false) {
 			this.setState({ mounted: false, typedEntry: false, userText: "" });
 		}
+		if (nextProps.fetchingReply === true) {
+			setTimeout(() => {
+				this.setState({
+					animateLoader: true
+				});
+			}, 500);
+		} else {
+			this.setState({ animateLoader: false });
+		}
+
+		if (nextProps.fetchedReply === true) {
+			setTimeout(() => {
+				this.setState({
+					animateReply: true
+				});
+			}, 500);
+		} else {
+			this.setState({ animateReply: false });
+		}
 	}
 
 	handleTheSpeechInput(text) {
@@ -160,14 +180,31 @@ class BotChat extends React.Component {
 
 		let textDisplayEntry = this.props.spawn ? "animate-init-entry" : "";
 
+		let lookAroundAnim = this.state.animateLoader ? "look-around-anim" : "";
+		let replyAnim = this.state.animateReply ? "reply-anim" : "";
+
 		let lookAround =
 			this.props.fetchingReply && this.props.spawn ? (
-				<div className={`look-around `}>
+				<div
+					className={`look-around ${lookAroundAnim}`}
+					style={{
+						transition: this.state.animateLoader
+							? "transform 0.3s,opacity 0.3s"
+							: ""
+					}}
+				>
 					<Dots />
 					<h3 className="text-center">Please wait..</h3>
 				</div>
 			) : this.props.spawn ? (
-				<div className="reply look-around">
+				<div
+					className={`reply ${replyAnim}`}
+					style={{
+						transition: this.state.animateReply
+							? "transform 0.3s,opacity 0.3s"
+							: ""
+					}}
+				>
 					<h3>
 						{responseAreaText.length > 200 ? (
 							`${responseAreaText.substring(0, 200)}...`

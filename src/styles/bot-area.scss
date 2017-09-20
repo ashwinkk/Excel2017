@@ -41,9 +41,12 @@
 }
 
 .look-around {
-	// transition: opacity 0.3s;
-	animation: floatup 0.5s 0.3s;
-	animation-iteration-count: 1;
+	opacity: 0;
+	transform: translateY(300%);
+}
+.look-around-anim {
+	opacity: 1;
+	transform: translateY(0);
 }
 
 @keyframes floatup {
@@ -113,6 +116,12 @@
 
 .reply {
 	text-align: right;
+	opacity: 0;
+	transform: translateY(300%);
+}
+.reply-anim {
+	transform: translateY(0);
+	opacity: 1;
 }
 
 div#wave {
