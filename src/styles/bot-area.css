@@ -30,6 +30,9 @@
     .bot-chat-container .close-button:hover {
       color: red;
       background: #fbfbfb; }
+    @media (max-width: 700px) {
+      .bot-chat-container .close-button {
+        margin: 0; } }
 
 .spawn {
   animation: spawn-animation 0.5s ease-in-out;
@@ -161,14 +164,14 @@ div#wave {
   @media (max-width: 700px) {
     .text-input {
       top: unset;
-      bottom: calc(20% + 100px); } }
+      bottom: calc(20% + 120px); } }
 
 .text-area {
   width: 40%;
   margin: auto; }
-  @media (max-width: 700px) {
-    .text-area {
-      width: 100%; } }
   @media (max-width: 1400px) {
     .text-area {
       width: 60%; } }
+  @media (max-width: 700px) {
+    .text-area {
+      width: 100%; } }

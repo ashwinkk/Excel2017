@@ -32,6 +32,9 @@
 			color: red;
 			background: #fbfbfb;
 		}
+		@media (max-width: 700px) {
+			margin: 0;
+		}
 	}
 }
 
@@ -197,16 +200,16 @@ div#wave {
 	}
 	@media (max-width: 700px) {
 		top: unset;
-		bottom: calc(20% + 100px);
+		bottom: calc(20% + 120px);
 	}
 }
 .text-area {
 	width: 40%;
 	margin: auto;
-	@media (max-width: 700px) {
-		width: 100%;
-	}
 	@media (max-width: 1400px) {
 		width: 60%;
+	}
+	@media (max-width: 700px) {
+		width: 100%;
 	}
 }

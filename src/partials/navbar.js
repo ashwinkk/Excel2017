@@ -53,7 +53,6 @@ class Navbar extends React.Component {
 	}
 	render() {
 		let micClass = "bot-spawn";
-		if (this.state.spawn) micClass = "bot-spawn record";
 		return (
 			<div
 				className="navbar-container"
@@ -118,7 +117,12 @@ class Navbar extends React.Component {
 					</div>
 					<div className={micClass} onClick={this.handleSpawn}>
 						<div>
-							<FaMicrophone />
+							<div className="loading">
+								<img
+									src="/static/anim-assets/logowithgap.png"
+									alt="excel-logo"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>

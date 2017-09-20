@@ -296,7 +296,7 @@
 			"Knowledge is power, but enthusiasm pulls the switch” From untangling earphone wires to solving complicated wiring circuits, do you think you have a natural flair in wiring up electrical circuits?",
 		"name": "Lumiere",
 		"description":
-			"<p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">“</strong><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Knowledge is power, but enthusiasm pulls the switch” From untangling earphone wires to solving complicated wiring circuits, do you think you have a natural flair in wiring up electrical circuits? If so&nbsp;lumiere is the right platform for you. Enlighten the world with the sparks of your wiring knowledge. Unleash the wiring wizard in you, before you lose track of time!</span></p>",
+			"<p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">“</strong><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Knowledge is power, but enthusiasm pulls the switch” From untangling earphone wires to solving complicated wiring circuits, do you think you have a natural flair in wiring up electrical circuits? If so" "lumiere is the right platform for you. Enlighten the world with the sparks of your wiring knowledge. Unleash the wiring wizard in you, before you lose track of time!</span></p>",
 		"color": "#E91E63",
 		"contact_details":
 			"<p>Rohin John Mathews</p><p>+91-9447597473</p><p>Lakshmy R</p><p>+91-9497282399</p>",
@@ -341,7 +341,7 @@
 		"cover": "/static/images/algorithms.png",
 		"prize_pool": "8k",
 		"rules":
-			"<ul><li>Participants can code in C, C++, Java or Python.</li><li>Use of mobile phones will not be allowed during the event.</li><li>The individual that codes the most optimal solution in the shortest time will be declared as the winner (Highest points).</li><li>Programs with least complexity will be given preference.</li><li>The decision of the judges will be final and rules are subject to change at any point of time.&nbsp;</li></ul>",
+			"<ul><li>Participants can code in C, C++, Java or Python.</li><li>Use of mobile phones will not be allowed during the event.</li><li>The individual that codes the most optimal solution in the shortest time will be declared as the winner (Highest points).</li><li>Programs with least complexity will be given preference.</li><li>The decision of the judges will be final and rules are subject to change at any point of time." "</li></ul>",
 		"eventFormat":
 			"<p><strong>Preliminary Round</strong></p><ul><li>This is an individual event.</li><li>General Tech based MCQ Questions to be solved in 30mins.</li><li>The top few contestants move on to the final stage.</li></ul><p><br></p><p><br></p><p><strong>Final Round</strong></p><ul><li>Consists of a pure coding competition with a 2 hour time limit.</li><li>The person with the highest score will be the winner, in cases of a tie of points, complexity of the programs will be considered.</li></ul>"
 	},
@@ -393,9 +393,9 @@
 		"name": "Lifeline",
 		"color": "#1B5E20",
 		"description":
-			"<p><span style=\"background-color: transparent;\">Get your act&nbsp;together before the patient flat-lines. Scrutinise the inner workings of an impaired medical instrument to keep a soul alive. An exclusive event which provides an opportunity to assert your proficiency in debugging and endow yourself with the honour of being a life saver. </span></p>",
+			"<p><span style=\"background-color: transparent;\">Get your act" "together before the patient flat-lines. Scrutinise the inner workings of an impaired medical instrument to keep a soul alive. An exclusive event which provides an opportunity to assert your proficiency in debugging and endow yourself with the honour of being a life saver. </span></p>",
 		"shortDes":
-			"Get your act&nbsp;together before the patient flat-lines. Scrutinise the inner workings of an impaired medical instrument to keep a soul alive.",
+			"Get your act" "together before the patient flat-lines. Scrutinise the inner workings of an impaired medical instrument to keep a soul alive.",
 		"contact_details":
 			"<p>Nithin Raj</p><p>+91-8089791044</p><p>Paulson Paul</p><p>+91-9895183049</p>",
 		"cover": "/static/images/lifeline.png",
@@ -419,10 +419,10 @@
 		"contact_details":
 			"<ul><li>Hassan K Salim: +91 8848624154</li><li>Prince Mathew: +91 9497247908</li></ul>",
 		"cover": "/static/images/dalalbull.png",
-		"prize_pool": "",
+		"prize_pool": "9k",
 		"rules":
-			"<p>The rules of this event can be found at <a href=\"play.excelmec.org\" target=\"_blank\">play.excelmec.org</a></p>",
+			"<p>The rules of this event can be found at <a href=\"http://play.excelmec.org\" target=\"_blank\">play.excelmec.org</a></p>",
 		"eventFormat":
-			"<p>The event format can be found at <a href=\"play.excelmec.org\" target=\"_blank\">play.excelmec.org</a></p>"
+			"<p>The event format can be found at <a href=\"http://play.excelmec.org\" target=\"_blank\">play.excelmec.org</a></p>"
 	}
 ]

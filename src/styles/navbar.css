@@ -53,10 +53,15 @@
 		background-color: white;
 		transform: translate(-50%, -20px);
 		display: flex;
+		overflow: hidden;
 	}
 	.bot-spawn > div {
 		margin: auto;
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
 		align-self: center;
+		position: relative;
 		font-size: 30px;
 	}
 	.navbar {
@@ -74,6 +79,34 @@
 		position: absolute;
 		top: 0px;
 		margin-left: 10px;
+	}
+	.loading {
+		position: absolute;
+		background: #fff;
+		width: 70%;
+		height: 70%;
+		border-radius: 100%;
+		border: 5px solid white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.loading img {
+		width: 100%;
+	}
+	.loading:after {
+		content: "";
+		background: trasparent;
+		width: 140%;
+		height: 140%;
+		position: absolute;
+		border-radius: 100%;
+		opacity: 1;
+		box-shadow: rgba(209, 47, 137, 0.6) -4px -5px 3px -3px;
+		animation: rotate 2s infinite linear;
+		top: -20%;
+		left: -20%;
+		/* transform: translate(-50%,-50%); */
 	}
 }
 @media (min-width: 400px) {
@@ -195,5 +228,14 @@
 @media (max-width: 800px) and (min-width: 600px) {
 	.nav-text {
 		visibility: hidden;
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
 	}
 }

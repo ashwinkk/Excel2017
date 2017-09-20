@@ -6,9 +6,10 @@
 			"Swarm robotics is a field of robotics technology which deals with the artificial swarm intelligence and involves the usage of multiple robots which coordinate among themselves to complete a task more efficiently compared to a single robot carrying out the same task.Swarm robots communicate with each other wirelessly and take decisions.This workshop involves development of autonomous swarm robots enabled with master-slave communication.",
 		"thumbnail": "/static/images/iconswarm.png",
 		"bgcolor": "#4cccc6",
-		"registerLink":"https://google.com",
-		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus et ante eu semper. Etiam rutrum tellus in ante cursus, eget tempor sem interdum. Praesent in sapien sed tortor aliquam lacinia. Sed eget orci urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus a nulla mollis, aliquet diam commodo, fermentum justo. Suspendisse sit amet urna nunc. Proin scelerisque erat vitae eros pharetra, eget rhoncus turpis fringilla. Nunc vel quam semper, venenatis massa vel, fermentum est. Praesent imperdiet laoreet facilisis. Sed dapibus nisi eu felis bibendum, molestie suscipit arcu vehicula. Sed consequat purus et erat hendrerit maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-		"coverImage": "https://dummyimage.com/600x400/2980b9/2980b9.jpg",
+		"registerLink": "https://google.com",
+		"content":
+			"Excel has always upheld its commitment to society and provides a platform for students to groom themselves through social service. This year, under the umbrella of Excel 2017, students of Govt. Model Engineering College conducted a series of classes christened ‘Zero Hour - Tech Classes’ in different schools of Kochi, to better equip school goers with knowledge and foresight regarding technological developments and the boons and banes of the internet connected world. Aishwarya Mariam and Elsa Maria Thampi of EC5A conducted classes at Vimalagiri Public School, while Neha and Megha of EC 3A and Michelle of CS 3A successfully conducted the classes at Assisi Vidyaniketan School. Nandini Udayan and Aysha of EC5A took tech classes in St francis d Assisi Senior Secondary School Asokapuram, Aluva.",
+		"coverImage": "/static/events/marathon.jpg",
 		"tagLine": "some tagline"
 	},
 	{
@@ -18,11 +19,11 @@
 			"Quadcopter is an aerial robot combining a simple propeller mechanism with powerful electronics for limitless real-world applications. It is an embedded system comprising of microcontrollers, sensors, flight gear and other integrated components.This workshop helps participants to develop a Quadcopter project from scratch while understanding the various engineering concepts in making a working Unmanned Aerial Vehicle.",
 		"thumbnail": "/static/images/quadcopter.png",
 		"bgcolor": "#9f76d6",
-		"registerLink":"https://google.com",
-		"content": "Lorem ipsum dolor sit amet, <b>consectetur adipiscing</b> elit. Sed luctus et ante eu semper. Etiam rutrum tellus in ante cursus, eget tempor sem interdum. Praesent in sapien sed tortor aliquam lacinia. Sed eget orci urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus a nulla mollis, aliquet diam commodo, fermentum justo. Suspendisse sit amet urna nunc. Proin scelerisque erat vitae eros pharetra, eget rhoncus turpis fringilla. Nunc vel quam semper, venenatis massa vel, fermentum est. Praesent imperdiet laoreet facilisis. Sed dapibus nisi eu felis bibendum, molestie suscipit arcu vehicula. Sed consequat purus et erat hendrerit maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+		"registerLink": "https://google.com",
+		"content":
+			"Lorem ipsum dolor sit amet, <b>consectetur adipiscing</b> elit. Sed luctus et ante eu semper. Etiam rutrum tellus in ante cursus, eget tempor sem interdum. Praesent in sapien sed tortor aliquam lacinia. Sed eget orci urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus a nulla mollis, aliquet diam commodo, fermentum justo. Suspendisse sit amet urna nunc. Proin scelerisque erat vitae eros pharetra, eget rhoncus turpis fringilla. Nunc vel quam semper, venenatis massa vel, fermentum est. Praesent imperdiet laoreet facilisis. Sed dapibus nisi eu felis bibendum, molestie suscipit arcu vehicula. Sed consequat purus et erat hendrerit maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
 		"coverImage": "https://dummyimage.com/600x400/2980b9/2980b9.jpg",
 		"tagLine": "some tagline"
-		
 	},
 	{
 		"id": "ai-summit",
@@ -31,9 +32,10 @@
 			"When it comes to the possibilities of Artificial Intelligence, there may be a lot of opinions out there. It is a field which expands human capability beyond our imagination. We’re entering the world where AI will be ubiquitous.The pace of this progress is incredible, and close to exponential. AI has been conquering every sector imaginable and is being preached upon by leading organisations who is looking to reach unrivalled efficiency.",
 		"thumbnail": "/static/summit/ai.png",
 		"bgcolor": "#9f76d6",
-		"registerLink":"https://google.com",
-		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus et ante eu semper. Etiam rutrum tellus in ante cursus, eget tempor sem interdum. Praesent in sapien sed tortor aliquam lacinia. Sed eget orci urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus a nulla mollis, aliquet diam commodo, fermentum justo. Suspendisse sit amet urna nunc. Proin scelerisque erat vitae eros pharetra, eget rhoncus turpis fringilla. Nunc vel quam semper, venenatis massa vel, fermentum est. Praesent imperdiet laoreet facilisis. Sed dapibus nisi eu felis bibendum, molestie suscipit arcu vehicula. Sed consequat purus et erat hendrerit maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+		"registerLink": "https://google.com",
+		"content":
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus et ante eu semper. Etiam rutrum tellus in ante cursus, eget tempor sem interdum. Praesent in sapien sed tortor aliquam lacinia. Sed eget orci urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus a nulla mollis, aliquet diam commodo, fermentum justo. Suspendisse sit amet urna nunc. Proin scelerisque erat vitae eros pharetra, eget rhoncus turpis fringilla. Nunc vel quam semper, venenatis massa vel, fermentum est. Praesent imperdiet laoreet facilisis. Sed dapibus nisi eu felis bibendum, molestie suscipit arcu vehicula. Sed consequat purus et erat hendrerit maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
 		"coverImage": "https://dummyimage.com/600x400/2980b9/2980b9.jpg",
-		"tagLine": "some tagline"				
+		"tagLine": "some tagline"
 	}
 ]
