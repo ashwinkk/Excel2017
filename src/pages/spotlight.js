@@ -50,6 +50,7 @@ class Spotlight extends React.Component {
 				style={{ transitionDelay: `${1 + (i + 1) * 0.1}s` }}
 				overview={`${obj.overview.substr(0, 200).trim()}...`}
 				thumbnail={obj.thumbnail}
+				buttonName={obj.buttonName}
 				bgcolor={obj.bgcolor}
 				registerLink={obj.registerLink}
 			/>

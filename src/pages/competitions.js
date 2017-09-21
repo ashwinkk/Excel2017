@@ -203,7 +203,7 @@ class Competitions extends Component {
 				);
 			});
 		let filterDepts = [
-			{ value: "all", label: "All" },
+			{ value: "all", label: "All Departments" },
 			{
 				value: "CS",
 				label: "Computer Science"
@@ -213,7 +213,7 @@ class Competitions extends Component {
 			{ value: "NT", label: "Non-Tech" }
 		];
 		let filterCateg = [
-			{ value: "all", label: "All" },
+			{ value: "all", label: "All Categories" },
 			{ value: "on", label: "online" },
 			{ value: "off", label: "offline" }
 		];

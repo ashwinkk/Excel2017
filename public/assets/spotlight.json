@@ -6,6 +6,7 @@
 			"Quadcopter is an aerial robot combining a simple propeller mechanism with powerful electronics for limitless real-world applications. It is an embedded system comprising of microcontrollers, sensors, flight gear and other integrated components.This workshop helps participants to develop a Quadcopter project from scratch while understanding the various engineering concepts in making a working Unmanned Aerial Vehicle.",
 		"thumbnail": "/static/images/quadcopter.png",
 		"bgcolor": "#03A9F4",
+		"buttonName": "Closed",
 		"registerLink": "https://goo.gl/forms/nLC6thd4GbUcAsDu2"
 	},
 	{
@@ -14,6 +15,7 @@
 		"overview":
 			"When it comes to the possibilities of Artificial Intelligence, there may be a lot of opinions out there. It is a field which expands human capability beyond our imagination. We’re entering the world where AI will be ubiquitous.The pace of this progress is incredible, and close to exponential. AI has been conquering every sector imaginable and is being preached upon by leading organisations who is looking to reach unrivalled efficiency.",
 		"thumbnail": "/static/summit/ai.png",
+		"buttonName": "Register",
 		"bgcolor": "#212121",
 		"registerLink": "https://goo.gl/forms/xeiZh6D07AmthK8t1"
 	},
@@ -22,6 +24,7 @@
 		"category": "WS",
 		"bgcolor": "#607D8B",
 		"title": "Artificial Intelligence",
+		"buttonName": "Coming Soon",
 		"overview":
 			"Artificial Intelligence (AI) is a field that has a long history but is still constantly and actively growing and changing. In this workshop you’ll learn the basics of modern AI as well as some of the representative applications of AI. An introduction to Software tool used for AI will also be covered in the workshop",
 		"thumbnail": "/static/images/artificial-intelligence.png"
@@ -33,6 +36,7 @@
 		"bgcolor": "#4CAF50",
 		"overview":
 			"Behold curious minds. Ever wondered how scientific or technological breakthroughs occur? Dreamt of interacting with minds who have brought new dimensions to conventions? Introducing the Guest Lectures of Excel 2017, all new with the theme “Discover|Define|Defy, lines”.",
+		"buttonName": "Coming Soon",
 		"thumbnail": "/static/images/guest-lectures.png"
 	},
 	{
@@ -40,6 +44,7 @@
 		"category": "WS",
 		"title": "Augmented Reality ",
 		"bgcolor": "#F44336",
+		"buttonName": "Coming Soon",
 		"overview":
 			"Augmented reality is one of the present cutting edge technology. Which allows for a digitally manipulable, enhanced and interactive view of users real world.Among the other reality technologies, augmented reality lies in the middle of the mixed reality spectrum, being between the real and virtual world.",
 		"thumbnail": "/static/images/augmented-reality.png"

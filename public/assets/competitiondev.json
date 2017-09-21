@@ -1,82 +1,20 @@
-[
-	{
-		"name": "Techathon",
-		"id": "techathon",
-		"cover": "/static/images/techathon.png",
-		"category": "CS",
-		"type": "off",
-		"color": "#F44336"
-	},
-	{
-		"name": "Techathon",
-		"id": "techathon",
-		"cover": "/static/images/techathon.png",
-		"category": "CS",
-		"type": "on",
-		"color": "#E91E63"
-	},
-	{
-		"name": "Techathon",
-		"id": "techathon",
-		"cover": "/static/images/techathon.png",
-		"category": "EC",
-		"type": "on",
-		"color": "#9C27B0"
-	},
-	{
-		"name": "Techathon",
-		"id": "techathon",
-		"cover": "/static/images/techathon.png",
-		"category": "EC",
-		"type": "off",
-		"color": "#673AB7"
-	},
-	{
-		"name": "Techathon",
-		"id": "techathon",
-		"cover": "/static/images/techathon.png",
-		"category": "CS",
-		"type": "off",
-		"color": "#3F51B5"
-	},
-	{
-		"name": "Techathon",
-		"id": "techathon",
-		"cover": "/static/images/techathon.png",
-		"category": "EC",
-		"type": "off",
-		"color": "#2196F3"
-	},
-	{
-		"name": "Techathon",
-		"id": "techathon",
-		"cover": "/static/images/techathon.png",
-		"category": "CS",
-		"type": "off",
-		"color": "#009688"
-	},
-	{
-		"name": "Techathon",
-		"id": "techathon",
-		"cover": "/static/images/techathon.png",
-		"category": "CS",
-		"type": "off",
-		"color": "#4CAF50"
-	},
-	{
-		"name": "Techathon",
-		"id": "techathon",
-		"cover": "/static/images/techathon.png",
-		"category": "EC",
-		"type": "off",
-		"color": "#CDDC39"
-	},
-	{
-		"name": "Techathon",
-		"id": "techathon",
-		"cover": "/static/images/techathon.png",
-		"category": "EC",
-		"type": "off",
-		"color": "#FF5722"
-	}
-]
+{
+	"_id": "59c33a015235f40012513103",
+	"id": "game-plan",
+	"category": "NT",
+	"type": "off",
+	"color": "",
+	"name": "Game Plan",
+	"shortDes":
+		"Excel presents The Game Plan, an event centered around football. A test for true football fanatics among us. One to weed out the newbies from the pack. Many say they love the sport but few truly follow it with a passion.",
+	"description":
+		"<p>Excel presents The Game Plan, an event centered around football. A test for true football fanatics among us. One to weed out the newbies from the pack. Many say they love the sport but few truly follow it with a passion.</p><p>&nbsp;</p><p>Every group has its share of football-crazed guys and girls. We hope to bring them together so that they may showcase their knowledge of the sport, ability to make quick decisions and their mettle in the game we all love and cherish, FIFA.</p>",
+	"contact_details":
+		"<p><strong>Rahul Rana - 9961834572</strong></p><p><strong>Kevin Varghese -</strong> <strong>8301059699</strong></p>",
+	"cover": "/static/images/game-plan.png",
+	"prize_pool": "10k",
+	"rules":
+		"<ul><li>This is a team event consisting of 4 members per team.</li><li>Cross-college teams are allowed.</li><li>The contest is open to students from all colleges.</li><li>Participants need to produce a valid identity card of their respective institutes.</li><li>The organizers reserve all rights to disqualify any team for using unfair means at any stage of the event.</li><li>In case of any discrepancies, decision of the coordinators shall be considered final and binding for all the teams.</li><li>Additional rules will be provided by the organizers onsite.</li><li>Any violation of the rules provided by the organizers, will lead to immediate disqualification.</li><li>The judges' decision will be final.</li><li>Rules are subject to change at any point in time.</li><li>Participants will be duly notified of any changes.&nbsp;</li></ul>",
+	"eventFormat":
+		"<p><strong>Round 1: PRELIMINARY ROUND</strong></p><p>Prelims include a written test consisting of 25 objective questions.10 teams will be shortlisted from this round.</p><p>&nbsp;</p><p><strong>Round 2: INTERMEDIATE ROUND - 1</strong></p><p>The 10 shortlisted teams will go up against each other in a quiz. The top 5 teams will advance to the final two rounds. Teams will be awarded points based on there performance.</p><p>&nbsp;</p><p><strong>Round 4: INTERMEDIATE ROUND – 2</strong></p><p>The 5 top teams from the quiz round will have to auction for players to form a team in the final round. Teams will be awarded points based on the strength of the team they form.</p><p>&nbsp;</p><p><strong>Round 3: FINAL ROUND</strong></p><p>In the final round, the teams will be pitched against each other in a league format(FIFA 17). Teams will be awarded points as per their performance in the league. The team will the most points accumulated over the last three rounds will be the winners of the event.</p><p>&nbsp;</p><p><strong>Points Weighting</strong></p><p>In decreasing order of points weighting:</p><ol><li>Round 3: INTERMEDIATE ROUND – 2 (Auction)</li><li>Round 4: FINAL ROUND (FIFA)</li><li>Round 2: INTERMEDIATE ROUND – 1 (Quiz)</li></ol>"
+}

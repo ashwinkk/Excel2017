@@ -41,7 +41,7 @@ export default class SpotlightCard extends React.Component {
 						className="spotlight-card-register"
 						href={this.props.registerLink}
 					>
-						Register
+						{this.props.buttonName}
 					</a>
 				</div>
 			</div>

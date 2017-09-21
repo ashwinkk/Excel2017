@@ -197,7 +197,7 @@
 		"type": "off",
 		"name": "Ultimate Engineer",
 		"description":
-			"<p><em>Scientists dream about doing great things. Engineers do them.</em></p><p><em><span class=\"ql-cursor\">﻿</span></em></p><p>Combining smart and art is a tough job, but if you're ready to test your grit, skill and knowledge, you're at the right place.</p><p>Can you beat the clock to build the gadget you envisioned?</p><p>They say, creativity is the genius of the mind. And what could be more creative than a little bit of Engineering?</p><p>Do you have what it takes to be the Ultimate Engineer?</p>",
+			"<p><em>Scientists dream about doing great things. Engineers do them.</em></p<p>They say, creativity is the genius of the mind. And what could be more creative than a little bit of Engineering? Here is an event for the complete Engineer. If you believe that engineering is not branch specific, if you believe that you have the prowess to tinker with any domain, be it electronics, electrical, computer or biomedical, your mettle will be tested before you earn the title of the Ultimate Engineer. Combining smart and art is a tough job, but if you're ready to test your grit, skill and knowledge, you're at the right place. Can you beat the clock to design the gadget you envisioned?</p>",
 		"contact_details":
 			"<p>V. Kannan</p><p>+91-7736433808</p><p>Anjali K</p><p>+91-7736479418</p>",
 		"cover": "/static/images/ultimate-engineer.png",
@@ -221,11 +221,11 @@
 		"contact_details":
 			"<p>James Mathews: 8547984757</p><p><a href=\"mailto:jamesmathews.mec@gmail.com\" target=\"_blank\">jamesmathews.mec@gmail.com</a></p><p><br></p><p>Ashma M J: 7907561079</p><p><a href=\"mailto:ashmamj.mec@gmail.com\" target=\"_blank\">ashmamj.mec@gmail.com</a></p>",
 		"cover": "/static/images/alohomora.png",
-		"prize_pool": "13k",
+		"prize_pool": "15k",
 		"rules":
 			"<p><strong>Rules</strong></p><ul><li>Each team <strong>must </strong>comprise of 4 members.</li><li>The participants must carry their <strong>valid id cards</strong> at each round of the game.</li><li>Teams clearing the 1st round should report at the place announced before the <strong>time deadline</strong>. Failing to report at the specified time will be considered a disqualification.</li><li>Picking up fights with other teams or the authority will lead to disqualification of the team.</li><li>Since the event is scheduled for two days the participants clearing the first day must look after the arrangements for their accomodation on their own.</li><li>Each round has its own set of rules and participants are strictly adviced to stick to those rules and instructions.</li><li>Any malpractice during the event will lead to disqualification of the team.</li><li>The decision of the authority on any matter will be final.</li></ul><p><br></p>",
 		"eventFormat":
-			"<p><strong>Event format</strong></p><p><br></p><p><br></p><p><u>Peliminary</u></p><p><br></p><p>The preliminary round is in theform of a paper test conducted inside the college.</p><p><br></p><p><u>Consecutive rounds</u></p><p><br></p><p>The rest of Alohomora will comprise a compete treasure hunt conducted in various rounds and a vast span of area in and around college.</p><p>These rounds conducted in a span of <strong>two days</strong> will comprise of eliminations and the successful team moves on to the next round.</p><p>A team has to survive through all these rounds till the end to find the Treasure.</p>"
+			"<p><strong>Event format</strong></p><p><br></p><p><br></p><p><u>Preliminary</u></p><p><br></p><p>The preliminary round is in theform of a paper test conducted inside the college.</p><p><br></p><p><u>Consecutive rounds</u></p><p><br></p><p>The rest of Alohomora will comprise a compete treasure hunt conducted in various rounds and a vast span of area in and around college.</p><p>These rounds conducted in a span of <strong>two days</strong> will comprise of eliminations and the successful team moves on to the next round.</p><p>A team has to survive through all these rounds till the end to find the Treasure.</p>"
 	},
 	{
 		"_id": "59ac005d39d8b90011e525d1",
@@ -233,7 +233,7 @@
 		"category": "EC",
 		"type": "off",
 		"name": "Extrinsicity",
-		"color": "#8BC34A",
+		"color": "#283593",
 		"description":
 			"<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Love messing around and playing with circuits, bugs and all things electronics? Look no further, Extrinsicity is your cup of tea mate! Wind your way through intriguing analogue circuits and calculated signals to win the great war of circuitry and prove your devotion to electronics.</span></p>",
 		"shortDes":
@@ -296,7 +296,7 @@
 			"Knowledge is power, but enthusiasm pulls the switch” From untangling earphone wires to solving complicated wiring circuits, do you think you have a natural flair in wiring up electrical circuits?",
 		"name": "Lumiere",
 		"description":
-			"<p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">“</strong><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Knowledge is power, but enthusiasm pulls the switch” From untangling earphone wires to solving complicated wiring circuits, do you think you have a natural flair in wiring up electrical circuits? If so" "lumiere is the right platform for you. Enlighten the world with the sparks of your wiring knowledge. Unleash the wiring wizard in you, before you lose track of time!</span></p>",
+			"<p><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">“</strong><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Knowledge is power, but enthusiasm pulls the switch” From untangling earphone wires to solving complicated wiring circuits, do you think you have a natural flair in wiring up electrical circuits? If solumiere is the right platform for you. Enlighten the world with the sparks of your wiring knowledge. Unleash the wiring wizard in you, before you lose track of time!</span></p>",
 		"color": "#E91E63",
 		"contact_details":
 			"<p>Rohin John Mathews</p><p>+91-9447597473</p><p>Lakshmy R</p><p>+91-9497282399</p>",
@@ -320,7 +320,7 @@
 			"<p>Ananthu Haridas</p><p>+91-8281394935</p><p>Aiswarya P</p><p>+91-9539680138</p>",
 		"cover": "/static/images/elecquest.png",
 		"prize_pool": "9k",
-		"color": "#4A148C",
+		"color": "#8BC34A",
 		"rules":
 			"<ol><li>A team of 3 is required.</li><li>The decision of the organizers will be final.</li><li>Rules are subject to change at any point of time.Participants will be duly notified of any change.</li><li>Cross college teams are allowed.</li><li>Contestants should present their college ID cards.</li><li>Any team not abiding by the rules of the event will be immediately disqualified.</li><li>Cross-college teams are allowed.</li><li>a basic knowledge on proteus and arduino will be an advantage.</li><li>Judges' decision will be final.</li><li>Organizers reserve the right to make decisions in case of conflicts and other issues.</li></ol>",
 		"eventFormat":
@@ -341,7 +341,7 @@
 		"cover": "/static/images/algorithms.png",
 		"prize_pool": "8k",
 		"rules":
-			"<ul><li>Participants can code in C, C++, Java or Python.</li><li>Use of mobile phones will not be allowed during the event.</li><li>The individual that codes the most optimal solution in the shortest time will be declared as the winner (Highest points).</li><li>Programs with least complexity will be given preference.</li><li>The decision of the judges will be final and rules are subject to change at any point of time." "</li></ul>",
+			"<ul><li>Participants can code in C, C++, Java or Python.</li><li>Use of mobile phones will not be allowed during the event.</li><li>The individual that codes the most optimal solution in the shortest time will be declared as the winner (Highest points).</li><li>Programs with least complexity will be given preference.</li><li>The decision of the judges will be final and rules are subject to change at any point of time.</li></ul>",
 		"eventFormat":
 			"<p><strong>Preliminary Round</strong></p><ul><li>This is an individual event.</li><li>General Tech based MCQ Questions to be solved in 30mins.</li><li>The top few contestants move on to the final stage.</li></ul><p><br></p><p><br></p><p><strong>Final Round</strong></p><ul><li>Consists of a pure coding competition with a 2 hour time limit.</li><li>The person with the highest score will be the winner, in cases of a tie of points, complexity of the programs will be considered.</li></ul>"
 	},
@@ -393,9 +393,9 @@
 		"name": "Lifeline",
 		"color": "#1B5E20",
 		"description":
-			"<p><span style=\"background-color: transparent;\">Get your act" "together before the patient flat-lines. Scrutinise the inner workings of an impaired medical instrument to keep a soul alive. An exclusive event which provides an opportunity to assert your proficiency in debugging and endow yourself with the honour of being a life saver. </span></p>",
+			"<p><span style=\"background-color: transparent;\">Get your act together before the patient flat-lines. Scrutinise the inner workings of an impaired medical instrument to keep a soul alive. An exclusive event which provides an opportunity to assert your proficiency in debugging and endow yourself with the honour of being a life saver. </span></p>",
 		"shortDes":
-			"Get your act" "together before the patient flat-lines. Scrutinise the inner workings of an impaired medical instrument to keep a soul alive.",
+			"Get your act together before the patient flat-lines. Scrutinise the inner workings of an impaired medical instrument to keep a soul alive.",
 		"contact_details":
 			"<p>Nithin Raj</p><p>+91-8089791044</p><p>Paulson Paul</p><p>+91-9895183049</p>",
 		"cover": "/static/images/lifeline.png",
@@ -409,7 +409,7 @@
 		"_id": "59b8dab71368910012bde125",
 		"id": "dalalbull",
 		"shortDes":
-			"Take risks and expect the unexpected cause it's all about amateurism.</p><p>Dalal Bull is an online stock marketing event. It is the ultimate stock exchange event and it tests the individuals trading skills.",
+			"Take risks and expect the unexpected cause it's all about amateurism. Dalal Bull is an online stock marketing event. It is the ultimate stock exchange event and it tests the individuals trading skills.",
 		"category": "NT",
 		"type": "on",
 		"color": "#F57F17",
@@ -424,5 +424,249 @@
 			"<p>The rules of this event can be found at <a href=\"http://play.excelmec.org\" target=\"_blank\">play.excelmec.org</a></p>",
 		"eventFormat":
 			"<p>The event format can be found at <a href=\"http://play.excelmec.org\" target=\"_blank\">play.excelmec.org</a></p>"
+	},
+	{
+		"_id": "59b8db231368910012bde12a",
+		"id": "kryptos",
+		"category": "NT",
+		"name": "Kryptos",
+		"type": "on",
+		"color": "#283593",
+		"shortDes":
+			"Unravel the mysteries of the crypt.The most popular online event of Excel, Kryptos brings to life the online miniature version of the world’s favorite game-the treasure hunt.",
+		"description":
+			"<p>Unravel the mysteries of the crypt.</p><p>The most popular online event of Excel, Kryptos brings to life the online miniature version of the world’s favorite game-the treasure hunt. From simple images to cryptic keys hidden in the pages Kryptos is all set to take you to a world of clues, codes and yes, cryptography!</p><p>P.S. Knowledge of basic features available in all major web browsers is a plus.</p>",
+		"contact_details":
+			"<ul><li>Greger George: +91 7293257583</li><li>Vishnu Bhagyanath: +91 9037890079</li></ul>",
+		"cover": "/static/images/kryptos.png",
+		"prize_pool": "10k",
+		"rules":
+			"<ul><li>Admin's decisions are final and should not be questioned.</li><li>Malpractices or any sort of practices which grant advantages over other players are strictly prohibited. This includes accessing restricted files/brute forcing/sharing answers etc.</li><li>Any user other than the admin found sharing answers or clues will be immediately banned from the hunt.</li><li>Clues can be found anywhere in the webpage, use all your resources accordingly. This can be anything from Image Name/Source/Cookies etc.</li><li>Admins will provide timely hints for all levels as per schedule. Do not beg for hints or spam the page's Direct Messages.</li><li>The hunt will end on 28 September 2017. The user on top of the scoreboard at that time will be declared as the winner regardless of whether all the levels have been completed.</li><li>The leaderboard is based purely on time completed to maintain equality. First to solve the level will be on top.</li><li>The hunt can be extended or shortened (with prior notification) according to time constraints.</li><li>The rules may be modified or changed at any moment before or during the hunt.</li><li>Failure to comply with any of the rules will result in immediate disqualification.</li></ul>",
+		"eventFormat":
+			"<ul><li>The game is conducted in time span of 2 weeks and each week a set of questions are released. No point is awarded for solving a level. Instead winners are calculated on the basis of maximum level he/she has reached and time taken.</li><li>User can register online on the website with his Facebook/Google account.</li></ul>"
+	},
+	{
+		"_id": "59c23a6ecf6364001200fcae",
+		"id": "doctype",
+		"category": "CS",
+		"type": "off",
+		"color": "#00897B",
+		"name": "<!DOCTYPE>",
+		"shortDes":
+			"If you are a ‘wonder-kid’ at website design, then this event will strain your skills to the limit. <!DOCTYPE> will test your knowledge of website designing more thoroughly than anything you’ve encountered before.",
+		"description":
+			"<p><span style=\"color: rgb(0, 0, 0);\">If you are a ‘wonder-kid’ at website design, then this event will strain your skills to the limit. <!DOCTYPE> will test your knowledge of website designing more thoroughly than anything you’ve encountered before. Patch up poorly created websites, replicate given ones and create new websites from scratch on the given theme.</span></p>",
+		"contact_details":
+			"<ul><li>Siva Renganathan: +91 94465 04377</li><li><span style=\"background-color: transparent;\">Greger George: </span>+91 72932 57583</li></ul>",
+		"cover": "/static/images/doctype.png",
+		"prize_pool": "10k",
+		"rules":
+			"<ul><li><span style=\"background-color: transparent;\">A team can have a maximum of 3 members.</span></li><li><span style=\"background-color: transparent;\">Students from any engineering branch can participate.</span></li><li><span style=\"background-color: transparent;\">The students can use internet for reference but code snippets cannot be copied from websites.</span></li><li><span style=\"background-color: transparent;\">Systems and devices will not be provided. Candidates should bring their own laptops and devices.</span></li><li><span style=\"background-color: transparent;\">Judges decision will be final.</span></li><li><span style=\"background-color: transparent;\">Rules are subject to change at any point in time. All rules will be explained at the event as well.</span></li><li><span style=\"background-color: transparent;\">Organizers reserve the right to take decisions in case of conflicts and issues.</span></li></ul>",
+		"eventFormat":
+			"<p><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\">Preliminary Round</strong></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Use your basic knowledge of web development to get through the preliminary round.</span></p><p><br></p><p><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\">Final Round</strong></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Teams must replicate the Website provided in both functionality and UI. Sites will be judged based on the progress made at the end of the competition</span></p>"
+	},
+	{
+		"_id": "59b8db231368910012bde12c",
+		"id": "circuimstance",
+		"category": "EC",
+		"name": "CIRCUImsTance",
+		"type": "on",
+		"color": "#4CAF50",
+		"buttons": [
+			{
+				"link": "http://circuimstance.excelmec.org",
+				"name": "Play"
+			}
+		],
+		"shortDes":
+			"The ultimate Sci-Fi geek fantasy has finally come true! Rediscover your passion for electronics through this compelling online narrative, set in a fictitious world.",
+		"description":
+			"The ultimate Sci-Fi geek fantasy has finally come true! Rediscover your passion for electronics through this compelling online narrative, set in a fictitious world. Battle real time hurdles and emerge victorious as the plot unfolds to become the master of circumstances. Wait with bated breath! The story has just began folks!",
+		"contact_details":
+			"<ul><li>Mishel Jyothis Paul: +91-8289837546</li><li>Abu Jose George: +91-9497336167</li><li>Ebin B Plackal: +91-8281484093</li></ul>",
+		"cover": "/static/images/circuimstance.png",
+		"prize_pool": "3k",
+		"rules":
+			"<ol><li><span style=\"background-color: transparent;\">Admin's decisions are final and should not be questioned.</span></li><li><span style=\"background-color: transparent;\">Malpractices or any sort of practices which grant advantages over other players are strictly prohibited. This includes accessing restricted files/brute forcing/sharing answers etc.</span></li><li><span style=\"background-color: transparent;\">Any user other than the admin found sharing answers or clues will be immediately banned from the hunt.</span></li><li><span style=\"background-color: transparent;\">Clues can be found at the </span><a href=\"https://www.facebook.com/circuimstance\" target=\"_blank\" style=\"background-color: transparent; color: rgb(17, 85, 204);\">facebook page</a><span style=\"background-color: transparent;\">.</span></li><li><span style=\"background-color: transparent;\">When in doubt, always feel free to DM us on facebook.</span></li><li><span style=\"background-color: transparent;\">The game will end on 01 October 2017. The user on top of the scoreboard at that time will be declared as the winner regardless of whether all the levels have been completed.</span></li><li><span style=\"background-color: transparent;\">The leaderboard is based purely on time completed to maintain equality. First to solve the level will be on top.</span></li><li><span style=\"background-color: transparent;\">The hunt can be extended or shortened (with prior notification) according to time constraints.</span></li><li><span style=\"background-color: transparent;\">Answers are to be typed in lowercase and excluding spaces. If the answer is a name, it should be the full name including initials. All values should be in SI units unless otherwise specified in the question. Floating point values should be correct to two decimal places.</span></li><li><span style=\"background-color: transparent;\">Boolean expressions should be arranged alphabetically with brackets whenever necessary.</span></li><li class=\"ql-indent-1\">\timage</li><li><span style=\"background-color: transparent;\">The rules may be modified or changed at any moment before or during the hunt.</span></li><li><span style=\"background-color: transparent;\">Failure to comply with any of the rules will result in immediate disqualification.</span></li></ol>",
+		"eventFormat": "Event will be launched tomorrow at 6:30pm. Stay tuned!"
+	},
+	{
+		"_id": "59c2383fcf6364001200fcac",
+		"id": "include",
+		"category": "CS",
+		"type": "on",
+		"name": "#include",
+		"color": "#EF5350",
+		"shortDes":
+			"If you eat, drink and think code!, this is the event tailor made for you. Display your coding prowess and beat other opponents with your expertise.",
+		"description":
+			"<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Debug..Compile..Execute!</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">If you eat, drink and think code!, this is the event tailor made for you. Display your coding prowess and beat other opponents with your expertise. All one has to do is attempt the 27 questions which are strategically divided into 9 chapters. Each chapter is based on a challenging concept. The participants are free to use the language from C/C++/Java/Python to crack the code.</span></p>",
+		"contact_details":
+			"<ul><li><span style=\"background-color: transparent;\">Asif Ali: </span>+91 85940 14280</li><li>Siva Renganathan: +91 94465 04377</li></ul>",
+		"cover": "/static/images/include.png",
+		"prize_pool": "9k",
+		"rules":
+			"<p>For all the rules check out <a href=\"http://play.excelmec.org/\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255);\">http://play.excelmec.org</a></p>",
+		"eventFormat":
+			"<ol><li><span style=\"background-color: transparent;\">User can register online on the website.</span></li><li><span style=\"background-color: transparent;\">There will be 3 difficulty levels:</span></li></ol><ul><li class=\"ql-indent-1\"><span style=\"background-color: transparent;\">Easy - 5 points</span></li><li class=\"ql-indent-1\"><span style=\"background-color: transparent;\">Medium - 7 points</span></li><li class=\"ql-indent-1\"><span style=\"background-color: transparent;\">Hard - 8 points.</span></li></ul><p>For more details, check  out: <a href=\"http://play.excelmec.org\" target=\"_blank\">http://play.excelmec.org</a></p>"
+	},
+	{
+		"_id": "59b8ca2cf82f9600123938f6",
+		"id": "kluge",
+		"category": "NT",
+		"name": "Kluge",
+		"type": "off",
+		"color": "#FFC107",
+		"shortDes":
+			"Remember those Tom & Jerry cartoons where Tom created the most intricate and convoluted contraptions just to catch Jerry? Well, here you have a chance to design something similar.",
+		"description":
+			"<p>Remember those Tom & Jerry cartoons where Tom created the most intricate and convoluted contraptions just to catch Jerry? Well, here you have a chance to design something similar. Use the most twisted and convoluted logic possible and the laws of Physics to create machines that do the simplest of things like open a door or switch on a light bulb. Complexity is the winning mantra here.</p>",
+		"contact_details":
+			"<p>Anet Luciya Davis-9895872022</p><p>Mathew P Abraham-9496913813</p>",
+		"cover": "/static/images/kluge.png",
+		"prize_pool": "7k",
+		"rules":
+			"<ul><li>Event is open for all.</li><li>Teams can have 4-5 members.</li><li>Cross-college teams are allowed.</li><li>Only the provided set of materials may be used in the creation of the machines.</li><li>Malpractices and sabotaging other teams' machines will lead to immediate disqualification.</li><li>Judges' decision will be final.</li><li>Organizers reserve the right to make decisions in case of conflicts and other issues.</li><li>Rules are subject to change at any point in time.</li><li>All rules will be explained at the event as well.</li></ul>",
+		"eventFormat":
+			"<p>The event is a three stage, team based event</p><p><br></p><p><strong>﻿Round 1: Preliminary Round</strong></p><p>A written round that will evaluate teams on their reasoning, logical and basic mechanical skills. 10 teams will qualify to the final round.</p><p><br></p><p><strong>Round 2: Elimination round</strong></p><p>Teams will be given tasks to provide innovative solutions to given problems. 3 teams will be shortlisted to the next round.</p><p><br></p><p><strong>Round 3: Creation Round</strong></p><p>In the final round, teams will be given a task, a set of material to perform the task and will be required to create a complex machine that completes the task in as many steps as possible and the output from the device should be optimum. The machine must perform the task in at least the minimum number of steps stipulated.</p>"
+	},
+	{
+		"_id": "59b8c5dff82f9600123938f4",
+		"id": "defacto",
+		"category": "NT",
+		"type": "off",
+		"name": "Defacto",
+		"color": "#EC407A",
+		"description":
+			"<p><span style=\"color: rgb(34, 34, 34);\">A quiz solely aimed at school students, Defacto promises to be fun and interactive session, combining the innovation of college quizzing and the inquisitiveness of school quizzing consisting of a variety of interactive sessions, Defacto wishes to reach out to the young Einsteins and Madam Curies in school.</span></p>",
+		"shortDes":
+			"A quiz solely aimed at school students, Defacto promises to be fun and interactive session, combining the innovation of college quizzing and the inquisitiveness of school quizzing consisting of a variety of interactive sessions, Defacto wishes to reach out to the young Einsteins and Madam Curies in school.",
+		"contact_details":
+			"<p>Aparna V.A</p><p>+91 94965 00466</p><p>MG Krishnan</p><p>+91 9400815088</p>",
+		"cover": "/static/images/defacto.png",
+		"prize_pool": "6k",
+		"rules":
+			"<ul><li>School students from classes 7-12 can participate.</li><li>A team should comprise of 2 members.</li><li>Cross school teams allowed.</li><li>Online registration and spot registration available for the teams. Spot registration will be closed half an hour before the prelims.</li><li>School ID cards is mandatory.</li><li>Winners and runners up of the quiz will be rewarded.</li><li>The team with the most innovative ‘name’ will be rewarded.</li><li>Decision of the quizmaster will be final and binding.</li></ul>",
+		"eventFormat":
+			"<p><strong>Prelims</strong></p><p>A written selection round where teams of two have to answer a set of questions.</p><p><br></p><p><strong>Finals</strong></p><p>Four teams qualify for the finals.</p>"
+	},
+	{
+		"_id": "59b8c315f82f9600123938f2",
+		"id": "best-manager",
+		"category": "NT",
+		"type": "off",
+		"color": "#26A69A",
+		"name": "Best Manager",
+		"shortDes":
+			"A good manager sees the big picture even in the smallest instance .They are the true leaders, leading in the front, inspiring and educating the support system. They have the ability to bring out magical outputs at extremely critical situation.",
+		"description":
+			"<p>A good manager sees the big picture even in the smallest instance .They are the true leaders, leading in the front, inspiring and educating the support system. They have the ability to bring out magical outputs at extremely critical situation. If you see such a fire in you just be a part of BEST MANAGER to discover the real manager in you!!!</p>",
+		"contact_details":
+			"<p>Joseph Thomas Thachil - +91 9946525909</p><p>Joel Varghese P - +91 8547167746</p>",
+		"cover": "/static/images/best-manager.png",
+		"prize_pool": "8k",
+		"rules":
+			"<ul><li>Individual participation only.</li><li>Improper behaviour or unfair use of any means at any stage will lead to immediate disqualification.</li><li>The decision of the organisers and Judges will be final.</li><li>Rules are subject to change at any point in time.</li><li>Participants will be duly notified of any change.</li></ul>",
+		"eventFormat":
+			"<p>All the rounds will be elimination rounds.</p><p><br></p><p><strong>Round 1</strong></p><p>This will be a written round wherein the business acumen and general knowledge of the candidates would be tested via a 45-minute-long test consisting of MCQ questions primarily, along with classical business analysis and related questions. The questions will vary from general knowledge to something as simple as giving a caption.</p><p><br></p><p><strong>Round 2</strong></p><p>This round will ensure that the top 30 candidates selected will be filtered and put through the test. This will have another written test but in a rapid fire format lasting for only 2 minutes. Then a video based question will be provided which will take up 10 minutes. Following these two, the candidates will have to come up with 5 uses for a random, abstract product that will be given to them. The entire round would consume up to 30-minutes maximum.</p><p><br></p><p><strong>Round 3</strong></p><p>This will be a business case study round with external judges presiding. A detailed financial statement and the corresponding case will be provided to the final 18 who will have to come up with ways to tackle the current problems the virtual company faces and bring it into profit. The judges will be using financial terms and the knowledge of the same will differentiate the best from the rest. This round would last for 30 minutes.</p><p><br></p><p><strong>Round 4</strong></p><p>This round will be of 1 hour. 6 finalists will have 5 minutes each of mock press and product launch according to lots. The judges will determine the character after each product launch session for the respective candidate. The preparation time for product launch would be limited to 3 minutes.</p><p><br></p><p>The winners would be declared after all the rounds are complete.</p>"
+	},
+	{
+		"_id": "59b8c550f82f9600123938f3",
+		"id": "game-zone",
+		"category": "NT",
+		"name": "Game Zone",
+		"type": "off",
+		"color": "#202225",
+		"shortDes":
+			"What would it be like to live a dream in reality? Game zone is the ultimate platform which provides you with such an opportunity. Let your fingers take on the battle on the screen.",
+		"description":
+			"<p>What would it be like to live a dream in reality? Game zone is the ultimate platform which provides you with such an opportunity. Let your fingers take on the battle on the screen.</p>",
+		"contact_details":
+			"<p>Linn Zacharias</p><p>9895527537</p><p>linnzacharias@gmail.com</p><p><br></p><p>Sebin C Wilson</p><p>854755755</p><p>sebincw@gmail.com</p>",
+		"cover": "/static/images/game-zone.png",
+		"prize_pool": "32k",
+		"rules":
+			"<p><strong>COUNTER STRIKE GLOBAL OFFENSIVE</strong></p><ul><li>The team may consist of up to 5 members.</li><li>Participants can bring their own headphones, USB keyboards and USB mice.</li><li>Participants are strictly advised not to bring any sort of configuration files to the event. If any participant is found trying to use their own configuration files during the event, their team will be disqualified without any warning.</li><li>The event will be controlled by an administrator who monitors the game server. The decision of the admin will be final and binding.</li><li>A knife round will decide which team starts as Counter-Terrorist or Terrorist, the team who wins the knife round chooses the team. Both teams meet up at the knife-spot on the map. You are not allowed to go around the map to attack the other team from behind. It is forbidden to boost up on boxes or do similar things to get an advantage.</li><li>$800 will be set as the starting money for each match.</li><li>Players can write to each other only during game play and indecent language will not be tolerated.</li></ul><p><br></p><p><strong>FIFA</strong></p><ul><li>Number of Players: 2</li><li>Teams: Any team international or club with some exceptions .</li></ul><p><br></p><p>Kindly note due FIFA’s inconsistency the combination of certain teams may lead to the game crashing, in which case either of the players may be asked to changed teams.</p>",
+		"eventFormat":
+			"<p><strong style=\"color: black; background-color: rgb(246, 246, 246);\">COUNTER STRIKE GLOBAL OFFENSIVE</strong></p><ul><li><span style=\"color: black; background-color: rgb(246, 246, 246);\">Maximum Round time: 1 mins 55 sec + 25 sec(Freeze time) </span></li><li><span style=\"color: black; background-color: rgb(246, 246, 246);\">Number of Rounds: For preliminaries 10 (5 Counter-Terrorists, 5 Terrorists)</span></li><li><span style=\"color: black; background-color: rgb(246, 246, 246);\">Till Quater finals 16 (8 Counter-Terrorists, 8 Terrorists)</span></li><li><span style=\"color: black; background-color: rgb(246, 246, 246);\">For Semi and Finals 30 (15 Counter-Terrorists, 15 Terrorists) </span></li><li><span style=\"color: black; background-color: rgb(246, 246, 246);\"><span class=\"ql-cursor\">﻿</span>Maps: </span></li></ul><ol><li class=\"ql-indent-1\"><span style=\"color: black; background-color: rgb(246, 246, 246);\">de_dust2 </span></li><li class=\"ql-indent-1\"><span style=\"color: black; background-color: rgb(246, 246, 246);\">de_inferno </span></li><li class=\"ql-indent-1\"><span style=\"color: black; background-color: rgb(246, 246, 246);\">de_cobblestone</span></li><li class=\"ql-indent-1\"><span style=\"color: black; background-color: rgb(246, 246, 246);\">de_train</span></li><li class=\"ql-indent-1\"><span style=\"color: black; background-color: rgb(246, 246, 246);\">de_mirage</span></li><li class=\"ql-indent-1\"><span style=\"color: black; background-color: rgb(246, 246, 246);\">de_overpass</span></li></ol><p><br></p><p><strong style=\"color: black; background-color: rgb(246, 246, 246);\">FIFA</strong></p><ul><li>Match Format: Players go head to head in two (2) four (4) minute halves.</li><li>Tournament Format: Knockout</li><li>Game Speed: Fast</li><li>Injuries: On</li><li>Radar: On</li><li>Bookings: On</li><li>Time/Score Indicator: On </li></ul>"
+	},
+	{
+		"_id": "59b8cec4f82f9600123938f7",
+		"id": "excelsior",
+		"category": "NT",
+		"name": "Excelsior",
+		"type": "off",
+		"color": "#FFA726",
+		"shortDes":
+			"The battle of brains at the excel quiz guarantees a delightful experience to the participants and the audience alike. The event is open exclusively for college students.",
+		"description":
+			"<p>The battle of brains at the excel quiz guarantees a delightful experience to the participants and the audience alike. The event is open exclusively for college students. With questions related to anything under the sun, a sharp mind and quick wit will see you through with flying colours.</p>",
+		"contact_details":
+			"<p>Muhammed Shafeeque A - 9947033410</p><p>Akhila Naz - 7025084884</p>",
+		"cover": "/static/images/excelsior.png",
+		"prize_pool": "7K",
+		"rules":
+			"<ul><li>This is a general quiz.</li><li>The quiz is open only to college students.</li><li>College ID cards are mandatory. Drivers license,electoral IDs and other forms of identification shall not be entertained.</li><li>A team shall comprise of 2 members. Cross college teams are allowed.</li><li>In the event of a tie,a tie breaker would be the deciding factor.</li><li>The decision of the quiz master and the organisers shall be final and binding.</li><li>Rules are subject to change at any point of time.</li><li>Participants will be duly notified of any changes.</li></ul>",
+		"eventFormat":
+			"<p><strong>PRELIMS </strong></p><ul><li>PRELIMS consists of a written test. The questions include:</li><li class=\"ql-indent-1\">General Knowledge</li><li class=\"ql-indent-1\">Aptitude questions</li><li class=\"ql-indent-1\">Short paragraph question to asses group work</li><li>The top 10 groups will be selected for further rounds.</li></ul><p><br></p><p><strong>SECOND PRELIMS</strong></p><ul><li>More written test including General Knowledge questions only.</li><li>From the groups selected in the first prelims, 6 are selected for the next rounds.</li></ul><p><br></p><p><strong>SEMI FINAL</strong></p><ul><li>Comprises of 3 level.</li><li class=\"ql-indent-1\">First round are general knowledge questions(20 questions).</li><li class=\"ql-indent-1\">Second round: 4 categories. Groups can select which category. Each include a set of 10 questions.</li><li class=\"ql-indent-1\">Third round: 10 questions( Include Photo identifications etc)</li></ul><p><br></p><p><strong>FINALS</strong></p><ul><li>Finals consists of Two rounds</li><li class=\"ql-indent-1\">First round: 4 categories. Groups can select which category. Each include a set of 10 questions.</li><li class=\"ql-indent-1\">Second round: 10 questions. It also include some pictures to identify etc.</li></ul>"
+	},
+	{
+		"_id": "59c33a015235f40012513103",
+		"id": "game-plan",
+		"category": "NT",
+		"type": "off",
+		"color": "#03A9F4",
+		"name": "Game Plan",
+		"shortDes":
+			"Excel presents The Game Plan, an event centered around football. A test for true football fanatics among us. One to weed out the newbies from the pack. Many say they love the sport but few truly follow it with a passion.",
+		"description":
+			"<p>Excel presents The Game Plan, an event centered around football. A test for true football fanatics among us. One to weed out the newbies from the pack. Many say they love the sport but few truly follow it with a passion.</p><p> </p><p>Every group has its share of football-crazed guys and girls. We hope to bring them together so that they may showcase their knowledge of the sport, ability to make quick decisions and their mettle in the game we all love and cherish, FIFA.</p>",
+		"contact_details":
+			"<p><strong>Rahul Rana - 9961834572</strong></p><p><strong>Kevin Varghese -</strong> <strong>8301059699</strong></p>",
+		"cover": "/static/images/game-plan.png",
+		"prize_pool": "10k",
+		"rules":
+			"<ul><li>This is a team event consisting of 4 members per team.</li><li>Cross-college teams are allowed.</li><li>The contest is open to students from all colleges.</li><li>Participants need to produce a valid identity card of their respective institutes.</li><li>The organizers reserve all rights to disqualify any team for using unfair means at any stage of the event.</li><li>In case of any discrepancies, decision of the coordinators shall be considered final and binding for all the teams.</li><li>Additional rules will be provided by the organizers onsite.</li><li>Any violation of the rules provided by the organizers, will lead to immediate disqualification.</li><li>The judges' decision will be final.</li><li>Rules are subject to change at any point in time.</li><li>Participants will be duly notified of any changes. </li></ul>",
+		"eventFormat":
+			"<p><strong>Round 1: PRELIMINARY ROUND</strong></p><p>Prelims include a written test consisting of 25 objective questions.10 teams will be shortlisted from this round.</p><p> </p><p><strong>Round 2: INTERMEDIATE ROUND - 1</strong></p><p>The 10 shortlisted teams will go up against each other in a quiz. The top 5 teams will advance to the final two rounds. Teams will be awarded points based on there performance.</p><p> </p><p><strong>Round 4: INTERMEDIATE ROUND – 2</strong></p><p>The 5 top teams from the quiz round will have to auction for players to form a team in the final round. Teams will be awarded points based on the strength of the team they form.</p><p> </p><p><strong>Round 3: FINAL ROUND</strong></p><p>In the final round, the teams will be pitched against each other in a league format(FIFA 17). Teams will be awarded points as per their performance in the league. The team will the most points accumulated over the last three rounds will be the winners of the event.</p><p> </p><p><strong>Points Weighting</strong></p><p>In decreasing order of points weighting:</p><ol><li>Round 3: INTERMEDIATE ROUND – 2 (Auction)</li><li>Round 4: FINAL ROUND (FIFA)</li><li>Round 2: INTERMEDIATE ROUND – 1 (Quiz)</li></ol>"
+	},
+	{
+		"_id": "59c3495f2b6934001254e0c4",
+		"id": "csi",
+		"category": "NT",
+		"name": "Crime Scene Investigation",
+		"type": "off",
+		"color": "#FFA726",
+		"shortDes":
+			"Crime Scene Investigation events are engaging and practical; team work, critical thinking and problem solving skills will be put to the test. They are specifically structured to improve the communication and relationships between participants and in a way that encourages full participation by everyone.",
+		"description":
+			"<p>Crime Scene Investigation events are engaging and practical; team work, critical thinking and problem solving skills will be put to the test. They are specifically structured to improve the communication and relationships between participants and in a way that encourages full participation by everyone. Teams must manage themselves to ensure they come to a conclusion and solve the crime.</p>",
+		"contact_details":
+			"<p>Krishnapriya V - 8281215655</p><p>Vishnu N S - 7558899539</p>",
+		"cover": "/static/images/csi.png",
+		"prize_pool": "7K",
+		"rules":
+			"<ul><li>This is a team event consisting of 2 members per team.</li><li>Event will consist of 3 stages.</li><li>Cross-college teams are allowed.</li><li>The contest is open to students from all colleges.</li><li>Participants need to produce a valid identity card of their respective institutes.</li><li>The organizers reserve all rights to disqualify any team for using unfair means at any stage of the event.</li><li>In case of any discrepancies, decision of the coordinators shall be considered final and binding for all the teams.</li><li>Additional rules will be provided by the organizers on site.</li><li>Any violation of the rules provided by the organizers,wi<strong>ll </strong>lead to immediate disqualification.</li><li>The judges' decision wi<strong>ll </strong>be final.</li><li>Rules are subject to change at any point in time.</li><li>Participants wi<strong>ll </strong>be duly notified of any changes.</li></ul>",
+		"eventFormat":
+			"<p><br></p><p><strong>Round 1: PRELIMINARY ROUND</strong></p><p>Prelims include a written test consisting of 40 questions based on logical and reasoning skills. 10 teams will be shortlisted from this.</p><p><br></p><p><strong>Round 2: INTERMEDIATE ROUND</strong></p><p>Each shortlisted team will be asked to solve a jigsaw mystery puzzle and crossword. The first 8 teams will be provided with a video questionnaire on a projector to check out their observation skills. First 6 teams will be shortlisted to the next task where they will be provided with sketches and places to find the matching person. The top 4 teams will enter finals.</p><p><br></p><p><strong>Round 3: FINAL ROUND</strong></p><p>Finalists will be taken to the crime scene. Solve the crime within the allotted time by taking the necessary snapshots, interrogating suspects and witnesses within an hour.</p>"
+	},
+	{
+		"_id": "59c346d32b6934001254e0c3",
+		"id": "spider-web",
+		"category": "NT",
+		"name": "Spider Web",
+		"color": "#8D6E63",
+		"shortDes":
+			"Have you ever seen a fly caught in a spider's web? What would go through its mind when its sees the 8 legged harbinger of death? If you relish beating the odds and being the underdog, this is an event for you.",
+		"description":
+			"<p>Have you ever seen a fly caught in a spider's web? What would go through its mind when its sees the 8 legged harbinger of death? If you relish beating the odds and being the underdog, this is an event for you. Excel 2017 gives you the perfect venue to test your endurance, teamwork and resolve. Compete in this grueling race against time, challenge yourself to rise above fear and gets your hands dirty in this fun filled test of physical and mental stamina. Better be quick, cause one wrong step and you will never get our of the spider web!</p>",
+		"contact_details":
+			"<p>Pranoy Paul 8547402762</p><p>Stanley Johnson 8606707063</p>",
+		"cover": "/static/images/spider-web.png",
+		"prize_pool": "8K",
+		"rules":
+			"<p><strong>Rules And Regulations:</strong></p><p>●&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The team must consist of exactly 4 members.</p><p>●&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Team Change won't be allowed after the prelims.</p><p>●&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replacement of members won't be allowed.</p><p>●&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The decision of the co-ordinators will be final.</p><p>&nbsp;</p>",
+		"eventFormat":
+			"<p><strong>Preliminary round</strong></p><p>This will be pen and paper round that will be 30 mins long.Top 8 teams(each team consisting of 4 members each) from this round will be selected to the next round.The results will be published with 45 mins.</p><p><strong>&nbsp;</strong></p><p><strong>First Round</strong></p><p>This will be a team event of 4.Each team will be given 4 tasks to complete (one task per person). Two teams will compete against each other and the team which finishes all the tasks in the shortest time will qualify for the next round.</p><p>&nbsp;</p><p><strong>Second Round</strong></p><p>This Round is an individual round consisting of 16 people(4 teams from 1st round). 4 participants will compete against each other and the winner will qualify for the final round</p><p>&nbsp;</p><p><strong>Final ROUND</strong></p><p>This is the final round consisting of 4 finalists. All of the 4 participants will have to complete a set of tasks and the winner will be crowned the spiderweb Champion.</p>"
 	}
 ]

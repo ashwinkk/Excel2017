@@ -16,10 +16,10 @@ const eventsReducer = (
 				fetchedEvents: false
 			};
 		case "FETCHED_EVENTS":
-			action.payload.forEach((event) => {
-				event.content = ReactHtmlParser(event.content);
-				event.tagLine = ReactHtmlParser(event.tagLine);
-			});
+			// action.payload.forEach((event) => {
+			// 	event.content = ReactHtmlParser(event.content);
+			// 	event.tagLine = ReactHtmlParser(event.tagLine);
+			// });
 			return {
 				...state,
 				fetchingEvents: false,

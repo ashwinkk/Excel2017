@@ -8,7 +8,8 @@ import "../styles/event-detail.css";
 
 @connect(store => {
 	return {
-		events: store.events.collection
+		events: store.events.collection,
+		fetching: store.events.fetchingEvents
 	};
 })
 export default class EventDetail extends Component {
@@ -17,11 +18,14 @@ export default class EventDetail extends Component {
 	}
 	getEvent() {
 		const eventId = this.props.match.params.type;
+		console.log(this.props.events);
 		return getObjectFromStore(this.props.events, eventId);
 	}
 
 	render() {
-		const { content, coverImage, title, tagLine } = this.getEvent();
+		const { content, coverImage } = this.getEvent();
+		if (content === undefined) return <h2>Loading..</h2>;
+		console.log(JSON.stringify(content));
 		return (
 			<div className="row event-detail">
 				<div
@@ -29,9 +33,14 @@ export default class EventDetail extends Component {
 					style={{ backgroundImage: `url(${coverImage})` }}
 				/>
 				<div className="col-xs-12 col-md-6 event-content">
-					<h2 className="event-title">{title}</h2>
-					<p className="event-tagline">{tagLine}</p>
-					<p className="event-content-text">{content}</p>
+					{content.map((section, index) => {
+						return (
+							<div key={index}>
+								<h2 className="event-title">{section.title}</h2>
+								<p className="event-content-text">{section.desc}</p>
+							</div>
+						);
+					})}
 				</div>
 			</div>
 		);

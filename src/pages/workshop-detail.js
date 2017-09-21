@@ -34,6 +34,7 @@ class WorkshopDetail extends React.Component {
 	}
 	componentDidMount() {
 		this.setState({ mounted: true });
+		window.scrollTo(0, 0);
 	}
 	componentDidUpdate() {
 		if (this.state.render === false) {
@@ -70,6 +71,34 @@ class WorkshopDetail extends React.Component {
 			? "animate-bounce"
 			: "";
 		let textTransition = this.state.renderElements ? 1 : 0;
+		let regButton;
+		if (this.workshop.register_link !== undefined)
+			regButton = (
+				<a
+					className="reg_button"
+					target="_blank"
+					href={
+						this.workshop.register_link !== "" ? (
+							this.workshop.register_link
+						) : null
+					}
+					style={{ opacity: textTransition }}
+				>
+					{this.workshop.register_link !== "" ? "Register" : "Closed"}
+				</a>
+			);
+		else {
+			regButton = (
+				<a
+					className="reg_button"
+					target="_blank"
+					style={{ opacity: textTransition }}
+				>
+					Coming Soon
+				</a>
+			);
+		}
+
 		const eventTabNames = ["Overview", "Schedule", "Particulars"];
 		return (
 			<div className="workshop-container">
@@ -82,14 +111,7 @@ class WorkshopDetail extends React.Component {
 				<h2 style={{ color: this.props.accentColour, opacity: textTransition }}>
 					{this.workshop.title}
 				</h2>
-				<a
-					className="reg_button"
-					target="_blank"
-					href={this.workshop.register_link}
-					style={{ opacity: textTransition }}
-				>
-					Register
-				</a>
+				{regButton}
 				<EventTabs
 					render={this.state.renderElements}
 					activeTab={this.handleTab}

@@ -29,7 +29,6 @@ class EventTabs extends React.Component {
 		this.moveTab = this.moveTab.bind(this);
 		this.seekTab = this.seekTab.bind(this);
 		this.seekContent = this.seekContent.bind(this);
-		this.setScroll = this.setScroll.bind(this);
 	}
 	handleClick(e, index) {
 		this.props.activeTab(index);
@@ -42,10 +41,6 @@ class EventTabs extends React.Component {
 		this.seekTab(this.tabPos, true);
 	}
 
-	setScroll() {
-		this.scrolling = true;
-	}
-
 	calculateNavHeight() {
 		let windowHeight = window.innerWidth,
 			navHeight = 0;
@@ -55,8 +50,6 @@ class EventTabs extends React.Component {
 	}
 
 	componentDidMount() {
-		window.addEventListener("scroll", this.setScroll);
-		let scrollVal;
 		this.tabContent = ReactDOM.findDOMNode(this.refs["tab-content-container"]);
 		this.width =
 			this.tabContent.getBoundingClientRect().width /
@@ -65,18 +58,7 @@ class EventTabs extends React.Component {
 		this.tabWidth = this.tabContainer.getBoundingClientRect().width;
 		let windowHeight = window.innerHeight;
 		this.navbarMargin = this.calculateNavHeight();
-		setInterval(() => {
-			if (this.scrolling === true) {
-				scrollVal = this.tabContainer.getBoundingClientRect().top;
-				if (scrollVal <= this.navbarMargin) {
-					this.setState({
-						tabPosition: "fixed",
-						offsetTop: `${this.navbarMargin}px`
-					});
-				} else this.setState({ tabPosition: "relative", offsetTop: "0px" });
-				this.scrolling = false;
-			}
-		}, 5);
+
 		this.setState({
 			tabHeight: windowHeight - this.tabContainer.height - 120
 		});
@@ -207,9 +189,7 @@ class EventTabs extends React.Component {
 			backgroundColor: this.props.trackColor || "gray"
 		};
 		let tabContainerStyle = {
-			position: this.state.tabPosition,
-			width: `${this.tabWidth}px`,
-			top: this.state.offsetTop
+			width: `${this.tabWidth}px`
 		};
 		let highlighterTheme = {
 			color: this.props.color || "white",

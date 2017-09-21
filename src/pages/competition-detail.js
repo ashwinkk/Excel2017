@@ -27,6 +27,7 @@ class CompetitionDetail extends React.Component {
 	}
 	componentDidMount() {
 		this.setState({ mounted: true });
+		window.scrollTo(0, 0);
 	}
 	componentWillMount() {
 		if (this.props.competitions.length === 0)

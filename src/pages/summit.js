@@ -17,6 +17,7 @@ class Summit extends React.Component {
 			type: "SET_THEME",
 			payload: { fontColor: "white", backgroundColor: "#171717" }
 		});
+		window.scrollTo(0, 0);
 	}
 	componentWillUnmount() {
 		document.getElementById("root").style.backgroundColor = "transparent";
@@ -43,7 +44,7 @@ class Summit extends React.Component {
 				company: "Bosch"
 			},
 			{
-				name: "Aravind Devarajan",
+				name: "Arvind Devarajan",
 				pic: "/static/summit/S3.png",
 				post: "Technical Expert",
 				company: "Bosch"
