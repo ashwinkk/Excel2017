@@ -94,7 +94,7 @@ class Summit extends React.Component {
 				speaker: "Introduction to AI and The AI boom - Soj Thomas"
 			},
 			{
-				time: "10:10-11:50 am",
+				time: "10:10-10:50 am",
 				type: "Invited Speaker",
 				speaker: "AI Cognitive Computer Vision - Hiranmay Ghosh"
 			}
