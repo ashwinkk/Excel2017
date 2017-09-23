@@ -14,7 +14,8 @@ import Root from "./pages/root";
 import PageNotFound from "./pages/pagenotfound";
 import About from "./pages/about";
 import EventDetail from "./pages/event-detail";
-import Sponsors from "./pages/sponsors"
+import Sponsors from "./pages/sponsors";
+import Schedule from "./pages/schedule";
 
 import "./styles/defaults.css";
 import "./styles/test.scss";
@@ -44,6 +45,7 @@ function App(props) {
 					<Route path="/under-construction" render={()=><Redirect to="/" />} />
 					<Route path="/contacts" component={About} />
 					<Route path="/sponsors" component={Sponsors} />
+					<Route path="/schedule" component={Schedule} />
 					<Route path="*" component={PageNotFound} />
 				</Switch>
 			</div>
