@@ -13,17 +13,36 @@ import "../styles/event-detail.css";
 	};
 })
 export default class EventDetail extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			viewportImage: ""
+		};
+		this.getEvent = this.getEvent.bind(this);
+		this.viewImage = this.viewImage.bind(this);
+		this.closeViewport = this.closeViewport.bind(this);
+	}
+
 	componentWillMount() {
 		if (this.props.events.length === 0) this.props.dispatch(fetchEvent());
 	}
+
 	getEvent() {
 		const eventId = this.props.match.params.type;
 		console.log(this.props.events);
 		return getObjectFromStore(this.props.events, eventId);
 	}
 
+	viewImage(url) {
+		this.setState({ viewportImage: url });
+	}
+
+	closeViewport() {
+		this.setState({ viewportImage: "" });
+	}
+
 	render() {
-		const { content, coverImage } = this.getEvent();
+		const { content, coverImage, images } = this.getEvent();
 		if (content === undefined) return <h2>Loading..</h2>;
 		console.log(JSON.stringify(content));
 		return (
@@ -41,6 +60,28 @@ export default class EventDetail extends Component {
 							</div>
 						);
 					})}
+					<div className="event-pics">
+						{images.map((image, index) => {
+							return (
+								<div className="square-container">
+									<img
+										src={image}
+										alt={image}
+										onClick={e => this.viewImage(image)}
+									/>
+								</div>
+							);
+						})}
+					</div>
+				</div>
+				<div
+					className="event-viewport"
+					style={{ zIndex: this.state.viewportImage === "" ? -1 : 101 }}
+				>
+					<img src={this.state.viewportImage} />
+					<div className="event-viewport-close" onClick={this.closeViewport}>
+						&times;
+					</div>
 				</div>
 			</div>
 		);
