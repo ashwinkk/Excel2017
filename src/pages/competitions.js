@@ -214,8 +214,8 @@ class Competitions extends Component {
 		];
 		let filterCateg = [
 			{ value: "all", label: "All Categories" },
-			{ value: "on", label: "online" },
-			{ value: "off", label: "offline" }
+			{ value: "on", label: "Online" },
+			{ value: "off", label: "Offline" }
 		];
 		return (
 			<div className="competitions-page">

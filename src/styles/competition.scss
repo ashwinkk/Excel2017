@@ -51,6 +51,7 @@
 			width: 50%;
 			@media (max-width: 800px) {
 				width: 100% !important;
+				margin: auto;
 			}
 		}
 		.filter-list {
@@ -64,8 +65,11 @@
 			}
 			@media (max-width: 800px) {
 				width: 100% !important;
+				margin: auto;
 				& > div {
 					width: 50%;
+					margin-left: unset;
+					margin-right: unset;
 				}
 			}
 		}

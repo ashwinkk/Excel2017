@@ -40,7 +40,8 @@
       width: 50%; }
       @media (max-width: 800px) {
         .competitions-page .filters .page-head {
-          width: 100% !important; } }
+          width: 100% !important;
+          margin: auto; } }
     .competitions-page .filters .filter-list {
       width: 50%;
       display: flex;
@@ -51,9 +52,12 @@
         margin-right: 20px; }
       @media (max-width: 800px) {
         .competitions-page .filters .filter-list {
-          width: 100% !important; }
+          width: 100% !important;
+          margin: auto; }
           .competitions-page .filters .filter-list > div {
-            width: 50%; } }
+            width: 50%;
+            margin-left: unset;
+            margin-right: unset; } }
 
 .competitions-container {
   display: flex;
