@@ -11,6 +11,7 @@ import eventsReducer from "./reducers/events-reducer";
 import navbarReducer from "./reducers/navbar-reducer";
 import aboutReducer from "./reducers/about-reducer";
 import sponsorsReducer from "./reducers/sponsors-reducer";
+import scheduleReducer from "./reducers/schedule-reducer"
 
 const app = combineReducers({
 	gallery: galleryReducer,
@@ -21,7 +22,8 @@ const app = combineReducers({
 	events: eventsReducer,
 	navbar: navbarReducer,
 	about: aboutReducer,
-	sponsors: sponsorsReducer
+	sponsors: sponsorsReducer,
+	schedule: scheduleReducer
 });
 
 const middleware = applyMiddleware(thunk);

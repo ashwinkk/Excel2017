@@ -1,77 +1,77 @@
 [
   {
-    "day":"0",
+    "day":"Day 0",
     "events": [
       {
         "name": "Event 1",
-        "start_time": "10:00 A.M.",
-        "end_time": "12:00 P.M.",
+        "start_time": "10:00 AM",
+        "end_time": "12:00 PM",
         "venue": "Room 201",
-        "tags": ["Tech","Computer Science"]
+        "type": "Computer Science"
       },
       {
         "name": "Event 2",
-        "start_time": "12:00 P.M.",
-        "end_time": "2:00 P.M.",
+        "start_time": "12:00 PM",
+        "end_time": "2:00 PM",
         "venue": "Room 510",
-        "tags": ["Non-Tech","Managerial"]
+        "type": "Non-Tech"
       }
     ]
   },
   {
-    "day":"1",
+    "day":"Day 1",
     "events": [
       {
         "name": "Event 3",
-        "start_time": "10:00 A.M.",
-        "end_time": "12:00 P.M.",
+        "start_time": "10:00 AM",
+        "end_time": "12:00 PM",
         "venue": "Room 201",
-        "tags": ["Tech","Computer Science"]
+        "type": "Computer Science"
       },
       {
         "name": "Event 4",
-        "start_time": "12:00 P.M.",
-        "end_time": "2:00 P.M.",
+        "start_time": "12:00 PM",
+        "end_time": "2:00 PM",
         "venue": "Room 510",
-        "tags": ["Non-Tech","Managerial"]
+        "type": "Non-Tech"
       }
     ]
   },
   {
-    "day":"2",
+    "day":"Day 2",
     "events": [
       {
         "name": "Event 5",
-        "start_time": "10:00 A.M.",
-        "end_time": "12:00 P.M.",
+        "start_time": "10:00 AM",
+        "end_time": "12:00 PM",
         "venue": "Room 201",
-        "tags": ["Tech","Computer Science"]
+        "type": "Computer Science"
       },
       {
         "name": "Event 6",
-        "start_time": "12:00 P.M.",
-        "end_time": "2:00 P.M.",
+        "start_time": "12:00 PM",
+        "end_time": "2:00 PM",
         "venue": "Room 510",
-        "tags": ["Non-Tech","Managerial"]
+        "type": "Non-Tech"
       }
     ]
   },
   {
-    "day":"3",
+    "day":"Day 3",
     "events": [
       {
         "name": "Event 7",
-        "start_time": "10:00 A.M.",
-        "end_time": "12:00 P.M.",
+        "start_time": "10:00 AM",
+        "end_time": "12:00 PM",
         "venue": "Room 201",
-        "tags": ["Tech","Computer Science"]
+        "type": "Computer Science"
       },
       {
         "name": "Event 8",
-        "start_time": "12:00 P.M.",
-        "end_time": "2:00 P.M.",
+        "start_time": "12:00 PM",
+        "end_time": "2:00 PM",
         "venue": "Room 510",
-        "tags": ["Non-Tech","Managerial"]
+        "type": "Non-Tech"
       }
     ]
   }
