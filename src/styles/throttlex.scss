@@ -1,0 +1,177 @@
+.nested-overlay-merge {
+	padding: 0;
+	z-index: 11;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.std-overlay {
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.entry {
+	background: white;
+	div {
+		padding: 20px;
+	}
+	img {
+		width: 100%;
+		padding: 20px;
+	}
+}
+.throttlex-competition {
+	padding: 20px 15%;
+	background: #0c0c0c;
+	position: relative;
+	color: rgba(255, 255, 255, 0.7);
+	div {
+		padding: 20px;
+		p {
+			position: relative;
+			z-index: 9;
+			font-size: 18px;
+			margin-top: 50%;
+			transform: translateY(-50%);
+			@media (max-width: 700px) {
+				transform: none;
+				margin-top: 20px;
+				font-size: 15px;
+				margin-bottom: 70px;
+			}
+		}
+	}
+	img {
+		position: relative;
+		z-index: 9;
+		width: 100%;
+		padding: 20px;
+	}
+	.overlay-throttlex {
+		.nested-overlay {
+			background-image: -webkit-linear-gradient(left, #0c0c0c, transparent);
+		}
+		.nested-overlay-merge {
+			right: 0;
+			bottom: 0;
+			background-image: -webkit-linear-gradient(bottom, #0c0c0c, transparent);
+		}
+	}
+	@media (max-width: 700px) {
+		div {
+			padding: 0;
+		}
+	}
+}
+.throttlex-rally {
+	position: relative;
+	justify-content: space-around;
+	padding: 20px 15%;
+	background: #0c0c0c;
+	color: rgba(255, 255, 255, 0.7);
+	& > .nested-overlay-merge {
+		background-image: -webkit-linear-gradient(top, #0c0c0c, transparent);
+		top: 100%;
+		z-index: 11;
+		left: 0;
+		height: 100px;
+	}
+	p {
+		z-index: 9;
+		text-align: right;
+		margin-top: 50%;
+		transform: translateY(-50%);
+		font-size: 18px;
+		@media (max-width: 700px) {
+			transform: none;
+			margin-top: 20px;
+			font-size: 15px;
+			margin-bottom: 70px;
+		}
+	}
+	img.text-img {
+		width: 100%;
+		padding: 20px;
+		position: relative;
+		z-index: 11;
+	}
+	.overlay-throttlex {
+		right: unset;
+		left: 0;
+		.nested-overlay {
+			background-image: -webkit-linear-gradient(right, #0c0c0c, transparent);
+		}
+		.nested-overlay-merge {
+			left: 0;
+			top: 0;
+			background-image: -webkit-linear-gradient(top, #0c0c0c, transparent);
+		}
+	}
+	@media (max-width: 700px) {
+		div {
+			padding: 0;
+		}
+	}
+}
+.throttlex-contacts {
+	justify-content: space-around;
+	padding: 55px 15%;
+	position: relative;
+	background-image: url("/static/throttlex/rally2.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: -50% -70%;
+	h2 {
+		margin-bottom: 45px;
+	}
+	.throttlex-contact-container {
+		position: relative;
+		color: #c7c7c7;
+		z-index: 9;
+		div {
+			text-align: center;
+		}
+		@media (max-width: 700px) {
+			margin-bottom: 40px;
+		}
+	}
+	.video-tx {
+		position: relative;
+		z-index: 9;
+	}
+	@media (max-width: 1000px) {
+		background-position: 50% 70%;
+	}
+}
+.overlay-throttlex {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 0;
+	height: 100%;
+	padding: 0 !important;
+	img {
+		padding: 0 !important;
+		width: 100%;
+		bottom: 0;
+		opacity: 0.8;
+		@media (max-width: 800px) {
+			width: auto;
+			height: 100%;
+		}
+	}
+	.nested-overlay {
+		padding: 0;
+		z-index: 11;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+}
