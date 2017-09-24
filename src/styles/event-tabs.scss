@@ -6,6 +6,9 @@
 	transition: transform 0.5s;
 	transform: translateY(50%);
 }
+.event-cover {
+	background-size: cover;
+}
 ol,
 ul {
 	font-size: 18px;

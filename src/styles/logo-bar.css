@@ -2,6 +2,7 @@
   width: 100%;
   -webkit-display: flex;
   display: flex;
+  background: white;
   -webkit-justify-content: space-between;
   justify-content: space-between;
   height: 70px;

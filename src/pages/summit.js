@@ -322,19 +322,8 @@ class Summit extends React.Component {
 							</table>
 							<p className="text-center ">04:20-4:25 pm : Closing Note</p>
 							<div className="payment-links">
-								<a
-									className="register_button"
-									target="_blank"
-									href="https://goo.gl/forms/xeiZh6D07AmthK8t1"
-								>
-									Register
-								</a>
-								<a
-									className="register_button"
-									href="https://imjo.in/DqQKbp"
-									target="_blank"
-								>
-									Pay Here
+								<a className="register_button" target="_blank">
+									Registrations Closed
 								</a>
 							</div>
 							<h4 className="text-center">Registration fees Rs 750/-</h4>

@@ -14,6 +14,13 @@
 			}
 		],
 		"coverImage": "/static/events/marathon.jpg",
+		"images": [
+			"/static/events/marathon1.jpg",
+			"/static/events/marathon2.jpg",
+			"/static/events/marathon3.jpg",
+			"/static/events/marathon4.jpg",
+			"/static/events/marathon5.jpg"
+		],
 		"tagLine": "Kochi Mini Marathon"
 	},
 	{
@@ -21,7 +28,7 @@
 		"title": "Robinhood Army",
 		"overview":
 			"Excel 2017 has partnered with Robinhood Army, an international volunteer based organization that works to alleviate hunger in the less fortunate strata of society. On August 15th, as a part of the Independence Day commemoration of Govt. Model Engineering College, students undertook a drive to raise aid for the hunger ridden people of Indian society. Under the umbrella of Excel 2017, sixty five food kits were contributed to the campaign, each consisting of 5 kg rice, 1kg sugar, 1 kg gram peas, 1 kg dal, 2 packets of biscuits, 1 packet tea powder, 1 L coconut oil.",
-		"thumbnail": "/static/images/quadcopter.png",
+		"thumbnail": "/static/events/ra.jpg",
 		"bgcolor": "#FF8A65",
 		"registerLink": "https://google.com",
 		"content": [
@@ -31,7 +38,12 @@
 					"Excel 2017 has partnered with Robinhood Army, an international volunteer based organization that works to alleviate hunger in the less fortunate strata of society. On August 15th, as a part of the Independence Day commemoration of Govt. Model Engineering College, students undertook a drive to raise aid for the hunger ridden people of Indian society. Under the umbrella of Excel 2017, sixty five food kits were contributed to the campaign, each consisting of 5 kg rice, 1kg sugar, 1 kg gram peas, 1 kg dal, 2 packets of biscuits, 1 packet tea powder, 1 L coconut oil."
 			}
 		],
-		"coverImage": "https://dummyimage.com/600x400/2980b9/2980b9.jpg",
+		"coverImage": "/static/events/ra.jpg",
+		"images": [
+			"/static/events/ra1.jpg",
+			"/static/events/ra2.jpg",
+			"/static/events/ra3.jpg"
+		],
 		"tagLine": "some tagline"
 	},
 	{
@@ -53,7 +65,12 @@
 					"A 24 hour Hackathon was held on 29th April 2017 in association with Good Methods Global at Kerala Startup Mission (KSUM), Kalamassery, as part of IBeTo 2017, a technical innovations competition hosted by Excel 2017. Out of the 70 teams that had registered, the 15 shortlisted teams, comprising of 4 members each, from various engineering colleges including undergraduates, post graduates and those currently doing their course participated in the event."
 			}
 		],
-		"coverImage": "/static/events/marathon.jpg",
+		"coverImage": "/static/events/ibeto-hack.jpg",
+		"images": [
+			"/static/events/ibeto-hack1.jpg",
+			"/static/events/ibeto-hack2.jpg",
+			"/static/events/ibeto-hack3.jpg"
+		],
 		"tagLine": ""
 	},
 	{
@@ -61,9 +78,8 @@
 		"title": "Zero Hour - Tech Classes",
 		"overview":
 			"Excel has always upheld its commitment to society and provides a platform for students to groom themselves through social service. This year, under the umbrella of Excel 2017, students of Govt. Model Engineering College conducted a series of classes christened ‘Zero Hour - Tech Classes’ in different schools of Kochi, to better equip school goers with knowledge and foresight regarding technological developments and the boons and banes of the internet connected world.",
-		"thumbnail": "/static/events/ibeto.png",
+		"thumbnail": "/static/events/presentation.png",
 		"bgcolor": "#FFF176",
-		"registerLink": "https://google.com",
 		"content": [
 			{
 				"title": "Zero Hour - Tech Classes",
@@ -71,7 +87,12 @@
 					"Excel has always upheld its commitment to society and provides a platform for students to groom themselves through social service. This year, under the umbrella of Excel 2017, students of Govt. Model Engineering College conducted a series of classes christened ‘Zero Hour - Tech Classes’ in different schools of Kochi, to better equip school goers with knowledge and foresight regarding technological developments and the boons and banes of the internet connected world. Aishwarya Mariam and Elsa Maria Thampi of EC5A conducted classes at Vimalagiri Public School, while Neha and Megha of EC 3A and Michelle of CS 3A successfully conducted the classes at Assisi Vidyaniketan School. Nandini Udayan and Aysha of EC5A took tech classes in St francis d Assisi Senior Secondary School Asokapuram, Aluva."
 			}
 		],
-		"coverImage": "/static/events/marathon.jpg",
+		"coverImage": "/static/events/tech-class.JPG",
+		"images": [
+			"/static/events/tech-class1.jpg",
+			"/static/events/tech-class2.JPG",
+			"/static/events/tech-class3.jpg"
+		],
 		"tagLine": ""
 	}
 ]

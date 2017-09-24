@@ -27,7 +27,7 @@
 		"schedule":
 			"<ul><li><span style=\"background-color: transparent;\">Introduction to UNITY</span></li><li><span style=\"background-color: transparent;\">Why UNITY ?</span></li><li><span style=\"background-color: transparent;\">Getting Started with UNITY.</span></li><li><span style=\"background-color: transparent;\">Learning the interface.</span></li><li><span style=\"background-color: transparent;\">Introduction to UNITY Scripting</span></li><li><span style=\"background-color: transparent;\">Scripting Tools.</span></li><li><span style=\"background-color: transparent;\">Unity Programming Syntax.</span></li><li><span style=\"background-color: transparent;\">Touch Inputs.</span></li><li><span style=\"background-color: transparent;\">Moving 2D/3D objects with touch Inputs.</span></li><li><span style=\"background-color: transparent;\">Augmented Reality</span></li><li><span style=\"background-color: transparent;\">Introduction.</span></li><li><span style=\"background-color: transparent;\">Different AR degrees.</span></li><li><span style=\"background-color: transparent;\">Augmented / Virtual Reality.</span></li><li><span style=\"background-color: transparent;\">Google Cardboard.</span></li><li><span style=\"background-color: transparent;\">Plugins for Augmented Reality</span></li><li><span style=\"background-color: transparent;\">Introduction to Vuforia.</span></li><li><span style=\"background-color: transparent;\">Creating a tracker.</span></li><li><span style=\"background-color: transparent;\">Detecting tracker.</span></li><li><span style=\"background-color: transparent;\">Interacting with 3D Objects in Augmented Reality.</span></li></ul>",
 		"particulars":
-			"<ul><li>Date: October 6th &amp; 7th</li><li>Registration Fee: ₹900 per person</li><li>Venue: Govt. Model Engineering College</li><li>Timing: 9:30 AM - 4:30 PM</li><li>Laptops and Chargers required</li><li>Accommodation can be provided to external participants (Gents only) at the men's hostel</li><li>Certificates will be provided</li></ul>"
+			"<ul><li>Date: October 6th & 7th</li><li>Registration Fee: ₹900 per person</li><li>Venue: Govt. Model Engineering College</li><li>Timing: 9:30 AM - 4:30 PM</li><li>Laptops and Chargers required</li><li>Accommodation can be provided to external participants (Gents only) at the men's hostel</li><li>Certificates will be provided</li></ul>"
 	},
 	{
 		"_id": "59ba2071cc67f600120e773b",
@@ -42,12 +42,13 @@
 		"schedule":
 			"<ul><li>Introduction to AI</li><li>Different areas in AI</li><li>Major players in AI</li><li>Introduction to Mahcine learning</li><li>Supervised and Unsupervised learning</li><li>The Different ML Algortihms</li><li>Introduction to Deep learning</li><li>Liner regression</li><li>Logistic regression</li><li>Artificial Neural Networks</li><li>Concepts in Deep Learning</li><li>Different Types of Networks</li><li>Introduction to Software tools used</li></ul><p><br></p>",
 		"particulars":
-			"<ul><li>Date: October 5th &amp; 6th</li><li>Registration Fee: ₹700 per person</li><li>Venue: Govt. Model Engineering College</li><li>Timing: 9:30 AM - 4:30 PM</li><li>Laptops and Chargers required</li><li>Basic knowledge in Python and Linux</li><li>Accommodation can be provided to external participants (Gents only) at the men's hostel</li><li>Certificates will be provided</li></ul><p><br></p>"
+			"<ul><li>Date: October 5th & 6th</li><li>Registration Fee: ₹700 per person</li><li>Venue: Govt. Model Engineering College</li><li>Timing: 9:30 AM - 4:30 PM</li><li>Laptops and Chargers required</li><li>Basic knowledge in Python and Linux</li><li>Accommodation can be provided to external participants (Gents only) at the men's hostel</li><li>Certificates will be provided</li></ul><p><br></p>"
 	},
 	{
 		"_id": "59be81d0724a590012c46871",
 		"id": "guest-lectures",
 		"category": "Talks",
+		"register_link": "",
 		"title": "Guest Lectures",
 		"overview":
 			"<p>\t<span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Behold curious minds. Ever wondered how scientific or technological breakthroughs occur? Dreamt of interacting with minds who have brought new dimensions to conventions? Introducing the Guest Lectures of Excel 2017, all new with the theme “Discover|Define|Defy, lines”. </span></p><p>\t<span style=\"background-color: transparent; color: rgb(0, 0, 0);\">A line represents a path we follow. A path that defines us as we explore it. Focussing on new technical ideas and aspects, we bring in a set of diverse speakers who would enlighten us with their experiences on traversing these paths.</span></p><p><br></p>",
