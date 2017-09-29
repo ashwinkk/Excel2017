@@ -72,34 +72,26 @@ class WorkshopDetail extends React.Component {
 			: "";
 		let textTransition = this.state.renderElements ? 1 : 0;
 		let regButton;
-		if (this.workshop.register_link !== undefined)
-			regButton = (
-				<a
-					className="reg_button"
-					target="_blank"
-					href={
-						this.workshop.register_link !== "" ? (
-							this.workshop.register_link
-						) : null
-					}
-					style={{ opacity: textTransition }}
-				>
-					{this.workshop.register_link !== "" ? "Register" : "Closed"}
-				</a>
-			);
+		if (this.workshop.buttons !== undefined)
+			regButton = this.workshop.buttons.map((button, index) => {
+				return (
+					<a
+						className="reg_button"
+						target="_blank"
+						href={button.register_link !== "" ? button.register_link : null}
+						style={{ opacity: textTransition }}
+					>
+						{button.register_link !== "" ? button.name : "Closed"}
+					</a>
+				);
+			});
 		else {
-			regButton = (
-				<a
-					className="reg_button"
-					target="_blank"
-					style={{ opacity: textTransition }}
-				>
-					Coming Soon
-				</a>
-			);
+			regButton = <p />;
 		}
-
-		const eventTabNames = ["Overview", "Schedule", "Particulars"];
+		let eventTabNames;
+		if (this.workshop.category === "WS")
+			eventTabNames = ["Overview", "Schedule", "Particulars"];
+		else eventTabNames = ["Overview", "Speakers", "Particulars"];
 		return (
 			<div className="workshop-container">
 				<Logobar />
@@ -111,7 +103,7 @@ class WorkshopDetail extends React.Component {
 				<h2 style={{ color: this.props.accentColour, opacity: textTransition }}>
 					{this.workshop.title}
 				</h2>
-				{regButton}
+				<div className="buttons">{regButton}</div>
 				<EventTabs
 					render={this.state.renderElements}
 					activeTab={this.handleTab}

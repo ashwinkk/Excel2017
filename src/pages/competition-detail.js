@@ -52,7 +52,22 @@ class CompetitionDetail extends React.Component {
 		this.competition = this.getCompetition();
 		console.log(this.competition);
 		let buttons = <div />;
-		if (this.competition.buttons)
+		if (this.competition.play !== undefined) {
+			buttons = (
+				<a
+					href="http://play.excelmec.org"
+					target="_blank"
+					className="reg_button"
+					style={{ background: "#ac2e16", padding: "10px 5px" }}
+				>
+					<img
+						style={{ width: "50px" }}
+						src="/static/anim-assets/play.png"
+						alt="play-button"
+					/>
+				</a>
+			);
+		} else if (this.competition.buttons)
 			buttons = this.competition.buttons.map((button, index) => {
 				return (
 					<a
@@ -80,9 +95,11 @@ class CompetitionDetail extends React.Component {
 					className={`cover-img ${transitionClassCover}`}
 				/>
 				<h2 style={{ opacity: textTransition }}>{this.competition.name}</h2>
-				<h3 className="container" style={{ opacity: textTransition }}>
-					Prize pool: {this.competition.prize_pool}
-				</h3>
+				{this.competition.prize_pool !== "" ? (
+					<h3 className="container" style={{ opacity: textTransition }}>
+						Prize pool: {this.competition.prize_pool}
+					</h3>
+				) : null}
 				<div className="button-container" style={{ opacity: textTransition }}>
 					{buttons}
 				</div>

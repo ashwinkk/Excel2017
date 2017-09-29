@@ -4,7 +4,12 @@
 		"id": "quadcopter",
 		"category": "WS",
 		"title": "Quadcopter",
-		"register_link": "",
+		"buttons": [
+			{
+				"name": "Register",
+				"register_link": ""
+			}
+		],
 		"accentColour": "cadetblue",
 		"overview":
 			"<img src=\"/static/sponsors/techeagle.gif\" /><p>Quadcopter is an aerial robot combining a simple propeller mechanism with powerful electronics for limitless real-world applications. It is an embedded system comprising of microcontrollers, sensors, flight gear and other integrated components.This workshop helps participants to develop a Quadcopter project from scratch while understanding the various engineering concepts in making a working Unmanned Aerial Vehicle</p>",
@@ -19,21 +24,53 @@
 		"id": "augmented-reality",
 		"category": "WS",
 		"title": "Augmented Reality",
+		"buttons": [
+			{
+				"name": "Register",
+				"register_link": "https://goo.gl/forms/IQP55w4ukhv8zPmk2"
+			}
+		],
 		"overview":
-			"<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Augmented reality is one of the present cutting edge technology. Which allows for a digitally manipulable, enhanced and interactive view of users real world</span><span style=\"color: rgb(0, 0, 0);\">.</span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Among the other reality technologies, augmented reality lies in the middle of the mixed reality spectrum, being between the real and virtual world</span>.<span style=\"color: rgb(0, 0, 0);\">This workshop will enable participants to work with AR modules, build modules including overlaying text, video, 2D and 3D elements. Animation and interaction with elements by making responsive AR.</span></p>",
+			"<p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Augmented reality is one of the present cutting edge technology which allows for a digitally manipulable, enhanced and interactive view of users real world</span><span style=\"color: rgb(0, 0, 0);\">.</span><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Among the other reality technologies, augmented reality lies in the middle of the mixed reality spectrum, being between the real and virtual world</span>.<span style=\"color: rgb(0, 0, 0);\">This workshop will enable participants to work with AR modules, build modules including overlaying text, video, 2D and 3D elements. Animation and interaction with elements by making responsive AR.</span></p>",
 		"contact_details":
 			"<h4>Gautham Dinanath</h4><p>+91 7736787858</p><p><br></p><h4>Ananthkrishnan</h4><p>+91 9747128937</p>",
 		"image": "/static/images/augmented-reality.png",
 		"schedule":
 			"<ul><li><span style=\"background-color: transparent;\">Introduction to UNITY</span></li><li><span style=\"background-color: transparent;\">Why UNITY ?</span></li><li><span style=\"background-color: transparent;\">Getting Started with UNITY.</span></li><li><span style=\"background-color: transparent;\">Learning the interface.</span></li><li><span style=\"background-color: transparent;\">Introduction to UNITY Scripting</span></li><li><span style=\"background-color: transparent;\">Scripting Tools.</span></li><li><span style=\"background-color: transparent;\">Unity Programming Syntax.</span></li><li><span style=\"background-color: transparent;\">Touch Inputs.</span></li><li><span style=\"background-color: transparent;\">Moving 2D/3D objects with touch Inputs.</span></li><li><span style=\"background-color: transparent;\">Augmented Reality</span></li><li><span style=\"background-color: transparent;\">Introduction.</span></li><li><span style=\"background-color: transparent;\">Different AR degrees.</span></li><li><span style=\"background-color: transparent;\">Augmented / Virtual Reality.</span></li><li><span style=\"background-color: transparent;\">Google Cardboard.</span></li><li><span style=\"background-color: transparent;\">Plugins for Augmented Reality</span></li><li><span style=\"background-color: transparent;\">Introduction to Vuforia.</span></li><li><span style=\"background-color: transparent;\">Creating a tracker.</span></li><li><span style=\"background-color: transparent;\">Detecting tracker.</span></li><li><span style=\"background-color: transparent;\">Interacting with 3D Objects in Augmented Reality.</span></li></ul>",
 		"particulars":
-			"<ul><li>Date: October 6th & 7th</li><li>Registration Fee: ₹900 per person</li><li>Venue: Govt. Model Engineering College</li><li>Timing: 9:30 AM - 4:30 PM</li><li>Laptops and Chargers required</li><li>Accommodation can be provided to external participants (Gents only) at the men's hostel</li><li>Certificates will be provided</li></ul>"
+			"<ul><li>Date: October 6th &amp; 7th</li><li>Registration Fee: ₹800 per person</li><li>Venue: Govt. Model Engineering College</li><li>Timing: 9:00 AM - 4:00 PM</li><li>Laptops and Chargers required</li><li>Certificates will be provided</li></ul>"
+	},
+
+	{
+		"_id": "59be81d0724a590012c46871",
+		"id": "guest-lectures",
+		"category": "Talks",
+		"title": "Guest Lectures",
+		"buttons": [
+			{
+				"name": "Register",
+				"register_link": "https://goo.gl/forms/BD7A4pGws9X3k2s03"
+			}
+		],
+		"overview":
+			"<p>\t<span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Behold curious minds. Ever wondered how scientific or technological breakthroughs occur? Dreamt of interacting with minds who have brought new dimensions to conventions? Introducing the Guest Lectures of Excel 2017, all new with the theme “Discover|Define|Defy, lines”. </span></p><p>\t<span style=\"background-color: transparent; color: rgb(0, 0, 0);\">A line represents a path we follow. A path that defines us as we explore it. Focussing on new technical ideas and aspects, we bring in a set of diverse speakers who would enlighten us with their experiences on traversing these paths.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"><b>Day 1: Discover</b>: Explore the latest technologies and realise how each one of them can bring out a change. To discover the real shift that needs to happen to go from believing that you have some innate calling, something you were \"meant\" to do, to understanding that you create your own sense of meaning and purpose in life.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"><b>Day 2: Define</b>: Get to know the latest innovations and get dissolved into them. Develop a perspective on career objective, what one has to aspire to be and where one should hope to go in their work life. Taking in account practical and objective views, reflect a career dream as success follows a well thought out plan.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"><b>Day 3: Defy</b>: A guide to venture into something out of the box. Giving up well off jobs to venture into the unknown or overcoming stereotypes that control our society is the leap of faith being glorified. Get to realise that life make or break moments which are hinged on the crucial step of “Deciding to Act”.</span></p><p><br></p>",
+		"particulars":
+			"<p><strong>Venue</strong>: College Auditorium</p><h3>Contacts</h3><p>Malavika Vasudevan : 9400242440</p><p>Joe Varghese Kurien : 9995294391</p>",
+		"image": "/static/images/guest-lectures.png",
+		"schedule":
+			"<p><strong>Day 1 : Discover : Abhas Mitra :</strong></p><p><img src=\"/static/speakers/abhasmitra.png\" class=\"img-circle img-responsive\">We proudly present, Mr.Abhas Mitra, an Indian astrophysicist, best known for his distinct views on various astrophysics concepts, particularly those related to black holes and Big Bang cosmology. He is also credited by members within the scientific community to have resolved the black hole information paradox 13 years before Stephen Hawking.</p><p>A member of the International Astronomical Union, he is also associated with the Himalayan Gamma Ray Observatory being set up at Han Leh. A passionate lecturer, he currently works at the Homi Bhabha National Science Institute in Mumbai.</p><p>Mr Mitra sets a stellar example about serving one’s nation dutifully and his efforts in uplifting the scientific community in India to international standards are commendable.</p><p><br/></p><p><strong>Day 2: Define : Manish Joshi</strong></p><p><img src=\"/static/speakers/manishjoshi.jpg\" class=\"img-circle img-responsive\">Manish Joshi is a proficient leader and a renowned personality in the field of Engineering drilling, with considerable experience in the oil and gas industry.</p><p>An IIT-Bombay alumni, Mr.Joshi has an impressive track record spanning over two decades and half a dozen countries, he was also actively involved in the drilling of one of the largest horizontal wells in Qatar. Currently, he is the Senior Product Owner at Baker Hughes,a GE company and leads a software development team, collaborating to create drilling engineering applications for the 21st century. </p><p>Across his illustrious career he has handled different positions relating to the field including that of a Surface logging Engineer, a LWD Engineer, a Geo-Steering Engineer and also that of a Directional Drilling Engineer. He is also one of the few industry experts who has managed all functions within Drilling Services.</p><p>Manish is a native of Mumbai, but delights in his time and stay in Cochin.</p><p><br/></p><p><strong>Day 3 : Defy : Gauri Sawant</strong></p><p><img src=\"/static/speakers/gourisawant.jpg\" class=\"img-circle img-responsive\">Abandoned by her family with no roof over her head, She knew the transition from Ganesh to Gauri was not going to be easy. The 37 year old transgender social activist Gauri Sawant, had to jump through various hoops to accept the woman in her. An icon identified by Vicks, her journey has been documented to demonstrate that care, love and a sense of family must go beyond class , gender and social stigma. She co-founded the NGO ‘Sakhi Char Chowghi’ in Mumbai, that has provided a safe space to all transgenders, hijras and men who have been forced into prostitution. 16 years down the line and with a team of 150, Gauri promotes safe sex practices and provides counselling to transgenders from the Mumbai suburbs. She was also the petitioner for the historic National Legal Services Authority (NALSA) judgement that was passed by the Supreme Court in 2013.</p><p>At Excel 2017,Gauri Sawant is the perfect epitome of courage and resolve who overcame stereotype that control our society. Under the theme of ‘Defy’, she will speak about the leap of faith that made her who she is!</p>"
 	},
 	{
 		"_id": "59ba2071cc67f600120e773b",
 		"id": "artificial-intelligence",
 		"category": "WS",
 		"title": "Artificial Intelligence",
+		"buttons": [
+			{
+				"name": "Register",
+				"register_link": "https://goo.gl/forms/Juyu75sJxC042VbG3"
+			}
+		],
 		"overview":
 			"<p>Artificial Intelligence (AI) is a field that has a long history but is still constantly and actively growing and changing. In this workshop you’ll learn the basics of modern AI as well as some of the representative applications of AI. An introduction to Software tool used for AI will also be covered in the workshop</p>",
 		"contact_details":
@@ -42,20 +79,19 @@
 		"schedule":
 			"<ul><li>Introduction to AI</li><li>Different areas in AI</li><li>Major players in AI</li><li>Introduction to Mahcine learning</li><li>Supervised and Unsupervised learning</li><li>The Different ML Algortihms</li><li>Introduction to Deep learning</li><li>Liner regression</li><li>Logistic regression</li><li>Artificial Neural Networks</li><li>Concepts in Deep Learning</li><li>Different Types of Networks</li><li>Introduction to Software tools used</li></ul><p><br></p>",
 		"particulars":
-			"<ul><li>Date: October 5th & 6th</li><li>Registration Fee: ₹700 per person</li><li>Venue: Govt. Model Engineering College</li><li>Timing: 9:30 AM - 4:30 PM</li><li>Laptops and Chargers required</li><li>Basic knowledge in Python and Linux</li><li>Accommodation can be provided to external participants (Gents only) at the men's hostel</li><li>Certificates will be provided</li></ul><p><br></p>"
+			"<ul><li>Date: October 5th & 6th</li><li>Registration Fee: ₹600 per person</li><li>Venue: Govt. Model Engineering College</li><li>Timing: 9:00 AM - 4:30 PM</li><li>Laptops and Chargers required</li><li>Basic knowledge in Python and Linux</li><li>Certificates will be provided</li></ul>"
 	},
 	{
-		"_id": "59be81d0724a590012c46871",
-		"id": "guest-lectures",
+		"_id": "59ce1e8bcf67ca0012aba277",
+		"id": "dotissue",
 		"category": "Talks",
-		"register_link": "",
-		"title": "Guest Lectures",
+		"name": "DOTISSUE",
 		"overview":
-			"<p>\t<span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Behold curious minds. Ever wondered how scientific or technological breakthroughs occur? Dreamt of interacting with minds who have brought new dimensions to conventions? Introducing the Guest Lectures of Excel 2017, all new with the theme “Discover|Define|Defy, lines”. </span></p><p>\t<span style=\"background-color: transparent; color: rgb(0, 0, 0);\">A line represents a path we follow. A path that defines us as we explore it. Focussing on new technical ideas and aspects, we bring in a set of diverse speakers who would enlighten us with their experiences on traversing these paths.</span></p><p><br></p>",
+			"<img class=\"title-issue\" src=\"/static/speakers/title.png\"><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Initiating dialogue is the key to inspiring action. Over time, several factors have reduced us to mere beings living within narrow cubicles concerned more or less with ourselves. There's no barrier that words can't cross.</span></p><p><br></p><p><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\">.ISSUE!</strong><span style=\"color: rgb(0, 0, 0); background-color: transparent;\"> is a forum where experienced veterans and budding youngsters come together to express themselves. Here is where eloquence and oratory rule the stage. Excellence shall speak and common perceptions of right and wrong shall be challenged as speakers go against each other in this engaging clash of ideas. This time .ISSUE! goes with the theme “Nationalism v/s Patriotism​”.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Patriotism is the sentiment that has for long been one of the motivational forces in shaping human societies and defining state boundaries. Today, a new line of thought is prevalent among the masses; one that advocates the superiority of his/her country’s beliefs and practices to be superior to others’ practices.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">It is high time to discuss if this evolution of patriotism​ is growing out to be one of the biggest threat to human feelings beyond boundaries.</span></p><p><br></p>",
 		"particulars":
-			"<p><strong>Venue</strong>: College Auditorium</p><h3>Speakers</h3><p>To be announced soon</p><h3>Contacts</h3><p>Malavika Vasudevan : 9400242440</p><p>Joe Varghese Kurien : 9995294391</p>",
-		"image": "/static/images/guest-lectures.png",
+			"<img src=\"/static/speakers/essense.png\"><p><strong>Venue</strong>: College Amphitheatre</p><h3>Contacts</h3><p>Malavika Vasudevan : +91 9400242440</p><p>Sahil Sameer : +91 8714823928</p>",
 		"schedule":
-			"<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"><b>Day 1: Discover</b>: Explore the latest technologies and realise how each one of them can bring out a change. To discover the real shift that needs to happen to go from believing that you have some innate calling, something you were \"meant\" to do, to understanding that you create your own sense of meaning and purpose in life.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"><b>Day 2: Define</b>: Get to know the latest innovations and get dissolved into them. Develop a perspective on career objective, what one has to aspire to be and where one should hope to go in their work life. Taking in account practical and objective views, reflect a career dream as success follows a well thought out plan.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"><b>Day 3: Defy</b>: A guide to venture into something out of the box. Giving up well off jobs to venture into the unknown or overcoming stereotypes that control our society is the leap of faith being glorified. Get to realise that life make or break moments which are hinged on the crucial step of “Deciding to Act”.</span></p><p><br></p>"
+			"<div class=\"issuespeakers row\"><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/arunkumar.jpg\"><h4>Arun Kumar</h4></div><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/balakrishnan.PNG\"><h4>Dr. E. Balakrishnan</h4></div><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/ravicharan.jpg\"><h4>Prof. Ravichandran</h4></div></div><div class=\"issuespeakers row\"><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/rahuleashwar.jpg\"><h4>Rahul Eashwar</h4></div><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/prasad.jpg\"><h4>V. K. Prasad</h4></div></div>",
+		"image": "/static/images/dotissue.png"
 	}
 ]

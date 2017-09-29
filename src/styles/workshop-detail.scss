@@ -30,6 +30,33 @@ img.cover-img {
 	}
 }
 
+.issuespeakers {
+	div {
+		img,
+		span {
+			display: block;
+			padding: 10px;
+		}
+		img {
+			border-radius: 50%;
+			width: 80% !important;
+		}
+		text-align: center;
+	}
+}
+
+.buttons {
+	width: 100%;
+	display: flex;
+	transition: opacity 0.5s;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	@media (min-width: 600px) {
+		width: 50%;
+		margin: auto;
+	}
+}
+
 .workshop-container {
 	& > img {
 		margin: auto;
@@ -68,6 +95,12 @@ img.cover-img {
 		}
 		button {
 			margin: 35px auto;
+		}
+	}
+	.title-issue {
+		width: 500px !important;
+		@media (max-width: 600px) {
+			width: 300px !important;
 		}
 	}
 }

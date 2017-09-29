@@ -24,6 +24,13 @@
 		"tagLine": "Kochi Mini Marathon"
 	},
 	{
+		"id": "throttlex",
+		"overview":
+			"Throttle X 2017 is the second edition of our annual celebration of everything engine, hosted as part of Excel 2017. The first edition saw massive crowds flocking in to witness the crème de la crème of machines, giving birth to a legacy. And this year we are bigger and more awesome than before. We guarantee you a day of raw energy, adrenalin and throttle-happiness with the world's best automotives.",
+		"thumbnail": "/static/throttlex/throttlexlow.png",
+		"bgcolor": "#212121"
+	},
+	{
 		"id": "robinhoodarmy",
 		"title": "Robinhood Army",
 		"overview":

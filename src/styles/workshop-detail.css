@@ -26,6 +26,27 @@ img.cover-img {
     img.cover-img {
       width: 250px; } }
 
+.issuespeakers div {
+  text-align: center; }
+  .issuespeakers div img,
+  .issuespeakers div span {
+    display: block;
+    padding: 10px; }
+  .issuespeakers div img {
+    border-radius: 50%;
+    width: 80% !important; }
+
+.buttons {
+  width: 100%;
+  display: flex;
+  transition: opacity 0.5s;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  @media (min-width: 600px) {
+    .buttons {
+      width: 50%;
+      margin: auto; } }
+
 .workshop-container > img {
   margin: auto;
   width: 250px;
@@ -61,3 +82,9 @@ img.cover-img {
     width: 250px; }
   .workshop-container button {
     margin: 35px auto; } }
+
+.workshop-container .title-issue {
+  width: 500px !important; }
+  @media (max-width: 600px) {
+    .workshop-container .title-issue {
+      width: 300px !important; } }
