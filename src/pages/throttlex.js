@@ -11,6 +11,12 @@ import "../styles/throttlex.css";
 	};
 })
 export default class ThrottleX extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			ylink: ""
+		};
+	}
 	componentDidMount() {
 		document.getElementById("root").style.backgroundColor =
 			"rgba(10, 10, 10, 1)";
@@ -19,6 +25,13 @@ export default class ThrottleX extends React.Component {
 			payload: { fontColor: "white", backgroundColor: "#171717" }
 		});
 		window.scrollTo(0, 0);
+	}
+	componentWillMount() {
+		fetch("/assets/throttlex.txt")
+			.then(response => response.text())
+			.then(data => {
+				this.setState({ ylink: data });
+			});
 	}
 	componentWillUnmount() {
 		document.getElementById("root").style.backgroundColor = "transparent";
@@ -114,7 +127,7 @@ export default class ThrottleX extends React.Component {
 						<iframe
 							width="100%"
 							height="315"
-							src="https://www.youtube.com/embed/KhQ_cTJcjgo"
+							src={this.state.ylink}
 							frameborder="0"
 							allowfullscreen
 						/>
