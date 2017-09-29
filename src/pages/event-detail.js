@@ -23,6 +23,14 @@ export default class EventDetail extends Component {
 		this.closeViewport = this.closeViewport.bind(this);
 	}
 
+	componentDidMount() {
+		document.getElementById("root").style.backgroundColor = "#f9f9f9";
+		window.scrollTo(0, 0);
+	}
+	componentWillUnmount() {
+		document.getElementById("root").style.backgroundColor = "transparent";
+	}
+
 	componentWillMount() {
 		if (this.props.events.length === 0) this.props.dispatch(fetchEvent());
 	}

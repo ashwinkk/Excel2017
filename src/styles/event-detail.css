@@ -89,9 +89,6 @@
 	.event-content p {
 		text-align: justify;
 	}
-	.event-content {
-		overflow-y: hidden;
-	}
 }
 
 @media (max-width: 700px) {
@@ -101,5 +98,12 @@
 	.event-viewport {
 		width: 100%;
 		left: 0;
+	}
+	.event-content {
+		height: unset;
+	}
+	.event-cover > div {
+		background-size: cover;
+		background-position: center;
 	}
 }
