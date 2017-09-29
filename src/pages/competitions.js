@@ -49,25 +49,17 @@ class Competitions extends Component {
 	}
 
 	setWidths() {
-		let competitionsContainer = ReactDOM.findDOMNode(
-			this.refs["competitions-container"]
-		);
-		if (competitionsContainer === null) return;
-		let width = competitionsContainer.getBoundingClientRect().width,
-			rowNum = 0,
-			scrollBar = 0;
+		let width;
 		if (window.innerWidth > 1000) {
-			scrollBar = 15;
-		}
-		if (window.innerWidth > 600) {
-			rowNum = 4;
+			width = "25%";
+		} else if (window.innerWidth > 600) {
+			width = "33.33333%";
 		} else if (window.innerWidth > 400) {
-			rowNum = 3;
+			width = "33.33333%";
 		} else if (window.innerWidth > 300) {
-			rowNum = 2;
+			width = "50%";
 		}
-		width -= scrollBar;
-		this.setState({ unitWidth: Math.floor(width / rowNum), render: false });
+		this.setState({ unitWidth: width, render: false });
 	}
 
 	componentDidMount() {
@@ -153,53 +145,71 @@ class Competitions extends Component {
 			.map((competition, index) => {
 				let cubeDimensions;
 				cubeDimensions = {
-					width: 2 * Math.floor((this.state.unitWidth + 1) / 2),
-					height: 2 * Math.floor((this.state.unitWidth + 1) / 2),
+					width: "100%",
+					height: "100%",
 					transitionDelay: `${1 + index * 0.1}s`
 				};
 				const translateZVal = Math.round(cubeDimensions.width / 2);
 				return (
-					<Link key={index} to={`competitions/${competition.id}`}>
-						<div
-							className="cube-container"
-							key={index}
-							ref={`cube${index}`}
+					<div
+						style={{
+							width: this.state.unitWidth,
+							paddingBottom: this.state.unitWidth,
+							position: "relative"
+						}}
+					>
+						<Link
 							style={{
-								...cubeDimensions,
-								transform: `scale(${this.state.scale})`
+								width: "100%",
+								height: "100%",
+								position: "absolute",
+								top: 0,
+								left: 0
 							}}
-							onTouchStart={e => this.handleTouchStart(`cube${index}`)}
-							onTouchEnd={e => this.handleTouchEnd(`cube${index}`)}
+							key={index}
+							to={`competitions/${competition.id}`}
 						>
-							<div className="theCube">
-								<div
-									className="topFlip"
-									style={{
-										backgroundColor: competition.color,
-										transform: `translateZ(${translateZVal}px)`
-									}}
-								>
-									<div className="competition-front">
-										<img
-											src={competition.cover}
-											alt={competition.cover.split("/")[-1]}
-											style={{ width: `${translateZVal}px` }}
-										/>
-										<h2>{competition.name}</h2>
+							<div
+								className="cube-container"
+								key={index}
+								ref={`cube${index}`}
+								style={{
+									...cubeDimensions,
+									transform: `scale(${this.state.scale})`
+								}}
+								onTouchStart={e => this.handleTouchStart(`cube${index}`)}
+								onTouchEnd={e => this.handleTouchEnd(`cube${index}`)}
+							>
+								<div className="theCube">
+									<div
+										className="topFlip"
+										style={{
+											backgroundColor: competition.color,
+											transform: `translateZ(${translateZVal}px)`
+										}}
+									>
+										<div className="competition-front">
+											<img
+												src={competition.cover}
+												alt={competition.cover.split("/")[-1]}
+												style={{ width: `${translateZVal}px` }}
+											/>
+											<h2>{competition.name}</h2>
+										</div>
+									</div>
+									<div
+										className="bottomFlop"
+										style={{
+											backgroundColor: competition.color,
+											transform: `rotateX(-90deg)translateZ(${translateZVal}px)`
+										}}
+									>
+										<p>{competition.shortDes}</p>
 									</div>
 								</div>
-								<div
-									className="bottomFlop"
-									style={{
-										backgroundColor: competition.color,
-										transform: `rotateX(-90deg)translateZ(${translateZVal}px)`
-									}}
-								>
-									<p>{competition.shortDes}</p>
-								</div>
 							</div>
-						</div>
-					</Link>
+						</Link>
+					</div>
 				);
 			});
 		let filterDepts = [
