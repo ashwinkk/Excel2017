@@ -1,78 +1,561 @@
 [
-  {
-    "day":"Day 0",
-    "events": [
-      {
-        "name": "Event 1",
-        "start_time": "10:00 AM",
-        "end_time": "12:00 PM",
-        "venue": "Room 201",
-        "type": "Computer Science"
-      },
-      {
-        "name": "Event 2",
-        "start_time": "12:00 PM",
-        "end_time": "2:00 PM",
-        "venue": "Room 510",
-        "type": "Non-Tech"
-      }
-    ]
-  },
-  {
-    "day":"Day 1",
-    "events": [
-      {
-        "name": "Event 3",
-        "start_time": "10:00 AM",
-        "end_time": "12:00 PM",
-        "venue": "Room 201",
-        "type": "Computer Science"
-      },
-      {
-        "name": "Event 4",
-        "start_time": "12:00 PM",
-        "end_time": "2:00 PM",
-        "venue": "Room 510",
-        "type": "Non-Tech"
-      }
-    ]
-  },
-  {
-    "day":"Day 2",
-    "events": [
-      {
-        "name": "Event 5",
-        "start_time": "10:00 AM",
-        "end_time": "12:00 PM",
-        "venue": "Room 201",
-        "type": "Computer Science"
-      },
-      {
-        "name": "Event 6",
-        "start_time": "12:00 PM",
-        "end_time": "2:00 PM",
-        "venue": "Room 510",
-        "type": "Non-Tech"
-      }
-    ]
-  },
-  {
-    "day":"Day 3",
-    "events": [
-      {
-        "name": "Event 7",
-        "start_time": "10:00 AM",
-        "end_time": "12:00 PM",
-        "venue": "Room 201",
-        "type": "Computer Science"
-      },
-      {
-        "name": "Event 8",
-        "start_time": "12:00 PM",
-        "end_time": "2:00 PM",
-        "venue": "Room 510",
-        "type": "Non-Tech"
-      }
-    ]
-  }
+    {
+        "events": [
+            {
+                "type": "Others",
+                "start_time": "10 AM",
+                "venue": "Auditorium",
+                "name": "IBETO EXHIBITION",
+                "end_time": "3 PM"
+            },
+            {
+                "type": "Others",
+                "start_time": "9 AM",
+                "venue": "Media Hall",
+                "name": "IBETO PRESENTATION",
+                "end_time": "3 PM"
+            },
+            {
+                "type": "Others",
+                "start_time": "3:30 PM",
+                "venue": "Amphitheatre",
+                "name": "INAUGURATION & IBETO PRIZE DISTRIBUTION",
+                "end_time": "5.30PM"
+            }
+        ],
+        "day": "Day 0"
+    },
+    {
+        "events": [
+            {
+                "type": "Others",
+                "start_time": "10 AM",
+                "venue": "Auditorium",
+                "name": "DEFACTO (P)",
+                "end_time": "11 AM"
+            },
+            {
+                "type": "Others",
+                "start_time": "2 PM",
+                "venue": "Auditorium",
+                "name": "DEFACTO (F)",
+                "end_time": "4 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "11 AM",
+                "venue": "501, 503, 515",
+                "name": "SPIDER WEB (P)",
+                "end_time": "12 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "1 PM",
+                "venue": "Volleyball Court",
+                "name": "SPIDER WEB (F)",
+                "end_time": "4:30 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "10 AM",
+                "venue": "Ground",
+                "name": "TIKI-TAKA",
+                "end_time": "4:30 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "11 AM",
+                "venue": "Basketball Court",
+                "name": "FUN ZONE",
+                "end_time": "4:30 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "10 AM",
+                "venue": "409, 410",
+                "name": "GAME ZONE",
+                "end_time": "4 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "10 AM",
+                "venue": "Graphics Hall",
+                "name": "REEL LIFE",
+                "end_time": "3 30PM"
+            },
+            {
+                "type": "Robotics",
+                "start_time": "10 AM",
+                "venue": "Ground",
+                "name": "GAME OF DRONES (P)",
+                "end_time": "12 PM"
+            },
+            {
+                "type": "Robotics",
+                "start_time": "12:30 PM",
+                "venue": "Amphitheatre",
+                "name": "GAME OF DRONES (F)",
+                "end_time": "4 PM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "10 AM",
+                "venue": "501, 503, 515",
+                "name": "EXTRINSICITY (P)",
+                "end_time": "11 AM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "1 PM",
+                "venue": "Test Lab & Circuits Lab",
+                "name": "EXTRINSICITY (F)",
+                "end_time": "4 PM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "10 AM",
+                "venue": "301, 314, 315",
+                "name": "ELECQUEST (P)",
+                "end_time": "11 AM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "12 PM",
+                "venue": "AE Lab",
+                "name": "ELECQUEST (IM)",
+                "end_time": "1 PM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "1:30 PM",
+                "venue": "PE Lab",
+                "name": "ELECQUEST (F)",
+                "end_time": "3:30 PM"
+            },
+            {
+                "type": "Others",
+                "start_time": "10 AM",
+                "venue": "M.Tech Lab",
+                "name": "PAPYRUS OF ANI",
+                "end_time": "4PM"
+            },
+            {
+                "type": "Others",
+                "start_time": "10 AM",
+                "venue": "New auditorium",
+                "name": "MEC LABS",
+                "end_time": "4PM"
+            },
+            {
+                "type": "Computer Science",
+                "start_time": "10 AM",
+                "venue": "CC 2",
+                "name": "<!DOCTYPE>(P)",
+                "end_time": "11 AM"
+            },
+            {
+                "type": "Computer Science",
+                "start_time": "12 PM",
+                "venue": "CC 2",
+                "name": "<!DOCTYPE>(F)",
+                "end_time": "4:30 PM"
+            },
+            {
+                "type": "Computer Science",
+                "start_time": "11 AM",
+                "venue": "301, 314, 315",
+                "name": "4*120(P)",
+                "end_time": "12 PM"
+            },
+            {
+                "type": "Computer Science",
+                "start_time": "1:30 PM",
+                "venue": "CC 1",
+                "name": "4*120 (F)",
+                "end_time": "4:30 PM"
+            },
+            {
+                "type": "Talks",
+                "start_time": "5:00 PM",
+                "venue": "Amphitheatre",
+                "name": "UNTITLED",
+                "end_time": "7:00 PM"
+            },
+            {
+                "type": "Talks",
+                "start_time": "12 PM",
+                "venue": "Auditorium",
+                "name": "GUEST LECTURE",
+                "end_time": "1 PM"
+            },
+            {
+                "type": "Workshop",
+                "start_time": "9:30 AM",
+                "venue": "Media Hall",
+                "name": "ARTIFICIAL INTELLIGENCE",
+                "end_time": "4:30 PM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "10 AM",
+                "venue": "401",
+                "name": "BIOX",
+                "end_time": "3 PM"
+            }
+        ],
+        "day": "Day 1"
+    },
+    {
+        "events": [
+            {
+                "type": "Non Tech",
+                "start_time": "10 AM",
+                "venue": "Ground",
+                "name": "TIKI-TAKA",
+                "end_time": "3.30PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "9:30 AM",
+                "venue": "501, 503, 515",
+                "name": "CSI (P)",
+                "end_time": "10:30 AM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "11:30 AM",
+                "venue": "310",
+                "name": "CSI (IM)",
+                "end_time": "1 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "1:30 PM",
+                "venue": "Machines Lab",
+                "name": "CSI (F)",
+                "end_time": "2:30 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "11 AM",
+                "venue": "Basketball Court",
+                "name": "FUN ZONE",
+                "end_time": "4 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "10 AM",
+                "venue": "409,410",
+                "name": "GAME ZONE",
+                "end_time": "3:30 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "10:30 AM",
+                "venue": "501, 503, 515",
+                "name": "ALOHAMORA (P)",
+                "end_time": "11:30 AM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "12 PM",
+                "venue": "Volleyball Court",
+                "name": "ALOHAMORA (IM)",
+                "end_time": "3:30 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "9:30 AM",
+                "venue": "Graphics Hall mtech lab*",
+                "name": "GAME PLAN",
+                "end_time": "4 PM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "10 AM",
+                "venue": "301, 314, 315",
+                "name": "LUMIERE (P)",
+                "end_time": "11 AM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "12 PM",
+                "venue": "Seminar Hall",
+                "name": "LUMIERE (IM1)",
+                "end_time": "1 PM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "1:15 PM",
+                "venue": "PE Lab",
+                "name": "LUMIERE (IM 2)",
+                "end_time": "2:15 PM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "2:15 PM",
+                "venue": "Electrical Workshop",
+                "name": "LUMIERE (F)",
+                "end_time": "3:30 PM"
+            },
+            {
+                "type": "Robotics",
+                "start_time": "10 AM",
+                "venue": "Amphitheatere",
+                "name": "ROBOWAR (P)",
+                "end_time": "1.30 PM"
+            },
+            {
+                "type": "Robotics",
+                "start_time": "2:00 PM",
+                "venue": "Amphitheatre",
+                "name": "ROBOWAR (F)",
+                "end_time": "3:00 PM"
+            },
+            {
+                "type": "Computer Science",
+                "start_time": "11 AM",
+                "venue": "301, 314, 315",
+                "name": "ALGORITHMS(P)",
+                "end_time": "12 PM"
+            },
+            {
+                "type": "Computer Science",
+                "start_time": "1 PM",
+                "venue": "CC 1",
+                "name": "ALGORITHMS(F)",
+                "end_time": "3 PM"
+            },
+            {
+                "type": "Computer Science",
+                "start_time": "9:30 AM",
+                "venue": "CC 2",
+                "name": "GRADLE-BUILD",
+                "end_time": "3:30 PM"
+            },
+            {
+                "type": "Talks",
+                "start_time": "4 PM",
+                "venue": "Amphitheatre",
+                "name": ".ISSUE!",
+                "end_time": "6:00 PM"
+            },
+            {
+                "type": "Talks",
+                "start_time": "6.30 PM",
+                "venue": "Amphitheatre",
+                "name": "UNMASKED",
+                "end_time": "8PM"
+            },
+            {
+                "type": "Talks",
+                "start_time": "9 AM",
+                "venue": "Auditorium",
+                "name": "GUEST LECTURES",
+                "end_time": "10 AM"
+            },
+            {
+                "type": "Workshops",
+                "start_time": "9 AM",
+                "venue": "Media Hall",
+                "name": "ARTIFICIAL INTELLIGENCE",
+                "end_time": "3:30 PM"
+            },
+            {
+                "type": "Workshops",
+                "start_time": "10:30 AM",
+                "venue": "Auditorium",
+                "name": "AUGMENTED REALITY",
+                "end_time": "3:30 PM"
+            },
+            {
+                "type": "Others",
+                "start_time": "10 AM",
+                "venue": "new auditorium",
+                "name": "IBETO JUNIOR EXHIBITION",
+                "end_time": "3 PM"
+            },
+            {
+                "type": "Others",
+                "start_time": "9:00AM",
+                "venue": "seminar hall",
+                "name": "IBETO JUNIOR PRESENTATION",
+                "end_time": "11:45AM"
+            },
+            {
+                "type": "Others",
+                "start_time": "10 AM",
+                "venue": "401",
+                "name": "BIOX",
+                "end_time": "3 PM"
+            }
+        ],
+        "day": "Day 2"
+    },
+    {
+        "events": [
+            {
+                "type": "Non Tech",
+                "start_time": "9 AM",
+                "venue": "501, 503, 515",
+                "name": "BEST MANAGER(P)",
+                "end_time": "10AM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "10:30 AM",
+                "venue": "M.Tech Lab",
+                "name": "BEST MANAGER (BR)",
+                "end_time": "11PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "11:30 PM",
+                "venue": "M.Tech Lab",
+                "name": "BEST MANAGER (DV)",
+                "end_time": "12.30PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "1 PM",
+                "venue": "Seminar Hall",
+                "name": "BEST MANAGER (F)",
+                "end_time": "2 PM"
+            },
+            {
+                "type": "Others",
+                "start_time": "9 AM",
+                "venue": "Auditorium",
+                "name": "EXCELSIOR (P)",
+                "end_time": "10 AM"
+            },
+            {
+                "type": "Others",
+                "start_time": "12 PM",
+                "venue": "Auditorium",
+                "name": "EXCELSIOR (F)",
+                "end_time": "2 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "9 AM",
+                "venue": "Volleyball Court",
+                "name": "ALOHAMORA (F)",
+                "end_time": "2 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "10:00AM",
+                "venue": "501, 503, 515",
+                "name": "KLUGE (P)",
+                "end_time": "11:00 AM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "11:30AM",
+                "venue": "Throwball Court",
+                "name": "KLUGE (F)",
+                "end_time": "2:00PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "9:00AM",
+                "venue": "Seminar Hall",
+                "name": "INSTANT PHOTOGRAPHY (WS)",
+                "end_time": "12:00 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "12:30 PM",
+                "venue": "Graphics Hall",
+                "name": "INSTANT PHOTOGRAPHY (F)",
+                "end_time": "2 PM"
+            },
+            {
+                "type": "Non Tech",
+                "start_time": "10:30 AM",
+                "venue": "Basketball Court",
+                "name": "FUN ZONE",
+                "end_time": "1:30 PM"
+            },
+            {
+                "type": "Robotics",
+                "start_time": "9:00 AM",
+                "venue": "new auditorium",
+                "name": "ROBO SOCCER (F)",
+                "end_time": "2 PM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "10:00 AM",
+                "venue": "301, 314, 315",
+                "name": "LIFELINE (P)",
+                "end_time": "11:00 AM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "11:30 AM",
+                "venue": "Biomedical Lab",
+                "name": "LIFELINE (F)",
+                "end_time": "2 PM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "9 AM",
+                "venue": "301, 314, 315",
+                "name": "DEFUSE 101 (P)",
+                "end_time": "10 AM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "10:30 AM",
+                "venue": "Test Lab, Circuits Lab & Comm. Lab",
+                "name": "DEFUSE 101 (F)",
+                "end_time": "2:00 PM"
+            },
+            {
+                "type": "Computer Science",
+                "start_time": "11:00 AM",
+                "venue": "501, 503, 515",
+                "name": "LOC(P)",
+                "end_time": "12:00 PM"
+            },
+            {
+                "type": "Computer Science",
+                "start_time": "12:30 PM",
+                "venue": "CC 2",
+                "name": "LOC (F)",
+                "end_time": "2 PM"
+            },
+            {
+                "type": "Talks",
+                "start_time": "10:30 AM",
+                "venue": "Auditorium",
+                "name": "GUEST LECTURES",
+                "end_time": "11:30 PM"
+            },
+            {
+                "type": "Workshop",
+                "start_time": "9 AM",
+                "venue": "Media Hall",
+                "name": "AUGMENTED REALITY",
+                "end_time": "2 PM"
+            },
+            {
+                "type": "Others",
+                "start_time": "4PM",
+                "venue": "Amphitheatre",
+                "name": "E NIGHT",
+                "end_time": "7 PM"
+            },
+            {
+                "type": "Electronics",
+                "start_time": "10 AM",
+                "venue": "401",
+                "name": "BIOMEDICAL EXHIBITION",
+                "end_time": "1 PM"
+            }
+        ],
+        "day": "Day 3"
+    }
 ]

@@ -1,10 +1,10 @@
 .schedule-content {
   background: #1881c3;
-  min-height: 100%;
-  padding: 100px 0px; }
+  height: 100vh;
+  padding: 40px 0px; }
   @media screen and (max-width: 750px) {
     .schedule-content {
-      padding: 10px 0px; } }
+      padding: 10px 0px 0px; } }
 
 .schedule-box {
   background: #ffffff;
@@ -13,7 +13,7 @@
   box-shadow: 0px 0px 50px -14px;
   border-radius: 20px;
   font-family: Raleway;
-  max-height: 90vh; }
+  height: 90vh; }
 
 .schedule-box-padding {
   height: 50px;
@@ -48,7 +48,8 @@
   text-align: center;
   padding: 50px 30px;
   display: inline-block;
-  width: 25%; }
+  width: 25%;
+  height: 100%; }
   @media screen and (max-width: 750px) {
     .tab-panes {
       padding: 10px 0px; } }
@@ -69,7 +70,9 @@
   display: inline-block;
   width: 80%;
   vertical-align: top;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  height: 100%;
+  overflow-y: scroll; }
   @media screen and (max-width: 750px) {
     .right-panel {
       width: 100%;
@@ -105,10 +108,12 @@
 
 .tabs-pane-container {
   width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: calc(100% - 112px); }
 
 .tabs-pane-carousel {
-  transition-duration: 1s; }
+  transition-duration: 1s;
+  height: 100%; }
 
 .schedule-card-box {
   width: 100%;
