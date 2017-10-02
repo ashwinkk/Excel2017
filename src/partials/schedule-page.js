@@ -30,7 +30,7 @@ export default class SchedulePage extends React.Component {
                 return(<ScheduleCard key={i} event={obj} active={obj.type == filter}/>);
             });
         }
-        let filter_tags = ["All", "Computer Science", "Electronics", "Robotics", "Non-Tech"];
+        let filter_tags = ["All", "Computer Science", "Electronics", "Robotics", "Non-Tech", "Talks", "Workshops", "Others"];
         let filters = filter_tags.map(function(obj,i){
             let style= "category" + (parent.state.filter == obj?" active":"");
             return(<a className={style} onClick={parent.changeFilter.bind(parent, obj)}>{obj}</a>);
