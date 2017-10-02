@@ -38,7 +38,7 @@
 		"schedule":
 			"<ul><li><span style=\"background-color: transparent;\">Introduction to UNITY</span></li><li><span style=\"background-color: transparent;\">Why UNITY ?</span></li><li><span style=\"background-color: transparent;\">Getting Started with UNITY.</span></li><li><span style=\"background-color: transparent;\">Learning the interface.</span></li><li><span style=\"background-color: transparent;\">Introduction to UNITY Scripting</span></li><li><span style=\"background-color: transparent;\">Scripting Tools.</span></li><li><span style=\"background-color: transparent;\">Unity Programming Syntax.</span></li><li><span style=\"background-color: transparent;\">Touch Inputs.</span></li><li><span style=\"background-color: transparent;\">Moving 2D/3D objects with touch Inputs.</span></li><li><span style=\"background-color: transparent;\">Augmented Reality</span></li><li><span style=\"background-color: transparent;\">Introduction.</span></li><li><span style=\"background-color: transparent;\">Different AR degrees.</span></li><li><span style=\"background-color: transparent;\">Augmented / Virtual Reality.</span></li><li><span style=\"background-color: transparent;\">Google Cardboard.</span></li><li><span style=\"background-color: transparent;\">Plugins for Augmented Reality</span></li><li><span style=\"background-color: transparent;\">Introduction to Vuforia.</span></li><li><span style=\"background-color: transparent;\">Creating a tracker.</span></li><li><span style=\"background-color: transparent;\">Detecting tracker.</span></li><li><span style=\"background-color: transparent;\">Interacting with 3D Objects in Augmented Reality.</span></li></ul>",
 		"particulars":
-			"<ul><li>Date: October 6th &amp; 7th</li><li>Registration Fee: ₹800 per person</li><li>Venue: Govt. Model Engineering College</li><li>Timing: 9:00 AM - 4:00 PM</li><li>Laptops and Chargers required</li><li>Certificates will be provided</li></ul>"
+			"<ul><li>Date: October 6th & 7th</li><li>Registration Fee: ₹800 per person</li><li>Venue: Govt. Model Engineering College</li><li>Timing: 9:00 AM - 4:00 PM</li><li>Laptops and Chargers required</li><li>Certificates will be provided</li></ul>"
 	},
 
 	{
@@ -69,6 +69,11 @@
 			{
 				"name": "Register",
 				"register_link": "https://goo.gl/forms/Juyu75sJxC042VbG3"
+			},
+			{
+				"name": "Payment Link",
+				"register_link":
+					"https://www.yepdesk.com/artificial-intelligence-workshop"
 			}
 		],
 		"overview":
@@ -85,13 +90,44 @@
 		"_id": "59ce1e8bcf67ca0012aba277",
 		"id": "dotissue",
 		"category": "Talks",
-		"name": "DOTISSUE",
+		"title": "DOTISSUE",
 		"overview":
 			"<img class=\"title-issue\" src=\"/static/speakers/title.png\"><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Initiating dialogue is the key to inspiring action. Over time, several factors have reduced us to mere beings living within narrow cubicles concerned more or less with ourselves. There's no barrier that words can't cross.</span></p><p><br></p><p><strong style=\"color: rgb(0, 0, 0); background-color: transparent;\">.ISSUE!</strong><span style=\"color: rgb(0, 0, 0); background-color: transparent;\"> is a forum where experienced veterans and budding youngsters come together to express themselves. Here is where eloquence and oratory rule the stage. Excellence shall speak and common perceptions of right and wrong shall be challenged as speakers go against each other in this engaging clash of ideas. This time .ISSUE! goes with the theme “Nationalism v/s Patriotism​”.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">Patriotism is the sentiment that has for long been one of the motivational forces in shaping human societies and defining state boundaries. Today, a new line of thought is prevalent among the masses; one that advocates the superiority of his/her country’s beliefs and practices to be superior to others’ practices.</span></p><p><br></p><p><span style=\"color: rgb(0, 0, 0); background-color: transparent;\">It is high time to discuss if this evolution of patriotism​ is growing out to be one of the biggest threat to human feelings beyond boundaries.</span></p><p><br></p>",
 		"particulars":
 			"<img src=\"/static/speakers/essense.png\"><p><strong>Venue</strong>: College Amphitheatre</p><h3>Contacts</h3><p>Malavika Vasudevan : +91 9400242440</p><p>Sahil Sameer : +91 8714823928</p>",
 		"schedule":
-			"<div class=\"issuespeakers row\"><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/arunkumar.jpg\"><h4>Arun Kumar</h4></div><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/balakrishnan.PNG\"><h4>Dr. E. Balakrishnan</h4></div><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/ravicharan.jpg\"><h4>Prof. Ravichandran</h4></div></div><div class=\"issuespeakers row\"><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/rahuleashwar.jpg\"><h4>Rahul Eashwar</h4></div><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/prasad.jpg\"><h4>V. K. Prasad</h4></div></div>",
+			"<p><h1>Moderator</h1></p><div class=\"issuespeakers row\"><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/arunkumar.jpg\"><h4>Arun Kumar</h4><h5>TV Anchor,</h5><h5>Host of Kerala Summit</h5></div></div><p><h1>Speakers</h1></p><div class=\"issuespeakers row\"><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/balakrishnan.PNG\"><h4>Dr. E. Balakrishnan</h4><h5>Author</h5></div><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/ravicharan.jpg\"><h4>Prof. Ravichandran</h4><h5>Author,</h5><h5>Rationalist</h5></div><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/rahuleashwar.jpg\"><h4>Rahul Eashwar</h4><h5>Social Activist</h5></div></div><div class=\"issuespeakers row\"><div class=\"col-md-4 col-sm-6 col-xs-12\"><img src=\"/static/speakers/prasad.jpg\"><h4>V. K. Prasad</h4><h5>Dep Gen Manager,</h5><h5>Deshabhimani</h5></div></div>",
 		"image": "/static/images/dotissue.png"
+	},
+	{
+		"_id": "59cfa40b3e6e950012f12af0",
+		"id": "untitled",
+		"category": "Talks",
+		"title": "(UN)TITLED",
+		"buttons": [
+			{
+				"name": "Register",
+				"register_link": "https://goo.gl/forms/HMhtB06JQN7nMqn83"
+			}
+		],
+		"overview":
+			"<p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Ladies and gentlemen </span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Have you ever been judged for </span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"> Scoring average marks?</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"> Being mediocre?</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"> Living a normal life? </span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">If the people around you think you're up to nothing,</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">It's time to crack open the shell!</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Never confine yourself to conventions if you think you're capable of more. Because sometimes we need to push our limits until the shell cracks. That's when great genius is born;</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Records are broken;</span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">And history is made.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"> Because money, fame and academic records don't define the real you!</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Presenting the theme for untitled this year </span><strong style=\"background-color: transparent; color: rgb(0, 0, 0);\">“Crack your Shell!”</strong></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Three speakers from three different areas of expertise tell their stories from an angle that we are yet to see.</span></p><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">Treading paths that are different as well as difficult calls for real sacrifice and hardwork. When you do what they love to do in the most honest and passionate way, you get called a winner. </span></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\"> </span></p><p><br></p><p><br></p>",
+		"particulars":
+			"<p>Venue : College Amphitheatre</p><p>Date : 5th October 2017</p><p>Time : 5PM</p><h3>Contacts</h3><p>Malavika Vasudevan : +91 9400242440</p><p>Amrin Kareem : +91 8891888969</p>",
+		"image": "/static/images/untitled.png",
+		"schedule": "<h3>Will be announced soon</h3>"
+	},
+	{
+		"_id": "59cfd05c9b7f280012619b6c",
+		"id": "unmasked",
+		"category": "WS",
+		"title": "UNMASKED",
+		"overview":
+			"<h3><strong><u>UNMASKED - The Story of a Remarkable Journey</u></strong></h3><p><br></p><p><span style=\"background-color: transparent; color: rgb(0, 0, 0);\">He is the first person in the world to have performed an escape act in the style of Harry Houdini. He is the first UNICEF Ambassador from Kerala. He is a renowned magician, escapologist, </span><span style=\"color: rgb(34, 34, 34);\">life coach, and motivational speaker. He started his tryst with magic at a very tender age; now his accolades speak for his ability.</span></p><p><br></p><p><span style=\"color: rgb(34, 34, 34);\">The life and times of Mr. Gopinath Muthukad is a source of inspiration to generations of Keralites as he has showed how far you can get with uncorrupted perseverance and dedication, even if you have had humble beginnings.</span></p><p><br></p><p><span style=\"color: rgb(34, 34, 34);\">Listen in to the whole story of how the label of Mr. Gopinath Muthukad came to be.</span></p><p><span style=\"color: rgb(34, 34, 34);\">Excel 2017 presents UNMASKED - a foray into the life of Mr. Gopinath Muthukad.</span></p><p><span style=\"color: rgb(34, 34, 34);\">Be there on October 6th when the magic unfolds!</span></p><p><br></p><p><br></p>",
+		"schedule":
+			"<p><strong style=\"color: rgb(34, 34, 34);\">Date\t\t:\t</strong><span style=\"color: rgb(34, 34, 34);\">6th October 2017</span></p><p><strong style=\"color: rgb(34, 34, 34);\">Time\t\t:\t</strong><span style=\"color: rgb(34, 34, 34);\">6:30 PM </span></p><p><strong style=\"color: rgb(34, 34, 34);\">Venue\t\t:\t</strong><span style=\"color: rgb(34, 34, 34);\">Amphitheatre</span></p><p><br></p>",
+		"particulars":
+			"<h3>Contacts</h3><p>Malavika Vasudevan : 9400242440</p><p>Nandana Satheendran : 9539139691</p>",
+		"image": "/static/images/unmasked.png"
 	}
 ]

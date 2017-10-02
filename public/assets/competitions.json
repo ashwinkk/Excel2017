@@ -673,6 +673,8 @@
 		"name": "Echo",
 		"color": "#212121",
 		"play": true,
+		"shortDes":
+			"Your mission, should you choose to accept it, is to compete with the brightest and prove that you have what it takes to emerge as the victor.",
 		"description":
 			"<p>Your mission, should you choose to accept it, is to compete with the brightest and prove that you have what it takes to emerge as the victor.</p><p>Echo is an individual online scripting competition that tests your knowledge on Shell scripting. Let’s go old school and back to the fundamentals with this little game.</p>",
 		"contact_details":

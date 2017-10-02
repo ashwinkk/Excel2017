@@ -1,5 +1,16 @@
 [
 	{
+		"id": "unmasked",
+		"category": "Talks",
+		"title": "UNMASKED",
+		"bgcolor": "#F4511E",
+		"overview":
+			"UNMASKED - The Story of a Remarkable Journey. The life and times of Mr. Gopinath Muthukad is a source of inspiration to generations of Keralites as he has showed how far you can get with uncorrupted perseverance and dedication, even if you have had humble beginnings.",
+		"buttonName": "Open Event",
+		"registerLink": "https://excelmec.org/excel2017/#/spotlight/unmasked",
+		"thumbnail": "/static/images/unmasked.png"
+	},
+	{
 		"id": "guest-lectures",
 		"category": "Talks",
 		"title": "Guest Lectures",
@@ -20,6 +31,17 @@
 		"buttonName": "Open Event",
 		"registerLink": "https://excelmec.org/excel2017/#/spotlight/dotissue",
 		"thumbnail": "/static/images/dotissue.png"
+	},
+	{
+		"id": "untitled",
+		"category": "Talks",
+		"title": "(UN)TITLED",
+		"bgcolor": "#00838F",
+		"overview":
+			"Three speakers from three different areas of expertise tell their stories from an angle that we are yet to see.”.",
+		"buttonName": "Register",
+		"registerLink": "https://goo.gl/forms/HMhtB06JQN7nMqn83",
+		"thumbnail": "/static/images/untitled.png"
 	},
 	{
 		"id": "artificial-intelligence",
