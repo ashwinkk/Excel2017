@@ -2,23 +2,38 @@
 .inline-container {
 	margin-left: 70px;
 }
+.reg_button-index {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	margin: 20px 10px;
+	display: block;
+	border: none;
+	background-color: white;
+	padding: 10px 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+	font-size: 18px;
+	border-radius: 5px;
+	color: rgba(0, 0, 0, 0.7);
+	width: 150px;
+	transition: box-shadow 0.1s;
+}
 .section {
 	position: relative;
 	overflow: hidden;
+	background: lightblue;
 }
 .header-image {
 	position: absolute;
 	top: 0;
 	width: 100%;
 }
-.header-image img {
-}
 #root {
-	overflow: auto !important;
+	/*overflow: auto !important;*/
 	overflow-x: hidden;
 	height: 100%;
 	overflow-y: auto !important;
-	position: relative;
 }
 #fullpage {
 	position: absolute !important;
@@ -383,6 +398,10 @@
 	.bottom-content {
 		margin-bottom: 100px;
 	}
+	.reg_button-index {
+		margin-bottom: 80px;
+		width: 100px;
+	}
 }
 @media (min-width: 600px) {
 	#fullpage {
@@ -586,13 +605,6 @@ ul.legacy li:hover .tooltip {
 	position: absolute;
 	animation: move 100s linear infinite;
 	z-index: 0;
-}
-
-.map-container {
-	z-index: 1;
-	width: 40%;
-	position: absolute;
-	margin-bottom: 10px;
 }
 
 @keyframes move {

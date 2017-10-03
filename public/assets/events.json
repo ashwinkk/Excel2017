@@ -1,39 +1,106 @@
 [
 	{
-		"id": "swarm-robotics",
-		"title": "Some Event",
+		"id": "the-second-lap",
+		"title": "The Second Lap",
 		"overview":
-			"Swarm robotics is a field of robotics technology which deals with the artificial swarm intelligence and involves the usage of multiple robots which coordinate among themselves to complete a task more efficiently compared to a single robot carrying out the same task.Swarm robots communicate with each other wirelessly and take decisions.This workshop involves development of autonomous swarm robots enabled with master-slave communication.",
-		"thumbnail": "/static/images/iconswarm.png",
-		"bgcolor": "#4cccc6",
-		"registerLink":"https://google.com",
-		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus et ante eu semper. Etiam rutrum tellus in ante cursus, eget tempor sem interdum. Praesent in sapien sed tortor aliquam lacinia. Sed eget orci urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus a nulla mollis, aliquet diam commodo, fermentum justo. Suspendisse sit amet urna nunc. Proin scelerisque erat vitae eros pharetra, eget rhoncus turpis fringilla. Nunc vel quam semper, venenatis massa vel, fermentum est. Praesent imperdiet laoreet facilisis. Sed dapibus nisi eu felis bibendum, molestie suscipit arcu vehicula. Sed consequat purus et erat hendrerit maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-		"coverImage": "https://dummyimage.com/600x400/2980b9/2980b9.jpg",
+			"‘The Second Lap’ - a mini marathon of 10 km was conducted on 13th August 2017, on the occasion of Organ Donation day, as part of the social initiatives of Excel 2017. About 800 participants, including students and working professiona",
+		"thumbnail": "/static/events/secondlap.png",
+		"bgcolor": "#B3E5FC",
+		"content": [
+			{
+				"title": "The Second Lap",
+				"desc":
+					"‘The Second Lap’ - a mini marathon of 10 km was conducted on 13th August 2017, on the occasion of Organ Donation day, as part of the social initiatives of Excel 2017. About 800 participants, including students and working professionals took part in the mini marathon that was flagged off at Port Trust ground, Willingdon island by cine actor Roshan Mathew and went through Thevara, MG road and concluded at Marine Drive. Commendation poured in from all quarters for taking such relevant and socially benefitting initiatives. The event was held in association with Yes Bank, Gold's Gym, Medical Trust Hospital and Radio Mirchi."
+			}
+		],
+		"coverImage": "/static/events/marathon.jpg",
+		"images": [
+			"/static/events/marathon1.jpg",
+			"/static/events/marathon2.jpg",
+			"/static/events/marathon3.jpg",
+			"/static/events/marathon4.jpg",
+			"/static/events/marathon5.jpg"
+		],
+		"tagLine": "Kochi Mini Marathon"
+	},
+	{
+		"id": "throttlex",
+		"title": "ThrottleX",
+		"overview":
+			"Throttle X 2017 is the second edition of our annual celebration of everything engine, hosted as part of Excel 2017. The first edition saw massive crowds flocking in to witness the crème de la crème of machines, giving birth to a legacy. And this year we are bigger and more awesome than before. We guarantee you a day of raw energy, adrenalin and throttle-happiness with the world's best automotives.",
+		"thumbnail": "/static/throttlex/throttlexlow.png",
+		"bgcolor": "#BCAAA4"
+	},
+	{
+		"id": "robinhoodarmy",
+		"title": "Robinhood Army",
+		"overview":
+			"Excel 2017 has partnered with Robinhood Army, an international volunteer based organization that works to alleviate hunger in the less fortunate strata of society. On August 15th, as a part of the Independence Day commemoration of Govt. Model Engineering College, students undertook a drive to raise aid for the hunger ridden people of Indian society. Under the umbrella of Excel 2017, sixty five food kits were contributed to the campaign, each consisting of 5 kg rice, 1kg sugar, 1 kg gram peas, 1 kg dal, 2 packets of biscuits, 1 packet tea powder, 1 L coconut oil.",
+		"thumbnail": "/static/events/ra.jpg",
+		"bgcolor": "#FF8A65",
+		"registerLink": "https://google.com",
+		"content": [
+			{
+				"title": "Robinhood Army",
+				"desc":
+					"Excel 2017 has partnered with Robinhood Army, an international volunteer based organization that works to alleviate hunger in the less fortunate strata of society. On August 15th, as a part of the Independence Day commemoration of Govt. Model Engineering College, students undertook a drive to raise aid for the hunger ridden people of Indian society. Under the umbrella of Excel 2017, sixty five food kits were contributed to the campaign, each consisting of 5 kg rice, 1kg sugar, 1 kg gram peas, 1 kg dal, 2 packets of biscuits, 1 packet tea powder, 1 L coconut oil."
+			}
+		],
+		"coverImage": "/static/events/ra.jpg",
+		"images": [
+			"/static/events/ra1.jpg",
+			"/static/events/ra2.jpg",
+			"/static/events/ra3.jpg"
+		],
 		"tagLine": "some tagline"
 	},
 	{
-		"id": "quadcopter",
-		"title": "Quadcopter",
+		"id": "ibeto",
+		"title": "IBeTo",
 		"overview":
-			"Quadcopter is an aerial robot combining a simple propeller mechanism with powerful electronics for limitless real-world applications. It is an embedded system comprising of microcontrollers, sensors, flight gear and other integrated components.This workshop helps participants to develop a Quadcopter project from scratch while understanding the various engineering concepts in making a working Unmanned Aerial Vehicle.",
-		"thumbnail": "/static/images/quadcopter.png",
-		"bgcolor": "#9f76d6",
-		"registerLink":"https://google.com",
-		"content": "Lorem ipsum dolor sit amet, <b>consectetur adipiscing</b> elit. Sed luctus et ante eu semper. Etiam rutrum tellus in ante cursus, eget tempor sem interdum. Praesent in sapien sed tortor aliquam lacinia. Sed eget orci urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus a nulla mollis, aliquet diam commodo, fermentum justo. Suspendisse sit amet urna nunc. Proin scelerisque erat vitae eros pharetra, eget rhoncus turpis fringilla. Nunc vel quam semper, venenatis massa vel, fermentum est. Praesent imperdiet laoreet facilisis. Sed dapibus nisi eu felis bibendum, molestie suscipit arcu vehicula. Sed consequat purus et erat hendrerit maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-		"coverImage": "https://dummyimage.com/600x400/2980b9/2980b9.jpg",
-		"tagLine": "some tagline"
-		
+			"IBeTo or “Innovations for a Better Tomorrow” is the flagship event of Excel and is an annual national level pursuit for extraordinary, innovative minds with ideas capable of aiding social uplift through technology. A social initiative that incorporates technical skills into the social sphere, the event provides a perfect platform for the most socially relevant and feasible ideas to be developed into a final product that could revolutionise society.",
+		"thumbnail": "/static/events/ibeto.png",
+		"bgcolor": "#F3E5F5",
+		"content": [
+			{
+				"title": "Ibeto",
+				"desc":
+					"IBeTo or “Innovations for a Better Tomorrow” is the flagship event of Excel and is an annual national level pursuit for extraordinary, innovative minds with ideas capable of aiding social uplift through technology. A social initiative that incorporates technical skills into the social sphere, the event provides a perfect platform for the most socially relevant and feasible ideas to be developed into a final product that could revolutionise society. Viable projects are mentored by leaders in the field, ensuring that lack of resources or financial limitations do not deny a genuine innovator the chance to work for a better tomorrow. IBeTo Jr is an extension of the mega scale event for school students from 8th upwards. An event designed for the forever questioning student with an itch to channel a wave of ingenious thoughts, IBeTo Jr reaches out to more than 2000 schools across India.  Shortlisted ideas will get expert mentoring and the prestigious opportunity to present at the national platform provided by Excel 2017. "
+			},
+			{
+				"title": "Ibeto Hackathon",
+				"desc":
+					"A 24 hour Hackathon was held on 29th April 2017 in association with Good Methods Global at Kerala Startup Mission (KSUM), Kalamassery, as part of IBeTo 2017, a technical innovations competition hosted by Excel 2017. Out of the 70 teams that had registered, the 15 shortlisted teams, comprising of 4 members each, from various engineering colleges including undergraduates, post graduates and those currently doing their course participated in the event."
+			}
+		],
+		"coverImage": "/static/events/ibeto-hack.jpg",
+		"images": [
+			"/static/events/ibeto-hack1.jpg",
+			"/static/events/ibeto-hack2.jpg",
+			"/static/events/ibeto-hack3.jpg"
+		],
+		"tagLine": ""
 	},
 	{
-		"id": "ai-summit",
-		"title": "AI Summit",
+		"id": "techclass",
+		"title": "Zero Hour - Tech Classes",
 		"overview":
-			"When it comes to the possibilities of Artificial Intelligence, there may be a lot of opinions out there. It is a field which expands human capability beyond our imagination. We’re entering the world where AI will be ubiquitous.The pace of this progress is incredible, and close to exponential. AI has been conquering every sector imaginable and is being preached upon by leading organisations who is looking to reach unrivalled efficiency.",
-		"thumbnail": "/static/summit/ai.png",
-		"bgcolor": "#9f76d6",
-		"registerLink":"https://google.com",
-		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus et ante eu semper. Etiam rutrum tellus in ante cursus, eget tempor sem interdum. Praesent in sapien sed tortor aliquam lacinia. Sed eget orci urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus a nulla mollis, aliquet diam commodo, fermentum justo. Suspendisse sit amet urna nunc. Proin scelerisque erat vitae eros pharetra, eget rhoncus turpis fringilla. Nunc vel quam semper, venenatis massa vel, fermentum est. Praesent imperdiet laoreet facilisis. Sed dapibus nisi eu felis bibendum, molestie suscipit arcu vehicula. Sed consequat purus et erat hendrerit maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-		"coverImage": "https://dummyimage.com/600x400/2980b9/2980b9.jpg",
-		"tagLine": "some tagline"				
+			"Excel has always upheld its commitment to society and provides a platform for students to groom themselves through social service. This year, under the umbrella of Excel 2017, students of Govt. Model Engineering College conducted a series of classes christened ‘Zero Hour - Tech Classes’ in different schools of Kochi, to better equip school goers with knowledge and foresight regarding technological developments and the boons and banes of the internet connected world.",
+		"thumbnail": "/static/events/presentation.png",
+		"bgcolor": "#FFF176",
+		"content": [
+			{
+				"title": "Zero Hour - Tech Classes",
+				"desc":
+					"Excel has always upheld its commitment to society and provides a platform for students to groom themselves through social service. This year, under the umbrella of Excel 2017, students of Govt. Model Engineering College conducted a series of classes christened ‘Zero Hour - Tech Classes’ in different schools of Kochi, to better equip school goers with knowledge and foresight regarding technological developments and the boons and banes of the internet connected world. Aishwarya Mariam and Elsa Maria Thampi of EC5A conducted classes at Vimalagiri Public School, while Neha and Megha of EC 3A and Michelle of CS 3A successfully conducted the classes at Assisi Vidyaniketan School. Nandini Udayan and Aysha of EC5A took tech classes in St francis d Assisi Senior Secondary School Asokapuram, Aluva."
+			}
+		],
+		"coverImage": "/static/events/tech-class.JPG",
+		"images": [
+			"/static/events/tech-class1.jpg",
+			"/static/events/tech-class2.JPG",
+			"/static/events/tech-class3.jpg"
+		],
+		"tagLine": ""
 	}
 ]

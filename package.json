@@ -22,9 +22,12 @@
     "react-router-dom": "^4.1.1",
     "react-scroll-parallax": "^1.0.0",
     "react-select": "^1.0.0-rc.5",
+    "react-speech-recognition": "^1.0.4",
+    "react-slick": "^0.15.4",
     "react-touch": "^0.4.2",
     "redux": "^3.7.1",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "slick-carousel": "^1.7.1"
   },
   "devDependencies": {
     "autoprefixer": "7.1.2",

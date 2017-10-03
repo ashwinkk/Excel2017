@@ -2,7 +2,7 @@
 	.titles-container {
 		position: relative;
 		@media (max-width: 600px) {
-			min-height: calc(100vh - 60px);
+			height: calc(100vh - 60px);
 		}
 	}
 	img.cover-img {

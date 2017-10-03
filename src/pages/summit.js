@@ -5,7 +5,9 @@ import { connect } from "react-redux";
 import "../styles/summit.css";
 
 @connect(store => {
-	store.navbar.backgroundColor;
+	return {
+		bg: store.navbar.backgroundColor
+	};
 })
 class Summit extends React.Component {
 	componentDidMount() {
@@ -15,6 +17,7 @@ class Summit extends React.Component {
 			type: "SET_THEME",
 			payload: { fontColor: "white", backgroundColor: "#171717" }
 		});
+		window.scrollTo(0, 0);
 	}
 	componentWillUnmount() {
 		document.getElementById("root").style.backgroundColor = "transparent";
@@ -41,10 +44,10 @@ class Summit extends React.Component {
 				company: "Bosch"
 			},
 			{
-				name: "Prasanna Lohar",
-				pic: "/static/summit/s3.png",
-				post: "Head of Technology",
-				company: "DCB Bank"
+				name: "Arvind Devarajan",
+				pic: "/static/summit/S3.png",
+				post: "Technical Expert",
+				company: "Bosch"
 			},
 			{
 				name: "Lentin Joseph",
@@ -91,7 +94,7 @@ class Summit extends React.Component {
 				speaker: "Introduction to AI and The AI boom - Soj Thomas"
 			},
 			{
-				time: "10:10-11:50 am",
+				time: "10:10-10:50 am",
 				type: "Invited Speaker",
 				speaker: "AI Cognitive Computer Vision - Hiranmay Ghosh"
 			}
@@ -100,8 +103,7 @@ class Summit extends React.Component {
 			{
 				time: "11:10-11:40 am",
 				type: "Invited Speaker",
-				speaker:
-					"Financial​ ​security:​ ​AI​ ​a​ ​game​ ​changer​? - Prasanna Lohar"
+				speaker: "Machine learning​ - Aravind Devarajan"
 			},
 			{
 				time: "11:50-12:20 am",
@@ -224,9 +226,9 @@ class Summit extends React.Component {
 				<div className="container-fluid cover">
 					<div className="overlay" />
 					<div className="container">
-						<img src="/static/sponsors/bosch.png" className="sponsor" />
-						<span>presents</span>
 						<img src="/static/summit/ai.png" />
+						<span>Presented By</span>
+						<img src="/static/sponsors/bosch.png" className="sponsor" />
 					</div>
 				</div>
 				<div className="container-fluid ai-content">
@@ -319,14 +321,11 @@ class Summit extends React.Component {
 								<tbody>{tableMarkup4}</tbody>
 							</table>
 							<p className="text-center ">04:20-4:25 pm : Closing Note</p>
-
-							<a
-								className="register_button"
-								target="_blank"
-								href="https://goo.gl/forms/xeiZh6D07AmthK8t1"
-							>
-								Register
-							</a>
+							<div className="payment-links">
+								<a className="register_button" target="_blank">
+									Registrations Closed
+								</a>
+							</div>
 							<h4 className="text-center">Registration fees Rs 750/-</h4>
 							<p className="text-center">(inclusive of lunch and tea)</p>
 						</section>

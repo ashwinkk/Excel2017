@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { fetchImages } from "../actions/gallery-actions";
@@ -44,6 +43,9 @@ class Gallery extends React.Component {
 
 	componentWillUnMount() {
 		clearInterval(this.interval);
+		this.props.dispatch({
+			type: "RESET_THEME"
+		});
 	}
 
 	slideShow() {
@@ -79,6 +81,11 @@ class Gallery extends React.Component {
 		this.setWidths();
 		if (window.innerWidth > 800)
 			this.interval = setInterval(this.slideShow, 4000);
+
+		this.props.dispatch({
+			type: "SET_THEME",
+			payload: { fontColor: "#3e3e3e", backgroundColor: "#49b1c0" }
+		});
 		// let height = document.getElementById("gallery-container").offsetHeight;
 		// console.log(height);
 		// if (window.innerWidth > 1000) {
@@ -154,7 +161,7 @@ class Gallery extends React.Component {
 		} else {
 			if (this.props.images.length - 1 === index) index = -1;
 			this.setState({ selectedImage: element.src, selectedIndex: index + 1 });
-			setInterval(this.slideShow, 4000);
+			setInterval(this.slideShow, 9000);
 		}
 	}
 

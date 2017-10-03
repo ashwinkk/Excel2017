@@ -9,9 +9,9 @@ export default function LogoBar(props) {
 			<a href="http://mec.ac.in/">
 				<img src="/static/anim-assets/mec_logo.png" alt="mec-logo" />
 			</a>
-			<Link to="/" className="excel-home">
+			<a href="https://excelmec.org/excel2017" className="excel-home">
 				<img src="/static/anim-assets/excel2017.png" alt="excel-logo" />
-			</Link>
+			</a>
 		</div>
 	);
 }

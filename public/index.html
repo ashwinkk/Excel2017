@@ -9,6 +9,7 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/stylesheets/bootstrap.min.css">
     <link rel="shortcut icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Muli|Raleway" rel="stylesheet">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="/static/javas/index.css" />
     <script type="text/javascript" src="/static/javas/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="/static/javas/jquery.fullpage.min.js"></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -40,7 +42,7 @@
     </div>
     <div id="root"></div>
     <div class="inline-container" id="fullpage">
-        <div class="section" style="background: lightblue;">
+        <div class="section">
             <img src="/static/anim-assets/cloudgen.png" class="cloud-slide" style="width: 100px;animation-duration: 200s;top: 40%;animation-delay: -50s;" />
             <img src="/static/anim-assets/cloudgen.png" class="cloud-slide" style="width: 120px;animation-duration: 120s;top: 25%;animation-delay: -100s;" />
             <img src="/static/anim-assets/cloudgen.png" class="cloud-slide" style="width: 80px;animation-duration: 150s;top: 50%;animation-delay: -150s;" />
@@ -56,12 +58,12 @@
                 <img class="cloud-header parallax-2" src="/static/anim-assets/cld1.png" />
             </div>
             <img class="plane-layer layer-2" src="/static/anim-assets/ffs.gif" />
-            <!--<img class="layer-2 cloud-footer " src="/static/anim-assets/cld2.png" />-->
             <img class="layer-1 cloud-2" src="/static/anim-assets/cld5.png" />
             <img class="layer-0 cloud-3 " src="/static/anim-assets/cld3.png" />
             <img class="layer-0 cloud-4 " src="/static/anim-assets/cld4.png" />
             <img class="layer-2 excel-logo" src="/static/anim-assets/excel2017.png" />
             <a href="http://mec.ac.in/" target="_blank"><img class="layer-2 mec-logo" src="/static/anim-assets/mec_logo.png" /></a>
+            <a href="http://play.excelmec.org" class="reg_button-index layer-blur" style="background:#ac2e16" target="_blank"><img style="width: 80px;" src="/static/anim-assets/excel-play.png" alt="play-logo" /></a>
         </div>
         <div class="section" style="background: lightblue;">
             <img src="/static/anim-assets/cloudgen.png" class="cloud-slide" style="width: 100px;animation-duration: 200s;top: 40%;animation-delay: -50s;" />
@@ -126,15 +128,15 @@
                     <div class="parts legacy-part ">
                         <ul class="legacy ">
                             <li id="e2016 ">
-                                <a href="https://excelmec.org/excel2016/ " target="_blank "></a>
-                                <img src="/static/anim-assets/2016.png " alt="excel-logo ">
+                                <a href="https://www.excelmec.org/excel2016/" target="_blank ">
+                                    <img src="/static/anim-assets/2016.png " alt="excel-logo ">
                                 </a>
                                 <div class="tooltip ">
                                     Excel 2016
                                 </div>
                             </li>
                             <li id="e2015 ">
-                                <a href="https://www.excelmec.org/excel2015/ " target="_blank ">
+                                <a href="https://www.excelmec.org/excel2015/" target="_blank ">
                                     <img src="https://excelmec.org/excel2016/images/legacy/excel15.png " alt="excel-logo ">
                                 </a>
                                 <div class="tooltip ">
@@ -142,7 +144,7 @@
                                 </div>
                             </li>
                             <li id="e2014 ">
-                                <a href="https://www.excelmec.org/excel2014/ " target="_blank ">
+                                <a href="https://www.excelmec.org/excel2014/" target="_blank ">
                                     <img src="https://excelmec.org/excel2016/images/legacy/excel14.png " alt="excel-logo ">
                                 </a>
                                 <div class="tooltip ">
@@ -168,6 +170,15 @@
     -->
 </body>
 <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+        appId: "74618c63-2ed8-4b6b-9235-a1cf548c94cd",
+        autoRegister: true,
+        notifyButton: {
+            enable: false /* Set to false to hide */
+        },
+        allowLocalhostAsSecureOrigin: true
+    }]);
     $(document).ready(function() {
         var parallax = document.getElementById("para "),
             parallax1 = document.getElementById("para1 "),
@@ -191,6 +202,27 @@
                 $('#fullpage').children().eq(nextIndex - 1).find('.layer-2').addClass("layer-2-active ");
             }
         });
+        setTimeout(function() {
+            if (window.location.hash !== "#/") {
+                $.fn.fullpage.destroy("all");
+                console.log("called");
+            }
+        });
+        var nav = document.getElementById("navbar");
+        console.log(nav);
+        nav.addEventListener("click", function() {
+            setTimeout(function() {
+                console.log(window.location.hash);
+                if (window.location.hash == "#/") {;
+                } else {
+                    $.fn.fullpage.destroy('all');
+                }
+            }, 500);
+
+            console.log(document.getElementsByTagName("html")[0].classList.contains("fp-enabled"));
+
+        });
+
     });
 </script>
 

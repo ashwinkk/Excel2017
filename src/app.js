@@ -5,7 +5,8 @@ import Competitions from "./pages/competitions";
 import CompetitionDetail from "./pages/competition-detail";
 import WorkshopDetail from "./pages/workshop-detail";
 import Summit from "./pages/summit.js";
-import Gallery from "./pages/gallery.js";
+import Throttlex from "./pages/throttlex.js";
+import Gallery from "./pages/gallery1";
 import Navbar from "./partials/navbar";
 import ComingSoon from "./pages/coming-soon";
 import Spotlight from "./pages/spotlight";
@@ -35,14 +36,18 @@ function App(props) {
 					<Route exact path="/" component={Root} />
 					<Route path="/competitions/:type" component={CompetitionDetail} />
 					<Route path="/spotlight/ai-summit" component={Summit} />
+					<Route path="/events/throttlex" component={Throttlex} />
 					<Route path="/spotlight/:type" component={WorkshopDetail} />
 					<Route path="/spotlight" component={Spotlight} />
-					{/* <Route path="/events/:type" component={EventDetail} />					 */}
+					<Route path="/events/:type" component={EventDetail} />
 					<Route path="/events" component={Events} />
 					<Route path="/competitions?" component={Competitions} />
 					<Route path="/competitions" component={Competitions} />
 					<Route path="/gallery" component={Gallery} />
-					<Route path="/under-construction" render={()=><Redirect to="/" />} />
+					<Route
+						path="/under-construction"
+						render={() => <Redirect to="/" />}
+					/>
 					<Route path="/contacts" component={About} />
 					<Route path="/sponsors" component={Sponsors} />
 					<Route path="/schedule" component={Schedule} />

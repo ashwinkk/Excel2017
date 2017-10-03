@@ -10,6 +10,7 @@ import spotlightReducer from "./reducers/spotlight-reducer";
 import eventsReducer from "./reducers/events-reducer";
 import navbarReducer from "./reducers/navbar-reducer";
 import aboutReducer from "./reducers/about-reducer";
+import botReducer from "./reducers/bot-reducer";
 import sponsorsReducer from "./reducers/sponsors-reducer";
 import scheduleReducer from "./reducers/schedule-reducer"
 
@@ -23,7 +24,8 @@ const app = combineReducers({
 	navbar: navbarReducer,
 	about: aboutReducer,
 	sponsors: sponsorsReducer,
-	schedule: scheduleReducer
+	schedule: scheduleReducer,
+	bot: botReducer
 });
 
 const middleware = applyMiddleware(thunk);

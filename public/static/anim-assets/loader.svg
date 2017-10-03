@@ -1,5 +1,13 @@
 <svg width="200px"  height="200px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-stroke" style="background: none;">
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <text x="50" y="50" text-anchor="middle" dy="0.38em" fill="none" stroke-linecap="round" stroke-linejoin="round" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" ng-attr-font-size="{{config.fontSize}}" ng-attr-font-family="{{config.fontFamily}}" stroke="#8e1687" stroke-width="0.7" font-size="17" font-family="hero">Excel 2017
+=======
     <text x="50" y="50" text-anchor="middle" dy="0.38em" fill="none" stroke-linecap="round" stroke-linejoin="round" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" ng-attr-font-size="{{config.fontSize}}"  stroke="#8e1687" stroke-width="0.7" font-size="17" font-family="Varela-Round">Excel 2017
+>>>>>>> origin/competition-filter
+=======
+    <text x="50" y="50" text-anchor="middle" dy="0.38em" fill="none" stroke-linecap="round" stroke-linejoin="round" ng-attr-stroke="{{config.c1}}" ng-attr-stroke-width="{{config.width}}" ng-attr-font-size="{{config.fontSize}}"  stroke="#8e1687" stroke-width="0.7" font-size="17" font-family="Varela-Round">Excel 2017
+>>>>>>> acd710a9603d005aba95c67e9d48c87024c731b8
       <animate attributeName="stroke-dasharray" calcMode="spline" values="0 100;100 100;0 100" keyTimes="0;0.5;1" dur="2.8" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" begin="0s" repeatCount="indefinite"></animate>
       <animate attributeName="stroke-dashoffset" calcMode="linear" values="0;0;-100" keyTimes="0;0.5;1" dur="2.8" begin="0s" repeatCount="indefinite"></animate></text>
   </svg>

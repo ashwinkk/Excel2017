@@ -1,50 +1,62 @@
 [
 	{
-		"url": "/static/gallery/3eye.png"
+		"url": "/static/gallery/i1.jpg"
 	},
 	{
-		"url": "/static/gallery/22.jpg"
+		"url": "/static/gallery/i2.jpg"
 	},
 	{
-		"url": "/static/gallery/23.jpg"
+		"url": "/static/gallery/i3.jpg"
 	},
 	{
-		"url": "/static/gallery/bestSmall.png"
+		"url": "/static/gallery/i4.jpg"
 	},
 	{
-		"url": "/static/gallery/binbashsmall.png"
+		"url": "/static/gallery/i5.jpg"
 	},
 	{
-		"url": "/static/gallery/bomb.png"
+		"url": "/static/gallery/i6.jpg"
 	},
 	{
-		"url": "/static/gallery/circum.png"
+		"url": "/static/gallery/i7.jpg"
 	},
 	{
-		"url": "/static/gallery/11.jpg"
+		"url": "/static/gallery/i8.jpg"
 	},
 	{
-		"url": "/static/gallery/csiSmall.png"
+		"url": "/static/gallery/i9.jpg"
 	},
 	{
-		"url": "/static/gallery/1.jpg"
+		"url": "/static/gallery/i10.jpg"
 	},
 	{
-		"url": "/static/gallery/12.jpg"
+		"url": "/static/gallery/i11.jpg"
 	},
 	{
-		"url": "/static/gallery/ext.png"
+		"url": "/static/gallery/i12.jpg"
 	},
 	{
-		"url": "/static/gallery/funSmall.png"
+		"url": "/static/gallery/i13.jpg"
 	},
 	{
-		"url": "/static/gallery/13.jpg"
+		"url": "/static/gallery/i14.jpg"
 	},
 	{
-		"url": "/static/gallery/generalQuiz.png"
+		"url": "/static/gallery/i15.jpg"
 	},
 	{
-		"url": "/static/gallery/2.jpg"
+		"url": "/static/gallery/i16.jpg"
+	},
+	{
+		"url": "/static/gallery/i17.jpg"
+	},
+	{
+		"url": "/static/gallery/i18.jpg"
+	},
+	{
+		"url": "/static/gallery/i19.jpg"
+	},
+	{
+		"url": "/static/gallery/i20.jpg"
 	}
 ]

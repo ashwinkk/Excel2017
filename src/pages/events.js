@@ -26,7 +26,7 @@ class Events extends React.Component {
 		this.setState({ mounted: true });
 	}
 	componentWillMount() {
-		this.props.dispatch(fetchEvent());
+		if (this.props.events.length === 0) this.props.dispatch(fetchEvent());
 	}
 	componentDidUpdate() {
 		if (this.state.render === false) {
@@ -43,7 +43,6 @@ class Events extends React.Component {
 		let events = this.props.events.map((obj, i) => (
 			<EventCard
 				title={obj.title}
-				key={obj.id}
 				id={obj.id}
 				render={this.state.renderCard}
 				style={{ transitionDelay: `${1 + (i + 1) * 0.1}s` }}

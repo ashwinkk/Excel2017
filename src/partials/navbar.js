@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import BotChat from "./bot-area";
 
 import GoLock from "react-icons/lib/go/lock";
-import { FaUserSecret, FaCalendar, FaMicrophone } from "react-icons/lib/fa";
+import { FaCameraRetro, FaCalendar, FaMicrophone } from "react-icons/lib/fa";
 
 import { MdVideogameAsset, MdHighlight, MdHome } from "react-icons/lib/md";
 
@@ -53,11 +53,11 @@ class Navbar extends React.Component {
 	}
 	render() {
 		let micClass = "bot-spawn";
-		if (this.state.spawn) micClass = "bot-spawn record";
 		return (
 			<div
 				className="navbar-container"
 				style={{ backgroundColor: this.props.backgroundColor }}
+				id="navbar"
 			>
 				<div className="navbar">
 					<div
@@ -70,11 +70,14 @@ class Navbar extends React.Component {
 						<div className="left">
 							<div className="lonely-home">
 								<div className="nav-text">
-									<Link to="/">Home</Link>
+									<a href="https://excelmec.org/excel2017">Home</a>
 								</div>
-								<Link to="/" onClick={this.showfullpage}>
+								<a
+									href="https://excelmec.org/excel2017"
+									onClick={this.showfullpage}
+								>
 									<MdHome />
-								</Link>
+								</a>
 							</div>
 							<div>
 								<div className="nav-text">
@@ -102,24 +105,34 @@ class Navbar extends React.Component {
 									<FaCalendar />
 								</Link>
 							</div>
-							{/* <div>
+							<div>
 								<div className="nav-text">
-									<Link to="/user">User</Link>
+									<Link to="/gallery">Gallery</Link>
 								</div>
-								<Link to="/user" onClick={this.removeFullpage}>
-									<FaUserSecret />
+								<Link to="/gallery" onClick={this.removeFullpage}>
+									<FaCameraRetro />
 								</Link>
-							</div> */}
+							</div>
 						</div>
 					</div>
-					<div className={micClass}>
-						<div onClick={this.handleSpawn}>
-							<FaMicrophone />
+					<div className={micClass} onClick={this.handleSpawn}>
+						<div>
+							<div className="loading">
+								<img
+									src="/static/anim-assets/logowithgap.png"
+									alt="excel-logo"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<BotChat spawn={this.state.spawn} />
+				<BotChat
+					spawn={this.state.spawn}
+					close={() => {
+						this.setState({ spawn: false });
+					}}
+				/>
 			</div>
 		);
 	}

@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import ReactHtmlParser from "react-html-parser";
 
 import { fetchWorkshops } from "../actions/workshop-actions";
+import Logobar from "../partials/logo-bar";
 import { getObjectFromStore } from "../helpers/excel2017";
 import EventTabs from "../partials/event-tabs";
 
@@ -33,6 +34,7 @@ class WorkshopDetail extends React.Component {
 	}
 	componentDidMount() {
 		this.setState({ mounted: true });
+		window.scrollTo(0, 0);
 	}
 	componentDidUpdate() {
 		if (this.state.render === false) {
@@ -69,8 +71,30 @@ class WorkshopDetail extends React.Component {
 			? "animate-bounce"
 			: "";
 		let textTransition = this.state.renderElements ? 1 : 0;
+		let regButton;
+		if (this.workshop.buttons !== undefined)
+			regButton = this.workshop.buttons.map((button, index) => {
+				return (
+					<a
+						className="reg_button"
+						target="_blank"
+						href={button.register_link !== "" ? button.register_link : null}
+						style={{ opacity: textTransition }}
+					>
+						{button.register_link !== "" ? button.name : "Closed"}
+					</a>
+				);
+			});
+		else {
+			regButton = <p />;
+		}
+		let eventTabNames;
+		if (this.workshop.category === "WS")
+			eventTabNames = ["Overview", "Schedule", "Particulars"];
+		else eventTabNames = ["Overview", "Speakers", "Particulars"];
 		return (
 			<div className="workshop-container">
+				<Logobar />
 				<img
 					src={this.workshop.image}
 					alt={this.workshop.image}
@@ -79,18 +103,11 @@ class WorkshopDetail extends React.Component {
 				<h2 style={{ color: this.props.accentColour, opacity: textTransition }}>
 					{this.workshop.title}
 				</h2>
-				<a
-					className="reg_button"
-					target="_blank"
-					href={this.workshop.register_link}
-					style={{ opacity: textTransition }}
-				>
-					Register
-				</a>
+				<div className="buttons">{regButton}</div>
 				<EventTabs
 					render={this.state.renderElements}
 					activeTab={this.handleTab}
-					tabLabels={["Overview", "Schedule", "Particulars"]}
+					tabLabels={eventTabNames}
 				>
 					<div className="active-tab">{this.workshop.overview}</div>
 					<div>{this.workshop.schedule}</div>
