@@ -684,6 +684,7 @@ ul.legacy li:hover .tooltip {
 	padding-left: 20px;
 }
 
+
 @media (max-width: 900px) {
 	.contacts-us img {
 		background: rgba(255, 255, 255, 0.6);

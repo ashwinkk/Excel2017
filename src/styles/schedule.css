@@ -25,7 +25,7 @@
   background: #f1f1f1;
   text-align: center; }
 
-.tab {
+.sched-tab {
   display: inline-block;
   background: none;
   padding: 20px 30px;
@@ -36,10 +36,10 @@
   cursor: pointer;
   transition: 0.5s; }
   @media screen and (max-width: 750px) {
-    .tab {
+    .sched-tab {
       padding: 10px 15px; } }
 
-.tab.tab-active {
+.sched-tab.tab-active {
   border-color: #f24501;
   color: #f24501; }
 

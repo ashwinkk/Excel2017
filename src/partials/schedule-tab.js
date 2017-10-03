@@ -8,7 +8,7 @@ export default class ScheduleTab extends React.Component {
         this.props.click(this.props.index);
     }
     render(){
-        let style = "tab" + (this.props.active?" tab-active":"");
+        let style = "sched-tab" + (this.props.active?" tab-active":"");
         return(
           <a className={style} onClick={this.changePage.bind(this)}>{this.props.day} {this.props.key}</a>
         );
