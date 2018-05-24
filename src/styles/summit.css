@@ -46,7 +46,7 @@ table {
   width: 100%;
   left: 0;
   top: 0;
-  background-image: -webkit-linear-gradient(bottom, #0a0a0a, transparent); }
+  background-image: -webkit-linear-gradient(bottom, #0a0a0a, rgba(0, 0, 0, 0)); }
 
 .cover {
   position: relative;
@@ -100,7 +100,7 @@ table {
     width: 100%;
     left: 0;
     top: 0;
-    background-image: -webkit-linear-gradient(bottom, #0a0a0a, transparent); }
+    background-image: -webkit-linear-gradient(bottom, #0a0a0a, rgba(0, 0, 0, 0)); }
   @media (max-width: 600px) {
     .cover {
       height: 550px; } }
@@ -194,7 +194,7 @@ section.venue-container {
     background-position: center; }
     .contacts-container .brain .overlay {
       background-color: transparent;
-      background-image: -webkit-linear-gradient(top, #0a0a0a, transparent 20%); }
+      background-image: -webkit-linear-gradient(top, #0a0a0a, rgba(0, 0, 0, 0) 20%); }
     .contacts-container .brain img {
       height: 300px; }
     @media (max-width: 600px) {
@@ -203,7 +203,7 @@ section.venue-container {
         .contacts-container .brain img {
           display: none; }
         .contacts-container .brain .overlay {
-          background-image: -webkit-linear-gradient(top, #0a0a0a, transparent 50%); } }
+          background-image: -webkit-linear-gradient(top, #0a0a0a, rgba(0, 0, 0, 0) 50%); } }
 
 .map-container {
   height: 300px;
